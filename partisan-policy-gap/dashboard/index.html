@@ -65,6 +65,10 @@
       <button type="button" data-go="vix">VIX</button>
       <button type="button" data-go="control">Split government</button>
       <button type="button" data-go="best-mix">Best mix</button>
+      <button type="button" data-go="fair">Dem vs Rep, adjusted</button>
+      <button type="button" data-go="over-time">Over time</button>
+      <button type="button" data-go="then-now">Mixes: then vs now</button>
+      <button type="button" data-go="closeup">Standout mix</button>
       <button type="button" data-go="post-election">After elections</button>
       <button type="button" data-go="legislation">Congress</button>
       <button type="button" data-go="conclusions">Conclusions</button>
@@ -80,7 +84,8 @@
       <li><b>Recent-decade signals were trend coincidences.</b> Since 1980, <b data-draw="kf-n" data-source="recent_sig" data-row="0" data-field="simple">—</b> of <b data-draw="kf-n" data-source="recent_sig" data-row="0" data-field="total">—</b> period tests looked significant; <b data-draw="kf-n" data-source="recent_sig" data-row="0" data-field="trend">—</b> survive once the long-run trend is removed.</li>
       <li><b>Elections don't change the picture.</b> Of <b data-draw="kf-n" data-source="post_sig" data-row="0" data-field="total">—</b> tests of market moves 1–6 months after elections, <b data-draw="kf-n" data-source="post_sig" data-row="0" data-field="sig">—</b> were significant.</li>
       <li><b>Who holds power matters more.</b> 10-year Treasuries returned <b data-draw="kf-cell" data-source="control_cells" data-where="outcome=bond_tr&amp;government=Divided&amp;beliefs=All" data-field="mean">—</b> a year under split government vs <b data-draw="kf-cell" data-source="control_cells" data-where="outcome=bond_tr&amp;government=Unified&amp;beliefs=All" data-field="mean">—</b> under one-party control (p-value <b data-draw="kf-p" data-source="control_tests" data-where="outcome=bond_tr&amp;test=Divided%20vs%20unified" data-field="p">—</b>). Stocks showed no reliable difference.</li>
-      <li><b>Which mix has been best?</b> For stocks, the best mix has been <b data-draw="best" data-k="stocks" data-f="combo" data-source="combo_best" data-where="kind=stocks" data-field="combo">—</b> (<b data-draw="best" data-k="stocks" data-f="value" data-source="combo_best" data-where="kind=stocks" data-field="value">—</b> a year over <b data-draw="best" data-k="stocks" data-f="n" data-source="combo_best" data-where="kind=stocks" data-field="n">—</b> years, vs <b data-draw="best" data-k="stocks" data-f="avg" data-source="combo_best" data-where="kind=stocks" data-field="avg">—</b> on average). For bonds, it has been <b data-draw="best" data-k="bonds" data-f="combo" data-source="combo_best" data-where="kind=bonds" data-field="combo">—</b> (<b data-draw="best" data-k="bonds" data-f="value" data-source="combo_best" data-where="kind=bonds" data-field="value">—</b> a year vs <b data-draw="best" data-k="bonds" data-f="avg" data-source="combo_best" data-where="kind=bonds" data-field="avg">—</b>). The stock differences are not statistically reliable; the bond one is.</li>
+      <li><b>Democrat or Republican, adjusted for years covered?</b> For stocks, Democratic presidents averaged <b data-draw="pc" data-g="President's party" data-k="Democratic president" data-o="sp_tr" data-f="diff" data-source="party_compare" data-where="grouping=President's%20party&amp;group=Democratic%20president&amp;outcome=sp_tr" data-field="diff">—</b> a year more than Republican presidents (p-value <b data-draw="pc" data-g="President's party" data-k="Democratic president" data-o="sp_tr" data-f="p" data-source="party_compare" data-where="grouping=President's%20party&amp;group=Democratic%20president&amp;outcome=sp_tr" data-field="p">—</b>), and <b data-draw="pc" data-g="President's party" data-k="Democratic president" data-o="sp_tr" data-f="diff_era" data-source="party_compare" data-where="grouping=President's%20party&amp;group=Democratic%20president&amp;outcome=sp_tr" data-field="diff_era">—</b> once each year is compared with its own decade (p-value <b data-draw="pc" data-g="President's party" data-k="Democratic president" data-o="sp_tr" data-f="p_era" data-source="party_compare" data-where="grouping=President's%20party&amp;group=Democratic%20president&amp;outcome=sp_tr" data-field="p_era">—</b>). For bonds it flips: 10-year Treasuries did <b data-draw="pc" data-g="President's party" data-k="Democratic president" data-o="bond_tr" data-f="diff" data-source="party_compare" data-where="grouping=President's%20party&amp;group=Democratic%20president&amp;outcome=bond_tr" data-field="diff">—</b> a year under Democratic presidents relative to Republican ones (p-value <b data-draw="pc" data-g="President's party" data-k="Democratic president" data-o="bond_tr" data-f="p" data-source="party_compare" data-where="grouping=President's%20party&amp;group=Democratic%20president&amp;outcome=bond_tr" data-field="p">—</b>). Across the seven president–Congress mixes, adjusting for sample size squeezes stock averages into a narrow <b data-draw="adjr" data-k="lo" data-source="adj_summary" data-where="kind=stocks" data-field="lo">—</b> to <b data-draw="adjr" data-k="hi" data-source="adj_summary" data-where="kind=stocks" data-field="hi">—</b> band, so no mix stands out; for bonds, <b data-draw="adjr" data-k="combo" data-source="adj_summary" data-where="kind=bonds" data-field="combo">—</b> stays clearly best at <b data-draw="adjr" data-k="value" data-source="adj_summary" data-where="kind=bonds" data-field="value">—</b> adjusted.</li>
+      <li><b>The standout mix: a Republican president with a Democratic House and Republican Senate.</b> It is the best mix for bonds: <b data-draw="cu" data-f="bond_all" data-source="closeup_summary" data-row="0" data-field="bond_all">—</b> a year, still <b data-draw="cua" data-o="bond_tr" data-f="adjusted" data-source="combo_adjusted" data-where="grouping=President,%20House,%20Senate&amp;group=Rep%20president,%20Dem%20House,%20Rep%20Senate&amp;outcome=bond_tr" data-field="adjusted">—</b> after adjusting for sample size, with a <b data-draw="cua" data-o="bond_tr" data-f="p_best" data-source="combo_adjusted" data-where="grouping=President,%20House,%20Senate&amp;group=Rep%20president,%20Dem%20House,%20Rep%20Senate&amp;outcome=bond_tr" data-field="p_best">—</b> chance of truly being best. For stocks it depends on which years count: <b data-draw="cu" data-f="sp_all" data-source="closeup_summary" data-row="0" data-field="sp_all">—</b> a year over all <b data-draw="cu" data-f="n_all" data-source="closeup_summary" data-row="0" data-field="n_all">—</b> years, but <b data-draw="cu" data-f="sp_ex" data-source="closeup_summary" data-row="0" data-field="sp_ex">—</b> leaving out the 1931–32 Depression, and only a <b data-draw="cua" data-o="sp_tr" data-f="p_best" data-source="combo_adjusted" data-where="grouping=President,%20House,%20Senate&amp;group=Rep%20president,%20Dem%20House,%20Rep%20Senate&amp;outcome=sp_tr" data-field="p_best">—</b> chance of being the best stock mix after adjusting.</li>
       <li><b>Words and votes diverge.</b> What parties write in platforms has a correlation of <b data-draw="leg-r" data-source="leg_tests" data-where="outcome=vote_gap&amp;spec=Simple" data-field="corr">—</b> with how divided Congress actually votes.</li>
     </ol>
   </section>
@@ -293,7 +298,7 @@
     </div>
     <div class="card" style="margin-top: var(--cds-gap-md)">
       <h3 id="best-mix">Which mix of president and Congress has been best for markets?</h3>
-      <p class="note">Average annual returns for every combination of the president's party and the House and Senate majorities, 1921–2022, best for stocks first. Dashed lines are the all-years averages. Combinations with fewer than <span data-draw="min-years">—</span> years are shown but not ranked as "best".</p>
+      <p class="note">Average annual returns for every combination of the president's party and the House and Senate majorities, 1921–2022, best for stocks first. Dashed lines are the all-years averages. Raw averages: combinations with fewer than <span data-draw="min-years">—</span> years are faded. See the adjusted view below for a fair ranking.</p>
       <div class="legend">
         <span><span class="sw" data-sw="0"></span>S&amp;P 500 total return</span>
         <span><span class="sw" data-sw="1"></span>10-yr Treasury return</span>
@@ -306,6 +311,101 @@
         </table>
       </div>
       <p class="note" style="margin-top: var(--cds-gap-sm)">How this compares with other studies: published analyses (Edelman, Bespoke, CFRA, Retirement Researcher) also find a Democratic president with a Republican or split Congress among the best mixes for stocks, and a Republican president with a Democratic Congress among the weakest. Some outside studies rank a Republican president with a Democratic House and Republican Senate first; they start in 1948 and so leave out 1931–32, which this study counts in that mix. Bold p-values are below 0.05.</p>
+    </div>
+    <div class="card" style="margin-top: var(--cds-gap-md)">
+      <h3 id="fair">A fair comparison: adjusting for years covered</h3>
+      <p class="note">Mixes with only a few years can post extreme averages by luck. Here each average is pulled toward the overall average in proportion to how little data it has (a random-effects model fitted by REML), so a 4-year mix moves a lot and a 36-year mix barely moves. Hollow dot = raw average; filled dot = adjusted; line = how far it moved.</p>
+      <div class="grid2">
+        <div><h3>S&amp;P 500 total return</h3><div class="chart mid" data-draw="adj-dots" data-outcome="sp_tr" data-source="combo_adjusted"></div></div>
+        <div><h3>10-yr Treasury return</h3><div class="chart mid" data-draw="adj-dots" data-outcome="bond_tr" data-source="combo_adjusted"></div></div>
+      </div>
+      <h3 style="margin-top: var(--cds-gap-md)">Democratic vs Republican presidents</h3>
+      <p class="note">These two groups cover almost the same number of years, so they compare directly without shrinkage. "Within decade" measures each year against its own decade's average and adds back the overall average, so neither party gets credit or blame for the era it happened to govern in.</p>
+      <div class="legend">
+        <span><span class="sw" data-sw="6"></span>Raw average</span>
+        <span><span class="sw" data-sw="0"></span>Within decade</span>
+      </div>
+      <div class="grid2">
+        <div><h3>S&amp;P 500 total return</h3><div class="chart small" data-draw="party-bars" data-outcome="sp_tr" data-source="party_compare"></div></div>
+        <div><h3>10-yr Treasury return</h3><div class="chart small" data-draw="party-bars" data-outcome="bond_tr" data-source="party_compare"></div></div>
+      </div>
+      <p class="note" style="margin-top: var(--cds-gap-sm)">Reading it: once sample size is accounted for, the stock gaps between mixes mostly disappear. The president's party matters more than the full mix: Democratic presidents have had better stock years and Republican presidents better bond years, and both gaps hold within decades. The bond standout is the 1980s, when rates fell from record highs.</p>
+    </div>
+    <div class="card" style="margin-top: var(--cds-gap-md)">
+      <h3 id="over-time">Has this always been true, or is it recent?</h3>
+      <p class="note">The Democratic-minus-Republican-president gap in average annual returns over every rolling 30-year window. Above zero = better under Democratic presidents. Larger dots = significant at 5%.</p>
+      <div class="legend">
+        <span><span class="sw" data-sw="0"></span>S&amp;P 500 total return</span>
+        <span><span class="sw" data-sw="1"></span>10-yr Treasury return</span>
+      </div>
+      <div class="chart tall" data-draw="roll-diff" data-source="dem_rep_rolling"></div>
+      <div class="grid2" style="margin-top: var(--cds-gap-md)">
+        <div>
+          <h3>Gap by era</h3>
+          <p class="note">Democratic minus Republican president, average annual return. Bold p-values are below 0.05.</p>
+          <div class="tbl">
+            <table data-source="dem_rep_eras" data-row-key="period,outcome">
+              <thead><tr><th class="l" data-field="period">Period</th><th class="l" data-field="outcome_label">Outcome</th><th data-field="dem">Dem</th><th data-field="rep">Rep</th><th data-field="diff">Gap</th><th data-field="p">p</th></tr></thead>
+              <tbody data-draw="eras-tbl"></tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <h3>President by president</h3>
+          <p class="note">Annualized S&amp;P 500 total return in each president's years; Biden uses price return because dividend data stops in 2022. Hover for bonds.</p>
+          <div class="legend">
+            <span><span class="sw" data-sw="0"></span>Democratic</span>
+            <span><span class="sw" data-sw="3"></span>Republican</span>
+          </div>
+          <div class="chart tall" data-draw="pres-bars" data-source="president_returns"></div>
+        </div>
+      </div>
+      <p class="note" style="margin-top: var(--cds-gap-sm)">Reading it: the bond pattern is long-standing. Republican presidents have had the better bond years in every era, significantly so in most, peaking in the falling-rate 1980s. The stock pattern points the same way in most windows but is never significant within an era, and it rests on a few Republican-era crashes (1929–32, 2001–02, 2008): the median Republican presidency actually beat the median Democratic one. In the most recent stretch it has disappeared. Using price returns for 2013–2025, stocks averaged <b data-draw="er" data-f="dem" data-source="dem_rep_eras" data-where="period=2013–2025%20(price%20only)&amp;outcome=sp_px" data-field="dem">—</b> under Democratic presidents and <b data-draw="er" data-f="rep" data-source="dem_rep_eras" data-where="period=2013–2025%20(price%20only)&amp;outcome=sp_px" data-field="rep">—</b> under Republican ones.</p>
+    </div>
+    <div class="card" style="margin-top: var(--cds-gap-md)">
+      <h3 id="then-now">Which mix wins recently, and is it a change?</h3>
+      <p class="note">Average annual return for each president–Congress mix before 1991 and since. Stocks use S&amp;P 500 price returns so the recent period runs through 2025 (total returns stop in 2022); bonds run through 2022. Hover a bar for the years behind it. Each recent mix covers only two to eight years, often one or two presidencies.</p>
+      <div class="legend">
+        <span><span class="sw" data-sw="6"></span>1921–1990</span>
+        <span><span class="sw" data-sw="0"></span>Since 1991</span>
+      </div>
+      <div class="grid2">
+        <div><h3>S&amp;P 500 price return</h3><div class="chart tall" data-draw="then-now" data-outcome="sp_px" data-source="combo_then_now"></div></div>
+        <div><h3>10-yr Treasury return</h3><div class="chart tall" data-draw="then-now" data-outcome="bond_tr" data-source="combo_then_now"></div></div>
+      </div>
+      <p class="note" style="margin-top: var(--cds-gap-sm)">Reading it: for stocks the ranking has flipped. Before 1991, one-party government did best, Republican first and Democratic second. Since 1991, split government has done best: a Democratic president with a Republican House (Clinton, Obama, Biden) and the 2019–20 Republican-president, Democratic-House years, while unified government fell to the middle. The "Democratic president with a Republican Congress" pattern in outside studies is largely a post-1991 result. For bonds the picture is steadier: Republican presidents facing a Democratic House sit at or near the top in both periods, and unified Democratic control is near the bottom in both.</p>
+    </div>
+    <div class="card" style="margin-top: var(--cds-gap-md)">
+      <h3 id="closeup">Close-up: Republican president, Democratic House, Republican Senate</h3>
+      <p class="note">This mix has happened in only three stretches: Hoover in 1931–32, Reagan in 1981–86 and Trump in 2019–20. Each bar is one year: S&amp;P 500 price return and 10-yr Treasury return.</p>
+      <div class="legend">
+        <span><span class="sw" data-sw="0"></span>S&amp;P 500 price return</span>
+        <span><span class="sw" data-sw="1"></span>10-yr Treasury return</span>
+      </div>
+      <div class="chart tall" data-draw="closeup-bars" data-source="mix_closeup"></div>
+      <div class="tiles" style="margin-top: var(--cds-gap-md)">
+        <div class="card tile">
+          <div class="lab">Stocks, all years</div>
+          <div class="big" data-draw="cu" data-f="sp_all" data-source="closeup_summary" data-row="0" data-field="sp_all">—</div>
+          <div class="sub">Average price return a year, including the 1931–32 crash</div>
+        </div>
+        <div class="card tile">
+          <div class="lab">Stocks, without 1931–32</div>
+          <div class="big" data-draw="cu" data-f="sp_ex" data-source="closeup_summary" data-row="0" data-field="sp_ex">—</div>
+          <div class="sub">Reagan and Trump years only, close to what outside studies starting in 1948 report</div>
+        </div>
+        <div class="card tile">
+          <div class="lab">Bonds, all years</div>
+          <div class="big" data-draw="cu" data-f="bond_all" data-source="closeup_summary" data-row="0" data-field="bond_all">—</div>
+          <div class="sub">10-yr Treasury return a year; best of every mix</div>
+        </div>
+        <div class="card tile">
+          <div class="lab">Chance it is truly the best bond mix</div>
+          <div class="big" data-draw="cua" data-o="bond_tr" data-f="p_best" data-source="combo_adjusted" data-where="grouping=President,%20House,%20Senate&amp;group=Rep%20president,%20Dem%20House,%20Rep%20Senate&amp;outcome=bond_tr" data-field="p_best">—</div>
+          <div class="sub">After adjusting for sample size; for stocks it is <span data-draw="cua" data-o="sp_tr" data-f="p_best" data-source="combo_adjusted" data-where="grouping=President,%20House,%20Senate&amp;group=Rep%20president,%20Dem%20House,%20Rep%20Senate&amp;outcome=sp_tr" data-field="p_best">—</span></div>
+        </div>
+      </div>
+      <p class="note" style="margin-top: var(--cds-gap-sm)">Reading it: for bonds this mix is reliably the best, helped most by the 1980s, when rates fell from record highs. For stocks it looks strong in the Reagan and Trump years and terrible in Hoover's, so with three short stretches the economy each president inherited likely matters more than the mix itself.</p>
     </div>
     <div class="card" style="margin-top: var(--cds-gap-md)">
       <h3>By type of split</h3>
@@ -409,7 +509,7 @@
       <li><b>Polarization is real and rising.</b> The gap index puts 2023–24 at the widest point in over a century.</li>
       <li><b>It is not a market signal.</b> Neither how far apart the parties are nor whether the gap is widening reliably explains stock returns, Treasury returns, volatility or the VIX: in any period, with or without controls, or in the months after elections. Out of sample, it made forecasts worse.</li>
       <li><b>Early hints were coincidences.</b> Links to bonds and the VIX faded when foreign policy was added, and recent-decade results vanished once the long-run trend was removed.</li>
-      <li><b>Power beats beliefs.</b> Split government has reliably come with better Treasury returns, plausibly because gridlock limits big spending and borrowing. For stocks, a Democratic president facing a Republican Congress and full Republican control have had the best average years, but no stock difference between combinations is statistically reliable.</li>
+      <li><b>Power beats beliefs.</b> Split government has reliably come with better Treasury returns, plausibly because gridlock limits big spending and borrowing. Adjusted for how many years each mix covers, no president–Congress mix stands out for stocks. The president's party matters more: Democratic presidents have had better stock years and Republican presidents better bond years, within decades as well as overall. The bond pattern is long-standing; the stock edge depends on a few crashes and has vanished since 2013. Among mixes, stocks favored one-party government before 1991 but split government since. A Republican president with a Democratic House and Republican Senate has been the most reliable mix for bonds.</li>
       <li><b>Words and votes diverge.</b> Platform distance does not track how divided Congress votes or how much law it passes. Markets price what passes, not what parties say.</li>
     </ul>
     <h3>What's next</h3>
@@ -439,6 +539,7 @@
       <li><b>Composite</b>: each component standardized over 1921–2024; index = ½ voting gap + ½ average of the four platform topics, then re-standardized.</li>
       <li><b>Party control</b>: majorities per Congress from the published party-division tables (Wikipedia, "Party divisions of United States Congresses"), cross-checked with Voteview membership. The 72nd House is counted Democratic (Democrats organized it), the 107th Senate Democratic (after the 2001 Jeffords switch), and 2021–22 unified Democratic.</li>
       <li><b>Congress behavior</b>: party-unity and bipartisan shares computed from every House and Senate roll call (Voteview member votes); laws enacted and pages of law from Libgober's comprehensive database of U.S. federal laws (Scientific Data, 2024). 2021–24 law counts are left out because that source switches to NARA records and is incomplete there.</li>
+      <li><b>Fair comparison of party mixes</b>: each mix's average shrunk toward the overall average with a random-intercept model fitted by REML (statsmodels MixedLM), weight = between-mix variance / (between-mix variance + within-mix variance / years); probability of being best from 20,000 draws. Within-decade figures subtract each decade's average return.</li>
       <li><b>Recent-decade and VIX checks</b>: the gap regressions re-run from later starting years with and without a linear time trend; monthly VIX averages from Cboe daily closes, tested with Newey-West standard errors (24 lags) because the gap repeats for two years at a time.</li>
       <li><b>Outcomes</b>: S&amp;P 500 calendar-year total return and realized volatility (std. dev. of monthly returns × √12) from Shiller's monthly data; 10-yr Treasury return computed as a constant-maturity par bond from Shiller's long rate; VIX annual average from CBOE (1990 on). Shiller dividends end mid-2023, so return tests stop at 2022.</li>
     </ol>
@@ -602,6 +703,33 @@ dash.calc('combo_best', {
       { kind: 'stocks', combo: s.combo, value: Number(s.sp_tr), n: Number(s.n), avg: Number(avg.sp_tr) },
       { kind: 'bonds', combo: b.combo, value: Number(b.bond_tr), n: Number(b.n), avg: Number(avg.bond_tr) },
     ];
+  },
+});
+
+dash.calc('adj_summary', {
+  inputs: ['combo_adjusted'],
+  title: 'Adjusted mix summary',
+  description: 'Range of sample-size-adjusted S&P 500 averages across president/House/Senate mixes, and the best adjusted mix for 10-yr Treasuries.',
+  fn: (combo_adjusted) => {
+    const mix = combo_adjusted.filter((r) => r.grouping === 'President, House, Senate');
+    const sp = mix.filter((r) => r.outcome === 'sp_tr').map((r) => Number(r.adjusted));
+    const bd = mix.filter((r) => r.outcome === 'bond_tr');
+    const top = bd.reduce((b, r) => (Number(r.adjusted) > Number(b.adjusted) ? r : b), bd[0]);
+    return [
+      { kind: 'stocks', lo: d3.min(sp), hi: d3.max(sp) },
+      { kind: 'bonds', combo: top.group, value: Number(top.adjusted), p_best: Number(top.p_best) },
+    ];
+  },
+});
+
+dash.calc('closeup_summary', {
+  inputs: ['mix_closeup'],
+  title: 'Standout mix summary',
+  description: 'Average S&P 500 price return and 10-yr Treasury return in the Republican-president, Democratic-House, Republican-Senate years, with and without 1931–32.',
+  fn: (mix_closeup) => {
+    const all = mix_closeup.map((r) => ({ sp: Number(r.sp_px), bd: Number(r.bond_tr), dep: r.depression === true || r.depression === 'True' }));
+    const ex = all.filter((r) => !r.dep);
+    return [{ n_all: all.length, sp_all: d3.mean(all, (r) => r.sp), sp_ex: d3.mean(ex, (r) => r.sp), n_ex: ex.length, bond_all: d3.mean(all, (r) => r.bd) }];
   },
 });
 
@@ -967,6 +1095,174 @@ dash.draw('combo-tbl', (el) => {
     const sp = G.num(r.sp_p), bp = G.num(r.bond_p);
     cellTd(tr, r.combo, 'l'); cellTd(tr, String(r.n)); cellTd(tr, G.pctU(+r.sp_tr)); cellTd(tr, d3.format('.0%')(+r.sp_up));
     cellTd(tr, isNaN(sp) ? '—' : G.pfmt(sp), '', sp < 0.05); cellTd(tr, G.pctU(+r.bond_tr)); cellTd(tr, isNaN(bp) ? '—' : G.pfmt(bp), '', bp < 0.05); return tr; }));
+});
+dash.draw('pc', (el) => {
+  const r = G.rows('party_compare').find((d) => d.grouping === el.dataset.g && d.group === el.dataset.k && d.outcome === el.dataset.o);
+  if (!r) { setText(el, '—'); return; }
+  const f = el.dataset.f;
+  setText(el, f.startsWith('p') ? G.pfmt(+r[f]) : G.pct(+r[f]));
+});
+dash.draw('adjr', (el) => {
+  const r = G.rows('adj_summary').find((d) => d.kind === (el.dataset.k === 'lo' || el.dataset.k === 'hi' ? 'stocks' : 'bonds'));
+  if (!r) { setText(el, '—'); return; }
+  setText(el, el.dataset.k === 'combo' ? r.combo : G.pctU(r[el.dataset.k]));
+});
+dash.draw('adj-dots', (el) => {
+  const o = el.dataset.outcome;
+  const rs = G.rows('combo_adjusted').filter((r) => r.grouping === 'President, House, Senate' && r.outcome === o)
+    .map((r) => ({ ...r, raw: +r.raw, adj: +r.adjusted, n: +r.n, pb: +r.p_best, grand: +r.grand })).sort((a, b) => b.adj - a.adj);
+  if (!rs.length) { G.pending(el, 'combo_adjusted'); return; }
+  const H = 30 + rs.length * 30;
+  const { svg, w, h } = G.reset(el, H);
+  const probe = svg.append('text'); let lw = 0;
+  rs.forEach((r) => { probe.text(r.group); lw = Math.max(lw, probe.node().getComputedTextLength()); }); probe.remove();
+  const m = { t: 4, r: 14, b: 22, l: Math.min(w * 0.55, lw + 12) };
+  const x = d3.scaleLinear(d3.extent(rs.flatMap((r) => [r.raw, r.adj])), [m.l, w - m.r]).nice();
+  const y = d3.scaleBand(rs.map((r) => r.group), [m.t, h - m.b]).padding(0.3);
+  svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).ticks(Math.max(3, Math.floor((w - m.l) / 70))).tickFormat(d3.format('.0%'))).call(G.styleAxis);
+  svg.append('line').attr('x1', x(rs[0].grand)).attr('x2', x(rs[0].grand)).attr('y1', m.t).attr('y2', h - m.b).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 3');
+  const t = G.tip(el);
+  const g = svg.selectAll('g.r').data(rs).join('g').attr('transform', (r) => `translate(0,${y(r.group) + y.bandwidth() / 2})`);
+  g.append('text').attr('x', m.l - 8).attr('dy', '0.35em').attr('text-anchor', 'end').text((r) => r.group);
+  g.append('line').attr('x1', (r) => x(r.raw)).attr('x2', (r) => x(r.adj)).attr('stroke', 'var(--cds-chart-muted)').attr('stroke-width', 2);
+  g.append('circle').attr('cx', (r) => x(r.raw)).attr('r', 4.5).attr('fill', 'var(--color-bg)').attr('stroke', dash.colors[0]).attr('stroke-width', 1.5);
+  g.append('circle').attr('cx', (r) => x(r.adj)).attr('r', 5).attr('fill', dash.colors[0])
+    .on('mousemove', (ev, r) => { const [px, py] = d3.pointer(ev, el); t.show(px, py, [r.group, `Raw: ${G.pctU(r.raw)} over ${r.n} years`, `Adjusted: ${G.pctU(r.adj)}`, `Chance it is truly the best: ${d3.format('.0%')(r.pb)}`]); })
+    .on('mouseleave', () => t.hide());
+});
+dash.draw('party-bars', (el) => {
+  const o = el.dataset.outcome;
+  const rs = G.rows('party_compare').filter((r) => r.grouping === "President's party" && r.outcome === o).map((r) => ({ ...r, raw: +r.raw, era: +r.era_adjusted, n: +r.n }));
+  if (!rs.length) { G.pending(el, 'party_compare'); return; }
+  const { svg, w, h } = G.reset(el, 190);
+  const m = { t: 18, r: 6, b: 24, l: 6 };
+  const x0 = d3.scaleBand(rs.map((r) => r.group), [m.l, w - m.r]).padding(0.2);
+  const x1 = d3.scaleBand(['raw', 'era'], [0, x0.bandwidth()]).padding(0.15);
+  const y = d3.scaleLinear([Math.min(0, d3.min(rs, (r) => Math.min(r.raw, r.era))), d3.max(rs, (r) => Math.max(r.raw, r.era))], [h - m.b, m.t + 4]).nice();
+  const bw = Math.min(32, x1.bandwidth());
+  svg.append('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-axis)');
+  const t = G.tip(el);
+  ['raw', 'era'].forEach((k) => {
+    const g = svg.append('g').selectAll('g').data(rs).join('g');
+    const cx = (r) => x0(r.group) + x1(k) + x1.bandwidth() / 2;
+    g.append('rect').attr('x', (r) => cx(r) - bw / 2).attr('width', bw).attr('y', (r) => y(Math.max(0, r[k]))).attr('height', (r) => Math.abs(y(r[k]) - y(0))).attr('rx', 3)
+      .attr('fill', k === 'era' ? dash.colors[0] : dash.colors[6])
+      .on('mousemove', (ev, r) => { const [px, py] = d3.pointer(ev, el); t.show(px, py, [r.group, `${k === 'era' ? 'Within decade' : 'Raw average'}: ${G.pctU(r[k])} a year`, `${r.n} years`]); })
+      .on('mouseleave', () => t.hide());
+    g.append('text').attr('x', cx).attr('text-anchor', 'middle').attr('y', (r) => y(Math.max(0, r[k])) - 5).style('fill', 'var(--color-fg)').text((r) => G.pctU(r[k]));
+  });
+  svg.selectAll('text.gl').data(rs).join('text').attr('x', (r) => x0(r.group) + x0.bandwidth() / 2).attr('y', h - 6).attr('text-anchor', 'middle').text((r) => `${r.group} (${r.n})`);
+});
+dash.draw('er', (el) => {
+  const r = G.rows('dem_rep_eras').find((d) => d.period === '2013–2025 (price only)' && d.outcome === 'sp_px');
+  setText(el, r ? G.pctU(+r[el.dataset.f]) : '—');
+});
+dash.draw('roll-diff', (el) => {
+  const rs = G.rows('dem_rep_rolling').map((r) => ({ ...r, end: +r.end_year, sp: +r.sp_tr_diff, spp: +r.sp_tr_p, bd: +r.bond_tr_diff, bdp: +r.bond_tr_p }));
+  if (!rs.length) { G.pending(el, 'dem_rep_rolling'); return; }
+  const { svg, w, h } = G.reset(el, 300);
+  const m = { t: 10, r: 12, b: 26, l: 44 };
+  const x = d3.scaleLinear(d3.extent(rs, (r) => r.end), [m.l, w - m.r]);
+  const y = d3.scaleLinear(d3.extent(rs.flatMap((r) => [r.sp, r.bd])), [h - m.b, m.t]).nice();
+  svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).ticks(Math.max(3, Math.floor(w / 90))).tickFormat(d3.format('d'))).call(G.styleAxis);
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickFormat(d3.format('+.0%')).tickSize(-(w - m.l - m.r))).call(G.styleAxis).call((g) => g.select('.domain').remove());
+  svg.append('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-axis)');
+  svg.append('text').attr('x', w - m.r).attr('y', h - 4).attr('text-anchor', 'end').text('Last year of 30-year window →');
+  [['sp', 'spp', dash.colors[0]], ['bd', 'bdp', dash.colors[1]]].forEach(([k, pk, c]) => {
+    svg.append('path').datum(rs).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round').attr('d', d3.line().x((r) => x(r.end)).y((r) => y(r[k])));
+    svg.append('g').selectAll('circle').data(rs.filter((r) => r[pk] < 0.05)).join('circle').attr('cx', (r) => x(r.end)).attr('cy', (r) => y(r[k])).attr('r', 3).attr('fill', c);
+  });
+  const t = G.tip(el); const dot = svg.append('g'); const bis = d3.bisector((r) => r.end).center;
+  svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', w - m.l - m.r).attr('height', h - m.t - m.b).attr('fill', 'transparent')
+    .on('mousemove', (ev) => { const [px, py] = d3.pointer(ev); const r = rs[bis(rs, x.invert(px))];
+      dot.selectAll('circle').data([[y(r.sp), dash.colors[0]], [y(r.bd), dash.colors[1]]]).join('circle').attr('r', 4.5).attr('cx', x(r.end)).attr('cy', (d) => d[0]).attr('fill', (d) => d[1]);
+      t.show(px, py, [r.window, `Stocks gap: ${G.pct(r.sp)} (p ${G.pfmt(r.spp)})`, `Bonds gap: ${G.pct(r.bd)} (p ${G.pfmt(r.bdp)})`]); })
+    .on('mouseleave', () => { t.hide(); dot.selectAll('*').remove(); });
+});
+dash.draw('eras-tbl', (el) => {
+  const rs = G.rows('dem_rep_eras');
+  el.replaceChildren(...rs.map((r) => { const tr = document.createElement('tr'); tr.dataset.key = `${encodeURIComponent(r.period)},${r.outcome}`;
+    cellTd(tr, r.period, 'l'); cellTd(tr, r.outcome_label, 'l'); cellTd(tr, G.pctU(+r.dem)); cellTd(tr, G.pctU(+r.rep));
+    cellTd(tr, G.pct(+r.diff)); cellTd(tr, G.pfmt(+r.p), '', +r.p < 0.05); return tr; }));
+});
+dash.draw('pres-bars', (el) => {
+  const rs = G.rows('president_returns').map((r) => ({ ...r, v: +r.n_tr >= 4 ? +r.sp_tr_ann : +r.sp_px_ann, px: +r.n_tr < 4, bd: G.num(r.bond_tr_ann) }));
+  if (!rs.length) { G.pending(el, 'president_returns'); return; }
+  const H = 26 + rs.length * 22;
+  const { svg, w, h } = G.reset(el, H);
+  const probe = svg.append('text'); let lw = 0;
+  rs.forEach((r) => { probe.text(r.president); lw = Math.max(lw, probe.node().getComputedTextLength()); }); probe.remove();
+  const m = { t: 4, r: 44, b: 22, l: lw + 12 };
+  const x = d3.scaleLinear([Math.min(0, d3.min(rs, (r) => r.v)), d3.max(rs, (r) => r.v)], [m.l, w - m.r]).nice();
+  const y = d3.scaleBand(rs.map((r) => r.president), [m.t, h - m.b]).padding(0.25);
+  svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).ticks(Math.max(3, Math.floor((w - m.l) / 70))).tickFormat(d3.format('.0%'))).call(G.styleAxis);
+  svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', h - m.b).attr('stroke', 'var(--cds-chart-axis)');
+  const t = G.tip(el);
+  const g = svg.selectAll('g.r').data(rs).join('g').attr('transform', (r) => `translate(0,${y(r.president)})`);
+  g.append('text').attr('x', m.l - 8).attr('y', y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').text((r) => r.president);
+  g.append('rect').attr('x', (r) => x(Math.min(0, r.v))).attr('width', (r) => Math.abs(x(r.v) - x(0))).attr('height', y.bandwidth()).attr('rx', 3)
+    .attr('fill', (r) => (r.party === 'Democratic' ? dash.colors[0] : dash.colors[3]))
+    .on('mousemove', (ev, r) => { const [px, py] = d3.pointer(ev, el); t.show(px, py, [`${r.president} (${r.party}), ${r.years}`, `S&P 500: ${G.pctU(r.v)} a year${r.px ? ' (price return)' : ''}`, isNaN(r.bd) ? '' : `10-yr Treasury: ${G.pctU(r.bd)} a year${+r.n_tr < 4 ? ' (2021–22 only)' : ''}`].filter(Boolean)); })
+    .on('mouseleave', () => t.hide());
+  g.append('text').attr('x', (r) => (r.v >= 0 ? x(r.v) + 4 : x(r.v) - 4)).attr('text-anchor', (r) => (r.v >= 0 ? 'start' : 'end')).attr('y', y.bandwidth() / 2).attr('dy', '0.35em').text((r) => G.pctU(r.v));
+});
+dash.draw('then-now', (el) => {
+  const o = el.dataset.outcome;
+  const rs = G.rows('combo_then_now').filter((r) => r.outcome === o).map((r) => ({ ...r, v: +r.mean, n: +r.n }));
+  if (!rs.length) { G.pending(el, 'combo_then_now'); return; }
+  const since = rs.filter((r) => r.era === 'since').sort((a, b) => b.v - a.v).map((r) => r.combo);
+  const combos = [...since, ...[...new Set(rs.map((r) => r.combo))].filter((c) => !since.includes(c))];
+  const H = 26 + combos.length * 44;
+  const { svg, w, h } = G.reset(el, H);
+  const probe = svg.append('text'); let lw = 0;
+  combos.forEach((c) => { probe.text(c); lw = Math.max(lw, probe.node().getComputedTextLength()); }); probe.remove();
+  const m = { t: 4, r: 44, b: 22, l: Math.min(w * 0.5, lw + 12) };
+  const x = d3.scaleLinear([Math.min(0, d3.min(rs, (r) => r.v)), d3.max(rs, (r) => r.v)], [m.l, w - m.r]).nice();
+  const y = d3.scaleBand(combos, [m.t, h - m.b]).padding(0.2);
+  const y1 = d3.scaleBand(['before', 'since'], [0, y.bandwidth()]).padding(0.1);
+  svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).ticks(Math.max(3, Math.floor((w - m.l) / 70))).tickFormat(d3.format('.0%'))).call(G.styleAxis);
+  svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', h - m.b).attr('stroke', 'var(--cds-chart-axis)');
+  svg.selectAll('text.cl').data(combos).join('text').attr('x', m.l - 8).attr('y', (c) => y(c) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').text((c) => c);
+  const t = G.tip(el);
+  const g = svg.selectAll('g.b').data(rs).join('g').attr('transform', (r) => `translate(0,${y(r.combo) + y1(r.era)})`);
+  g.append('rect').attr('x', (r) => x(Math.min(0, r.v))).attr('width', (r) => Math.abs(x(r.v) - x(0))).attr('height', y1.bandwidth()).attr('rx', 3)
+    .attr('fill', (r) => (r.era === 'since' ? dash.colors[0] : dash.colors[6]))
+    .on('mousemove', (ev, r) => { const [px, py] = d3.pointer(ev, el); t.show(px, py, [r.combo, `${r.period}: ${G.pctU(r.v)} a year (rank ${r.rank} of ${r.of})`, `${r.n} years: ${r.years}`]); })
+    .on('mouseleave', () => t.hide());
+  g.append('text').attr('x', (r) => (r.v >= 0 ? x(r.v) + 4 : x(r.v) - 4)).attr('text-anchor', (r) => (r.v >= 0 ? 'start' : 'end')).attr('y', y1.bandwidth() / 2).attr('dy', '0.35em').text((r) => G.pctU(r.v));
+});
+dash.draw('cu', (el) => {
+  const r = G.rows('closeup_summary')[0];
+  if (!r) { setText(el, '—'); return; }
+  const f = el.dataset.f;
+  setText(el, f.startsWith('n_') ? String(r[f]) : G.pctU(r[f]));
+});
+dash.draw('cua', (el) => {
+  const r = G.rows('combo_adjusted').find((d) => d.grouping === 'President, House, Senate' && d.group === 'Rep president, Dem House, Rep Senate' && d.outcome === el.dataset.o);
+  if (!r) { setText(el, '—'); return; }
+  setText(el, el.dataset.f === 'p_best' ? d3.format('.0%')(+r.p_best) : G.pctU(+r[el.dataset.f]));
+});
+dash.draw('closeup-bars', (el) => {
+  const rs = G.rows('mix_closeup').map((r) => ({ ...r, yr: String(r.year), sp: +r.sp_px, bd: +r.bond_tr }));
+  if (!rs.length) { G.pending(el, 'mix_closeup'); return; }
+  const { svg, w, h } = G.reset(el, 300);
+  const m = { t: 18, r: 8, b: 40, l: 44 };
+  const x0 = d3.scaleBand(rs.map((r) => r.yr), [m.l, w - m.r]).padding(0.2);
+  const x1 = d3.scaleBand(['sp', 'bd'], [0, x0.bandwidth()]).padding(0.1);
+  const y = d3.scaleLinear(d3.extent([0, ...rs.flatMap((r) => [r.sp, r.bd])]), [h - m.b, m.t]).nice();
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickFormat(d3.format('.0%')).tickSize(-(w - m.l - m.r))).call(G.styleAxis).call((g) => g.select('.domain').remove());
+  svg.append('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-axis)');
+  const t = G.tip(el);
+  [['sp', 0, 'S&P 500 price return'], ['bd', 1, '10-yr Treasury return']].forEach(([k, ci, n]) => {
+    svg.append('g').selectAll('rect').data(rs).join('rect')
+      .attr('x', (r) => x0(r.yr) + x1(k)).attr('width', x1.bandwidth()).attr('y', (r) => y(Math.max(0, r[k]))).attr('height', (r) => Math.abs(y(r[k]) - y(0))).attr('rx', 2)
+      .attr('fill', dash.colors[ci])
+      .on('mousemove', (ev, r) => { const [px, py] = d3.pointer(ev, el); t.show(px, py, [`${r.year} · ${r.president}`, `${n}: ${G.pctU(r[k])}`]); })
+      .on('mouseleave', () => t.hide());
+  });
+  svg.selectAll('text.yl').data(rs).join('text').attr('x', (r) => x0(r.yr) + x0.bandwidth() / 2).attr('y', h - m.b + 14).attr('text-anchor', 'middle').text((r) => r.yr);
+  const groups = d3.groups(rs, (r) => r.president).map(([p, g]) => ({ p, x1: x0(g[0].yr), x2: x0(g[g.length - 1].yr) + x0.bandwidth() }));
+  svg.selectAll('text.pl').data(groups).join('text').attr('x', (d) => (d.x1 + d.x2) / 2).attr('y', h - 6).attr('text-anchor', 'middle').style('fill', 'var(--color-fg)').text((d) => d.p);
 });
 dash.draw('k-now', (el) => {
   const r = G.annual().find((d) => d.year === 2024);

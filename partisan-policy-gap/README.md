@@ -15,6 +15,11 @@ Do markets care how far apart Democrats and Republicans are on policy? This stud
 | VIX: weak, not significant | Monthly VIX vs gap: corr −0.12, p = 0.38; trend removed p = 0.08 (`vix_tests.csv`) |
 | Power beats beliefs | 10-yr Treasuries returned 8.3%/yr under split government vs 2.5% under one-party control, p < 0.001 (`gap_control_cells.csv`, `gap_control_tests.csv`) |
 | Best mix of president and Congress | Stocks: Dem president with Rep House and Senate, 16.0%/yr over 10 years (up 9 of 10), vs 12.3% average; not statistically reliable. Bonds: Rep president with Dem House and Rep Senate, 14.5%/yr vs 5.2% average, p = 0.002 (`combo_returns.csv`) |
+| Adjusted for years covered | With sample-size shrinkage (REML random effects), stock averages across mixes fall in a narrow 11.5%–12.7% band, so no mix stands out (`combo_adjusted.csv`) |
+| Dem vs Rep president | Stocks: +4.6 pts/yr under Democrats (p = 0.24), +6.7 pts within decade (p = 0.045). Bonds: −4.7 pts under Democrats (p = 0.002), −2.4 within decade (p = 0.03) (`party_compare.csv`) |
+| Long-standing or recent? | Bonds have been better under Republican presidents in every era and in 86% of 30-year windows. The stock edge rests on a few crashes (1929–32, 2001–02, 2008): the median Republican presidency beat the median Democratic one, and 2013–2025 shows no gap (13.5% vs 13.8%, price returns) (`dem_rep_eras.csv`, `dem_rep_rolling.csv`, `president_returns.csv`) |
+| Mixes then vs now | Stocks: one-party government ranked 1st–2nd before 1991. Since 1991, split government with a Democratic president or a Democratic House ranks on top. Bonds: Republican presidents facing a Democratic House stay near the top in both periods (`combo_then_now.csv`) |
+| Standout mix | Rep president, Dem House, Rep Senate. Bonds: best of all mixes at 14.5%/yr (12.6% adjusted, 89% chance best). Stocks: 4.5%/yr over all 10 years, 13.7% excluding 1931–32 (`mix_closeup.csv`) |
 | Words and votes diverge | Platform gap vs actual voting gap: correlation +0.05 across 52 Congresses (`legislative_tests.csv`) |
 
 ## How the index is built
@@ -53,7 +58,11 @@ pip install -r ../requirements.txt
 | `scripts/legislative.py` | Platform gap vs party-unity votes, bipartisan votes and laws enacted per Congress |
 | `scripts/extras.py` | Recent-decade windows, split-government detail, correlations |
 | `scripts/combos.py` | Returns for every president / House / Senate party combination |
-| `dashboard/index.html` | Source of the interactive dashboard page. It runs inside Claude's dashboard runtime, so it does not open as a standalone file |
+| `scripts/combos_adjusted.py` | Sample-size-adjusted (REML random-effects) and within-decade rankings of mixes; Dem vs Rep and split vs one-party tests |
+| `scripts/stability.py` | Dem vs Rep president by era, rolling 30-year windows, and president-by-president returns |
+| `scripts/then_now.py` | Mix rankings before vs since 1991 (stocks as price returns through 2025) |
+| `scripts/closeup.py` | Year-by-year returns for the Rep president, Dem House, Rep Senate mix |
+| `dashboard/index.html` | Source of the interactive dashboard page. It runs inside a hosted dashboard runtime, so it does not open as a standalone file |
 
 ## Data sources
 

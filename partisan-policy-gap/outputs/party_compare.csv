@@ -1,0 +1,9 @@
+grouping,group,outcome,outcome_label,n,raw,era_adjusted,diff,p,diff_era,p_era,diff_of
+President's party,Democratic president,sp_tr,S&P 500,50,0.146124,0.157271,0.045623,0.242921,0.067487,0.04528,Democratic president minus Republican president
+President's party,Republican president,sp_tr,S&P 500,52,0.100502,0.089784,0.045623,0.242921,0.067487,0.04528,Democratic president minus Republican president
+President's party,Democratic president,bond_tr,10-yr Treasury,50,0.028225,0.039932,-0.04656,0.00163,-0.023595,0.027491,Democratic president minus Republican president
+President's party,Republican president,bond_tr,10-yr Treasury,52,0.074784,0.063527,-0.04656,0.00163,-0.023595,0.027491,Democratic president minus Republican president
+Government type,Split government,sp_tr,S&P 500,48,0.096205,0.088314,-0.05036,0.179455,-0.065264,0.05011,Split government minus One-party government
+Government type,One-party government,sp_tr,S&P 500,54,0.146565,0.153578,-0.05036,0.179455,-0.065264,0.05011,Split government minus One-party government
+Government type,Split government,bond_tr,10-yr Treasury,48,0.082845,0.069322,0.058336,0.000112,0.032793,0.006144,Split government minus One-party government
+Government type,One-party government,bond_tr,10-yr Treasury,54,0.024509,0.036529,0.058336,0.000112,0.032793,0.006144,Split government minus One-party government

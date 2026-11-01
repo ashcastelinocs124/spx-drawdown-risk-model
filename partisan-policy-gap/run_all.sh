@@ -14,6 +14,10 @@ py vix_test.py              # monthly VIX tests
 py legislative.py           # platform gap vs what Congress did (slow: reads all member votes)
 py extras.py                # recent-decade windows, VIX tables, split detail, correlations
 py combos.py                # returns by every president / House / Senate combination
+py combos_adjusted.py       # sample-size (REML random-effects) and within-decade adjusted rankings
+py stability.py             # Dem vs Rep president by era, rolling 30-year windows, by presidency
+py then_now.py              # party-mix rankings before vs since 1991
+py closeup.py               # year-by-year: Rep president, Dem House, Rep Senate
 
 mkdir -p "$HERE/outputs/three_topic"
 cp "$DATA"/work/*.csv "$DATA"/work/results.json "$HERE/outputs/"

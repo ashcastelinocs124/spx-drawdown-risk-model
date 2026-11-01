@@ -1,0 +1,11 @@
+year,president,stretch,depression,sp_px,bond_tr
+1931,Hoover,1931–32 (Great Depression),True,-0.455835,0.008801
+1932,Hoover,1931–32 (Great Depression),True,-0.191943,0.06308
+1981,Reagan,1981–86,False,-0.072659,0.091361
+1982,Reagan,1981–86,False,0.12601,0.364519
+1983,Reagan,1981–86,False,0.17934,0.033055
+1984,Reagan,1981–86,False,0.000608,0.152829
+1985,Reagan,1981–86,False,0.260182,0.276143
+1986,Reagan,1981–86,False,0.199228,0.247982
+2019,Trump,2019–20,False,0.237384,0.112691
+2020,Trump,2019–20,False,0.163236,0.099161

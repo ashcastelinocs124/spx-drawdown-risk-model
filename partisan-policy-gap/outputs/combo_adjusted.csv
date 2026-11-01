@@ -1,0 +1,27 @@
+grouping,group,outcome,outcome_label,n,raw,ci_lo,ci_hi,weight,adjusted,p_best,grand,era_adjusted,p_best_era
+"President, House, Senate","Dem president, Dem House, Dem Senate",sp_tr,S&P 500,36,0.140547,0.079159,0.201934,0.253414,0.126492,0.18755,0.121721,0.134523,0.3507
+"President, House, Senate","Dem president, Rep House, Dem Senate",sp_tr,S&P 500,4,0.161205,-0.022959,0.345368,0.036344,0.123156,0.16165,0.121721,0.120076,0.14345
+"President, House, Senate","Dem president, Rep House, Rep Senate",sp_tr,S&P 500,10,0.160173,0.043698,0.276648,0.086162,0.125034,0.18305,0.121721,0.121388,0.1549
+"President, House, Senate","Rep president, Dem House, Dem Senate",sp_tr,S&P 500,22,0.081013,0.002486,0.159541,0.171794,0.114728,0.0635,0.121721,0.106413,0.03735
+"President, House, Senate","Rep president, Dem House, Rep Senate",sp_tr,S&P 500,10,0.091905,-0.02457,0.20838,0.086162,0.119152,0.10705,0.121721,0.111868,0.0744
+"President, House, Senate","Rep president, Rep House, Dem Senate",sp_tr,S&P 500,2,-0.165034,-0.42548,0.095412,0.018508,0.116414,0.0873,0.121721,0.112839,0.0915
+"President, House, Senate","Rep president, Rep House, Rep Senate",sp_tr,S&P 500,18,0.158601,0.071785,0.245416,0.145091,0.127072,0.2099,0.121721,0.121838,0.1477
+"President, House, Senate","Dem president, Dem House, Dem Senate",bond_tr,10-yr Treasury,36,0.015326,-0.007003,0.037655,0.919214,0.019406,0.0,0.065834,0.053509,0.00055
+"President, House, Senate","Dem president, Rep House, Dem Senate",bond_tr,10-yr Treasury,4,0.051169,-0.015818,0.118156,0.558355,0.057646,0.0127,0.065834,0.072308,0.1023
+"President, House, Senate","Dem president, Rep House, Rep Senate",bond_tr,10-yr Treasury,10,0.065481,0.023114,0.107847,0.759653,0.065566,0.00805,0.065834,0.070458,0.06235
+"President, House, Senate","Rep president, Dem House, Dem Senate",bond_tr,10-yr Treasury,22,0.06661,0.038047,0.095174,0.874268,0.066513,0.0026,0.065834,0.072037,0.05085
+"President, House, Senate","Rep president, Dem House, Rep Senate",bond_tr,10-yr Treasury,10,0.144962,0.102596,0.187329,0.759653,0.125944,0.88895,0.065834,0.092438,0.61645
+"President, House, Senate","Rep president, Rep House, Dem Senate",bond_tr,10-yr Treasury,2,0.10101,0.006276,0.195744,0.387304,0.079458,0.08755,0.065834,0.074685,0.15395
+"President, House, Senate","Rep president, Rep House, Rep Senate",bond_tr,10-yr Treasury,18,0.042873,0.011295,0.074451,0.850505,0.046306,0.00015,0.065834,0.063132,0.01355
+President and Congress,"Democratic president, congress opposite party",sp_tr,S&P 500,10,0.160173,0.043401,0.276945,3e-06,0.122866,0.1642,0.122866,0.123613,0.1743
+President and Congress,"Democratic president, congress same party",sp_tr,S&P 500,36,0.140547,0.079002,0.202091,1e-05,0.122866,0.16755,0.122866,0.139057,0.40445
+President and Congress,"Democratic president, split congress",sp_tr,S&P 500,4,0.161205,-0.023429,0.345838,1e-06,0.122866,0.16675,0.122866,0.121995,0.1742
+President and Congress,"Republican president, congress opposite party",sp_tr,S&P 500,22,0.081013,0.002286,0.159741,6e-06,0.122866,0.16655,0.122866,0.104784,0.0334
+President and Congress,"Republican president, congress same party",sp_tr,S&P 500,18,0.158601,0.071564,0.245637,5e-06,0.122866,0.1714,0.122866,0.124043,0.1683
+President and Congress,"Republican president, split congress",sp_tr,S&P 500,12,0.049082,-0.057516,0.15568,3e-06,0.122866,0.16355,0.122866,0.105344,0.04535
+President and Congress,"Democratic president, congress opposite party",bond_tr,10-yr Treasury,10,0.065481,0.023131,0.107831,0.757106,0.064699,0.0114,0.062262,0.066369,0.07165
+President and Congress,"Democratic president, congress same party",bond_tr,10-yr Treasury,36,0.015326,-0.006994,0.037646,0.918176,0.019167,0.0,0.062262,0.049396,0.00055
+President and Congress,"Democratic president, split congress",bond_tr,10-yr Treasury,4,0.051169,-0.015791,0.11813,0.554924,0.056106,0.0156,0.062262,0.068127,0.11865
+President and Congress,"Republican president, congress opposite party",bond_tr,10-yr Treasury,22,0.06661,0.038058,0.095163,0.872732,0.066057,0.00485,0.062262,0.068169,0.0613
+President and Congress,"Republican president, congress same party",bond_tr,10-yr Treasury,18,0.042873,0.011308,0.074439,0.848729,0.045806,0.00025,0.062262,0.058971,0.01725
+President and Congress,"Republican president, split congress",bond_tr,10-yr Treasury,12,0.137637,0.098977,0.176297,0.789049,0.121736,0.9679,0.062262,0.08959,0.7306
