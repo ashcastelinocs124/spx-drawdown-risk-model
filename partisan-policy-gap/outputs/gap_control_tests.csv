@@ -1,0 +1,21 @@
+outcome,outcome_label,test,beta,p,n
+sp_tr,S&P 500 total return,Divided vs unified,-0.05036,0.179455,102
+sp_tr,S&P 500 total return,Far apart vs close (under unified),0.053898,0.253545,102
+sp_tr,S&P 500 total return,Extra effect of far apart under divided,0.018372,0.801153,102
+sp_tr,S&P 500 total return,Gap slope under unified (per 1 SD),-0.009512,0.672788,102
+sp_tr,S&P 500 total return,Extra gap slope under divided (per 1 SD),0.055333,0.086169,102
+bond_tr,10-yr Treasury return,Divided vs unified,0.058336,0.000112,102
+bond_tr,10-yr Treasury return,Far apart vs close (under unified),-0.006965,0.602701,102
+bond_tr,10-yr Treasury return,Extra effect of far apart under divided,0.044494,0.124312,102
+bond_tr,10-yr Treasury return,Gap slope under unified (per 1 SD),-0.012828,0.145225,102
+bond_tr,10-yr Treasury return,Extra gap slope under divided (per 1 SD),0.021486,0.204105,102
+rvol,S&P 500 realized volatility,Divided vs unified,0.011192,0.452819,102
+rvol,S&P 500 realized volatility,Far apart vs close (under unified),-0.041301,0.030072,102
+rvol,S&P 500 realized volatility,Extra effect of far apart under divided,0.021214,0.490046,102
+rvol,S&P 500 realized volatility,Gap slope under unified (per 1 SD),-0.023636,0.010972,102
+rvol,S&P 500 realized volatility,Extra gap slope under divided (per 1 SD),0.010739,0.462445,102
+vix_avg,VIX (annual average),Divided vs unified,2.138176,0.286801,35
+vix_avg,VIX (annual average),Far apart vs close (under unified),5.706758,0.014397,35
+vix_avg,VIX (annual average),Extra effect of far apart under divided,-6.620975,0.013612,35
+vix_avg,VIX (annual average),Gap slope under unified (per 1 SD),0.836382,0.661294,35
+vix_avg,VIX (annual average),Extra gap slope under divided (per 1 SD),-2.839228,0.120763,35

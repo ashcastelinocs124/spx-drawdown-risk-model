@@ -1,0 +1,9 @@
+version,outcome,outcome_label,n,chg_p,ctrl_beta,ctrl_p,rt_p,perm_p,oos_r2,oos_from
+4 topics (with foreign policy),sp_tr,S&P 500 total return,98,0.879512,0.00787,0.866812,0.930866,0.897551,-0.084009,1950
+4 topics (with foreign policy),bond_tr,10-yr Treasury return,98,0.3202,-0.006546,0.529041,0.685382,0.37931,-0.017646,1950
+4 topics (with foreign policy),rvol,S&P 500 realized volatility,98,0.080921,-0.020776,0.126646,0.490111,0.110945,-0.18528,1950
+4 topics (with foreign policy),vix_avg,VIX (annual average),33,0.325641,-2.728459,0.410059,0.835425,0.466267,-0.316621,2000
+3 topics (original),sp_tr,S&P 500 total return,98,0.816922,-0.007762,0.843276,0.756451,0.843578,-0.043624,1950
+3 topics (original),bond_tr,10-yr Treasury return,98,0.025078,-0.012722,0.192002,0.24599,0.041479,-0.00714,1950
+3 topics (original),rvol,S&P 500 realized volatility,98,0.019731,-0.025517,0.014359,0.064662,0.025987,0.011907,1950
+3 topics (original),vix_avg,VIX (annual average),33,0.025482,-3.615193,0.121149,0.20864,0.130935,-0.071428,2000

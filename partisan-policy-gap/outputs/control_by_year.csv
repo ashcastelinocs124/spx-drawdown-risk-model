@@ -1,0 +1,105 @@
+year,congress,president,senate,house,government,control_detail,beliefs
+1921,67,R,R,R,Unified,Unified Republican,Far apart
+1922,67,R,R,R,Unified,Unified Republican,Far apart
+1923,68,R,R,R,Unified,Unified Republican,Far apart
+1924,68,R,R,R,Unified,Unified Republican,Far apart
+1925,69,R,R,R,Unified,Unified Republican,Far apart
+1926,69,R,R,R,Unified,Unified Republican,Far apart
+1927,70,R,R,R,Unified,Unified Republican,Far apart
+1928,70,R,R,R,Unified,Unified Republican,Far apart
+1929,71,R,R,R,Unified,Unified Republican,Close together
+1930,71,R,R,R,Unified,Unified Republican,Close together
+1931,72,R,R,D,Divided,Split Congress,Close together
+1932,72,R,R,D,Divided,Split Congress,Close together
+1933,73,D,D,D,Unified,Unified Democratic,Close together
+1934,73,D,D,D,Unified,Unified Democratic,Close together
+1935,74,D,D,D,Unified,Unified Democratic,Close together
+1936,74,D,D,D,Unified,Unified Democratic,Close together
+1937,75,D,D,D,Unified,Unified Democratic,Close together
+1938,75,D,D,D,Unified,Unified Democratic,Close together
+1939,76,D,D,D,Unified,Unified Democratic,Close together
+1940,76,D,D,D,Unified,Unified Democratic,Close together
+1941,77,D,D,D,Unified,Unified Democratic,Close together
+1942,77,D,D,D,Unified,Unified Democratic,Close together
+1943,78,D,D,D,Unified,Unified Democratic,Close together
+1944,78,D,D,D,Unified,Unified Democratic,Close together
+1945,79,D,D,D,Unified,Unified Democratic,Close together
+1946,79,D,D,D,Unified,Unified Democratic,Close together
+1947,80,D,R,R,Divided,Opposite party controls Congress,Close together
+1948,80,D,R,R,Divided,Opposite party controls Congress,Close together
+1949,81,D,D,D,Unified,Unified Democratic,Close together
+1950,81,D,D,D,Unified,Unified Democratic,Close together
+1951,82,D,D,D,Unified,Unified Democratic,Close together
+1952,82,D,D,D,Unified,Unified Democratic,Close together
+1953,83,R,R,R,Unified,Unified Republican,Far apart
+1954,83,R,R,R,Unified,Unified Republican,Far apart
+1955,84,R,D,D,Divided,Opposite party controls Congress,Far apart
+1956,84,R,D,D,Divided,Opposite party controls Congress,Far apart
+1957,85,R,D,D,Divided,Opposite party controls Congress,Close together
+1958,85,R,D,D,Divided,Opposite party controls Congress,Close together
+1959,86,R,D,D,Divided,Opposite party controls Congress,Close together
+1960,86,R,D,D,Divided,Opposite party controls Congress,Close together
+1961,87,D,D,D,Unified,Unified Democratic,Close together
+1962,87,D,D,D,Unified,Unified Democratic,Close together
+1963,88,D,D,D,Unified,Unified Democratic,Close together
+1964,88,D,D,D,Unified,Unified Democratic,Close together
+1965,89,D,D,D,Unified,Unified Democratic,Far apart
+1966,89,D,D,D,Unified,Unified Democratic,Far apart
+1967,90,D,D,D,Unified,Unified Democratic,Close together
+1968,90,D,D,D,Unified,Unified Democratic,Close together
+1969,91,R,D,D,Divided,Opposite party controls Congress,Close together
+1970,91,R,D,D,Divided,Opposite party controls Congress,Close together
+1971,92,R,D,D,Divided,Opposite party controls Congress,Close together
+1972,92,R,D,D,Divided,Opposite party controls Congress,Close together
+1973,93,R,D,D,Divided,Opposite party controls Congress,Close together
+1974,93,R,D,D,Divided,Opposite party controls Congress,Close together
+1975,94,R,D,D,Divided,Opposite party controls Congress,Close together
+1976,94,R,D,D,Divided,Opposite party controls Congress,Close together
+1977,95,D,D,D,Unified,Unified Democratic,Close together
+1978,95,D,D,D,Unified,Unified Democratic,Close together
+1979,96,D,D,D,Unified,Unified Democratic,Far apart
+1980,96,D,D,D,Unified,Unified Democratic,Far apart
+1981,97,R,R,D,Divided,Split Congress,Far apart
+1982,97,R,R,D,Divided,Split Congress,Far apart
+1983,98,R,R,D,Divided,Split Congress,Far apart
+1984,98,R,R,D,Divided,Split Congress,Far apart
+1985,99,R,R,D,Divided,Split Congress,Far apart
+1986,99,R,R,D,Divided,Split Congress,Far apart
+1987,100,R,D,D,Divided,Opposite party controls Congress,Far apart
+1988,100,R,D,D,Divided,Opposite party controls Congress,Far apart
+1989,101,R,D,D,Divided,Opposite party controls Congress,Close together
+1990,101,R,D,D,Divided,Opposite party controls Congress,Close together
+1991,102,R,D,D,Divided,Opposite party controls Congress,Close together
+1992,102,R,D,D,Divided,Opposite party controls Congress,Close together
+1993,103,D,D,D,Unified,Unified Democratic,Close together
+1994,103,D,D,D,Unified,Unified Democratic,Close together
+1995,104,D,R,R,Divided,Opposite party controls Congress,Far apart
+1996,104,D,R,R,Divided,Opposite party controls Congress,Far apart
+1997,105,D,R,R,Divided,Opposite party controls Congress,Far apart
+1998,105,D,R,R,Divided,Opposite party controls Congress,Far apart
+1999,106,D,R,R,Divided,Opposite party controls Congress,Close together
+2000,106,D,R,R,Divided,Opposite party controls Congress,Close together
+2001,107,R,D,R,Divided,Split Congress,Far apart
+2002,107,R,D,R,Divided,Split Congress,Far apart
+2003,108,R,R,R,Unified,Unified Republican,Far apart
+2004,108,R,R,R,Unified,Unified Republican,Far apart
+2005,109,R,R,R,Unified,Unified Republican,Far apart
+2006,109,R,R,R,Unified,Unified Republican,Far apart
+2007,110,R,D,D,Divided,Opposite party controls Congress,Far apart
+2008,110,R,D,D,Divided,Opposite party controls Congress,Far apart
+2009,111,D,D,D,Unified,Unified Democratic,Far apart
+2010,111,D,D,D,Unified,Unified Democratic,Far apart
+2011,112,D,D,R,Divided,Split Congress,Far apart
+2012,112,D,D,R,Divided,Split Congress,Far apart
+2013,113,D,D,R,Divided,Split Congress,Far apart
+2014,113,D,D,R,Divided,Split Congress,Far apart
+2015,114,D,R,R,Divided,Opposite party controls Congress,Far apart
+2016,114,D,R,R,Divided,Opposite party controls Congress,Far apart
+2017,115,R,R,R,Unified,Unified Republican,Far apart
+2018,115,R,R,R,Unified,Unified Republican,Far apart
+2019,116,R,R,D,Divided,Split Congress,Far apart
+2020,116,R,R,D,Divided,Split Congress,Far apart
+2021,117,D,D,D,Unified,Unified Democratic,Far apart
+2022,117,D,D,D,Unified,Unified Democratic,Far apart
+2023,118,D,D,R,Divided,Split Congress,Far apart
+2024,118,D,D,R,Divided,Split Congress,Far apart

@@ -1,0 +1,10 @@
+period,outcome,outcome_label,corr
+1921–2022,sp_tr,S&P 500 total return,0.040366
+1921–2022,bond_tr,10-yr Treasury return,0.022426
+1921–2022,rvol,S&P 500 realized volatility,-0.206752
+1921–2022,sp_next,"S&P 500 return, next year",0.05568
+1950–2022,sp_tr,S&P 500 total return,0.010438
+1950–2022,bond_tr,10-yr Treasury return,-0.079994
+1950–2022,rvol,S&P 500 realized volatility,0.023905
+1950–2022,sp_next,"S&P 500 return, next year",0.033632
+1990–2024,vix_avg,VIX (annual average),-0.159172

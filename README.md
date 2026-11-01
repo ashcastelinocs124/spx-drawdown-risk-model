@@ -12,6 +12,7 @@ ARC Capital's model of the probability that the S&P 500 closes at least 5% below
 | `scripts/spx_risk_model.py` | `fetch`, `evaluate`, `score` commands |
 | `reference/findings.md` | Full research log: every variable and model tested, with numbers |
 | `requirements.txt` | Python dependencies |
+| `partisan-policy-gap/` | Separate study: does the Democrat–Republican policy gap move stocks, bonds or the VIX? (see its README) |
 
 ```bash
 pip install -r requirements.txt
