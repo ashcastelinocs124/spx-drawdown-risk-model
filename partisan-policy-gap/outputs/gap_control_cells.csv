@@ -1,0 +1,33 @@
+outcome,outcome_label,government,beliefs,mean,median,n,years
+sp_tr,S&P 500 total return,Unified,Close together,0.12261,0.165221,30,"1929, 1930, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1949, 1950, 1951, 1952, 1961, 1962, 1963, 1964, 1967, 1968, 1977, 1978, 1993, 1994"
+sp_tr,S&P 500 total return,Unified,Far apart,0.176508,0.166607,24,"1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1953, 1954, 1965, 1966, 1979, 1980, 2003, 2004, 2005, 2006, 2009, 2010, 2017, 2018, 2021, 2022"
+sp_tr,S&P 500 total return,Unified,All,0.146565,0.165221,54,
+sp_tr,S&P 500 total return,Divided,Close together,0.057058,0.056768,22,"1931, 1932, 1947, 1948, 1957, 1958, 1959, 1960, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1989, 1990, 1991, 1992, 1999, 2000"
+sp_tr,S&P 500 total return,Divided,Far apart,0.129329,0.176489,26,"1955, 1956, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1995, 1996, 1997, 1998, 2001, 2002, 2007, 2008, 2011, 2012, 2013, 2014, 2015, 2016, 2019, 2020"
+sp_tr,S&P 500 total return,Divided,All,0.096205,0.137842,48,
+sp_tr,S&P 500 total return,All,Close together,0.094877,0.137842,52,
+sp_tr,S&P 500 total return,All,Far apart,0.151975,0.174795,50,
+bond_tr,10-yr Treasury return,Unified,Close together,0.027604,0.02833,30,"1929, 1930, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1949, 1950, 1951, 1952, 1961, 1962, 1963, 1964, 1967, 1968, 1977, 1978, 1993, 1994"
+bond_tr,10-yr Treasury return,Unified,Far apart,0.020639,0.031638,24,"1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1953, 1954, 1965, 1966, 1979, 1980, 2003, 2004, 2005, 2006, 2009, 2010, 2017, 2018, 2021, 2022"
+bond_tr,10-yr Treasury return,Unified,All,0.024509,0.031517,54,
+bond_tr,10-yr Treasury return,Divided,Close together,0.062517,0.051952,22,"1931, 1932, 1947, 1948, 1957, 1958, 1959, 1960, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1989, 1990, 1991, 1992, 1999, 2000"
+bond_tr,10-yr Treasury return,Divided,Far apart,0.100046,0.090562,26,"1955, 1956, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1995, 1996, 1997, 1998, 2001, 2002, 2007, 2008, 2011, 2012, 2013, 2014, 2015, 2016, 2019, 2020"
+bond_tr,10-yr Treasury return,Divided,All,0.082845,0.076678,48,
+bond_tr,10-yr Treasury return,All,Close together,0.042375,0.033454,52,
+bond_tr,10-yr Treasury return,All,Far apart,0.061931,0.045937,50,
+rvol,S&P 500 realized volatility,Unified,Close together,0.139886,0.121163,30,"1929, 1930, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1949, 1950, 1951, 1952, 1961, 1962, 1963, 1964, 1967, 1968, 1977, 1978, 1993, 1994"
+rvol,S&P 500 realized volatility,Unified,Far apart,0.098585,0.100988,24,"1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1953, 1954, 1965, 1966, 1979, 1980, 2003, 2004, 2005, 2006, 2009, 2010, 2017, 2018, 2021, 2022"
+rvol,S&P 500 realized volatility,Unified,All,0.12153,0.107304,54,
+rvol,S&P 500 realized volatility,Divided,Close together,0.143602,0.114829,22,"1931, 1932, 1947, 1948, 1957, 1958, 1959, 1960, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1989, 1990, 1991, 1992, 1999, 2000"
+rvol,S&P 500 realized volatility,Divided,Far apart,0.123516,0.110087,26,"1955, 1956, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1995, 1996, 1997, 1998, 2001, 2002, 2007, 2008, 2011, 2012, 2013, 2014, 2015, 2016, 2019, 2020"
+rvol,S&P 500 realized volatility,Divided,All,0.132722,0.112483,48,
+rvol,S&P 500 realized volatility,All,Close together,0.141458,0.115521,52,
+rvol,S&P 500 realized volatility,All,Far apart,0.111549,0.104403,50,
+vix_avg,VIX (annual average),Unified,Close together,13.30588,13.30588,2,"1993, 1994"
+vix_avg,VIX (annual average),Unified,Far apart,19.012639,18.147996,10,"2003, 2004, 2005, 2006, 2009, 2010, 2017, 2018, 2021, 2022"
+vix_avg,VIX (annual average),Unified,All,18.061512,16.059248,12,
+vix_avg,VIX (annual average),Divided,Close together,20.915162,23.063478,5,"1990, 1991, 1992, 1999, 2000"
+vix_avg,VIX (annual average),Divided,Far apart,20.000945,17.192482,18,"1995, 1996, 1997, 1998, 2001, 2002, 2007, 2008, 2011, 2012, 2013, 2014, 2015, 2016, 2019, 2020, 2023, 2024"
+vix_avg,VIX (annual average),Divided,All,20.199688,17.79888,23,
+vix_avg,VIX (annual average),All,Close together,18.741082,18.373373,7,
+vix_avg,VIX (annual average),All,Far apart,19.647978,17.192482,28,

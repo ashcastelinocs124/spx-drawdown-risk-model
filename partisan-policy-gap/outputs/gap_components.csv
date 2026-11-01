@@ -1,0 +1,16 @@
+component,component_label,outcome,outcome_label,beta,t,p,n
+vote_gap_z,Congress voting gap,sp_tr,S&P 500 total return,-0.003648,-0.236131,0.813331,102
+vote_gap_z,Congress voting gap,bond_tr,10-yr Treasury return,0.003678,0.448996,0.653434,102
+vote_gap_z,Congress voting gap,rvol,S&P 500 realized volatility,-0.006922,-0.960064,0.337023,102
+econ_gap_z,Economy platform gap,sp_tr,S&P 500 total return,-0.027525,-1.524623,0.127353,102
+econ_gap_z,Economy platform gap,bond_tr,10-yr Treasury return,-0.005324,-0.653831,0.513221,102
+econ_gap_z,Economy platform gap,rvol,S&P 500 realized volatility,-0.005943,-0.802887,0.42204,102
+business_gap_z,Business/regulation platform gap,sp_tr,S&P 500 total return,0.040242,1.928036,0.053851,102
+business_gap_z,Business/regulation platform gap,bond_tr,10-yr Treasury return,-0.005756,-0.999271,0.317664,102
+business_gap_z,Business/regulation platform gap,rvol,S&P 500 realized volatility,-0.035283,-2.490848,0.012744,102
+immig_gap_z,Immigration/identity platform gap,sp_tr,S&P 500 total return,0.025695,1.371575,0.170196,102
+immig_gap_z,Immigration/identity platform gap,bond_tr,10-yr Treasury return,-0.016489,-2.783612,0.005376,102
+immig_gap_z,Immigration/identity platform gap,rvol,S&P 500 realized volatility,-0.003336,-0.409695,0.68203,102
+foreign_gap_z,Foreign policy platform gap,sp_tr,S&P 500 total return,0.007995,0.562896,0.573505,102
+foreign_gap_z,Foreign policy platform gap,bond_tr,10-yr Treasury return,0.021432,2.475483,0.013306,102
+foreign_gap_z,Foreign policy platform gap,rvol,S&P 500 realized volatility,-0.004577,-0.625071,0.531924,102

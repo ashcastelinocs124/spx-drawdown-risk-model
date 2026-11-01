@@ -1,0 +1,25 @@
+outcome,outcome_label,spec,beta,beta_sd,p,n,corr,divided_beta,divided_p
+vote_gap,Voting gap (DW-NOMINATE),Simple,0.009094,0.081012,0.815591,52,0.049206,,
+vote_gap,Voting gap (DW-NOMINATE),+ divided gov,0.005829,0.051922,0.877632,52,,0.046385,0.119202
+vote_gap,Voting gap (DW-NOMINATE),+ divided gov + trend,-0.009026,-0.080406,0.600644,52,,-0.025893,0.190599
+vote_gap,Voting gap (DW-NOMINATE),Since 1953,-0.043215,-0.384954,0.177941,36,-0.23494,,
+unity,Party-unity votes (share),Simple,-0.038847,-0.38345,0.097916,52,-0.232904,,
+unity,Party-unity votes (share),+ divided gov,-0.037087,-0.366084,0.113135,52,,-0.02499,0.379849
+unity,Party-unity votes (share),+ divided gov + trend,-0.044178,-0.436078,0.026393,52,,-0.059492,0.025523
+unity,Party-unity votes (share),Since 1953,-0.023472,-0.231683,0.397655,36,-0.137635,,
+bipartisan,Bipartisan votes (share),Simple,0.039627,0.397165,0.088664,52,0.241234,,
+bipartisan,Bipartisan votes (share),+ divided gov,0.037712,0.377968,0.101888,52,,0.027206,0.333776
+bipartisan,Bipartisan votes (share),+ divided gov + trend,0.044239,0.443392,0.026608,52,,0.058966,0.025884
+bipartisan,Bipartisan votes (share),Since 1953,0.022296,0.223463,0.411801,36,0.13412,,
+consensus,Near-unanimous votes (share),Simple,0.024804,0.345774,0.241471,52,0.21002,,
+consensus,Near-unanimous votes (share),+ divided gov,0.021549,0.300397,0.258708,52,,0.046236,0.009562
+consensus,Near-unanimous votes (share),+ divided gov + trend,0.015242,0.212471,0.317401,52,,0.015547,0.335068
+consensus,Near-unanimous votes (share),Since 1953,-0.020396,-0.284325,0.145508,36,-0.247342,,
+public_laws,Public laws enacted,Simple,53.188926,0.267441,0.35711,50,0.162081,,
+public_laws,Public laws enacted,+ divided gov,61.897693,0.31123,0.258226,50,,-120.605677,0.02727
+public_laws,Public laws enacted,+ divided gov + trend,70.269851,0.353326,0.021685,50,,6.633954,0.888346
+public_laws,Public laws enacted,Since 1953,135.784411,0.682742,0.002269,34,0.462778,,
+law_pages,Pages of law enacted,Simple,108.264347,0.049481,0.874264,50,0.029988,,
+law_pages,Pages of law enacted,+ divided gov,6.245366,0.002854,0.992048,50,,1412.836848,0.01088
+law_pages,Pages of law enacted,+ divided gov + trend,-114.169881,-0.05218,0.579008,50,,-417.228004,0.207237
+law_pages,Pages of law enacted,Since 1953,-979.073053,-0.447475,0.070848,34,-0.306835,,

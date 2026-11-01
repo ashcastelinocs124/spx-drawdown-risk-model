@@ -1,0 +1,43 @@
+outcome,outcome_label,sample,beliefs,mean,n
+sp_1m,"S&P 500, 1 mo",All elections,Close together,0.019496,26
+sp_1m,"S&P 500, 1 mo",All elections,Far apart,0.01486,26
+sp_1m,"S&P 500, 1 mo",Presidential,Close together,0.013505,13
+sp_1m,"S&P 500, 1 mo",Presidential,Far apart,0.011406,13
+sp_1m,"S&P 500, 1 mo",Since 1980,Close together,0.03675,4
+sp_1m,"S&P 500, 1 mo",Since 1980,Far apart,0.020211,18
+bond_1m,"10-yr Treasury, 1 mo",All elections,Close together,0.004358,26
+bond_1m,"10-yr Treasury, 1 mo",All elections,Far apart,0.003739,26
+bond_1m,"10-yr Treasury, 1 mo",Presidential,Close together,0.001607,13
+bond_1m,"10-yr Treasury, 1 mo",Presidential,Far apart,0.003692,13
+bond_1m,"10-yr Treasury, 1 mo",Since 1980,Close together,-0.002038,4
+bond_1m,"10-yr Treasury, 1 mo",Since 1980,Far apart,0.004477,18
+sp_3m,"S&P 500, 3 mo",All elections,Close together,0.059566,26
+sp_3m,"S&P 500, 3 mo",All elections,Far apart,0.045127,26
+sp_3m,"S&P 500, 3 mo",Presidential,Close together,0.043591,13
+sp_3m,"S&P 500, 3 mo",Presidential,Far apart,0.041258,13
+sp_3m,"S&P 500, 3 mo",Since 1980,Close together,0.095987,4
+sp_3m,"S&P 500, 3 mo",Since 1980,Far apart,0.04574,18
+bond_3m,"10-yr Treasury, 3 mo",All elections,Close together,0.016263,26
+bond_3m,"10-yr Treasury, 3 mo",All elections,Far apart,0.015814,26
+bond_3m,"10-yr Treasury, 3 mo",Presidential,Close together,0.008841,13
+bond_3m,"10-yr Treasury, 3 mo",Presidential,Far apart,0.015758,13
+bond_3m,"10-yr Treasury, 3 mo",Since 1980,Close together,0.020177,4
+bond_3m,"10-yr Treasury, 3 mo",Since 1980,Far apart,0.020328,18
+sp_6m,"S&P 500, 6 mo",All elections,Close together,0.096896,26
+sp_6m,"S&P 500, 6 mo",All elections,Far apart,0.082967,26
+sp_6m,"S&P 500, 6 mo",Presidential,Close together,0.051795,13
+sp_6m,"S&P 500, 6 mo",Presidential,Far apart,0.052313,13
+sp_6m,"S&P 500, 6 mo",Since 1980,Close together,0.189374,4
+sp_6m,"S&P 500, 6 mo",Since 1980,Far apart,0.090075,18
+bond_6m,"10-yr Treasury, 6 mo",All elections,Close together,0.025054,26
+bond_6m,"10-yr Treasury, 6 mo",All elections,Far apart,0.023296,26
+bond_6m,"10-yr Treasury, 6 mo",Presidential,Close together,0.021456,13
+bond_6m,"10-yr Treasury, 6 mo",Presidential,Far apart,0.017754,13
+bond_6m,"10-yr Treasury, 6 mo",Since 1980,Close together,0.041092,4
+bond_6m,"10-yr Treasury, 6 mo",Since 1980,Far apart,0.025754,18
+vix_chg_60d,"VIX change, 60 days",All elections,Close together,-1.766667,3
+vix_chg_60d,"VIX change, 60 days",All elections,Far apart,-2.902857,14
+vix_chg_60d,"VIX change, 60 days",Presidential,Close together,-3.31,1
+vix_chg_60d,"VIX change, 60 days",Presidential,Far apart,-4.508571,7
+vix_chg_60d,"VIX change, 60 days",Since 1980,Close together,-1.766667,3
+vix_chg_60d,"VIX change, 60 days",Since 1980,Far apart,-2.902857,14

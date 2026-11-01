@@ -1,0 +1,1122 @@
+<meta name="dash-one-writer">
+<style>
+#dash-root { --dash-gutter: var(--cds-pad-lg); }
+.pg { max-width: 72rem; margin-inline: auto; font-family: var(--font-anthropic-sans); color: var(--color-fg); display: flex; flex-direction: column; gap: var(--cds-gap-xl); }
+.pg h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
+.pg h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0 0 var(--cds-gap-xs); }
+.pg h3 { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); margin: 0 0 var(--cds-gap-xs); }
+.pg p { margin: 0; line-height: 1.5; }
+.pg .lede { color: var(--color-fg-muted); max-width: 52rem; }
+.pg .note { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin-bottom: var(--cds-gap-sm); }
+.pg .take { font-size: var(--cds-font-size-body); max-width: 56rem; margin-top: var(--cds-gap-sm); }
+.pg b { font-weight: 600; }
+.pg .byline { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin-top: var(--cds-gap-xs); }
+.toc { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); margin-top: var(--cds-gap-md); }
+.toc button { font: inherit; font-size: var(--cds-font-size-caption); color: var(--color-fg); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: 999px; padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
+.toc button:hover { border-color: var(--color-fg-muted); }
+.kf-list { margin: var(--cds-gap-sm) 0 0; padding-left: 1.25rem; line-height: 1.6; display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+.kf-list li { max-width: 60rem; }
+.concl ul { margin: var(--cds-gap-xs) 0 var(--cds-gap-md); padding-left: 1.25rem; line-height: 1.6; }
+.concl li { margin-bottom: var(--cds-gap-xs); max-width: 60rem; }
+.src { margin: var(--cds-gap-xs) 0 0; padding-left: 1.25rem; line-height: 1.7; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.src a, .concl a { color: var(--color-fg); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: var(--cds-gap-md); }
+.card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+.tile .lab { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.tile .big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; margin: var(--cds-gap-xs) 0; }
+.tile .sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.grid4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: var(--cds-gap-md); }
+.chart { position: relative; width: 100%; }
+.chart.tall { min-height: 300px; }
+.chart.mid { min-height: 220px; }
+.chart.small { min-height: 190px; }
+.chart svg { display: block; overflow: visible; }
+.chart text { font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-caption); fill: var(--color-fg-muted); }
+.legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-bottom: var(--cds-gap-sm); }
+.legend span.sw { display: inline-block; width: .75rem; height: .2rem; border-radius: 2px; vertical-align: middle; margin-right: .35rem; }
+.tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; z-index: 2; }
+.tip .t1 { color: var(--cds-text-secondary); }
+.tbl { max-height: 26rem; overflow: auto; }
+.tbl table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.tbl th { position: sticky; top: 0; background: var(--color-panel); text-align: right; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+.tbl td { text-align: right; padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+.tbl th:first-child, .tbl td:first-child, .tbl th.l, .tbl td.l { text-align: left; }
+.method ol, .method ul { margin: var(--cds-gap-xs) 0 0; padding-left: 1.25rem; line-height: 1.55; }
+.method li { margin-bottom: var(--cds-gap-xs); }
+.sig { color: var(--color-fg); font-weight: 600; }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+</style>
+
+<div class="pg">
+  <header>
+    <h1 id="top">Partisan Policy Gap Study</h1>
+    <p class="lede">Do markets care how far apart Democrats and Republicans are on policy? This study builds a Partisan Policy Gap index from a century of congressional votes and party platforms (economy, business regulation, immigration and foreign policy), then tests it against stocks, Treasuries, volatility and the VIX, against who controls government, and against what Congress actually passes, 1921–2024.</p>
+    <p class="take">Bottom line: the gap is a good gauge of polarization, but <b>not a market signal</b>. Who holds power has mattered more than what the parties believe.</p>
+    <p class="byline">Educational research from public data. Not investment advice.</p>
+    <nav class="toc" aria-label="Sections">
+      <button type="button" data-go="findings">Key findings</button>
+      <button type="button" data-go="index">The gap index</button>
+      <button type="button" data-go="levels">Narrow vs wide</button>
+      <button type="button" data-go="tests">Tests</button>
+      <button type="button" data-go="useful">Forecast value</button>
+      <button type="button" data-go="recent">Recent decades</button>
+      <button type="button" data-go="vix">VIX</button>
+      <button type="button" data-go="control">Split government</button>
+      <button type="button" data-go="best-mix">Best mix</button>
+      <button type="button" data-go="post-election">After elections</button>
+      <button type="button" data-go="legislation">Congress</button>
+      <button type="button" data-go="conclusions">Conclusions</button>
+      <button type="button" data-go="method">Method</button>
+    </nav>
+  </header>
+
+  <section class="card">
+    <h2 id="findings">Key findings</h2>
+    <ol class="kf-list">
+      <li><b>The parties' belief gap doesn't move markets.</b> Its correlation with S&amp;P 500 returns is <b data-draw="kf-c" data-source="correlations" data-where="period=1921–2022&amp;outcome=sp_tr" data-field="corr">—</b> over 1921–2022 and <b data-draw="kf-c" data-source="correlations" data-where="period=1950–2022&amp;outcome=sp_tr" data-field="corr">—</b> since 1950, where 0 means no relationship.</li>
+      <li><b>It doesn't help forecasting.</b> Added to a forecast built on interest rates, inflation and last year's return, it made out-of-sample stock forecasts worse (R² change <b data-draw="t-oos" data-source="value" data-where="version=4%20topics%20(with%20foreign%20policy)&amp;outcome=sp_tr" data-field="oos_r2">—</b>).</li>
+      <li><b>Recent-decade signals were trend coincidences.</b> Since 1980, <b data-draw="kf-n" data-source="recent_sig" data-row="0" data-field="simple">—</b> of <b data-draw="kf-n" data-source="recent_sig" data-row="0" data-field="total">—</b> period tests looked significant; <b data-draw="kf-n" data-source="recent_sig" data-row="0" data-field="trend">—</b> survive once the long-run trend is removed.</li>
+      <li><b>Elections don't change the picture.</b> Of <b data-draw="kf-n" data-source="post_sig" data-row="0" data-field="total">—</b> tests of market moves 1–6 months after elections, <b data-draw="kf-n" data-source="post_sig" data-row="0" data-field="sig">—</b> were significant.</li>
+      <li><b>Who holds power matters more.</b> 10-year Treasuries returned <b data-draw="kf-cell" data-source="control_cells" data-where="outcome=bond_tr&amp;government=Divided&amp;beliefs=All" data-field="mean">—</b> a year under split government vs <b data-draw="kf-cell" data-source="control_cells" data-where="outcome=bond_tr&amp;government=Unified&amp;beliefs=All" data-field="mean">—</b> under one-party control (p-value <b data-draw="kf-p" data-source="control_tests" data-where="outcome=bond_tr&amp;test=Divided%20vs%20unified" data-field="p">—</b>). Stocks showed no reliable difference.</li>
+      <li><b>Which mix has been best?</b> For stocks, the best mix has been <b data-draw="best" data-k="stocks" data-f="combo" data-source="combo_best" data-where="kind=stocks" data-field="combo">—</b> (<b data-draw="best" data-k="stocks" data-f="value" data-source="combo_best" data-where="kind=stocks" data-field="value">—</b> a year over <b data-draw="best" data-k="stocks" data-f="n" data-source="combo_best" data-where="kind=stocks" data-field="n">—</b> years, vs <b data-draw="best" data-k="stocks" data-f="avg" data-source="combo_best" data-where="kind=stocks" data-field="avg">—</b> on average). For bonds, it has been <b data-draw="best" data-k="bonds" data-f="combo" data-source="combo_best" data-where="kind=bonds" data-field="combo">—</b> (<b data-draw="best" data-k="bonds" data-f="value" data-source="combo_best" data-where="kind=bonds" data-field="value">—</b> a year vs <b data-draw="best" data-k="bonds" data-f="avg" data-source="combo_best" data-where="kind=bonds" data-field="avg">—</b>). The stock differences are not statistically reliable; the bond one is.</li>
+      <li><b>Words and votes diverge.</b> What parties write in platforms has a correlation of <b data-draw="leg-r" data-source="leg_tests" data-where="outcome=vote_gap&amp;spec=Simple" data-field="corr">—</b> with how divided Congress actually votes.</li>
+    </ol>
+  </section>
+
+  <section class="tiles" aria-label="Headline figures">
+    <div class="card tile">
+      <div class="lab">Gap index now (2023–24, z-score)</div>
+      <div class="big" data-draw="k-now" data-source="annual" data-where="year=2024" data-field="gap_index">—</div>
+      <div class="sub">0 = 1921–2024 average; widest year on record</div>
+    </div>
+    <div class="card tile">
+      <div class="lab">Forecast value → S&amp;P 500 returns</div>
+      <div class="big" data-draw="k-oos" data-o="sp_tr" data-source="value" data-where="version=4%20topics%20(with%20foreign%20policy)&amp;outcome=sp_tr" data-field="oos_r2">—</div>
+      <div class="sub">Out-of-sample R² added to a controls-only forecast; below 0 = the gap made forecasts worse</div>
+    </div>
+    <div class="card tile">
+      <div class="lab">Forecast value → 10-yr Treasury returns</div>
+      <div class="big" data-draw="k-oos" data-o="bond_tr" data-source="value" data-where="version=4%20topics%20(with%20foreign%20policy)&amp;outcome=bond_tr" data-field="oos_r2">—</div>
+      <div class="sub">Out-of-sample R² added to a controls-only forecast; below 0 = the gap made forecasts worse</div>
+    </div>
+    <div class="card tile">
+      <div class="lab">Forecast value → stock volatility</div>
+      <div class="big" data-draw="k-oos" data-o="rvol" data-source="value" data-where="version=4%20topics%20(with%20foreign%20policy)&amp;outcome=rvol" data-field="oos_r2">—</div>
+      <div class="sub">Out-of-sample R² added to a controls-only forecast; below 0 = the gap made forecasts worse</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 id="index">1 · The gap variable over time</h2>
+    <div class="card">
+      <h3>Composite Partisan Policy Gap index</h3>
+      <p class="note">How it is built: half from how far apart the parties vote in Congress, half from how far apart their platforms are. Higher = parties further apart. Standardized: 0 is the 1921–2024 average, 1 is one standard deviation. Narrow at the New Deal and the 1960s–70s; rising steadily since the 1990s.</p>
+      <div class="chart tall" data-draw="line-index" data-source="annual"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="card">
+      <h3>The five components (z-scores)</h3>
+      <p class="note">Half the index is the congressional voting gap; the other half is the average of the four platform topics. Platforms change only every four years, so those lines step.</p>
+      <div class="legend">
+        <span><span class="sw" data-sw="0"></span>Congress voting gap</span>
+        <span><span class="sw" data-sw="1"></span>Economy platform</span>
+        <span><span class="sw" data-sw="2"></span>Business / regulation platform</span>
+        <span><span class="sw" data-sw="3"></span>Immigration / identity platform</span>
+        <span><span class="sw" data-sw="4"></span>Foreign policy platform</span>
+      </div>
+      <div class="chart tall" data-draw="line-comp" data-source="annual"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 id="levels">2 · When the gap is narrow vs wide</h2>
+    <p class="note">Years split into equal thirds by the index level. Calendar-year averages. VIX uses its own thirds within 1990–2024.</p>
+    <div class="grid4">
+      <div class="card"><h3>S&amp;P 500 total return</h3><div class="chart small" data-draw="bars-ter" data-outcome="sp_tr" data-source="terciles"></div></div>
+      <div class="card"><h3>10-yr Treasury return</h3><div class="chart small" data-draw="bars-ter" data-outcome="bond_tr" data-source="terciles"></div></div>
+      <div class="card"><h3>S&amp;P 500 realized volatility</h3><div class="chart small" data-draw="bars-ter" data-outcome="rvol" data-source="terciles"></div></div>
+      <div class="card"><h3>VIX, annual average</h3><div class="chart small" data-draw="bars-ter" data-outcome="vix_avg" data-source="terciles"></div></div>
+    </div>
+    <p class="note" style="margin-top: var(--cds-gap-sm)">Wide-gap years look better for stocks and calmer, but the regressions below show neither difference is reliable: the narrow third holds the 1929–40 Depression.</p>
+  </section>
+
+  <section>
+    <h2 id="changes">3 · When the gap is widening vs narrowing</h2>
+    <p class="note">Change in the index when a new Congress is seated (vs. two years earlier), applied to both years of that Congress.</p>
+    <div class="grid4">
+      <div class="card"><h3>S&amp;P 500 total return</h3><div class="chart small" data-draw="bars-dir" data-outcome="sp_tr" data-source="direction"></div></div>
+      <div class="card"><h3>10-yr Treasury return</h3><div class="chart small" data-draw="bars-dir" data-outcome="bond_tr" data-source="direction"></div></div>
+      <div class="card"><h3>S&amp;P 500 realized volatility</h3><div class="chart small" data-draw="bars-dir" data-outcome="rvol" data-source="direction"></div></div>
+      <div class="card"><h3>VIX, annual average</h3><div class="chart small" data-draw="bars-dir" data-outcome="vix_avg" data-source="direction"></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 id="tests">4 · Statistical tests</h2>
+    <p class="note">Effect of a 1-SD move in the index (level) or a 1-SD widening (change) on each outcome, with 95% intervals from Newey-West standard errors. A dot in color is significant at 5%; gray intervals cross zero. With foreign policy in the index, no test is significant at 5%. Returns and volatility in percentage points, VIX in points.</p>
+    <div class="grid2">
+      <div class="card"><h3>S&amp;P 500 total return</h3><div class="chart mid" data-draw="coef" data-outcome="sp_tr" data-source="regressions"></div></div>
+      <div class="card"><h3>10-yr Treasury return</h3><div class="chart mid" data-draw="coef" data-outcome="bond_tr" data-source="regressions"></div></div>
+      <div class="card"><h3>S&amp;P 500 realized volatility</h3><div class="chart mid" data-draw="coef" data-outcome="rvol" data-source="regressions"></div></div>
+      <div class="card"><h3>VIX, annual average</h3><div class="chart mid" data-draw="coef" data-outcome="vix_avg" data-source="regressions"></div></div>
+    </div>
+  </section>
+
+  <section class="grid2">
+    <div class="card">
+      <h3 id="scatter">Gap change vs 10-yr Treasury return</h3>
+      <p class="note">Each dot is a year, 1923–2022. The fitted line slopes only slightly down and the link is not statistically reliable.</p>
+      <div class="chart tall" data-draw="scatter" data-source="annual"></div>
+    </div>
+    <div class="card">
+      <h3 id="topics">Which topic matters? (index level, one at a time)</h3>
+      <p class="note">Each topic's gap alone vs each outcome, 1921–2022. Bold = significant at 5%. With fifteen tests, about one false positive is expected; immigration and foreign policy point in opposite directions for bonds, a sign of noise.</p>
+      <div class="tbl">
+        <table data-source="components" data-row-key="component,outcome">
+          <thead><tr><th class="l" data-field="component_label">Topic</th><th class="l" data-field="outcome_label">Outcome</th><th data-field="beta">Effect / SD</th><th data-field="p">p</th></tr></thead>
+          <tbody data-draw="comp-tbl"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 id="useful">5 · Is the variable useful for measuring market moves?</h2>
+    <p class="note">Four tests of whether a widening gap carries real information, for the index with foreign policy and the original three-topic index. Controls are the outcome's prior-year value, the 10-yr yield at the start of the year and prior-year inflation. The real-time version uses only what was known on January 1 (last Congress's votes, latest platforms).</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Out-of-sample forecast gain (R²)</h3>
+        <p class="note">Expanding-window forecasts from 1950 (VIX from 2000): controls only vs. controls plus the real-time gap change. Above 0 = the gap improved forecasts.</p>
+        <div class="legend">
+          <span><span class="sw" data-sw="0"></span>4 topics (with foreign policy)</span>
+          <span><span class="sw" data-sw="5"></span>3 topics (original)</span>
+        </div>
+        <div class="chart mid" data-draw="oos" data-source="value"></div>
+      </div>
+      <div class="card">
+        <h3>p-values for the gap-widening effect</h3>
+        <p class="note">Below 0.05 (bold) = unlikely to be chance. Permutation p shuffles which Congresses widened 2,000 times.</p>
+        <div class="tbl">
+          <table data-source="value" data-row-key="version,outcome">
+            <thead><tr><th class="l" data-field="version">Index</th><th class="l" data-field="outcome_label">Outcome</th><th data-field="chg_p">Simple</th><th data-field="ctrl_p">With controls</th><th data-field="rt_p">Real time</th><th data-field="perm_p">Permutation</th></tr></thead>
+            <tbody data-draw="value-tbl"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <p class="note" style="margin-top: var(--cds-gap-sm)">Verdict: no version adds forecasting value for stocks, bonds or the VIX. The three-topic index's link to lower stock volatility survives controls and the permutation test, but not real-time use or out-of-sample forecasting, and it fades once foreign policy is added.</p>
+  </section>
+
+  <section>
+    <h2 id="recent">6 · Does it hold in recent decades?</h2>
+    <p class="note">The same test re-run from later starting years. A few recent p-values dip below 0.05, but they vanish once a time trend is added: since 1980 the gap rose almost every Congress while bond yields fell, so the two move together without one driving the other.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>10-yr Treasury: p-value by starting year</h3>
+        <p class="note">Below the dashed line = significant at 5%.</p>
+        <div class="legend">
+          <span><span class="sw" data-sw="0"></span>Simple test</span>
+          <span><span class="sw" data-sw="1"></span>Time trend removed</span>
+        </div>
+        <div class="chart mid" data-draw="recent-p" data-source="recent_windows"></div>
+      </div>
+      <div class="card">
+        <h3>Every period and outcome</h3>
+        <p class="note">Correlation of the gap index with each outcome, and p-values with and without a time trend. Bold = p &lt; 0.05.</p>
+        <div class="tbl">
+          <table data-source="recent_windows" data-row-key="window,outcome">
+            <thead><tr><th class="l" data-field="window">Period</th><th class="l" data-field="outcome_label">Outcome</th><th data-field="corr">Corr.</th><th data-field="p">p</th><th data-field="p_trend">p, trend removed</th></tr></thead>
+            <tbody data-draw="recent-tbl"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 id="vix">7 · A closer look at the VIX</h2>
+    <p class="note">Monthly VIX, 1990–2024, against the gap index. The gap changes only every two years, so tests correct for its repeated values (Newey-West, 24 lags).</p>
+    <div class="card">
+      <h3>Monthly VIX and the gap index</h3>
+      <p class="note">VIX spikes line up with crises such as 1998, 2008 and 2020, not with moves in the gap.</p>
+      <div class="legend">
+        <span><span class="sw" data-sw="0"></span>VIX, monthly average (top)</span>
+        <span><span class="sw" data-sw="1"></span>Gap index (bottom)</span>
+      </div>
+      <div class="chart tall" data-draw="vix-line" data-source="vix_monthly"></div>
+    </div>
+    <div class="grid2" style="margin-top: var(--cds-gap-md)">
+      <div class="card">
+        <h3>Average VIX by gap thirds</h3>
+        <p class="note">Months split into equal thirds by the gap index.</p>
+        <div class="chart small" data-draw="vix-ter" data-outcome="vix_avg" data-source="vix_terciles"></div>
+      </div>
+      <div class="card">
+        <h3>VIX tests</h3>
+        <p class="note">Effect per 1-SD of each measure, in VIX points. Bold = p &lt; 0.05.</p>
+        <div class="tbl">
+          <table data-source="vix_tests" data-row-key="test">
+            <thead><tr><th class="l" data-field="test">Test</th><th data-field="n">n</th><th data-field="corr">Corr.</th><th data-field="beta">Effect</th><th data-field="p">p</th></tr></thead>
+            <tbody data-draw="vix-tbl"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <p class="note" style="margin-top: var(--cds-gap-sm)">Reading it: a wider gap goes with a slightly calmer VIX, but the link is weak and never significant at 5%. The closest call, with the trend removed, still misses.</p>
+  </section>
+
+  <section>
+    <h2 id="control">8 · Divided vs unified government, with the gap as a second lens</h2>
+    <p class="note">Unified = one party holds the White House, Senate and House. Divided = anything else. "Far apart" = gap index above its 1921–2022 median, "close together" = below. Calendar-year averages, 1921–2022; the number in brackets is how many years. VIX is left out: one cell has only two years.</p>
+    <div class="legend">
+      <span><span class="sw" data-sw="6"></span>Parties close together</span>
+      <span><span class="sw" data-sw="0"></span>Parties far apart</span>
+    </div>
+    <div class="grid4">
+      <div class="card"><h3>S&amp;P 500 total return</h3><div class="chart mid" data-draw="ctrl-bars" data-outcome="sp_tr" data-source="control_cells"></div></div>
+      <div class="card"><h3>10-yr Treasury return</h3><div class="chart mid" data-draw="ctrl-bars" data-outcome="bond_tr" data-source="control_cells"></div></div>
+      <div class="card"><h3>S&amp;P 500 realized volatility</h3><div class="chart mid" data-draw="ctrl-bars" data-outcome="rvol" data-source="control_cells"></div></div>
+    </div>
+    <div class="card" style="margin-top: var(--cds-gap-md)">
+      <h3>Are the differences real?</h3>
+      <p class="note">Newey-West regressions. Bold = p &lt; 0.05. Returns and volatility in percentage points, VIX in points.</p>
+      <div class="tbl">
+        <table data-source="control_tests" data-row-key="outcome,test">
+          <thead><tr><th class="l" data-field="outcome_label">Outcome</th><th class="l" data-field="test">Comparison</th><th data-field="beta">Difference</th><th data-field="p">p</th></tr></thead>
+          <tbody data-draw="ctrl-tbl"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card" style="margin-top: var(--cds-gap-md)">
+      <h3 id="best-mix">Which mix of president and Congress has been best for markets?</h3>
+      <p class="note">Average annual returns for every combination of the president's party and the House and Senate majorities, 1921–2022, best for stocks first. Dashed lines are the all-years averages. Combinations with fewer than <span data-draw="min-years">—</span> years are shown but not ranked as "best".</p>
+      <div class="legend">
+        <span><span class="sw" data-sw="0"></span>S&amp;P 500 total return</span>
+        <span><span class="sw" data-sw="1"></span>10-yr Treasury return</span>
+      </div>
+      <div class="chart tall" data-draw="combo-chart" data-source="combo_returns"></div>
+      <div class="tbl" style="margin-top: var(--cds-gap-sm)">
+        <table data-source="combo_returns" data-row-key="combo">
+          <thead><tr><th class="l" data-field="combo">President, House, Senate</th><th data-field="n">Years</th><th data-field="sp_tr">S&amp;P 500</th><th data-field="sp_up">Stocks up</th><th data-field="sp_p">p vs rest</th><th data-field="bond_tr">10-yr Treasury</th><th data-field="bond_p">p vs rest</th></tr></thead>
+          <tbody data-draw="combo-tbl"></tbody>
+        </table>
+      </div>
+      <p class="note" style="margin-top: var(--cds-gap-sm)">How this compares with other studies: published analyses (Edelman, Bespoke, CFRA, Retirement Researcher) also find a Democratic president with a Republican or split Congress among the best mixes for stocks, and a Republican president with a Democratic Congress among the weakest. Some outside studies rank a Republican president with a Democratic House and Republican Senate first; they start in 1948 and so leave out 1931–32, which this study counts in that mix. Bold p-values are below 0.05.</p>
+    </div>
+    <div class="card" style="margin-top: var(--cds-gap-md)">
+      <h3>By type of split</h3>
+      <p class="note">Average annual returns by who held the White House and Congress, 1921–2022. Small groups can swing on one crash: the Republican-president, split-Congress row includes 1931–32 and 2001–02.</p>
+      <div class="legend">
+        <span><span class="sw" data-sw="0"></span>S&amp;P 500 total return</span>
+        <span><span class="sw" data-sw="1"></span>10-yr Treasury return</span>
+      </div>
+      <div class="chart mid" data-draw="ctrl-detail" data-source="control_detail"></div>
+      <div class="tbl" style="margin-top: var(--cds-gap-sm)">
+        <table data-source="control_detail" data-row-key="setup">
+          <thead><tr><th class="l" data-field="setup">Setup</th><th class="l" data-field="government">Type</th><th data-field="sp_tr">S&amp;P 500</th><th data-field="bond_tr">10-yr Treasury</th><th data-field="n">Years</th></tr></thead>
+          <tbody data-draw="ctrl-detail-tbl"></tbody>
+        </table>
+      </div>
+    </div>
+    <p class="note" style="margin-top: var(--cds-gap-sm)">Reading it: divided government is the clear signal for bonds (about 6 points a year better, and it holds after controls and in three of four eras). For stocks, divided government with parties close together was the weakest mix, but no stock difference is statistically reliable. The gap adds little once you know who controls government.</p>
+  </section>
+
+  <section>
+    <h2 id="post-election">9 · The months right after each election</h2>
+    <p class="note">All 52 November elections, 1920–2022. Returns run from October's level through 1, 3 and 6 months later. "Far apart" = the gap the election produced (new platforms and incoming Congress) is above the median of all elections. Shiller monthly averages, so windows are approximate.</p>
+    <div class="legend">
+      <span><span class="sw" data-sw="6"></span>Election left parties close together (26)</span>
+      <span><span class="sw" data-sw="0"></span>Election left parties far apart (26)</span>
+    </div>
+    <div class="grid2">
+      <div class="card"><h3>S&amp;P 500 total return after the election</h3><div class="chart mid" data-draw="post-bars" data-k="sp" data-source="post_cells"></div></div>
+      <div class="card"><h3>10-yr Treasury return after the election</h3><div class="chart mid" data-draw="post-bars" data-k="bond" data-source="post_cells"></div></div>
+    </div>
+    <div class="card" style="margin-top: var(--cds-gap-md)">
+      <h3>p-values: does the gap explain post-election moves?</h3>
+      <p class="note">Far vs close = difference in averages; Gap = per 1-SD of the gap the election produced; + trend = same with a time trend; Widening = whether the election widened the gap. Bold = p &lt; 0.05. VIX change runs from the day before the election to 60 days after (1990 on).</p>
+      <div class="tbl">
+        <table data-source="post_tests" data-row-key="outcome,sample">
+          <thead><tr><th class="l" data-field="outcome_label">Outcome</th><th class="l" data-field="sample">Elections</th><th data-field="n">n</th><th data-field="far_diff">Far − close</th><th data-field="far_p">p</th><th data-field="gap_p">Gap p</th><th data-field="gap_trend_p">+ trend p</th><th data-field="chg_p">Widening p</th></tr></thead>
+          <tbody data-draw="post-tbl"></tbody>
+        </table>
+      </div>
+    </div>
+    <p class="note" style="margin-top: var(--cds-gap-sm)">Reading it: stocks usually rise after elections whatever the result, and the VIX usually falls as uncertainty clears. Whether the parties end up far apart or close together makes no reliable difference: none of the 84 p-values is below 0.05.</p>
+  </section>
+
+  <section>
+    <h2 id="legislation">10 · Do platform differences show up in Congress?</h2>
+    <p class="note">The platform half of the index measures what the parties say they believe. Here it is tested against what Congress actually did in each of the 52 Congresses from 1921 to 2024: how polarized the voting was, how often the parties voted together, and how many laws passed.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Platform gap vs actual voting gap</h3>
+        <p class="note">Both as z-scores by Congress. If platforms captured real division, these would move together. They don't: correlation <b data-draw="leg-r" data-source="leg_tests" data-where="outcome=vote_gap&amp;spec=Simple" data-field="corr">—</b>.</p>
+        <div class="legend">
+          <span><span class="sw" data-sw="1"></span>Platform gap (what they say)</span>
+          <span><span class="sw" data-sw="0"></span>Voting gap (how they vote)</span>
+        </div>
+        <div class="chart tall" data-draw="leg-lines" data-source="legislative"></div>
+      </div>
+      <div class="card">
+        <h3>Platform gap vs party-line voting</h3>
+        <p class="note">Each dot is a Congress. Party-unity share = roll calls where most Democrats voted against most Republicans (House and Senate averaged).</p>
+        <div class="chart tall" data-draw="leg-scatter" data-source="legislative"></div>
+      </div>
+    </div>
+    <div class="grid2" style="margin-top: var(--cds-gap-md)">
+      <div class="card">
+        <h3>Divided vs unified government in Congress</h3>
+        <p class="note">Average per Congress, 1921–2022 for laws, 1921–2024 for votes.</p>
+        <div class="tbl">
+          <table data-source="leg_div" data-row-key="measure">
+            <thead><tr><th class="l" data-field="label">Measure</th><th data-field="unified">Unified</th><th data-field="divided">Divided</th></tr></thead>
+            <tbody data-draw="leg-div"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Which topic's gap tracks Congress?</h3>
+        <p class="note">Correlation of each platform topic's gap with each outcome. Bold = p &lt; 0.05.</p>
+        <div class="tbl">
+          <table data-source="leg_topics" data-row-key="topic,outcome">
+            <thead><tr><th class="l" data-field="topic">Topic</th><th class="l" data-field="outcome">Outcome</th><th data-field="corr">Correlation</th><th data-field="p">p</th></tr></thead>
+            <tbody data-draw="leg-topics"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin-top: var(--cds-gap-md)">
+      <h3>Platform gap effects, with and without controls</h3>
+      <p class="note">Effect of a 1-SD wider platform gap, in standard deviations of each outcome (Newey-West). "Divided" = the separate effect of divided government in the same model.</p>
+      <div class="tbl">
+        <table data-source="leg_tests" data-row-key="outcome,spec">
+          <thead><tr><th class="l" data-field="outcome_label">Outcome</th><th class="l" data-field="spec">Model</th><th data-field="n">n</th><th data-field="beta_sd">Effect (SD)</th><th data-field="p">p</th><th data-field="divided_beta">Divided effect</th><th data-field="divided_p">p</th></tr></thead>
+          <tbody data-draw="leg-tests"></tbody>
+        </table>
+      </div>
+    </div>
+    <p class="note" style="margin-top: var(--cds-gap-sm)">Reading it: what parties write in platforms does not track how divided Congress actually is. Wider platform gaps came with slightly <i>more</i> bipartisan votes (mostly the business-regulation topic), not fewer. Divided government passed about 120 fewer laws per Congress, but that fades once the long decline in law counts is accounted for. Laws are getting fewer and longer, so counts alone understate output.</p>
+  </section>
+
+  <section class="card concl">
+    <h2 id="conclusions">11 · What we learned</h2>
+    <ul>
+      <li><b>Polarization is real and rising.</b> The gap index puts 2023–24 at the widest point in over a century.</li>
+      <li><b>It is not a market signal.</b> Neither how far apart the parties are nor whether the gap is widening reliably explains stock returns, Treasury returns, volatility or the VIX: in any period, with or without controls, or in the months after elections. Out of sample, it made forecasts worse.</li>
+      <li><b>Early hints were coincidences.</b> Links to bonds and the VIX faded when foreign policy was added, and recent-decade results vanished once the long-run trend was removed.</li>
+      <li><b>Power beats beliefs.</b> Split government has reliably come with better Treasury returns, plausibly because gridlock limits big spending and borrowing. For stocks, a Democratic president facing a Republican Congress and full Republican control have had the best average years, but no stock difference between combinations is statistically reliable.</li>
+      <li><b>Words and votes diverge.</b> Platform distance does not track how divided Congress votes or how much law it passes. Markets price what passes, not what parties say.</li>
+    </ul>
+    <h3>What's next</h3>
+    <p>A Policy Output variable built from what Congress actually enacts: how much passes (laws and pages), how bipartisan it is (minority-party support on final passage), and which way it moves policy (where enacted bills sit on the left–right voting scale), tested against market moves around each law's enactment date.</p>
+    <p style="margin-top: var(--cds-gap-sm)"><b>Then: prediction, starting with AI data centers.</b> Once Congress's say–do gap and policy output can be measured, the goal is to use them to forecast the policies that decide how fast AI data centers get built: power-grid and permitting rules, energy tax credits, chip manufacturing subsidies and export controls, and AI regulation. Those forecasts would then be tested against data-center build-out and the market segments that depend on it, such as chipmakers, utilities and data-center operators.</p>
+  </section>
+
+  <section class="card">
+    <h2 id="sources">Sources</h2>
+    <ul class="src">
+      <li><a href="https://voteview.com" target="_blank" rel="noopener">Voteview</a>: DW-NOMINATE scores, roll calls and member votes (Lewis, Poole, Rosenthal et al.)</li>
+      <li><a href="https://manifesto-project.wzb.eu" target="_blank" rel="noopener">Manifesto Project</a>: coded U.S. party platforms, dataset MPDS2024a</li>
+      <li><a href="https://github.com/datasets/s-and-p-500" target="_blank" rel="noopener">Robert Shiller's market data</a>: monthly S&amp;P 500, dividends, CPI and long-term interest rate</li>
+      <li><a href="https://github.com/datasets/finance-vix" target="_blank" rel="noopener">Cboe VIX history</a>: daily VIX closes</li>
+      <li><a href="https://doi.org/10.1038/s41597-023-02758-z" target="_blank" rel="noopener">Libgober (2024), Scientific Data</a>: a comprehensive dataset of U.S. federal laws</li>
+      <li><a href="https://en.wikipedia.org/wiki/Party_divisions_of_United_States_Congresses" target="_blank" rel="noopener">Party divisions of United States Congresses</a>: party control by Congress</li>
+      <li><a href="https://econpapers.repec.org/RePEc:eee:moneco:v:93:y:2018:i:c:p:114-131" target="_blank" rel="noopener">Azzimonti (2018), Journal of Monetary Economics</a>: partisan conflict and private investment</li>
+    </ul>
+    <p class="note" style="margin-top: var(--cds-gap-sm)">Educational research using public data. It is not investment advice, and past patterns do not guarantee future results.</p>
+  </section>
+
+  <section class="card method">
+    <h2 id="method">How the variable is built</h2>
+    <ol>
+      <li><b>Congress voting gap</b>: distance between the Republican and Democratic party means on the first (economic) DW-NOMINATE dimension, averaged over the House and Senate, for each Congress (Voteview).</li>
+      <li><b>Platform gaps</b>: for each presidential platform since 1920, a log-ratio position score per topic from the Manifesto Project's coded share of sentences; the gap is Republican minus Democratic. Economy = economic orthodoxy and welfare limitation vs. planning, Keynesian demand, nationalisation and welfare expansion. Business = free market and incentives vs. market regulation and controlled economy. Immigration/identity = national way of life (+) and multiculturalism (−) vs. the reverse. Foreign policy = military strength (+) and anti-internationalism vs. military restraint, peace and internationalism (+). A platform applies to the four years after its election.</li>
+      <li><b>Composite</b>: each component standardized over 1921–2024; index = ½ voting gap + ½ average of the four platform topics, then re-standardized.</li>
+      <li><b>Party control</b>: majorities per Congress from the published party-division tables (Wikipedia, "Party divisions of United States Congresses"), cross-checked with Voteview membership. The 72nd House is counted Democratic (Democrats organized it), the 107th Senate Democratic (after the 2001 Jeffords switch), and 2021–22 unified Democratic.</li>
+      <li><b>Congress behavior</b>: party-unity and bipartisan shares computed from every House and Senate roll call (Voteview member votes); laws enacted and pages of law from Libgober's comprehensive database of U.S. federal laws (Scientific Data, 2024). 2021–24 law counts are left out because that source switches to NARA records and is incomplete there.</li>
+      <li><b>Recent-decade and VIX checks</b>: the gap regressions re-run from later starting years with and without a linear time trend; monthly VIX averages from Cboe daily closes, tested with Newey-West standard errors (24 lags) because the gap repeats for two years at a time.</li>
+      <li><b>Outcomes</b>: S&amp;P 500 calendar-year total return and realized volatility (std. dev. of monthly returns × √12) from Shiller's monthly data; 10-yr Treasury return computed as a constant-maturity par bond from Shiller's long rate; VIX annual average from CBOE (1990 on). Shiller dividends end mid-2023, so return tests stop at 2022.</li>
+    </ol>
+    <h3 style="margin-top: var(--cds-gap-md)">Caveats</h3>
+    <ul>
+      <li>Results depend on how the index is built: adding foreign policy erased the three-topic index's significant links to Treasuries and the VIX. Treat any single finding as fragile.</li>
+      <li>The index level trends with eras (low mid-century, high today), so level comparisons mostly compare decades. Changes are the cleaner test.</li>
+      <li>About 100 years but only ~50 Congresses; the gap moves slowly, so effective sample sizes are small. Across the well over one hundred tests here, several p &lt; 0.05 results are expected by chance alone.</li>
+      <li>DW-NOMINATE is estimated from each Congress's own votes, so it is known with some lag. Platforms are known at the election.</li>
+      <li>The 2020 Republican platform re-adopted 2016's, so those topic scores repeat. 2024 platforms are not yet coded.</li>
+      <li>Shiller prices are monthly averages, which slightly smooth returns and volatility. Correlation, not causation.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h3 id="data">Annual data</h3>
+    <p class="note">Index, change at the new Congress, and outcomes by year.</p>
+    <div class="tbl">
+      <table data-source="annual" data-row-key="year">
+        <thead><tr><th data-field="year">Year</th><th data-field="gap_index">Gap index</th><th data-field="gap_change">Change</th><th data-field="sp_tr">S&amp;P TR</th><th data-field="bond_tr">10-yr TR</th><th data-field="rvol">Real. vol</th><th data-field="vix_avg">VIX</th></tr></thead>
+        <tbody data-draw="annual-tbl"></tbody>
+      </table>
+    </div>
+  </section>
+</div>
+
+<script>
+window.G = (() => {
+  const num = (v) => (v === '' || v == null ? NaN : Number(v));
+  const pct = d3.format('+.1%');
+  const pctU = d3.format('.1%');
+  const f1 = d3.format('+.1f');
+  const f2 = d3.format('+.2f');
+  const pfmt = (p) => (p < 0.001 ? '<0.001' : d3.format('.3f')(p));
+  const isPct = (o) => o !== 'vix_avg';
+  const fmtOut = (o, v) => (isNaN(v) ? '—' : isPct(o) ? pctU(v) : d3.format('.1f')(v));
+  const fmtEff = (o, v) => (isNaN(v) ? '—' : isPct(o) ? pct(v) : f1(v));
+  const ok = (id) => dash.data(id).status === 'ok';
+  const rows = (id) => (ok(id) ? dash.data(id).data : []);
+  const annual = () => rows('annual').map((r) => {
+    const o = {};
+    for (const k in r) o[k] = num(r[k]);
+    return o;
+  });
+  const reset = (el, h) => {
+    el.replaceChildren();
+    el.classList.toggle('dash-skeleton', false);
+    const w = Math.max(240, el.clientWidth || 320);
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`).attr('height', h);
+    return { svg, w, h };
+  };
+  const pending = (el, id) => {
+    el.replaceChildren();
+    el.classList.toggle('dash-skeleton', dash.data(id).status === 'loading');
+  };
+  const tip = (el) => {
+    const t = document.createElement('div');
+    t.className = 'tip';
+    t.hidden = true;
+    el.appendChild(t);
+    return {
+      show(x, y, lines) {
+        t.replaceChildren(...lines.map((l, i) => { const d = document.createElement('div'); if (i === 0) d.className = 't1'; d.textContent = l; return d; }));
+        t.hidden = false;
+        const W = el.clientWidth, tw = t.offsetWidth;
+        t.style.left = Math.max(0, Math.min(W - tw, x + 12)) + 'px';
+        t.style.top = Math.max(0, y - t.offsetHeight - 8) + 'px';
+      },
+      hide() { t.hidden = true; },
+    };
+  };
+  const styleAxis = (g) => {
+    g.attr('font-size', null).attr('font-family', null);
+    g.selectAll('.domain').attr('stroke', 'var(--cds-chart-axis)');
+    g.selectAll('.tick line').attr('stroke', 'var(--cds-chart-grid)');
+  };
+  return { num, pct, pctU, f1, f2, pfmt, isPct, fmtOut, fmtEff, ok, rows, annual, reset, pending, tip, styleAxis };
+})();
+
+dash.calc('terciles', {
+  inputs: ['annual'],
+  title: 'Outcomes by gap thirds',
+  description: 'Average of each outcome when the gap index is in its lower, middle or upper third (VIX: thirds within 1990–2024).',
+  fn: (annual) => {
+    const n = (v) => (v === '' || v == null ? NaN : Number(v));
+    const out = [];
+    for (const o of ['sp_tr', 'bond_tr', 'rvol', 'vix_avg']) {
+      const yrs = annual.filter((r) => !isNaN(n(r.gap_index)) && (o !== 'vix_avg' || (n(r.year) >= 1990 && n(r.year) <= 2024)));
+      const g = yrs.map((r) => n(r.gap_index)).sort((a, b) => a - b);
+      const q1 = d3.quantile(g, 1 / 3), q2 = d3.quantile(g, 2 / 3);
+      for (const [bucket, test] of [['Narrow', (x) => x <= q1], ['Middle', (x) => x > q1 && x <= q2], ['Wide', (x) => x > q2]]) {
+        const v = yrs.filter((r) => test(n(r.gap_index))).map((r) => n(r[o])).filter((x) => !isNaN(x));
+        out.push({ outcome: o, bucket, mean: d3.mean(v), n: v.length });
+      }
+    }
+    return out;
+  },
+});
+
+dash.calc('leg_div', {
+  inputs: ['legislative'],
+  title: 'Congress by government type',
+  description: 'Average laws, pages and vote shares per Congress under unified vs divided government.',
+  fn: (legislative) => {
+    const n = (v) => (v === '' || v == null ? NaN : Number(v));
+    const ms = [['public_laws', 'Public laws enacted'], ['law_pages', 'Pages of law enacted'], ['unity', 'Party-unity vote share'], ['bipartisan', 'Bipartisan vote share'], ['consensus', 'Near-unanimous vote share']];
+    return ms.map(([k, label]) => {
+      const avg = (d) => d3.mean(legislative.filter((r) => n(r.divided) === d).map((r) => n(r[k])).filter((x) => !isNaN(x)));
+      return { measure: k, label, unified: avg(0), divided: avg(1) };
+    });
+  },
+});
+
+dash.calc('recent_sig', {
+  inputs: ['recent_windows'],
+  title: 'Recent-decade significance count',
+  description: 'Among gap tests starting 1980 or later: how many have p < 0.05 without and with a time trend.',
+  fn: (recent_windows) => {
+    const n = (v) => (v === '' || v == null ? NaN : Number(v));
+    const r = recent_windows.filter((x) => n(x.start) >= 1980);
+    return [{ total: r.length, simple: r.filter((x) => n(x.p) < 0.05).length, trend: r.filter((x) => n(x.p_trend) < 0.05).length }];
+  },
+});
+
+dash.calc('post_sig', {
+  inputs: ['post_tests'],
+  title: 'Post-election significance count',
+  description: 'Number of post-election p-values (four per row) and how many are below 0.05.',
+  fn: (post_tests) => {
+    const ps = post_tests.flatMap((r) => [r.far_p, r.gap_p, r.gap_trend_p, r.chg_p]).map(Number).filter((x) => !isNaN(x));
+    return [{ total: ps.length, sig: ps.filter((x) => x < 0.05).length }];
+  },
+});
+
+dash.calc('vix_terciles', {
+  inputs: ['vix_monthly'],
+  title: 'VIX by gap thirds',
+  description: 'Average monthly VIX when the gap index is in its lower, middle or upper third, 1990–2024.',
+  fn: (vix_monthly) => {
+    const rows = vix_monthly.map((r) => ({ g: Number(r.gap_index), v: Number(r.vix) })).filter((r) => !isNaN(r.g) && !isNaN(r.v));
+    const g = rows.map((r) => r.g).sort((a, b) => a - b);
+    const q1 = d3.quantile(g, 1 / 3), q2 = d3.quantile(g, 2 / 3);
+    return [['Narrow', (x) => x <= q1], ['Middle', (x) => x > q1 && x <= q2], ['Wide', (x) => x > q2]].map(([bucket, t]) => {
+      const v = rows.filter((r) => t(r.g)).map((r) => r.v);
+      return { outcome: 'vix_avg', bucket, mean: d3.mean(v), n: v.length };
+    });
+  },
+});
+
+const MIN_YEARS = 8;
+dash.calc('combo_best', {
+  inputs: ['combo_returns'],
+  title: 'Best party combination',
+  description: 'Combination with the highest average S&P 500 and 10-yr Treasury return among those with at least 8 years, with the all-years average.',
+  fn: (combo_returns) => {
+    const avg = combo_returns.find((r) => r.government === 'All');
+    const ok = combo_returns.filter((r) => r.government !== 'All' && Number(r.n) >= 8);
+    const top = (k) => ok.reduce((b, r) => (Number(r[k]) > Number(b[k]) ? r : b), ok[0]);
+    const s = top('sp_tr'), b = top('bond_tr');
+    return [
+      { kind: 'stocks', combo: s.combo, value: Number(s.sp_tr), n: Number(s.n), avg: Number(avg.sp_tr) },
+      { kind: 'bonds', combo: b.combo, value: Number(b.bond_tr), n: Number(b.n), avg: Number(avg.bond_tr) },
+    ];
+  },
+});
+
+dash.calc('direction', {
+  inputs: ['annual'],
+  title: 'Outcomes by gap direction',
+  description: 'Average of each outcome in years when the index widened vs narrowed at the latest new Congress.',
+  fn: (annual) => {
+    const n = (v) => (v === '' || v == null ? NaN : Number(v));
+    const out = [];
+    for (const o of ['sp_tr', 'bond_tr', 'rvol', 'vix_avg']) {
+      for (const [bucket, test] of [['Narrowing', (x) => x < 0], ['Widening', (x) => x > 0]]) {
+        const v = annual.filter((r) => test(n(r.gap_change))).map((r) => n(r[o])).filter((x) => !isNaN(x));
+        out.push({ outcome: o, bucket, mean: d3.mean(v), n: v.length });
+      }
+    }
+    return out;
+  },
+});
+
+dash.onData(() => {
+  document.querySelectorAll('[data-sw]').forEach((s) => { s.style.background = dash.colors[Number(s.dataset.sw)]; });
+});
+
+const reg = (o, s) => G.rows('regressions').find((r) => r.outcome === o && r.spec === s);
+const setText = (el, t) => { el.textContent = t; };
+dash.draw('t-vix', (el) => { const r = reg('vix_avg', 'change_full'); setText(el, r ? G.f1(+r.beta) : '—'); });
+dash.draw('t-bond', (el) => { const r = reg('bond_tr', 'change_full'); setText(el, r ? G.pct(+r.beta) : '—'); });
+dash.draw('k-sp', (el) => { const r = reg('sp_tr', 'change_full'); setText(el, r ? G.pct(+r.beta) : '—'); });
+dash.draw('k-bond', (el) => { const r = reg('bond_tr', 'change_full'); setText(el, r ? G.pct(+r.beta) : '—'); });
+dash.draw('k-vix', (el) => { const r = reg('vix_avg', 'change_full'); setText(el, r ? G.f1(+r.beta) : '—'); });
+dash.draw('k-sp-p', (el) => { const r = reg('sp_tr', 'change_full'); setText(el, r ? G.pfmt(+r.p) : '—'); });
+dash.draw('k-bond-p', (el) => { const r = reg('bond_tr', 'change_full'); setText(el, r ? G.pfmt(+r.p) : '—'); });
+dash.draw('k-vix-p', (el) => { const r = reg('vix_avg', 'change_full'); setText(el, r ? G.pfmt(+r.p) : '—'); });
+dash.draw('k-oos', (el) => {
+  const r = G.rows('value').find((d) => d.version.startsWith('4') && d.outcome === el.dataset.o);
+  setText(el, r ? d3.format('+.1%')(+r.oos_r2) : '—');
+});
+dash.draw('t-oos', (el) => {
+  const r = G.rows('value').find((d) => d.version.startsWith('4') && d.outcome === 'sp_tr');
+  setText(el, r ? d3.format('+.1%')(+r.oos_r2) : '—');
+});
+dash.draw('oos', (el) => {
+  const rs = G.rows('value').map((r) => ({ ...r, oos_r2: +r.oos_r2 }));
+  if (!rs.length) { G.pending(el, 'value'); return; }
+  const outs = ['sp_tr', 'bond_tr', 'rvol', 'vix_avg'];
+  const labs = { sp_tr: 'S&P 500 return', bond_tr: '10-yr Treasury', rvol: 'Stock volatility', vix_avg: 'VIX' };
+  const vers = [...new Set(rs.map((r) => r.version))];
+  const { svg, w, h } = G.reset(el, 220);
+  const m = { t: 10, r: 10, b: 26, l: 44 };
+  const x0 = d3.scaleBand(outs, [m.l, w - m.r]).padding(0.25);
+  const x1 = d3.scaleBand(vers, [0, x0.bandwidth()]).padding(0.15);
+  const y = d3.scaleLinear([Math.min(0, d3.min(rs, (r) => r.oos_r2)), Math.max(0.05, d3.max(rs, (r) => r.oos_r2))], [h - m.b, m.t]).nice();
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickFormat(d3.format('.0%')).tickSize(-(w - m.l - m.r))).call(G.styleAxis).call((g) => g.select('.domain').remove());
+  svg.append('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-axis)');
+  const t = G.tip(el);
+  const bw = Math.min(32, x1.bandwidth());
+  svg.selectAll('rect.b').data(rs).join('rect')
+    .attr('x', (r) => x0(r.outcome) + x1(r.version) + (x1.bandwidth() - bw) / 2).attr('width', bw)
+    .attr('y', (r) => y(Math.max(0, r.oos_r2))).attr('height', (r) => Math.abs(y(r.oos_r2) - y(0))).attr('rx', 3)
+    .attr('fill', (r) => (r.version.startsWith('4') ? dash.colors[0] : dash.colors[5]))
+    .on('mousemove', (ev, r) => { const [px, py] = d3.pointer(ev, el); t.show(px, py, [labs[r.outcome], r.version, `Out-of-sample R²: ${d3.format('+.1%')(r.oos_r2)}`, `Forecasts from ${r.oos_from}`]); })
+    .on('mouseleave', () => t.hide());
+  svg.selectAll('text.xl').data(outs).join('text').attr('x', (o) => x0(o) + x0.bandwidth() / 2).attr('y', h - 6).attr('text-anchor', 'middle').text((o) => labs[o]);
+});
+dash.draw('value-tbl', (el) => {
+  const rs = G.rows('value');
+  el.replaceChildren(...rs.map((r) => {
+    const tr = document.createElement('tr');
+    tr.dataset.key = `${encodeURIComponent(r.version)},${r.outcome}`;
+    const cells = [[r.version, 'l'], [r.outcome_label, 'l'], [+r.chg_p], [+r.ctrl_p], [+r.rt_p], [+r.perm_p]];
+    for (const [v, cls] of cells) {
+      const td = document.createElement('td');
+      if (cls) { td.className = cls; td.textContent = v; } else { td.textContent = G.pfmt(v); if (v < 0.05) td.classList.add('sig'); }
+      tr.appendChild(td);
+    }
+    return tr;
+  }));
+});
+dash.draw('ctrl-bars', (el) => {
+  const o = el.dataset.outcome;
+  const rs = G.rows('control_cells').filter((r) => r.outcome === o && r.government !== 'All' && r.beliefs !== 'All').map((r) => ({ ...r, mean: +r.mean, n: +r.n }));
+  if (!rs.length) { G.pending(el, 'control_cells'); return; }
+  const govs = ['Unified', 'Divided'], bel = ['Close together', 'Far apart'];
+  const { svg, w, h } = G.reset(el, 220);
+  const m = { t: 18, r: 6, b: 24, l: 6 };
+  const x0 = d3.scaleBand(govs, [m.l, w - m.r]).padding(0.2);
+  const x1 = d3.scaleBand(bel, [0, x0.bandwidth()]).padding(0.15);
+  const y = d3.scaleLinear([Math.min(0, d3.min(rs, (r) => r.mean)), Math.max(0, d3.max(rs, (r) => r.mean))], [h - m.b, m.t + 4]).nice();
+  const bw = Math.min(32, x1.bandwidth());
+  svg.append('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-axis)');
+  const t = G.tip(el);
+  const g = svg.selectAll('g.b').data(rs).join('g');
+  const cx = (r) => x0(r.government) + x1(r.beliefs) + x1.bandwidth() / 2;
+  g.append('rect').attr('x', (r) => cx(r) - bw / 2).attr('width', bw).attr('y', (r) => y(Math.max(0, r.mean))).attr('height', (r) => Math.abs(y(r.mean) - y(0))).attr('rx', 3)
+    .attr('fill', (r) => (r.beliefs === 'Far apart' ? dash.colors[0] : dash.colors[6]))
+    .on('mousemove', (ev, r) => { const [px, py] = d3.pointer(ev, el); t.show(px, py, [`${r.government} government, parties ${r.beliefs.toLowerCase()}`, `Average: ${G.fmtOut(o, r.mean)}`, `${r.n} years`]); })
+    .on('mouseleave', () => t.hide());
+  g.append('text').attr('x', cx).attr('text-anchor', 'middle').attr('y', (r) => (r.mean >= 0 ? y(r.mean) - 5 : y(r.mean) + 13)).style('fill', 'var(--color-fg)').text((r) => `${G.fmtOut(o, r.mean)} (${r.n})`);
+  svg.selectAll('text.gl').data(govs).join('text').attr('x', (d) => x0(d) + x0.bandwidth() / 2).attr('y', h - 6).attr('text-anchor', 'middle').text((d) => d);
+});
+dash.draw('ctrl-tbl', (el) => {
+  const rs = G.rows('control_tests');
+  el.replaceChildren(...rs.map((r) => {
+    const tr = document.createElement('tr');
+    tr.dataset.key = `${encodeURIComponent(r.outcome)},${encodeURIComponent(r.test)}`;
+    const sig = +r.p < 0.05;
+    for (const [v, cls] of [[r.outcome_label, 'l'], [r.test, 'l'], [G.fmtEff(r.outcome, +r.beta), ''], [G.pfmt(+r.p), '']]) {
+      const td = document.createElement('td');
+      if (cls) td.className = cls; else if (sig) td.classList.add('sig');
+      td.textContent = v; tr.appendChild(td);
+    }
+    return tr;
+  }));
+});
+dash.draw('post-bars', (el) => {
+  const k = el.dataset.k;
+  const wins = [1, 3, 6];
+  const rs = G.rows('post_cells').filter((r) => r.sample === 'All elections' && wins.some((m) => r.outcome === `${k}_${m}m`)).map((r) => ({ ...r, mean: +r.mean, n: +r.n, win: r.outcome.split('_')[1] }));
+  if (!rs.length) { G.pending(el, 'post_cells'); return; }
+  const bel = ['Close together', 'Far apart'], wl = ['1m', '3m', '6m'];
+  const lbl = { '1m': '1 month', '3m': '3 months', '6m': '6 months' };
+  const { svg, w, h } = G.reset(el, 220);
+  const m = { t: 18, r: 6, b: 24, l: 6 };
+  const x0 = d3.scaleBand(wl, [m.l, w - m.r]).padding(0.2);
+  const x1 = d3.scaleBand(bel, [0, x0.bandwidth()]).padding(0.15);
+  const y = d3.scaleLinear([Math.min(0, d3.min(rs, (r) => r.mean)), Math.max(0, d3.max(rs, (r) => r.mean))], [h - m.b, m.t + 4]).nice();
+  const bw = Math.min(32, x1.bandwidth());
+  svg.append('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-axis)');
+  const t = G.tip(el);
+  const cx = (r) => x0(r.win) + x1(r.beliefs) + x1.bandwidth() / 2;
+  const g = svg.selectAll('g.b').data(rs).join('g');
+  g.append('rect').attr('x', (r) => cx(r) - bw / 2).attr('width', bw).attr('y', (r) => y(Math.max(0, r.mean))).attr('height', (r) => Math.abs(y(r.mean) - y(0))).attr('rx', 3)
+    .attr('fill', (r) => (r.beliefs === 'Far apart' ? dash.colors[0] : dash.colors[6]))
+    .on('mousemove', (ev, r) => { const [px, py] = d3.pointer(ev, el); t.show(px, py, [`${lbl[r.win]} after, parties ${r.beliefs.toLowerCase()}`, `Average: ${G.pctU(r.mean)}`, `${r.n} elections`]); })
+    .on('mouseleave', () => t.hide());
+  g.append('text').attr('x', cx).attr('text-anchor', 'middle').attr('y', (r) => (r.mean >= 0 ? y(r.mean) - 5 : y(r.mean) + 13)).style('fill', 'var(--color-fg)').text((r) => G.pctU(r.mean));
+  svg.selectAll('text.gl').data(wl).join('text').attr('x', (d) => x0(d) + x0.bandwidth() / 2).attr('y', h - 6).attr('text-anchor', 'middle').text((d) => lbl[d]);
+});
+dash.draw('post-tbl', (el) => {
+  const rs = G.rows('post_tests');
+  el.replaceChildren(...rs.map((r) => {
+    const tr = document.createElement('tr');
+    tr.dataset.key = `${encodeURIComponent(r.outcome)},${encodeURIComponent(r.sample)}`;
+    const isV = r.outcome === 'vix_chg_60d';
+    const diff = isV ? G.f1(+r.far_diff) : G.pct(+r.far_diff);
+    const cells = [[r.outcome_label, 'l'], [r.sample, 'l'], [String(r.n), 'n'], [diff, 'n'], [+r.far_p], [+r.gap_p], [+r.gap_trend_p], [+r.chg_p]];
+    for (const [v, cls] of cells) {
+      const td = document.createElement('td');
+      if (cls === 'l') { td.className = 'l'; td.textContent = v; }
+      else if (cls === 'n') { td.textContent = v; }
+      else { td.textContent = G.pfmt(v); if (v < 0.05) td.classList.add('sig'); }
+      tr.appendChild(td);
+    }
+    return tr;
+  }));
+});
+dash.draw('leg-r', (el) => {
+  const r = G.rows('leg_tests').find((d) => d.outcome === 'vote_gap' && d.spec === 'Simple');
+  setText(el, r ? d3.format('+.2f')(+r.corr) : '—');
+});
+const legRows = () => G.rows('legislative').map((r) => { const o = {}; for (const k in r) o[k] = G.num(r[k]); return o; });
+dash.draw('leg-lines', (el) => {
+  const a = legRows().filter((d) => !isNaN(d.platform_z) && !isNaN(d.vote_gap_z));
+  if (!a.length) { G.pending(el, 'legislative'); return; }
+  const { svg, w, h } = G.reset(el, 300);
+  const m = { t: 10, r: 12, b: 26, l: 36 };
+  const x = d3.scaleLinear(d3.extent(a, (d) => d.year), [m.l, w - m.r]);
+  const y = d3.scaleLinear(d3.extent(a.flatMap((d) => [d.platform_z, d.vote_gap_z])), [h - m.b, m.t]).nice();
+  svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).ticks(Math.max(3, Math.floor(w / 90))).tickFormat(d3.format('d'))).call(G.styleAxis);
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickSize(-(w - m.l - m.r))).call(G.styleAxis).call((g) => g.select('.domain').remove());
+  svg.append('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 3');
+  const ser = [{ k: 'platform_z', c: dash.colors[1], n: 'Platform gap' }, { k: 'vote_gap_z', c: dash.colors[0], n: 'Voting gap' }];
+  ser.forEach((s) => svg.append('path').datum(a).attr('fill', 'none').attr('stroke', s.c).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round').attr('d', d3.line().x((d) => x(d.year)).y((d) => y(d[s.k]))));
+  const t = G.tip(el); const dot = svg.append('g');
+  svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', w - m.l - m.r).attr('height', h - m.t - m.b).attr('fill', 'transparent')
+    .on('mousemove', (ev) => { const [px, py] = d3.pointer(ev); const d = a.reduce((b, r) => (Math.abs(r.year - x.invert(px)) < Math.abs(b.year - x.invert(px)) ? r : b), a[0]);
+      dot.selectAll('circle').data(ser).join('circle').attr('r', 3.5).attr('cx', x(d.year)).attr('cy', (s) => y(d[s.k])).attr('fill', (s) => s.c);
+      t.show(px, py, [`${d.year}–${d.year + 1} (Congress ${d.congress})`, ...ser.map((s) => `${s.n}: ${G.f2(d[s.k])}`)]); })
+    .on('mouseleave', () => { t.hide(); dot.selectAll('*').remove(); });
+});
+dash.draw('leg-scatter', (el) => {
+  const a = legRows().filter((d) => !isNaN(d.platform_z) && !isNaN(d.unity));
+  if (!a.length) { G.pending(el, 'legislative'); return; }
+  const { svg, w, h } = G.reset(el, 300);
+  const m = { t: 10, r: 12, b: 34, l: 44 };
+  const x = d3.scaleLinear(d3.extent(a, (d) => d.platform_z), [m.l, w - m.r]).nice();
+  const y = d3.scaleLinear(d3.extent(a, (d) => d.unity), [h - m.b, m.t]).nice();
+  svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).ticks(5).tickFormat(d3.format('+.1f'))).call(G.styleAxis);
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickFormat(d3.format('.0%')).tickSize(-(w - m.l - m.r))).call(G.styleAxis).call((g) => g.select('.domain').remove());
+  svg.append('text').attr('x', w - m.r).attr('y', h - 4).attr('text-anchor', 'end').text('Platform gap (SD) →');
+  const t = G.tip(el);
+  svg.selectAll('circle').data(a).join('circle').attr('cx', (d) => x(d.platform_z)).attr('cy', (d) => y(d.unity)).attr('r', 4.5)
+    .attr('fill', (d) => (d.divided === 1 ? dash.colors[2] : dash.colors[0])).attr('fill-opacity', 0.65)
+    .on('mousemove', (ev, d) => { const [px, py] = d3.pointer(ev, el); t.show(px, py, [`${d.year}–${d.year + 1} (Congress ${d.congress})`, `Platform gap: ${G.f2(d.platform_z)}`, `Party-unity votes: ${G.pctU(d.unity)}`, d.divided === 1 ? 'Divided government' : 'Unified government']); })
+    .on('mouseleave', () => t.hide());
+});
+dash.draw('leg-div', (el) => {
+  const rs = G.rows('leg_div');
+  const f = (k, v) => (isNaN(v) ? '—' : ['public_laws', 'law_pages'].includes(k) ? d3.format(',.0f')(v) : G.pctU(v));
+  el.replaceChildren(...rs.map((r) => { const tr = document.createElement('tr'); tr.dataset.key = r.measure;
+    for (const [v, c] of [[r.label, 'l'], [f(r.measure, +r.unified), ''], [f(r.measure, +r.divided), '']]) { const td = document.createElement('td'); if (c) td.className = c; td.textContent = v; tr.appendChild(td); }
+    return tr; }));
+});
+const TOPIC = { business_gap_z: 'Business / regulation', econ_gap_z: 'Economy', foreign_gap_z: 'Foreign policy', immig_gap_z: 'Immigration / identity' };
+const OUTL = { vote_gap: 'Voting gap', unity: 'Party-unity votes', bipartisan: 'Bipartisan votes', consensus: 'Near-unanimous votes', public_laws: 'Public laws', law_pages: 'Pages of law' };
+dash.draw('leg-topics', (el) => {
+  const rs = G.rows('leg_topics');
+  el.replaceChildren(...rs.map((r) => { const tr = document.createElement('tr'); tr.dataset.key = `${r.topic},${r.outcome}`;
+    const sig = +r.p < 0.05;
+    for (const [v, c] of [[TOPIC[r.topic] || r.topic, 'l'], [OUTL[r.outcome] || r.outcome, 'l'], [d3.format('+.2f')(+r.corr), ''], [G.pfmt(+r.p), '']]) { const td = document.createElement('td'); if (c) td.className = c; else if (sig) td.classList.add('sig'); td.textContent = v; tr.appendChild(td); }
+    return tr; }));
+});
+dash.draw('leg-tests', (el) => {
+  const rs = G.rows('leg_tests');
+  el.replaceChildren(...rs.map((r) => { const tr = document.createElement('tr'); tr.dataset.key = `${encodeURIComponent(r.outcome)},${encodeURIComponent(r.spec)}`;
+    const dv = G.num(r.divided_beta), dp = G.num(r.divided_p);
+    const dvf = isNaN(dv) ? '—' : ['public_laws', 'law_pages'].includes(r.outcome) ? d3.format('+,.0f')(dv) : ['unity', 'bipartisan', 'consensus'].includes(r.outcome) ? d3.format('+.1%')(dv) : d3.format('+.3f')(dv);
+    const cells = [[r.outcome_label, 'l'], [r.spec, 'l'], [String(r.n), 'n'], [d3.format('+.2f')(+r.beta_sd), +r.p], [G.pfmt(+r.p), +r.p], [dvf, dp], [isNaN(dp) ? '—' : G.pfmt(dp), dp]];
+    for (const [v, c] of cells) { const td = document.createElement('td'); if (c === 'l') td.className = 'l'; else if (typeof c === 'number' && c < 0.05) td.classList.add('sig'); td.textContent = v; tr.appendChild(td); }
+    return tr; }));
+});
+document.querySelectorAll('[data-go]').forEach((b) => b.addEventListener('click', () => {
+  const el = document.getElementById(b.dataset.go);
+  if (el) { el.scrollIntoView({ block: 'start' }); dash.setLink(el.id); }
+}));
+dash.draw('kf-c', (el) => {
+  const w = new URLSearchParams(el.dataset.where.replace(/&amp;/g, '&'));
+  const r = G.rows('correlations').find((d) => d.period === w.get('period') && d.outcome === w.get('outcome'));
+  setText(el, r ? d3.format('+.2f')(+r.corr) : '—');
+});
+dash.draw('kf-n', (el) => {
+  const r = G.rows(el.dataset.source)[0];
+  setText(el, r ? String(r[el.dataset.field]) : '—');
+});
+dash.draw('kf-cell', (el) => {
+  const w = new URLSearchParams(el.dataset.where);
+  const r = G.rows('control_cells').find((d) => d.outcome === w.get('outcome') && d.government === w.get('government') && d.beliefs === w.get('beliefs'));
+  setText(el, r ? G.pctU(+r.mean) : '—');
+});
+dash.draw('kf-p', (el) => {
+  const r = G.rows('control_tests').find((d) => d.outcome === 'bond_tr' && d.test === 'Divided vs unified');
+  setText(el, r ? G.pfmt(+r.p) : '—');
+});
+const cellTd = (tr, v, cls, sig) => { const td = document.createElement('td'); if (cls) td.className = cls; if (sig) td.classList.add('sig'); td.textContent = v; tr.appendChild(td); };
+dash.draw('recent-tbl', (el) => {
+  const rs = G.rows('recent_windows');
+  el.replaceChildren(...rs.map((r) => { const tr = document.createElement('tr'); tr.dataset.key = `${encodeURIComponent(r.window)},${r.outcome}`;
+    cellTd(tr, r.window, 'l'); cellTd(tr, r.outcome_label, 'l'); cellTd(tr, d3.format('+.2f')(+r.corr));
+    cellTd(tr, G.pfmt(+r.p), '', +r.p < 0.05); cellTd(tr, G.pfmt(+r.p_trend), '', +r.p_trend < 0.05); return tr; }));
+});
+dash.draw('recent-p', (el) => {
+  const rs = G.rows('recent_windows').filter((r) => r.outcome === 'bond_tr').map((r) => ({ ...r, start: +r.start, p: +r.p, pt: +r.p_trend }));
+  if (!rs.length) { G.pending(el, 'recent_windows'); return; }
+  const { svg, w, h } = G.reset(el, 220);
+  const m = { t: 10, r: 12, b: 26, l: 40 };
+  const x = d3.scalePoint(rs.map((r) => String(r.start)), [m.l + 16, w - m.r - 16]);
+  const y = d3.scaleLinear([0, 1], [h - m.b, m.t]);
+  svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).tickFormat((d) => `From ${d}`)).call(G.styleAxis);
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickFormat(d3.format('.1f')).tickSize(-(w - m.l - m.r))).call(G.styleAxis).call((g) => g.select('.domain').remove());
+  svg.append('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y(0.05)).attr('y2', y(0.05)).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 3');
+  const t = G.tip(el);
+  [['p', dash.colors[0], 'Simple test'], ['pt', dash.colors[1], 'Time trend removed']].forEach(([k, c, n]) => {
+    svg.append('path').datum(rs).attr('fill', 'none').attr('stroke', c).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round').attr('d', d3.line().x((r) => x(String(r.start))).y((r) => y(r[k])));
+    svg.append('g').selectAll('circle').data(rs).join('circle').attr('cx', (r) => x(String(r.start))).attr('cy', (r) => y(r[k])).attr('r', 4.5).attr('fill', c)
+      .on('mousemove', (ev, r) => { const [px, py] = d3.pointer(ev, el); t.show(px, py, [r.window, `${n}: p = ${G.pfmt(r[k])}`]); })
+      .on('mouseleave', () => t.hide());
+  });
+});
+dash.draw('vix-line', (el) => {
+  const parse = d3.utcParse('%Y-%m');
+  const rs = G.rows('vix_monthly').map((r) => ({ d: parse(r.month), v: +r.vix, g: +r.gap_index })).filter((r) => r.d && !isNaN(r.v));
+  if (!rs.length) { G.pending(el, 'vix_monthly'); return; }
+  const { svg, w, h } = G.reset(el, 300);
+  const m = { t: 10, r: 12, b: 26, l: 40 };
+  const topE = m.t + (h - m.t - m.b) * 0.66, botB = topE + 18;
+  const x = d3.scaleUtc(d3.extent(rs, (r) => r.d), [m.l, w - m.r]);
+  const y1 = d3.scaleLinear([0, d3.max(rs, (r) => r.v)], [topE, m.t]).nice();
+  const y2 = d3.scaleLinear(d3.extent(rs, (r) => r.g), [h - m.b, botB]).nice();
+  svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).ticks(Math.max(3, Math.floor(w / 90)))).call(G.styleAxis);
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y1).ticks(4).tickSize(-(w - m.l - m.r))).call(G.styleAxis).call((g) => g.select('.domain').remove());
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y2).ticks(3).tickFormat(d3.format('+.0f')).tickSize(-(w - m.l - m.r))).call(G.styleAxis).call((g) => g.select('.domain').remove());
+  svg.append('path').datum(rs).attr('fill', 'none').attr('stroke', dash.colors[0]).attr('stroke-width', 1.5).attr('stroke-linejoin', 'round').attr('d', d3.line().x((r) => x(r.d)).y((r) => y1(r.v)));
+  svg.append('path').datum(rs.filter((r) => !isNaN(r.g))).attr('fill', 'none').attr('stroke', dash.colors[1]).attr('stroke-width', 2).attr('d', d3.line().x((r) => x(r.d)).y((r) => y2(r.g)).curve(d3.curveStepAfter));
+  const t = G.tip(el); const dot = svg.append('g'); const bis = d3.bisector((r) => r.d).center;
+  svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', w - m.l - m.r).attr('height', h - m.t - m.b).attr('fill', 'transparent')
+    .on('mousemove', (ev) => { const [px, py] = d3.pointer(ev); const r = rs[bis(rs, x.invert(px))];
+      dot.selectAll('circle').data([[y1(r.v), dash.colors[0]], [y2(r.g), dash.colors[1]]]).join('circle').attr('r', 3.5).attr('cx', x(r.d)).attr('cy', (d) => d[0]).attr('fill', (d) => d[1]);
+      t.show(px, py, [d3.utcFormat('%b %Y')(r.d), `VIX: ${d3.format('.1f')(r.v)}`, `Gap index: ${G.f2(r.g)}`]); })
+    .on('mouseleave', () => { t.hide(); dot.selectAll('*').remove(); });
+});
+dash.draw('vix-ter', (el) => barPanel(el, 'vix_terciles', ['Narrow', 'Middle', 'Wide']));
+dash.draw('vix-tbl', (el) => {
+  const rs = G.rows('vix_tests');
+  el.replaceChildren(...rs.map((r) => { const tr = document.createElement('tr'); tr.dataset.key = r.test;
+    cellTd(tr, r.test, 'l'); cellTd(tr, String(r.n)); cellTd(tr, d3.format('+.2f')(+r.corr)); cellTd(tr, G.f1(+r.beta)); cellTd(tr, G.pfmt(+r.p), '', +r.p < 0.05); return tr; }));
+});
+dash.draw('ctrl-detail', (el) => {
+  const rs = G.rows('control_detail').map((r) => ({ ...r, sp: +r.sp_tr, bd: +r.bond_tr, n: +r.n }));
+  if (!rs.length) { G.pending(el, 'control_detail'); return; }
+  const H = 30 + rs.length * 44;
+  const { svg, w, h } = G.reset(el, H);
+  const probe = svg.append('text'); let lw = 0;
+  rs.forEach((r) => { probe.text(r.setup); lw = Math.max(lw, probe.node().getComputedTextLength()); }); probe.remove();
+  const m = { t: 4, r: 44, b: 22, l: Math.min(w * 0.5, lw + 12) };
+  const x = d3.scaleLinear([0, d3.max(rs, (r) => Math.max(r.sp, r.bd))], [m.l, w - m.r]).nice();
+  const y = d3.scaleBand(rs.map((r) => r.setup), [m.t, h - m.b]).padding(0.2);
+  const y1 = d3.scaleBand(['sp', 'bd'], [0, y.bandwidth()]).padding(0.1);
+  svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).ticks(Math.max(3, Math.floor((w - m.l) / 80))).tickFormat(d3.format('.0%'))).call(G.styleAxis);
+  const t = G.tip(el);
+  const g = svg.selectAll('g.r').data(rs).join('g').attr('transform', (r) => `translate(0,${y(r.setup)})`);
+  g.append('text').attr('x', m.l - 8).attr('y', y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').text((r) => r.setup);
+  [['sp', 0, 'S&P 500'], ['bd', 1, '10-yr Treasury']].forEach(([k, ci, n]) => {
+    g.append('rect').attr('x', m.l).attr('y', y1(k)).attr('height', y1.bandwidth()).attr('width', (r) => Math.max(0, x(r[k]) - m.l)).attr('rx', 3).attr('fill', dash.colors[ci])
+      .on('mousemove', (ev, r) => { const [px, py] = d3.pointer(ev, el); t.show(px, py, [r.setup, `${n}: ${G.pctU(r[k])} a year`, `${r.n} years`]); })
+      .on('mouseleave', () => t.hide());
+    g.append('text').attr('x', (r) => x(r[k]) + 4).attr('y', y1(k) + y1.bandwidth() / 2).attr('dy', '0.35em').text((r) => G.pctU(r[k]));
+  });
+});
+dash.draw('ctrl-detail-tbl', (el) => {
+  const rs = G.rows('control_detail');
+  el.replaceChildren(...rs.map((r) => { const tr = document.createElement('tr'); tr.dataset.key = r.setup;
+    cellTd(tr, r.setup, 'l'); cellTd(tr, r.government, 'l'); cellTd(tr, G.pctU(+r.sp_tr)); cellTd(tr, G.pctU(+r.bond_tr)); cellTd(tr, String(r.n)); return tr; }));
+});
+dash.draw('min-years', (el) => setText(el, String(MIN_YEARS)));
+dash.draw('best', (el) => {
+  const r = G.rows('combo_best').find((d) => d.kind === el.dataset.k);
+  if (!r) { setText(el, '—'); return; }
+  const f = el.dataset.f;
+  setText(el, f === 'combo' ? r.combo : f === 'n' ? String(r.n) : G.pctU(r[f]));
+});
+dash.draw('combo-chart', (el) => {
+  const all = G.rows('combo_returns').map((r) => ({ ...r, sp: +r.sp_tr, bd: +r.bond_tr, n: +r.n }));
+  const avg = all.find((r) => r.government === 'All');
+  const rs = all.filter((r) => r.government !== 'All');
+  if (!rs.length) { G.pending(el, 'combo_returns'); return; }
+  const H = 30 + rs.length * 46;
+  const { svg, w, h } = G.reset(el, H);
+  const probe = svg.append('text'); let lw = 0;
+  rs.forEach((r) => { probe.text(r.combo); lw = Math.max(lw, probe.node().getComputedTextLength()); }); probe.remove();
+  const m = { t: 4, r: 48, b: 22, l: Math.min(w * 0.5, lw + 12) };
+  const lo = Math.min(0, d3.min(rs, (r) => Math.min(r.sp, r.bd))), hi = d3.max(rs, (r) => Math.max(r.sp, r.bd));
+  const x = d3.scaleLinear([lo, hi], [m.l, w - m.r]).nice();
+  const y = d3.scaleBand(rs.map((r) => r.combo), [m.t, h - m.b]).padding(0.2);
+  const y1 = d3.scaleBand(['sp', 'bd'], [0, y.bandwidth()]).padding(0.1);
+  svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).ticks(Math.max(3, Math.floor((w - m.l) / 80))).tickFormat(d3.format('.0%'))).call(G.styleAxis);
+  svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', h - m.b).attr('stroke', 'var(--cds-chart-axis)');
+  if (avg) [['sp', 0], ['bd', 1]].forEach(([k, ci]) => svg.append('line').attr('x1', x(avg[k])).attr('x2', x(avg[k])).attr('y1', m.t).attr('y2', h - m.b).attr('stroke', dash.colors[ci]).attr('stroke-opacity', 0.6).attr('stroke-dasharray', '4 3'));
+  const t = G.tip(el);
+  const g = svg.selectAll('g.r').data(rs).join('g').attr('transform', (r) => `translate(0,${y(r.combo)})`);
+  g.append('text').attr('x', m.l - 8).attr('y', y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').style('fill', (r) => (r.n < MIN_YEARS ? 'var(--color-fg-muted)' : 'var(--color-fg)')).text((r) => r.combo);
+  [['sp', 0, 'S&P 500'], ['bd', 1, '10-yr Treasury']].forEach(([k, ci, n]) => {
+    g.append('rect').attr('x', (r) => x(Math.min(0, r[k]))).attr('y', y1(k)).attr('height', y1.bandwidth()).attr('width', (r) => Math.abs(x(r[k]) - x(0))).attr('rx', 3)
+      .attr('fill', dash.colors[ci]).attr('fill-opacity', (r) => (r.n < MIN_YEARS ? 0.45 : 1))
+      .on('mousemove', (ev, r) => { const [px, py] = d3.pointer(ev, el); t.show(px, py, [r.combo, `${n}: ${G.pctU(r[k])} a year`, avg ? `All-years average: ${G.pctU(avg[k])}` : '', `${r.n} years: ${r.years}`].filter(Boolean)); })
+      .on('mouseleave', () => t.hide());
+    g.append('text').attr('x', (r) => (r[k] >= 0 ? x(r[k]) + 4 : x(r[k]) - 4)).attr('text-anchor', (r) => (r[k] >= 0 ? 'start' : 'end')).attr('y', y1(k) + y1.bandwidth() / 2).attr('dy', '0.35em').text((r) => G.pctU(r[k]));
+  });
+});
+dash.draw('combo-tbl', (el) => {
+  const rs = G.rows('combo_returns');
+  el.replaceChildren(...rs.map((r) => { const tr = document.createElement('tr'); tr.dataset.key = r.combo;
+    const sp = G.num(r.sp_p), bp = G.num(r.bond_p);
+    cellTd(tr, r.combo, 'l'); cellTd(tr, String(r.n)); cellTd(tr, G.pctU(+r.sp_tr)); cellTd(tr, d3.format('.0%')(+r.sp_up));
+    cellTd(tr, isNaN(sp) ? '—' : G.pfmt(sp), '', sp < 0.05); cellTd(tr, G.pctU(+r.bond_tr)); cellTd(tr, isNaN(bp) ? '—' : G.pfmt(bp), '', bp < 0.05); return tr; }));
+});
+dash.draw('k-now', (el) => {
+  const r = G.annual().find((d) => d.year === 2024);
+  setText(el, r ? G.f2(r.gap_index) : '—');
+});
+
+const lineChart = (el, series, opts) => {
+  const a = G.annual().filter((d) => !isNaN(d.gap_index));
+  if (!a.length) { G.pending(el, 'annual'); return; }
+  const { svg, w, h } = G.reset(el, 300);
+  const m = { t: 10, r: 12, b: 26, l: 36 };
+  const x = d3.scaleLinear([1921, 2024], [m.l, w - m.r]);
+  const vals = series.flatMap((s) => a.map((d) => d[s.key]));
+  const y = d3.scaleLinear(d3.extent(vals), [h - m.b, m.t]).nice();
+  svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).ticks(Math.max(3, Math.floor(w / 90))).tickFormat(d3.format('d'))).call(G.styleAxis);
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickSize(-(w - m.l - m.r))).call(G.styleAxis).call((g) => g.select('.domain').remove());
+  svg.append('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 3');
+  series.forEach((s, i) => {
+    svg.append('path').datum(a).attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', s.width || 2)
+      .attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round')
+      .attr('d', d3.line().x((d) => x(d.year)).y((d) => y(d[s.key])).curve(s.step ? d3.curveStepAfter : d3.curveLinear));
+  });
+  const t = G.tip(el);
+  const dot = svg.append('g');
+  svg.append('rect').attr('x', m.l).attr('y', m.t).attr('width', w - m.l - m.r).attr('height', h - m.t - m.b).attr('fill', 'transparent')
+    .on('mousemove', (ev) => {
+      const [px, py] = d3.pointer(ev);
+      const yr = Math.round(x.invert(px));
+      const d = a.find((r) => r.year === yr);
+      if (!d) return;
+      dot.selectAll('circle').data(series).join('circle').attr('r', 3.5).attr('cx', x(yr)).attr('cy', (s) => y(d[s.key])).attr('fill', (s) => s.color);
+      t.show(px, py, [String(yr), ...series.map((s) => `${s.name}: ${G.f2(d[s.key])}`)]);
+    })
+    .on('mouseleave', () => { t.hide(); dot.selectAll('*').remove(); });
+};
+
+dash.draw('line-index', (el) => lineChart(el, [{ key: 'gap_index', name: 'Gap index', color: dash.colors[0] }]));
+dash.draw('line-comp', (el) => lineChart(el, [
+  { key: 'vote_gap_z', name: 'Congress voting', color: dash.colors[0] },
+  { key: 'econ_gap_z', name: 'Economy', color: dash.colors[1], step: true, width: 1.5 },
+  { key: 'business_gap_z', name: 'Business', color: dash.colors[2], step: true, width: 1.5 },
+  { key: 'immig_gap_z', name: 'Immigration', color: dash.colors[3], step: true, width: 1.5 },
+  { key: 'foreign_gap_z', name: 'Foreign policy', color: dash.colors[4], step: true, width: 1.5 },
+]));
+
+const barPanel = (el, id, order) => {
+  const o = el.dataset.outcome;
+  const rs = G.rows(id).filter((r) => r.outcome === o);
+  if (!rs.length) { G.pending(el, id); return; }
+  const data = order.map((b) => rs.find((r) => r.bucket === b)).filter(Boolean);
+  const { svg, w, h } = G.reset(el, 190);
+  const m = { t: 18, r: 6, b: 24, l: 6 };
+  const x = d3.scaleBand(order, [m.l, w - m.r]).padding(0.35);
+  const lo = Math.min(0, d3.min(data, (d) => d.mean));
+  const y = d3.scaleLinear([lo, Math.max(0, d3.max(data, (d) => d.mean))], [h - m.b, m.t + 4]).nice();
+  const bw = Math.min(32, x.bandwidth());
+  const accent = order.length === 3 ? 'Wide' : 'Widening';
+  svg.append('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', 'var(--cds-chart-axis)');
+  const g = svg.selectAll('g.b').data(data).join('g');
+  g.append('rect').attr('x', (d) => x(d.bucket) + (x.bandwidth() - bw) / 2).attr('width', bw)
+    .attr('y', (d) => y(Math.max(0, d.mean))).attr('height', (d) => Math.abs(y(d.mean) - y(0))).attr('rx', 3)
+    .attr('fill', (d) => (d.bucket === accent ? dash.colors[0] : 'var(--cds-chart-muted)'));
+  g.append('text').attr('x', (d) => x(d.bucket) + x.bandwidth() / 2).attr('text-anchor', 'middle')
+    .attr('y', (d) => (d.mean >= 0 ? y(d.mean) - 5 : y(d.mean) + 13)).style('fill', 'var(--color-fg)')
+    .text((d) => G.fmtOut(o, d.mean));
+  g.append('text').attr('x', (d) => x(d.bucket) + x.bandwidth() / 2).attr('y', h - 6).attr('text-anchor', 'middle').text((d) => `${d.bucket} (${d.n})`);
+};
+dash.draw('bars-ter', (el) => barPanel(el, 'terciles', ['Narrow', 'Middle', 'Wide']));
+dash.draw('bars-dir', (el) => barPanel(el, 'direction', ['Narrowing', 'Widening']));
+
+dash.draw('coef', (el) => {
+  const o = el.dataset.outcome;
+  const rs = G.rows('regressions').filter((r) => r.outcome === o).map((r) => ({ ...r, beta: +r.beta, se: +r.se, p: +r.p, n: +r.n }));
+  if (!rs.length) { G.pending(el, 'regressions'); return; }
+  const scale = G.isPct(o) ? 100 : 1;
+  const H = 34 + rs.length * 30;
+  const { svg, w, h } = G.reset(el, H);
+  const probe = svg.append('text').text('');
+  let lw = 0;
+  rs.forEach((r) => { probe.text(r.spec_label); lw = Math.max(lw, probe.node().getComputedTextLength()); });
+  probe.remove();
+  const m = { t: 6, r: 14, b: 24, l: Math.min(w * 0.55, lw + 12) };
+  const lo = d3.min(rs, (r) => (r.beta - 1.96 * r.se) * scale), hi = d3.max(rs, (r) => (r.beta + 1.96 * r.se) * scale);
+  const x = d3.scaleLinear([Math.min(0, lo), Math.max(0, hi)], [m.l, w - m.r]).nice();
+  const y = d3.scaleBand(rs.map((r) => r.spec), [m.t, h - m.b]).padding(0.3);
+  svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).ticks(Math.max(3, Math.floor((w - m.l) / 70)))).call(G.styleAxis);
+  svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', h - m.b).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 3');
+  const t = G.tip(el);
+  const g = svg.selectAll('g.r').data(rs).join('g');
+  g.append('text').attr('x', m.l - 10).attr('y', (r) => y(r.spec) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').text((r) => r.spec_label);
+  g.append('line').attr('x1', (r) => x((r.beta - 1.96 * r.se) * scale)).attr('x2', (r) => x((r.beta + 1.96 * r.se) * scale))
+    .attr('y1', (r) => y(r.spec) + y.bandwidth() / 2).attr('y2', (r) => y(r.spec) + y.bandwidth() / 2)
+    .attr('stroke', (r) => (r.p < 0.05 ? dash.colors[0] : 'var(--cds-chart-muted)')).attr('stroke-width', 2).attr('stroke-linecap', 'round');
+  g.append('circle').attr('cx', (r) => x(r.beta * scale)).attr('cy', (r) => y(r.spec) + y.bandwidth() / 2).attr('r', 5)
+    .attr('fill', (r) => (r.p < 0.05 ? dash.colors[0] : 'var(--cds-chart-muted)'))
+    .on('mousemove', (ev, r) => { const [px, py] = d3.pointer(ev, el); t.show(px, py, [r.spec_label, `Effect: ${G.fmtEff(o, r.beta)}`, `95% CI: ${G.fmtEff(o, r.beta - 1.96 * r.se)} to ${G.fmtEff(o, r.beta + 1.96 * r.se)}`, `p = ${G.pfmt(r.p)}, n = ${r.n}`]); })
+    .on('mouseleave', () => t.hide());
+});
+
+dash.draw('scatter', (el) => {
+  const a = G.annual().filter((d) => !isNaN(d.gap_change) && !isNaN(d.bond_tr));
+  if (!a.length) { G.pending(el, 'annual'); return; }
+  const { svg, w, h } = G.reset(el, 300);
+  const m = { t: 10, r: 12, b: 34, l: 44 };
+  const x = d3.scaleLinear(d3.extent(a, (d) => d.gap_change), [m.l, w - m.r]).nice();
+  const y = d3.scaleLinear(d3.extent(a, (d) => d.bond_tr), [h - m.b, m.t]).nice();
+  svg.append('g').attr('transform', `translate(0,${h - m.b})`).call(d3.axisBottom(x).ticks(5).tickFormat(d3.format('+.1f'))).call(G.styleAxis);
+  svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickFormat(d3.format('.0%')).tickSize(-(w - m.l - m.r))).call(G.styleAxis).call((g) => g.select('.domain').remove());
+  svg.append('text').attr('x', w - m.r).attr('y', h - 4).attr('text-anchor', 'end').text('Gap change at new Congress (SD) →');
+  svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', m.t).attr('y2', h - m.b).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 3');
+  const t = G.tip(el);
+  svg.selectAll('circle').data(a).join('circle').attr('cx', (d) => x(d.gap_change)).attr('cy', (d) => y(d.bond_tr)).attr('r', 4)
+    .attr('fill', dash.colors[0]).attr('fill-opacity', 0.55)
+    .on('mousemove', (ev, d) => { const [px, py] = d3.pointer(ev, el); t.show(px, py, [String(d.year), `Gap change: ${G.f2(d.gap_change)}`, `10-yr Treasury: ${G.pctU(d.bond_tr)}`]); })
+    .on('mouseleave', () => t.hide());
+  const fit = (() => {
+    const mx = d3.mean(a, (d) => d.gap_change), my = d3.mean(a, (d) => d.bond_tr);
+    const b = d3.sum(a, (d) => (d.gap_change - mx) * (d.bond_tr - my)) / d3.sum(a, (d) => (d.gap_change - mx) ** 2);
+    return (xx) => my + b * (xx - mx);
+  })();
+  const [x0, x1] = x.domain();
+  svg.append('line').attr('x1', x(x0)).attr('x2', x(x1)).attr('y1', y(fit(x0))).attr('y2', y(fit(x1))).attr('stroke', 'var(--color-fg-muted)').attr('stroke-width', 1.5);
+});
+
+dash.draw('comp-tbl', (el) => {
+  const rs = G.rows('components');
+  el.replaceChildren(...rs.map((r) => {
+    const tr = document.createElement('tr');
+    tr.dataset.key = `${r.component},${r.outcome}`;
+    const sig = +r.p < 0.05;
+    for (const [v, cls] of [[r.component_label, 'l'], [r.outcome_label, 'l'], [G.fmtEff(r.outcome, +r.beta), ''], [G.pfmt(+r.p), '']]) {
+      const td = document.createElement('td');
+      if (cls) td.className = cls;
+      if (sig && !cls) td.classList.add('sig');
+      td.textContent = v;
+      tr.appendChild(td);
+    }
+    return tr;
+  }));
+});
+
+dash.draw('annual-tbl', (el) => {
+  const rs = G.annual();
+  el.replaceChildren(...rs.map((d) => {
+    const tr = document.createElement('tr');
+    const cells = [String(d.year), G.f2(d.gap_index), isNaN(d.gap_change) ? '—' : G.f2(d.gap_change),
+      isNaN(d.sp_tr) ? '—' : G.pctU(d.sp_tr), isNaN(d.bond_tr) ? '—' : G.pctU(d.bond_tr),
+      isNaN(d.rvol) ? '—' : G.pctU(d.rvol), isNaN(d.vix_avg) ? '—' : d3.format('.1f')(d.vix_avg)];
+    for (const c of cells) { const td = document.createElement('td'); td.textContent = c; tr.appendChild(td); }
+    return tr;
+  }));
+});
+</script>

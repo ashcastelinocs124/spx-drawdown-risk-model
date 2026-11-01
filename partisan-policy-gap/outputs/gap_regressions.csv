@@ -1,0 +1,22 @@
+outcome,outcome_label,spec,spec_label,beta,se,t,p,n
+sp_tr,S&P 500 total return,level_full,"Gap level, 1921–2022",0.008016,0.016048,0.499503,0.617425,102
+sp_tr,S&P 500 total return,level_post1950,"Gap level, 1950–2022",0.002021,0.016863,0.119839,0.904611,73
+sp_tr,S&P 500 total return,level_ex_depression,"Gap level, excl. 1929–40",0.006111,0.014981,0.407895,0.683351,90
+sp_tr,S&P 500 total return,level_next_year,Gap level → next year,0.011419,0.015476,0.737861,0.460599,101
+sp_tr,S&P 500 total return,change_full,"Gap change, 1923–2022",0.007202,0.047512,0.151588,0.879512,100
+sp_tr,S&P 500 total return,change_post1950,"Gap change, 1950–2022",-0.00417,0.047822,-0.087203,0.93051,73
+bond_tr,10-yr Treasury return,level_full,"Gap level, 1921–2022",0.001812,0.008881,0.204072,0.838297,102
+bond_tr,10-yr Treasury return,level_post1950,"Gap level, 1950–2022",-0.008213,0.011508,-0.713732,0.475393,73
+bond_tr,10-yr Treasury return,level_ex_depression,"Gap level, excl. 1929–40",0.000302,0.010082,0.029942,0.976114,90
+bond_tr,10-yr Treasury return,level_next_year,Gap level → next year,0.003152,0.009397,0.335388,0.737332,101
+bond_tr,10-yr Treasury return,change_full,"Gap change, 1923–2022",-0.012753,0.012829,-0.994048,0.3202,100
+bond_tr,10-yr Treasury return,change_post1950,"Gap change, 1950–2022",-0.017795,0.015755,-1.129483,0.258694,73
+rvol,S&P 500 realized volatility,level_full,"Gap level, 1921–2022",-0.017479,0.008904,-1.963035,0.049642,102
+rvol,S&P 500 realized volatility,level_post1950,"Gap level, 1950–2022",0.001266,0.006123,0.206702,0.836243,73
+rvol,S&P 500 realized volatility,level_ex_depression,"Gap level, excl. 1929–40",-0.001497,0.004974,-0.300947,0.763455,90
+rvol,S&P 500 realized volatility,level_next_year,Gap level → next year,-0.012649,0.007714,-1.639904,0.101025,101
+rvol,S&P 500 realized volatility,change_full,"Gap change, 1923–2022",-0.046594,0.026696,-1.745368,0.080921,100
+rvol,S&P 500 realized volatility,change_post1950,"Gap change, 1950–2022",-0.00868,0.010049,-0.863768,0.387716,73
+vix_avg,VIX (annual average),level_full,"Gap level, 1990–2024",-1.008089,1.273666,-0.791486,0.42866,35
+vix_avg,VIX (annual average),level_next_year,Gap level → next year,-0.914122,1.314791,-0.69526,0.486892,35
+vix_avg,VIX (annual average),change_full,"Gap change, 1990–2024",-2.878831,2.928822,-0.982931,0.325641,35

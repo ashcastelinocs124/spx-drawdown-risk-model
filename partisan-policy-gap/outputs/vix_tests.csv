@@ -1,0 +1,7 @@
+test,note,n,corr,beta,p
+Gap level,Monthly VIX on the gap index,420,-0.123016,-1.017129,0.381357
+"Gap level, trend removed",Adds a linear time trend,420,-0.123016,-5.877015,0.080142
+Voting gap only,Congress half of the index,420,-0.051944,-0.568266,0.68645
+Platform gap only,Platform half of the index,420,-0.197584,-3.000392,0.192246
+Gap widening,Change at each new Congress,420,-0.114009,-2.885419,0.297989
+New Congress seated,"VIX Feb–Apr vs Oct–Dec before, vs gap change",17,-0.025116,-0.39061,0.861901
