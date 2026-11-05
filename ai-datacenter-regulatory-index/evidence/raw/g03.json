@@ -1,0 +1,1002 @@
+[
+ {
+  "state": "GA",
+  "indicator": "pw_tariff",
+  "level": 100,
+  "evidence": "In January 2025 the Georgia PSC unanimously approved a rule letting Georgia Power apply special billing terms to new customers of 100 MW or more; it covers Georgia Power only, not EMCs or municipal utilities.",
+  "source_url": "https://www.datacenterdynamics.com/en/news/georgia-psc-approves-new-billing-rules-for-data-centers-and-large-load-customers",
+  "source_date": "2025-01",
+  "confidence": "high",
+  "pending": "Rule does not reach EMCs/munis; legislative bills for a statutory large-load class (SB 34/SB 410) did not pass in 2026."
+ },
+ {
+  "state": "GA",
+  "indicator": "pw_min_commit",
+  "level": 100,
+  "evidence": "The PSC rule allows minimum monthly bills and extends contract terms from 5 to 15 years for 100 MW+ customers so Georgia Power recovers costs if a customer leaves.",
+  "source_url": "https://georgiawatch.org/georgia-regulators-approve-new-billing-rules-for-large-energy-users-amid-data-center-boom/",
+  "source_date": "2025-01",
+  "confidence": "medium",
+  "pending": "Exact minimum-bill percentage not found in sources."
+ },
+ {
+  "state": "GA",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "Large-load customers must pay transmission and distribution costs as construction progresses and new contracts go to the PSC at least 30 days before signing; no specific $/MW deposit figure found.",
+  "source_url": "https://psc.ga.gov/site/downloads/datacenterfactsheet.pdf",
+  "source_date": "2025",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "GA",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "PSC orders (April 2024 order, January 2025 rule) require Georgia Power to show data center revenue does not raise residential bills and to file cost-allocation studies so large loads pay their cost of service.",
+  "source_url": "https://psc.ga.gov/site/downloads/datacenterfactsheet.pdf",
+  "source_date": "2025",
+  "confidence": "medium",
+  "pending": "Statutory ratepayer-protection language (SB 34 folded into SB 410) did not become law; critics say PSC rule is not strong enough."
+ },
+ {
+  "state": "GA",
+  "indicator": "pm_moratorium",
+  "level": 60,
+  "evidence": "Democratic gubernatorial nominee Keisha Lance Bottoms has called for a pause on new data centers; statewide moratorium bills failed in the 2026 session, while 12+ local jurisdictions have temporary moratoria.",
+  "source_url": "https://wtoc.com/2026/10/20/bottoms-focuses-campaign-affordability-calls-data-center-pause",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": "Pledge becomes actionable only if Bottoms is confirmed governor-elect (election result not verified in sources I could open); legislature and Kemp-era Republican control may block it. Local moratoria in DeKalb, Cobb, Clayton and others expire late 2026."
+ },
+ {
+  "state": "GA",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Georgia has no state siting board for data centers; siting is decided by local zoning, with counties adopting their own ordinances and setbacks.",
+  "source_url": "https://admin.thompsonhine.com/wp-content/uploads/2026/06/Freeze-Study-Regulate-Repeat-Georgias-Data-Center-Cycle-and-Whats-Coming-Elsewhere.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "GA",
+  "indicator": "pm_threshold",
+  "level": 50,
+  "evidence": "The only state-level extra review is the PSC requirement that Georgia Power contracts with customers above 100 MW be filed for PSC review before execution.",
+  "source_url": "https://www.datacenterdynamics.com/en/news/georgia-psc-approves-new-billing-rules-for-data-centers-and-large-load-customers",
+  "source_date": "2025-01",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "GA",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track or backlog program documented for data center permits; feasibility is constrained by utility interconnection timelines and capacity.",
+  "source_url": "https://admin.thompsonhine.com/wp-content/uploads/2026/06/Freeze-Study-Regulate-Repeat-Georgias-Data-Center-Cycle-and-Whats-Coming-Elsewhere.pdf",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "GA",
+  "indicator": "tx_sales",
+  "level": 30,
+  "evidence": "Georgia's data center sales-tax exemption remains in effect after the 2026 House left it out of the repeal package, ending Senate Bill 410; a state audit estimated the foregone revenue at $474 million for 2025.",
+  "source_url": "https://news.bloomberglaw.com/daily-tax-report/data-center-break-survives-georgia-income-property-tax-push",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "Kemp vetoed a 2024 pause (HB 1192); a Bottoms administration or new legislature could revisit; SB 410 would have ended exemptions after honoring existing ones through 2028 and 2031."
+ },
+ {
+  "state": "GA",
+  "indicator": "tx_property",
+  "level": 0,
+  "evidence": "Local development authorities routinely offer property-tax abatements to data centers.",
+  "source_url": "https://www.sierraclub.org/georgia/blog/2026/10/why-sierra-club-georgia-chapter-calling-statewide-data-center-moratorium",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "GA",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "The exemption is tied to minimum investment/job thresholds set in statute, but I found no evidence of strict clawbacks; critics (Sen. Parent, Sierra Club) note weak protections.",
+  "source_url": "https://www.ajc.com/politics/2026/03/georgia-legislature-takes-aim-at-data-center-tax-breaks-on-crossover-day",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "GA",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No state data-center water limits or reporting found; only local proposals such as Atlanta's special-use-permit disclosure of estimated water and energy use.",
+  "source_url": "https://admin.thompsonhine.com/wp-content/uploads/2026/06/Freeze-Study-Regulate-Repeat-Georgias-Data-Center-Cycle-and-Whats-Coming-Elsewhere.pdf",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "GA",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Georgia-specific generator rules found; advocacy groups are asking for Tier 4 controls and a cumulative-impact study, implying only baseline permitting today.",
+  "source_url": "https://www.sierraclub.org/georgia/blog/2026/10/why-sierra-club-georgia-chapter-calling-statewide-data-center-moratorium",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "GA",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No data-center-specific state environmental review found.",
+  "source_url": "https://www.sierraclub.org/georgia/blog/2026/10/why-sierra-club-georgia-chapter-calling-statewide-data-center-moratorium",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "GA",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No state curtailment, demand-response or on-site-generation rule specific to data centers found.",
+  "source_url": "https://psc.ga.gov/site/downloads/datacenterfactsheet.pdf",
+  "source_date": "2025",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "GA",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No prevailing-wage or local-hire mandate for data centers found.",
+  "source_url": "https://www.sierraclub.org/georgia/blog/2026/10/why-sierra-club-georgia-chapter-calling-statewide-data-center-moratorium",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "GA",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "Georgia Power must file quarterly reports on new data centers with the PSC, but there is no operator-level public energy/water reporting statute.",
+  "source_url": "https://psc.ga.gov/site/downloads/datacenterfactsheet.pdf",
+  "source_date": "2025",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "GA",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "Noise and setback rules (e.g., 100-ft residential setbacks) are local, not statewide.",
+  "source_url": "https://admin.thompsonhine.com/wp-content/uploads/2026/06/Freeze-Study-Regulate-Repeat-Georgias-Data-Center-Cycle-and-Whats-Coming-Elsewhere.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "GA",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "About 20 data center bills failed in 2026, the gubernatorial race centers on data centers, and PSC load-growth and cost-allocation proceedings (including the OpenAI deal review) remain active.",
+  "source_url": "https://wtoc.com/2026/10/20/bottoms-focuses-campaign-affordability-calls-data-center-pause",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": "Bottoms pause pledge; possible 2027 repeal/clawback of tax exemption; Georgia Power large-load contract reviews."
+ },
+ {
+  "state": "GA",
+  "indicator": "ad_backlog",
+  "level": 50,
+  "evidence": "Georgia Power's projected data center load rose from 400 MW to 8,500 MW in a few years and the PSC allowed 6,000 MW (up to 8,500 MW) of new generation, indicating capacity and interconnection constraints.",
+  "source_url": "https://psc.ga.gov/site/downloads/datacenterfactsheet.pdf",
+  "source_date": "2025-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "FL",
+  "indicator": "pw_tariff",
+  "level": 100,
+  "evidence": "SB 484 (effective July 1, 2026) requires every public utility to file a large-load tariff by October 1, 2026 for single-site loads of 50 MW or more; FPL says its PSC-approved 2026-2029 rate structure already complies and the PSC must review it.",
+  "source_url": "https://flsenate.gov/Session/Bill/2026/484/BillText/er/PDF",
+  "source_date": "2026-05",
+  "confidence": "high",
+  "pending": "PSC review of utility compliance tariffs (due Oct 1, 2026); a separate report says regulators rejected Duke Energy Florida's data center rate structure."
+ },
+ {
+  "state": "FL",
+  "indicator": "pw_min_commit",
+  "level": 100,
+  "evidence": "FPL's large-load terms require a 20-year minimum contract with exit fees, and SB 484 lets the PSC approve minimum demand charges, take-or-pay and early termination fees.",
+  "source_url": "https://www.wusf.org/politics-issues/2026-10-04/fpl-tells-regulators-rate-structure-complies-with-data-center-law",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "FL",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "SB 484 lets the PSC approve contributions in aid of construction and financial guarantees for large loads; FPL requires upfront payment for new facilities, but no specific collateral amounts found.",
+  "source_url": "https://flsenate.gov/Session/Bill/2026/484/BillText/er/PDF",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "FL",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "SB 484 bars utilities from shifting data center infrastructure costs to residential and small-business customers and requires large loads to bear full cost of service.",
+  "source_url": "https://www.flgov.com/eog/news/press/2026/governor-ron-desantis-signs-law-protect-floridians-subsidizing-data-centers",
+  "source_date": "2026-05",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "FL",
+  "indicator": "pm_moratorium",
+  "level": 0,
+  "evidence": "No statewide or confirmed local moratorium found; SB 484 expressly keeps local governments' zoning authority (they can deny projects).",
+  "source_url": "https://www.flgov.com/eog/news/press/2026/governor-ron-desantis-signs-law-protect-floridians-subsidizing-data-centers",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": "Local moratoria not searched exhaustively."
+ },
+ {
+  "state": "FL",
+  "indicator": "pm_siting",
+  "level": 50,
+  "evidence": "SB 484 leaves siting to local comprehensive planning and zoning (with local power to deny), treats large loads as non-substations, and requires a hearing before water consumptive-use permits for large data centers.",
+  "source_url": "https://flsenate.gov/Session/Bill/2026/484/BillText/er/PDF",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "FL",
+  "indicator": "pm_threshold",
+  "level": 100,
+  "evidence": "SB 484 defines a 'large-scale data center' as a single site with anticipated peak load of 50 MW or more, triggering special water-permit and tariff rules.",
+  "source_url": "https://flsenate.gov/Session/Bill/2026/484/BillText/er/PDF",
+  "source_date": "2026-05",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "FL",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track or documented backlog for data center permits found; modifications by large data centers are processed like new applications.",
+  "source_url": "https://flsenate.gov/Session/Bill/2026/484/BillText/er/PDF",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "FL",
+  "indicator": "tx_sales",
+  "level": 30,
+  "evidence": "Florida exempts qualifying data center property from sales tax only for facilities of 100 MW or more with at least $150 million invested and DOR certification (2025 HB 7031 raised the threshold from 15 MW).",
+  "source_url": "https://www.floridasalestax.com/florida-tax-law-blog/2026/june/florida-sales-tax-data-center-exemption-under-se/",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "DOR guidance on applying the 100 MW threshold to existing certificate holders not yet issued."
+ },
+ {
+  "state": "FL",
+  "indicator": "tx_property",
+  "level": 60,
+  "evidence": "No state data center property-tax abatement program found; SB 484 does not add one.",
+  "source_url": "https://flsenate.gov/Session/Bill/2026/484/BillText/er/PDF",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "FL",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Sales-tax exemption requires DOR certificates, engineer and CPA certifications, and a five-year review, but no explicit clawback found; SB 484 adds public disclosure of data center agreements after a confidentiality period.",
+  "source_url": "https://www.floridasalestax.com/florida-tax-law-blog/2026/june/florida-sales-tax-data-center-exemption-under-se/",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "FL",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "SB 484 requires reclaimed water where available, a conservation plan for applications of 100,000 gpd or more, and a hearing before consumptive-use permits; it does not set hard caps.",
+  "source_url": "https://flsenate.gov/Session/Bill/2026/484/BillText/er/PDF",
+  "source_date": "2026-05",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "FL",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "SB 484 does not address generator or air permitting; no Florida-specific data center generator limits found.",
+  "source_url": "https://flsenate.gov/Session/Bill/2026/484/BillText/er/PDF",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "FL",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No data-center-specific state environmental review found beyond the water-permit conditions scored under ev_water.",
+  "source_url": "https://flsenate.gov/Session/Bill/2026/484/BillText/er/PDF",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "FL",
+  "indicator": "op_backup",
+  "level": 50,
+  "evidence": "SB 484 prohibits tariffs that hinder curtailment of service for grid stability, outage reduction or public safety; no mandatory demand-response requirement found.",
+  "source_url": "https://flsenate.gov/Session/Bill/2026/484/BillText/er/PDF",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "FL",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No labor mandate for data centers found.",
+  "source_url": "https://flsenate.gov/Session/Bill/2026/484/BillText/er/PDF",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "FL",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "SB 484 requires public disclosure of data center development agreements after an initial exemption period and orders an OPPAGA study by July 1, 2027, but no recurring operator reporting.",
+  "source_url": "https://www.flgov.com/eog/news/press/2026/governor-ron-desantis-signs-law-protect-floridians-subsidizing-data-centers",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "FL",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules for data centers found.",
+  "source_url": "https://flsenate.gov/Session/Bill/2026/484/BillText/er/PDF",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "FL",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "The new law's tariff compliance is still under PSC review, DOR rule 12A-1.108 has not been updated to the 100 MW threshold, and an OPPAGA study due July 2027 may prompt further legislation.",
+  "source_url": "https://www.wusf.org/politics-issues/2026-10-04/fpl-tells-regulators-rate-structure-complies-with-data-center-law",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": "OPPAGA report July 2027; PSC action on utility tariffs."
+ },
+ {
+  "state": "FL",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented interconnection queue or agency backlog specific to data centers found.",
+  "source_url": "https://www.wusf.org/politics-issues/2026-10-04/fpl-tells-regulators-rate-structure-complies-with-data-center-law",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "SC",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "Santee Cooper adopted a large-load rate (50 MW+, 15-year contract, four-year experimental) and Central Electric Power Cooperative approved a 20 MW+ rate in March 2026; Duke and Dominion apply large-load terms through contracts reviewed by the PSC.",
+  "source_url": "https://www.yahoo.com/news/sc-state-owned-utility-enacts-215038682.html",
+  "source_date": "2025",
+  "confidence": "medium",
+  "pending": "S.867 would direct the PSC to require data centers to cover full generation and transmission costs."
+ },
+ {
+  "state": "SC",
+  "indicator": "pw_min_commit",
+  "level": 100,
+  "evidence": "Duke Energy in SC reportedly requires 15-year terms with 75% take-or-pay, Dominion about 14 years with minimum bills and termination fees, and Central co-ops 15-year contracts with minimum monthly demand charges.",
+  "source_url": "https://cpo.soar.com/articles/7675294/South-Carolina/Utilities-tell-subcommittee-longterm-contracts-deposits-and-curtailment-protect-ratepayers-from-speculative-datacenter-costs",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "SC",
+  "indicator": "pw_collateral",
+  "level": 100,
+  "evidence": "Utilities told a legislative subcommittee that Duke requires upfront transmission-upgrade deposits of roughly $20-130 million and that Santee Cooper and the co-ops require upfront security and cash deposits.",
+  "source_url": "https://cpo.soar.com/articles/7675294/South-Carolina/Utilities-tell-subcommittee-longterm-contracts-deposits-and-curtailment-protect-ratepayers-from-speculative-datacenter-costs",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "SC",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "No SC statute mandates data centers pay their grid costs; protections come from utility tariffs/contracts under PSC prudency review, while S.867 (PSC full-cost mandate) and S.902 are pending.",
+  "source_url": "https://tegacaysun.com/2026/04/29/sc-senate-committee-advances-first-major-data-center-regulation-bill-sending-measure-to-full-senate/",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "S.867 passed committee April 28, 2026 but was still in the Senate; session ended May 2026 with no sign of enactment."
+ },
+ {
+  "state": "SC",
+  "indicator": "pm_moratorium",
+  "level": 60,
+  "evidence": "House bill H.5286 proposes a statewide data center moratorium, and the Senate budget version includes a proviso temporarily halting Coordinating Council incentives for data centers; neither is shown as enacted.",
+  "source_url": "https://www.scpolicycouncil.org/s_c_senate_waters_down_data_center_reform",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": "H.5286 and budget proviso status after May 2026 not confirmed."
+ },
+ {
+  "state": "SC",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Siting is currently by county zoning; S.867 would instead create a state permit through a new Data Center Development Office but has not been enacted.",
+  "source_url": "https://tegacaysun.com/2026/04/29/sc-senate-committee-advances-first-major-data-center-regulation-bill-sending-measure-to-full-senate/",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "S.867 would replace county authority with a state siting permit."
+ },
+ {
+  "state": "SC",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No enacted state size threshold; S.867 would have tiered review at 1-10 MW, 11-50 MW and over 50 MW.",
+  "source_url": "https://tegacaysun.com/2026/04/29/sc-senate-committee-advances-first-major-data-center-regulation-bill-sending-measure-to-full-senate/",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "S.867 tiered thresholds, if enacted, would score 100."
+ },
+ {
+  "state": "SC",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track or documented backlog; S.867 would set 60/90/120-day review clocks if enacted.",
+  "source_url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/867.htm",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "SC",
+  "indicator": "tx_sales",
+  "level": 30,
+  "evidence": "SC exempts data center computer equipment and electricity from sales tax; the exemptions cost the state about $828,000 last year per the Department of Revenue, and bills (S.784) would eliminate them.",
+  "source_url": "https://scdailygazette.com/?p=13424",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": "S.784 (Sen. Massey) would end blanket sales tax exemptions."
+ },
+ {
+  "state": "SC",
+  "indicator": "tx_property",
+  "level": null,
+  "evidence": "Searched but could not confirm whether SC data centers rely on state-authorized property-tax abatements (e.g., fee-in-lieu) as a routine program; budget-proviso study of data center tax exemptions was proposed.",
+  "source_url": "https://www.scpolicycouncil.org/s_c_senate_waters_down_data_center_reform",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "SC",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Senate budget version would study tax exemption money going to data centers and pause Coordinating Council incentives; existing exemptions have limited stated conditions in sources found.",
+  "source_url": "https://www.scpolicycouncil.org/s_c_senate_waters_down_data_center_reform",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "SC",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No enacted data center water limit or reporting found; the Senate budget version proposed a water-use reporting proviso due January 31, 2027 and S.867 would add annual reports.",
+  "source_url": "https://www.scpolicycouncil.org/s_c_senate_waters_down_data_center_reform",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": "Senate budget proviso and S.867 water reporting not confirmed enacted."
+ },
+ {
+  "state": "SC",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No SC-specific generator rules for data centers found.",
+  "source_url": "https://tegacaysun.com/2026/04/29/sc-senate-committee-advances-first-major-data-center-regulation-bill-sending-measure-to-full-senate/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "SC",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No data-center-specific state environmental review in place; S.867 would add site suitability and water assessments for 50 MW+ sites.",
+  "source_url": "https://tegacaysun.com/2026/04/29/sc-senate-committee-advances-first-major-data-center-regulation-bill-sending-measure-to-full-senate/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "SC",
+  "indicator": "op_backup",
+  "level": 100,
+  "evidence": "Duke Energy's SC large-load terms impose mandatory curtailment of 50-100 hours a year and the Central co-op rate lets co-ops cut power during shortages.",
+  "source_url": "https://cpo.soar.com/articles/7675294/South-Carolina/Utilities-tell-subcommittee-longterm-contracts-deposits-and-curtailment-protect-ratepayers-from-speculative-datacenter-costs",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "SC",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No labor condition on data centers found.",
+  "source_url": "https://www.scpolicycouncil.org/s_c_senate_waters_down_data_center_reform",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "SC",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "No enacted operating reporting requirement found; S.867 would require annual water and efficiency reporting.",
+  "source_url": "https://tegacaysun.com/2026/04/29/sc-senate-committee-advances-first-major-data-center-regulation-bill-sending-measure-to-full-senate/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "SC",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No enacted statewide noise or setback rules; S.867 would add light, vibration and sound limits.",
+  "source_url": "https://tegacaysun.com/2026/04/29/sc-senate-committee-advances-first-major-data-center-regulation-bill-sending-measure-to-full-senate/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "SC",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Multiple competing bills (S.867, S.784, S.902, H.5286) and budget provisos remain unresolved and the PSC and legislature are still defining large-load rules.",
+  "source_url": "https://www.scpolicycouncil.org/s_c_senate_waters_down_data_center_reform",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": "S.867 and others carry over to the next session if not enacted."
+ },
+ {
+  "state": "SC",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "Utilities reported data center proposals declining in SC; no documented backlog found.",
+  "source_url": "https://cpo.soar.com/articles/7675294/South-Carolina/Utilities-tell-subcommittee-longterm-contracts-deposits-and-curtailment-protect-ratepayers-from-speculative-datacenter-costs",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NC",
+  "indicator": "pw_tariff",
+  "level": 40,
+  "evidence": "Duke Energy, the Public Staff and others reached an October 2026 settlement on separate rates for customers using 50 MW+ at 80% load factor, awaiting NC Utilities Commission approval.",
+  "source_url": "https://www.wunc.org/2026-10-07/duke-energy-reaches-agreement-on-new-special-rates-for-large-users-like-data-centers",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": "NCUC approval of settlement; AG seeks separate class in Duke Energy Progress territory."
+ },
+ {
+  "state": "NC",
+  "indicator": "pw_min_commit",
+  "level": 50,
+  "evidence": "The settlement is described as imposing strict contract terms, and Duke's framework includes termination charges, but specific minimum-bill percentages and terms were not found.",
+  "source_url": "https://www.wunc.org/2026-10-07/duke-energy-reaches-agreement-on-new-special-rates-for-large-users-like-data-centers",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": "Terms depend on NCUC-approved tariff; SB 730 would require 15-year contracts above 100 MW."
+ },
+ {
+  "state": "NC",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "Duke's Customer Protection Plus framework contemplates upfront financial security and customer-funded connection costs; this is a voluntary pledge pending a binding tariff.",
+  "source_url": "https://www.carolinajournal.com/duke-energy-signs-pledge-to-shield-ratepayers-from-data-center-costs/",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": "Gov. Stein and AG Jackson want these terms made enforceable through the NCUC."
+ },
+ {
+  "state": "NC",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "Duke joined the federal Ratepayer Protection Pledge in July 2026 (voluntary), and SB 730 (Ratepayer Protection Act) passed the House but remains stalled in Senate Rules.",
+  "source_url": "https://www.carolinajournal.com/duke-energy-signs-pledge-to-shield-ratepayers-from-data-center-costs/",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": "SB 730 enactment or NCUC tariff approval would raise this to 100."
+ },
+ {
+  "state": "NC",
+  "indicator": "pm_moratorium",
+  "level": 0,
+  "evidence": "No statewide moratorium or proposal found, and I could not verify local moratoria in NC.",
+  "source_url": "https://www.carolinajournal.com/duke-energy-signs-pledge-to-shield-ratepayers-from-data-center-costs/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NC",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "No state siting board; siting is local, though SB 730 would add noise analysis within 500 feet of property lines.",
+  "source_url": "https://www.wunc.org/politics/2026-06-02/industry-groups-express-alarm-about-nc-data-center-bill",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": "SB 730 pending."
+ },
+ {
+  "state": "NC",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No enacted state review threshold; SB 730 uses 100 MW and Duke's tariff uses 50 MW as utility thresholds.",
+  "source_url": "https://www.wunc.org/politics/2026-06-02/industry-groups-express-alarm-about-nc-data-center-bill",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": "SB 730 100 MW threshold pending."
+ },
+ {
+  "state": "NC",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No documented fast-track program or backlog for data center permits found.",
+  "source_url": "https://www.wunc.org/2026-10-07/duke-energy-reaches-agreement-on-new-special-rates-for-large-users-like-data-centers",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NC",
+  "indicator": "tx_sales",
+  "level": 30,
+  "evidence": "The 2026 budget (S.L. 2026-41) repealed the sales-tax exemption for electricity used at certified data centers effective July 7, 2026, while other certified-datacenter exemptions remain.",
+  "source_url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/other-sales-and-use-tax-resources/important-notice-repeal-exemptions-electricity-used-datacenters",
+  "source_date": "2026-07",
+  "confidence": "high",
+  "pending": "Gov. Stein proposed phasing out remaining data center incentives by 2033."
+ },
+ {
+  "state": "NC",
+  "indicator": "tx_property",
+  "level": 0,
+  "evidence": "No state property-tax restriction in force; local economic development incentives remain available, though SB 730 would bar local incentives such as property-tax breaks.",
+  "source_url": "https://www.wunc.org/politics/2026-06-02/industry-groups-express-alarm-about-nc-data-center-bill",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": "SB 730 ban on local incentives pending."
+ },
+ {
+  "state": "NC",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Certified-datacenter exemptions require state certification and S.L. 2026-42 adds quarterly reporting by electricity purchasers, but no explicit clawbacks found.",
+  "source_url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/other-sales-and-use-tax-resources/important-notice-repeal-exemptions-electricity-used-datacenters",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "NC",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No enacted data center water limits; SB 730 would require closed-loop cooling for large data centers.",
+  "source_url": "https://www.wunc.org/politics/2026-06-02/industry-groups-express-alarm-about-nc-data-center-bill",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "SB 730 closed-loop cooling mandate pending."
+ },
+ {
+  "state": "NC",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No NC-specific data center generator rules found.",
+  "source_url": "https://www.wunc.org/politics/2026-06-02/industry-groups-express-alarm-about-nc-data-center-bill",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NC",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No data-center-specific state environmental review found.",
+  "source_url": "https://www.wunc.org/politics/2026-06-02/industry-groups-express-alarm-about-nc-data-center-bill",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NC",
+  "indicator": "op_backup",
+  "level": 50,
+  "evidence": "Duke's framework allows curtailment of large loads during emergencies as part of voluntary long-term agreements; Gov. Stein also wants a program letting data centers bring their own generation.",
+  "source_url": "https://www.carolinajournal.com/duke-energy-signs-pledge-to-shield-ratepayers-from-data-center-costs/",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "NC",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No labor mandate for data centers found.",
+  "source_url": "https://www.datacenterknowledge.com/regulations/nc-ends-data-center-power-tax-break-keeps-capital-incentives",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NC",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "S.L. 2026-42 requires quarterly reporting by purchasers of electricity used at certified data centers, first report due October 30, 2026.",
+  "source_url": "https://www.ncdor.gov/taxes-forms/sales-and-use-tax/other-sales-and-use-tax-resources/important-notice-repeal-exemptions-electricity-used-datacenters",
+  "source_date": "2026-07",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "NC",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide operating restrictions in force; SB 730 would require noise analysis near property lines.",
+  "source_url": "https://www.wunc.org/politics/2026-06-02/industry-groups-express-alarm-about-nc-data-center-bill",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": "SB 730 pending."
+ },
+ {
+  "state": "NC",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "SB 730 is pending in the Senate, the Duke settlement awaits NCUC approval, and Gov. Stein proposes phasing out incentives by 2033.",
+  "source_url": "https://www.carolinajournal.com/duke-energy-signs-pledge-to-shield-ratepayers-from-data-center-costs/",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": "NCUC order; SB 730 in Senate Rules."
+ },
+ {
+  "state": "NC",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented interconnection or agency backlog for data centers found in sources.",
+  "source_url": "https://www.wunc.org/2026-10-07/duke-energy-reaches-agreement-on-new-special-rates-for-large-users-like-data-centers",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KY",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "The PSC approved East Kentucky Power Cooperative's Data Center Power tariff (15 MW+, extra terms above 250 MW) in Case 2025-00140 on Oct. 30, 2025, and LG&E/KU publish an approved Extremely High Load Factor service rate.",
+  "source_url": "https://www.wkyufm.org/2025-10-31/kentucky-regulators-approve-power-co-ops-rates-terms-for-future-data-centers",
+  "source_date": "2025-10",
+  "confidence": "medium",
+  "pending": "Status of Kentucky Power and Duke Energy Kentucky large-load tariffs not confirmed."
+ },
+ {
+  "state": "KY",
+  "indicator": "pw_min_commit",
+  "level": 100,
+  "evidence": "LG&E/KU sought an EHLF tariff requiring 15-year contracts and payment for at least 80% of forecast monthly energy; the utility now describes the rate as approved with long-term commitments.",
+  "source_url": "https://www.wvxu.org/2026-04-15/kentucky-data-center-regulations-stripped-from-bill-as-legislative-session-closes",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "Approval order and final terms not verified from the PSC docket."
+ },
+ {
+  "state": "KY",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "The EKPC tariff raised collateral requirements scaled to load plus application fees, and LG&E/KU's EHLF requires customers to pay full interconnection study costs before studies begin.",
+  "source_url": "https://caer.uky.edu/sites/default/files/2026-06/epic-report-no-2026-001.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "KY",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "A bill (HB 593) requiring data centers to cover grid costs passed the House 90-8 but was stripped from SB 197 and died on the session's last day; cost protection exists only through PSC-approved utility tariffs.",
+  "source_url": "https://www.wvxu.org/2026-04-15/kentucky-data-center-regulations-stripped-from-bill-as-legislative-session-closes",
+  "source_date": "2026-04",
+  "confidence": "high",
+  "pending": "Senate President Stivers and Rep. Bray plan to revisit before the 2027 session."
+ },
+ {
+  "state": "KY",
+  "indicator": "pm_moratorium",
+  "level": 0,
+  "evidence": "No statewide or confirmed local moratorium found.",
+  "source_url": "https://www.wvxu.org/2026-04-15/kentucky-data-center-regulations-stripped-from-bill-as-legislative-session-closes",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KY",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Siting is by local zoning; the PSC would not approve new generation until zoning and environmental permits are in place, but no state data center siting regime exists.",
+  "source_url": "https://caer.uky.edu/sites/default/files/2026-06/epic-report-no-2026-001.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "KY",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No enacted state size threshold for extra review; the failed HB 593 provisions (including a $75,000 application fee) were removed.",
+  "source_url": "https://www.wvxu.org/2026-04-15/kentucky-data-center-regulations-stripped-from-bill-as-legislative-session-closes",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "KY",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track program or documented permit backlog found.",
+  "source_url": "https://caer.uky.edu/sites/default/files/2026-06/epic-report-no-2026-001.pdf",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KY",
+  "indicator": "tx_sales",
+  "level": 30,
+  "evidence": "Kentucky's 2025 data center law (HB 775, expanding the 2024 program) exempts data center equipment from sales and use tax for up to 50 years, with minimum investments of $25M to $450M depending on county population.",
+  "source_url": "https://www.stites.com/resources/client-alerts/kentucky-vastly-expands-data-center-tax-incentives/",
+  "source_date": "2025",
+  "confidence": "medium",
+  "pending": "Legislators (Stivers) champion the break; no repeal effort found."
+ },
+ {
+  "state": "KY",
+  "indicator": "tx_property",
+  "level": 0,
+  "evidence": "No state-level restriction on property-tax incentives found; local abatements (e.g., industrial revenue bonds) were not verified.",
+  "source_url": "https://www.stites.com/resources/client-alerts/kentucky-vastly-expands-data-center-tax-incentives/",
+  "source_date": "2025",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KY",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "The exemption requires the owner or colocation tenant to meet the minimum investment within five years of preliminary approval, but I found no clawback; a proposal tying tax breaks to local-rule compliance was stripped from the 2026 bill.",
+  "source_url": "https://www.stites.com/resources/client-alerts/kentucky-vastly-expands-data-center-tax-incentives/",
+  "source_date": "2025",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KY",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No state data center water limits or reporting found.",
+  "source_url": "https://caer.uky.edu/sites/default/files/2026-06/epic-report-no-2026-001.pdf",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KY",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Kentucky-specific data center generator limits found.",
+  "source_url": "https://caer.uky.edu/sites/default/files/2026-06/epic-report-no-2026-001.pdf",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KY",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No data-center-specific state environmental review found.",
+  "source_url": "https://caer.uky.edu/sites/default/files/2026-06/epic-report-no-2026-001.pdf",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KY",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No state curtailment or on-site generation rule found.",
+  "source_url": "https://caer.uky.edu/sites/default/files/2026-06/epic-report-no-2026-001.pdf",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KY",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No labor mandate for data centers found.",
+  "source_url": "https://www.stites.com/resources/client-alerts/kentucky-vastly-expands-data-center-tax-incentives/",
+  "source_date": "2025",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KY",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "No ongoing operating reporting requirement found.",
+  "source_url": "https://www.stites.com/resources/client-alerts/kentucky-vastly-expands-data-center-tax-incentives/",
+  "source_date": "2025",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KY",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules found.",
+  "source_url": "https://caer.uky.edu/sites/default/files/2026-06/epic-report-no-2026-001.pdf",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KY",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Ratepayer-protection legislation died in 2026 but is expected back in 2027 and the PSC is still shaping large-load tariffs.",
+  "source_url": "https://www.wvxu.org/2026-04-15/kentucky-data-center-regulations-stripped-from-bill-as-legislative-session-closes",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "2027 session."
+ },
+ {
+  "state": "KY",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented interconnection queue backlog found; PSC approved new LG&E/KU gas units in October 2025 to serve load growth.",
+  "source_url": "https://www.wvxu.org/2026-04-15/kentucky-data-center-regulations-stripped-from-bill-as-legislative-session-closes",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ }
+]

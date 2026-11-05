@@ -1,0 +1,1002 @@
+[
+ {
+  "state": "NY",
+  "indicator": "pw_tariff",
+  "level": 40,
+  "evidence": "PSC Case 26-E-0045 (Energize NY Development, opened Feb 2026) is reviewing large-load interconnection, cost allocation and tariff structures; EO 62 lets DPS/PSC create data-center-specific service classifications, but no large-load tariff is approved yet.",
+  "source_url": "https://www.governor.ny.gov/news/governor-hochul-announces-psc-proceeding-her-plan-ensure-data-centers-pay-their-fair-share",
+  "source_date": "2026-02",
+  "confidence": "high",
+  "pending": "DPS white paper and PSC action; EO 62 working group due ~60 days after Jul 14, 2026"
+ },
+ {
+  "state": "NY",
+  "indicator": "pw_min_commit",
+  "level": 0,
+  "evidence": "No minimum-bill, take-or-pay or exit-fee requirement specific to large loads found in any adopted NY order or tariff; terms are only under study in the PSC proceeding.",
+  "source_url": "https://www.governor.ny.gov/news/governor-hochul-announces-psc-proceeding-her-plan-ensure-data-centers-pay-their-fair-share",
+  "source_date": "2026-02",
+  "confidence": "low",
+  "pending": "Could be set in PSC large-load tariff outcome"
+ },
+ {
+  "state": "NY",
+  "indicator": "pw_collateral",
+  "level": 0,
+  "evidence": "No adopted large-load deposit or collateral rule found; EO 62 contemplates a possible Grid Acceleration Fund/insurance pool developers may contribute to, not yet established.",
+  "source_url": "https://www.governor.ny.gov/news/western-new-york-governor-hochul-highlights-first-statewide-moratorium-new-hyperscale-data",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": "DPS may create NY Grid Acceleration Fund"
+ },
+ {
+  "state": "NY",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "EO 62 (Jul 14, 2026) and the Energize NY proceeding aim to make data centers pay for grid upgrades or supply their own power, but no enacted statute or PSC order yet mandates it.",
+  "source_url": "https://www.governor.ny.gov/news/western-new-york-governor-hochul-highlights-first-statewide-moratorium-new-hyperscale-data",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": "PSC order and possible legislation"
+ },
+ {
+  "state": "NY",
+  "indicator": "pm_moratorium",
+  "level": 60,
+  "evidence": "Executive Order 62 (effective Jul 14, 2026) directs DEC to hold discretionary permits for data centers of 50 MW or more in abeyance until DPS finishes a GEIS (up to about one year); local permits are unaffected, so this is a partial state pause.",
+  "source_url": "https://www.hodgsonruss.com/newsroom/alerts/governor-hochul-signs-first-statewide-data-center-moratorium-in-the-u-s",
+  "source_date": "2026-07",
+  "confidence": "high",
+  "pending": "Legislature passed Responsible Data Center Development Act (S10642/A11560, 20 MW one-year pause) on Jun 4, 2026; unsigned, veto reportedly likely by year-end"
+ },
+ {
+  "state": "NY",
+  "indicator": "pm_siting",
+  "level": 50,
+  "evidence": "No state siting-board certificate for data centers; projects need local zoning plus state DEC permits and SEQRA review, with EO 62 adding a state-level permit hold and a Community Investment Framework.",
+  "source_url": "https://www.cullenllp.com/blog/new-york-becomes-the-first-state-to-impose-a-moratorium-on-new-hyperscale-data-centers-what-it-means/",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "NY",
+  "indicator": "pm_threshold",
+  "level": 100,
+  "evidence": "EO 62 applies state-level treatment to data centers of 50 MW or more (the pending bill uses 20 MW), both below 100 MW.",
+  "source_url": "https://www.hodgsonruss.com/newsroom/alerts/governor-hochul-signs-first-statewide-data-center-moratorium-in-the-u-s",
+  "source_date": "2026-07",
+  "confidence": "high",
+  "pending": "Bill would lower threshold to 20 MW if signed"
+ },
+ {
+  "state": "NY",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track program; DEC discretionary permits for covered projects are paused for up to about a year and about 30 hyperscale applications are reportedly pending, but no documented >18-month backlog.",
+  "source_url": "https://spectrumlocalnews.com/nys/central-ny/politics/2026/09/18/data-center-tax-exemptions",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": "GEIS completion date drives timing"
+ },
+ {
+  "state": "NY",
+  "indicator": "tx_sales",
+  "level": 0,
+  "evidence": "New York has an active sales tax exemption benefiting data centers (Hochul says she will seek its repeal for large data centers); repeal not yet enacted and thresholds were not verified.",
+  "source_url": "https://spectrumlocalnews.com/nys/central-ny/politics/2026/09/18/data-center-tax-exemptions",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": "Hochul pursuing legislation to repeal sales tax exemptions for massive data centers; would move to 100"
+ },
+ {
+  "state": "NY",
+  "indicator": "tx_property",
+  "level": 0,
+  "evidence": "Local industrial development agencies routinely grant tax abatements to data centers; sources describe IDA sales-tax breaks and Hochul seeking to ban them, property-tax abatement availability inferred, not verified in a statute.",
+  "source_url": "https://investigativepost.org/2026/07/21/hochul-wants-ban-on-tax-breaks-for-data-centers/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": "Proposed ban on IDA sales tax breaks for data centers"
+ },
+ {
+  "state": "NY",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Governor's framework recommends a community investment (about $50M for a 50 MW project) and annual reporting; incentive conditions exist but strict clawbacks were not confirmed.",
+  "source_url": "https://spectrumlocalnews.com/nys/central-ny/politics/2026/09/18/data-center-tax-exemptions",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": "ESD Community Investment Framework; bill's claw-back measures"
+ },
+ {
+  "state": "NY",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "DEC water-withdrawal regulations and reporting (6 NYCRR parts 601-602) apply generally and EO 62 directs DEC to review them within 12 months; the GEIS will assess data center water use.",
+  "source_url": "https://www.cullenllp.com/blog/new-york-becomes-the-first-state-to-impose-a-moratorium-on-new-hyperscale-data-centers-what-it-means/",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": "DEC water-withdrawal rule review due within 12 months"
+ },
+ {
+  "state": "NY",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No New York data-center-specific backup generator limits found; EO 62's GEIS will assess air quality but no rule adopted.",
+  "source_url": "https://www.governor.ny.gov/news/western-new-york-governor-hochul-highlights-first-statewide-moratorium-new-hyperscale-data",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": "GEIS findings may inform DEC rules"
+ },
+ {
+  "state": "NY",
+  "indicator": "ev_review",
+  "level": 100,
+  "evidence": "EO 62 directs DPS to prepare a data-center-specific Generic Environmental Impact Statement under SEQRA (energy, water, air, noise, disadvantaged communities) before DEC permits resume.",
+  "source_url": "https://www.cullenllp.com/blog/new-york-becomes-the-first-state-to-impose-a-moratorium-on-new-hyperscale-data-centers-what-it-means/",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": "GEIS not yet complete"
+ },
+ {
+  "state": "NY",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No mandatory curtailment or on-site generation limits adopted; DPS is only considering requirements that data centers fund or build clean on-site generation and storage.",
+  "source_url": "https://www.governor.ny.gov/news/western-new-york-governor-hochul-highlights-first-statewide-moratorium-new-hyperscale-data",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": "Energize NY and Grid Acceleration Fund outcomes"
+ },
+ {
+  "state": "NY",
+  "indicator": "op_labor",
+  "level": 50,
+  "evidence": "EO 62 requires an ESD Community Investment Framework within 60 days covering labor standards, local hiring, prevailing wage/PLAs, tied to approvals and incentives rather than a statutory mandate.",
+  "source_url": "https://www.cullenllp.com/blog/new-york-becomes-the-first-state-to-impose-a-moratorium-on-new-hyperscale-data-centers-what-it-means/",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": "Framework issued around Sept 2026 recommends community investment"
+ },
+ {
+  "state": "NY",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "Governor's framework recommends annual reporting to host communities on jobs, water, utility use and energy demand; not a statutory public reporting mandate.",
+  "source_url": "https://spectrumlocalnews.com/nys/central-ny/politics/2026/09/18/data-center-tax-exemptions",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "NY",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback standard for data centers found; noise is only an item for the GEIS.",
+  "source_url": "https://www.cullenllp.com/blog/new-york-becomes-the-first-state-to-impose-a-moratorium-on-new-hyperscale-data-centers-what-it-means/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NY",
+  "indicator": "ad_uncertainty",
+  "level": 100,
+  "evidence": "Conflicting and fluid directives: EO 62 pause at 50 MW, a passed but unsigned 20 MW bill, a pending sales-tax repeal, and ongoing PSC proceedings.",
+  "source_url": "https://www.hodgsonruss.com/newsroom/alerts/governor-hochul-signs-first-statewide-data-center-moratorium-in-the-u-s",
+  "source_date": "2026-07",
+  "confidence": "high",
+  "pending": "Veto/sign decision on S10642/A11560"
+ },
+ {
+  "state": "NY",
+  "indicator": "ad_backlog",
+  "level": 50,
+  "evidence": "NYISO queue held 48 large-load projects totaling over 11 GW as of Jan 2026 and about 30 hyperscale applications are pending, prompting interconnection reform.",
+  "source_url": "https://www.governor.ny.gov/news/governor-hochul-announces-psc-proceeding-her-plan-ensure-data-centers-pay-their-fair-share",
+  "source_date": "2026-02",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "NJ",
+  "indicator": "pw_tariff",
+  "level": 40,
+  "evidence": "Data Center Fair Share Act (P.L. 2026, c.32) requires BPU standards within 12 months and utility petitions for a data-center rate class within 180 days after; BPU docket EO26080463 is open and no tariff is approved yet.",
+  "source_url": "https://www.nj.gov/bpu/pdf/publicnotice/Webposting-Notice-EO26080463-%20Data%20Center%20Fair%20Share%20Act%20RFI.pdf",
+  "source_date": "2026-10",
+  "confidence": "high",
+  "pending": "BPU stakeholder meeting Nov 4, 2026; comments due Nov 13, 2026"
+ },
+ {
+  "state": "NJ",
+  "indicator": "pw_min_commit",
+  "level": 100,
+  "evidence": "The Act requires financial assurance covering at least 85% of requested electricity supply for 10 years from start of service.",
+  "source_url": "https://www.nj.gov/bpu/pdf/publicnotice/Webposting-Notice-EO26080463-%20Data%20Center%20Fair%20Share%20Act%20RFI.pdf",
+  "source_date": "2026-10",
+  "confidence": "high",
+  "pending": "Terms to be fixed in BPU standards and tariffs"
+ },
+ {
+  "state": "NJ",
+  "indicator": "pw_collateral",
+  "level": 100,
+  "evidence": "The Act requires large data centers to post financial guarantees for at least 85% of requested supply over 10 years and lets BPU impose transmission security agreements and stranded-cost protections.",
+  "source_url": "https://www.utilitydive.com/news/new-jersey-lawmakers-send-data-center-tariff-bill-to-governor/824191/",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "Implementation through BPU standards"
+ },
+ {
+  "state": "NJ",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "P.L. 2026, c.32 makes large data centers responsible for interconnection, T&D upgrade, capacity and stranded-asset costs and gives priority to those bringing their own generation; curtailment and anti-evasion rules included.",
+  "source_url": "https://www.nj.gov/bpu/pdf/publicnotice/Webposting-Notice-EO26080463-%20Data%20Center%20Fair%20Share%20Act%20RFI.pdf",
+  "source_date": "2026-10",
+  "confidence": "high",
+  "pending": "BPU standards due within 12 months of enactment"
+ },
+ {
+  "state": "NJ",
+  "indicator": "pm_moratorium",
+  "level": 0,
+  "evidence": "No statewide or announced state-level moratorium on data centers found in New Jersey.",
+  "source_url": "https://www.nj.gov/governor/news/2026/20260827a.shtml",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NJ",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Siting stays with municipalities under local land-use law; the state issued DCA Local Finance Notice 2026-13 guidance on community benefit agreements but no state certificate regime.",
+  "source_url": "https://www.nj.gov/governor/news/2026/20260827a.shtml",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "NJ",
+  "indicator": "pm_threshold",
+  "level": 100,
+  "evidence": "The Fair Share Act's large-data-center regime reaches facilities with peak demand around 50 MW (earlier draft 100 MW) and aggregates commonly owned or contiguous sites; threshold is below 100 MW per the passed version.",
+  "source_url": "https://www.utilitydive.com/news/new-jersey-lawmakers-send-data-center-tariff-bill-to-governor/824191/",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": "Final statutory threshold should be confirmed in P.L. 2026 c.32 text"
+ },
+ {
+  "state": "NJ",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track program and no documented permit backlog specific to data centers found.",
+  "source_url": "https://www.nj.gov/governor/news/2026/20260827a.shtml",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NJ",
+  "indicator": "tx_sales",
+  "level": 60,
+  "evidence": "No data-center-specific sales tax exemption program found; NJ's AI incentive was delivered through EDA tax credits instead.",
+  "source_url": "https://aiunderstanding.org/news/new-jersey-ends-250-million-in-uncommitted-ai-data-center-tax-credits",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NJ",
+  "indicator": "tx_property",
+  "level": 60,
+  "evidence": "No state data-center property tax abatement program found; local PILOT arrangements were not verified.",
+  "source_url": "https://aiunderstanding.org/news/new-jersey-ends-250-million-in-uncommitted-ai-data-center-tax-credits",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NJ",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Next NJ AI credits, awarded to CoreWeave ($250M for a $1.8B Kenilworth project), carry EDA program conditions; the End Data Center Tax Credits Act (signed Aug 2026) eliminated the remaining uncommitted $250M.",
+  "source_url": "https://aiunderstanding.org/news/new-jersey-ends-250-million-in-uncommitted-ai-data-center-tax-credits",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": "Verify EDA award clawback terms"
+ },
+ {
+  "state": "NJ",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "S3379/A4096 (signed Aug 27, 2026) requires data centers to file semiannual water and energy use reports with BPU, including peak daily water use and sources.",
+  "source_url": "https://www.nj.gov/governor/news/2026/20260827a.shtml",
+  "source_date": "2026-08",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "NJ",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No NJ data-center-specific generator limits found beyond standard air permitting; the reporting law requires disclosure of backup power supplies only.",
+  "source_url": "https://www.nj.gov/governor/news/2026/20260827a.shtml",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NJ",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "New Jersey has no general SEPA-style environmental review statute and none specific to data centers was found.",
+  "source_url": "https://www.nj.gov/governor/news/2026/20260827a.shtml",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NJ",
+  "indicator": "op_backup",
+  "level": 100,
+  "evidence": "Fair Share Act mandates that large data center loads (excluding critical load) are curtailed before residential customers in system emergencies and rewards demand-reduction commitments.",
+  "source_url": "https://www.nj.gov/bpu/pdf/publicnotice/Webposting-Notice-EO26080463-%20Data%20Center%20Fair%20Share%20Act%20RFI.pdf",
+  "source_date": "2026-10",
+  "confidence": "high",
+  "pending": "BPU standards; PJM resource adequacy rules in flux"
+ },
+ {
+  "state": "NJ",
+  "indicator": "op_labor",
+  "level": 50,
+  "evidence": "Governor's data center plan proposes incentives for local trades jobs and DCA guidance on community benefit agreements; no statutory prevailing wage mandate for data centers found.",
+  "source_url": "https://www.saul.com/insights/alert/new-jerseys-first-nation-comprehensive-plan-regulate-data-centers",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NJ",
+  "indicator": "op_reporting",
+  "level": 100,
+  "evidence": "Statute S3379/A4096 requires semiannual BPU reporting on total energy, cooling vs IT energy, water use and on-site/backup power, with transparency intent.",
+  "source_url": "https://www.nj.gov/governor/news/2026/20260827a.shtml",
+  "source_date": "2026-08",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "NJ",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback standard for data centers found.",
+  "source_url": "https://www.nj.gov/governor/news/2026/20260827a.shtml",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NJ",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Major implementation pending: BPU standards due within 12 months, tariff filings after that, an open BPU RFI, and FERC's Oct 9, 2026 rejection of PJM's interim resource adequacy framework leaves curtailment design uncertain.",
+  "source_url": "https://www.nj.gov/bpu/pdf/publicnotice/Webposting-Notice-EO26080463-%20Data%20Center%20Fair%20Share%20Act%20RFI.pdf",
+  "source_date": "2026-10",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "NJ",
+  "indicator": "ad_backlog",
+  "level": 50,
+  "evidence": "PJM interconnection and capacity constraints affect NJ large loads; no NJ-specific quantified data center queue backlog found.",
+  "source_url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5l---pseg.pdf",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "CT",
+  "indicator": "pw_tariff",
+  "level": 0,
+  "evidence": "No Connecticut large-load or data-center tariff or open PURA docket found; HB 5469 (bring-your-own-power) did not advance in the 2026 session.",
+  "source_url": "https://www.ctpublic.org/news/2026-05-11/ct-bills-failed-2026-school-cellphones-data-centers-evictions",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": "Lamont wants PURA review of self-powered proposals; PURA proceeding possible"
+ },
+ {
+  "state": "CT",
+  "indicator": "pw_min_commit",
+  "level": 0,
+  "evidence": "No large-load minimum-bill or term requirement found; HB 5469 would have required 85% guarantees over 10 years but died.",
+  "source_url": "https://www.ctpublic.org/news/2026-05-11/ct-bills-failed-2026-school-cellphones-data-centers-evictions",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": "Bill could return in 2027 session"
+ },
+ {
+  "state": "CT",
+  "indicator": "pw_collateral",
+  "level": 0,
+  "evidence": "No adopted large-load deposit or collateral rule found; HB 5469's deposits and guarantees did not pass.",
+  "source_url": "https://www.ctpublic.org/news/2026-05-11/ct-bills-failed-2026-school-cellphones-data-centers-evictions",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "CT",
+  "indicator": "pw_cost_alloc",
+  "level": 0,
+  "evidence": "Bring-your-own-power bill HB 5469 failed in 2026; no enacted law or PURA order makes data centers bear grid costs.",
+  "source_url": "https://www.ctpublic.org/news/2026-05-11/ct-bills-failed-2026-school-cellphones-data-centers-evictions",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": "Governor says slow new data centers unless they add generation"
+ },
+ {
+  "state": "CT",
+  "indicator": "pm_moratorium",
+  "level": 0,
+  "evidence": "No moratorium or pause; Governor Lamont said in Sept 2026 large AI data centers are not welcome in CT but described no formal pause.",
+  "source_url": "https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": "Governor statement could become policy"
+ },
+ {
+  "state": "CT",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Final siting decisions rest with towns' zoning authority per the governor; no state certificate for data centers.",
+  "source_url": "https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "CT",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No MW or acreage threshold triggering extra state review of data centers found.",
+  "source_url": "https://www.energizect.com/sites/default/files/documents/%234A%20-%20Connecticut%20Data%20Center%20Memo_2026-08-11_CI_MM_0.pdf",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": "HB 5469 had a 50 MW test but failed"
+ },
+ {
+  "state": "CT",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No expedited program or documented backlog found.",
+  "source_url": "https://www.energizect.com/sites/default/files/documents/%234A%20-%20Connecticut%20Data%20Center%20Memo_2026-08-11_CI_MM_0.pdf",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "CT",
+  "indicator": "tx_sales",
+  "level": 30,
+  "evidence": "2021 Data Center Tax Incentive Program grants 20-30 year sales and use tax exemptions subject to large capital investment minimums; only one company has qualified and a repeal bill (SB 245) did not advance.",
+  "source_url": "https://www.ctpublic.org/news/2026-05-11/ct-bills-failed-2026-school-cellphones-data-centers-evictions",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": "Gubernatorial candidate Fazio wants to end program; scaling back reported"
+ },
+ {
+  "state": "CT",
+  "indicator": "tx_property",
+  "level": 30,
+  "evidence": "The same 2021 program offers property tax exemptions for qualifying projects requiring host-municipality agreement and large investment minimums.",
+  "source_url": "https://www.energizect.com/sites/default/files/documents/%234A%20-%20Connecticut%20Data%20Center%20Memo_2026-08-11_CI_MM_0.pdf",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "CT",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Incentives require a host municipality agreement and large capital investment commitments; clawback provisions were not confirmed.",
+  "source_url": "https://www.energizect.com/sites/default/files/documents/%234A%20-%20Connecticut%20Data%20Center%20Memo_2026-08-11_CI_MM_0.pdf",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "CT",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No data-center water reporting or limit found; governor said a developer supplying its own water would be considered case by case.",
+  "source_url": "https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "CT",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Connecticut data-center-specific generator rule found beyond general air permits.",
+  "source_url": "https://www.energizect.com/sites/default/files/documents/%234A%20-%20Connecticut%20Data%20Center%20Memo_2026-08-11_CI_MM_0.pdf",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "CT",
+  "indicator": "ev_review",
+  "level": 50,
+  "evidence": "General state environmental review (Connecticut Environmental Policy Act) applies to state-involved actions; no data-center-specific review; level inferred rather than confirmed from a data center source.",
+  "source_url": "https://www.energizect.com/sites/default/files/documents/%234A%20-%20Connecticut%20Data%20Center%20Memo_2026-08-11_CI_MM_0.pdf",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "CT",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No mandatory curtailment or on-site generation rules for data centers adopted.",
+  "source_url": "https://www.ctpublic.org/news/2026-05-11/ct-bills-failed-2026-school-cellphones-data-centers-evictions",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "CT",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No labor conditions specific to data centers found.",
+  "source_url": "https://www.energizect.com/sites/default/files/documents/%234A%20-%20Connecticut%20Data%20Center%20Memo_2026-08-11_CI_MM_0.pdf",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "CT",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "No ongoing data center operating reporting requirement found.",
+  "source_url": "https://www.energizect.com/sites/default/files/documents/%234A%20-%20Connecticut%20Data%20Center%20Memo_2026-08-11_CI_MM_0.pdf",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "CT",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide data center noise or setback rules found; local zoning handles concerns.",
+  "source_url": "https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "CT",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Governor's stated opposition to massive data centers, a gubernatorial election with a candidate seeking to end incentives, and recurring legislative proposals create policy uncertainty.",
+  "source_url": "https://www.wshu.org/connecticut-news/2026-09-07/ct-data-centers-ned-lamont",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "CT",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No data center interconnection backlog specific to Connecticut found.",
+  "source_url": "https://www.energizect.com/sites/default/files/documents/%234A%20-%20Connecticut%20Data%20Center%20Memo_2026-08-11_CI_MM_0.pdf",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MA",
+  "indicator": "pw_tariff",
+  "level": 40,
+  "evidence": "EO 658 (Sep 8, 2026) tells DPU to prioritize completing large-load rate schedules under EO 654; DPU has opened a data center directive (D.P.U. 26-DC) to utilities, but no tariff is approved.",
+  "source_url": "https://www.mass.gov/executive-orders/no-658-establishing-requirements-for-responsible-data-center-development-and-operations-in-massachusetts-to-protect-and-support-ratepayers-communities-and-the-environment",
+  "source_date": "2026-09",
+  "confidence": "high",
+  "pending": "DPU large-load rate schedules"
+ },
+ {
+  "state": "MA",
+  "indicator": "pw_min_commit",
+  "level": 0,
+  "evidence": "No adopted minimum-bill or contract-term rule for large loads found; EO 658 only asks utilities about commitments used to screen queue projects.",
+  "source_url": "https://www.mass.gov/doc/directive-to-the-electric-distribution-companies-regarding-data-center-interconnection-requests/download",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MA",
+  "indicator": "pw_collateral",
+  "level": 0,
+  "evidence": "DPU's Sept 24, 2026 directive asks Eversource, National Grid and Unitil to report fees and deposits used to remove speculative data center requests but sets no amount.",
+  "source_url": "https://www.mass.gov/doc/directive-to-the-electric-distribution-companies-regarding-data-center-interconnection-requests/download",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": "Utility responses were due Oct 23, 2026 in D.P.U. 26-DC"
+ },
+ {
+  "state": "MA",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "EO 658 requires covered projects over 25 MW to match consumption with incremental clean power or pay an alternative compliance payment, and directs DPU to protect other ratepayers; it is an executive order with MassDEP and DPU mechanisms still being built.",
+  "source_url": "https://www.mass.gov/executive-orders/no-658-establishing-requirements-for-responsible-data-center-development-and-operations-in-massachusetts-to-protect-and-support-ratepayers-communities-and-the-environment",
+  "source_date": "2026-09",
+  "confidence": "high",
+  "pending": "MassDEP ACP mechanism due Dec 31, 2026"
+ },
+ {
+  "state": "MA",
+  "indicator": "pm_moratorium",
+  "level": 0,
+  "evidence": "No statewide moratorium; the Jun 25, 2026 pause covers only new tax-exemption applications, which the rubric excludes.",
+  "source_url": "https://www.mma.org/gov-halts-data-center-tax-incentive-releases-development-framework/",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MA",
+  "indicator": "pm_siting",
+  "level": 50,
+  "evidence": "EO 658 bars MassDEP, EFSB, MEPA and other agencies from issuing permits until the applicant shows a community benefits agreement reviewed by OEJE and conformance with the data center framework (framed as local approval).",
+  "source_url": "https://www.mass.gov/executive-orders/no-658-establishing-requirements-for-responsible-data-center-development-and-operations-in-massachusetts-to-protect-and-support-ratepayers-communities-and-the-environment",
+  "source_date": "2026-09",
+  "confidence": "high",
+  "pending": "Municipal guidance due Dec 31, 2026"
+ },
+ {
+  "state": "MA",
+  "indicator": "pm_threshold",
+  "level": 100,
+  "evidence": "EO 658 applies to data centers built or expanded above 25 MW of peak demand (expansions measured by added capacity).",
+  "source_url": "https://www.mass.gov/executive-orders/no-658-establishing-requirements-for-responsible-data-center-development-and-operations-in-massachusetts-to-protect-and-support-ratepayers-communities-and-the-environment",
+  "source_date": "2026-09",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "MA",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track program; EO 658 adds review steps with no stated permit clock and no grandfathering clarity.",
+  "source_url": "https://www.bdlaw.com/data-centers/publications/massachusetts-conditions-large-data-center-permits-on-community-agreements/",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MA",
+  "indicator": "tx_sales",
+  "level": 80,
+  "evidence": "The 2024 qualified data center sales and use tax exemption (M.G.L. c.64H s.6(zz)) is paused: EOED stopped accepting new applications on Jun 25, 2026 until guardrails are set.",
+  "source_url": "https://www.mass.gov/info-details/massachusetts-qualified-data-center-sales-and-use-tax-exemption",
+  "source_date": "2026-06",
+  "confidence": "high",
+  "pending": "Regulations to align with the June 25, 2026 framework"
+ },
+ {
+  "state": "MA",
+  "indicator": "tx_property",
+  "level": 60,
+  "evidence": "No state data-center property tax abatement program found; local TIF/abatement use not verified.",
+  "source_url": "https://www.mass.gov/info-details/massachusetts-qualified-data-center-sales-and-use-tax-exemption",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MA",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Exemption requires $50M investment, 100 jobs, 100,000 sq ft and annual reporting; the framework adds community benefit and labor expectations, but explicit clawback terms were not confirmed.",
+  "source_url": "https://www.mass.gov/info-details/massachusetts-qualified-data-center-sales-and-use-tax-exemption",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MA",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "EO 658 requires MassDEP to develop protocols protecting water quality and quantity and applicants must show water, wastewater and stormwater compliance; no numeric caps yet.",
+  "source_url": "https://www.mass.gov/executive-orders/no-658-establishing-requirements-for-responsible-data-center-development-and-operations-in-massachusetts-to-protect-and-support-ratepayers-communities-and-the-environment",
+  "source_date": "2026-09",
+  "confidence": "high",
+  "pending": "MassDEP protocols pending"
+ },
+ {
+  "state": "MA",
+  "indicator": "ev_emissions",
+  "level": 50,
+  "evidence": "The framework expects emissions and noise minimization and alternatives to diesel backup where feasible, and EO 658 conditions air-permit review on it; no numeric run-hour caps yet.",
+  "source_url": "https://www.mma.org/gov-halts-data-center-tax-incentive-releases-development-framework/",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "Agencies to amend regulations"
+ },
+ {
+  "state": "MA",
+  "indicator": "ev_review",
+  "level": 50,
+  "evidence": "MEPA general review applies and EO 658 binds MEPA to require the community benefits agreement and framework conformance for covered data centers.",
+  "source_url": "https://www.mass.gov/executive-orders/no-658-establishing-requirements-for-responsible-data-center-development-and-operations-in-massachusetts-to-protect-and-support-ratepayers-communities-and-the-environment",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MA",
+  "indicator": "op_backup",
+  "level": 50,
+  "evidence": "Framework prioritizes on-site clean energy and diesel alternatives and EO 658 explores requiring 100% own clean energy; no mandatory curtailment.",
+  "source_url": "https://www.mass.gov/doc/directive-to-the-electric-distribution-companies-regarding-data-center-interconnection-requests/download",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MA",
+  "indicator": "op_labor",
+  "level": 50,
+  "evidence": "EO 658 encourages project labor agreements, local hiring and apprenticeships, and the framework asks PLAs for projects receiving public incentives; not a statutory mandate.",
+  "source_url": "https://www.mass.gov/executive-orders/no-658-establishing-requirements-for-responsible-data-center-development-and-operations-in-massachusetts-to-protect-and-support-ratepayers-communities-and-the-environment",
+  "source_date": "2026-09",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "MA",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "EEA will issue annual reporting and disclosure guidance for operating data centers and applicants must attest they will file; certified exemption holders file annual reports by Sept 1.",
+  "source_url": "https://www.mass.gov/executive-orders/no-658-establishing-requirements-for-responsible-data-center-development-and-operations-in-massachusetts-to-protect-and-support-ratepayers-communities-and-the-environment",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": "EEA guidance pending"
+ },
+ {
+  "state": "MA",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No binding statewide data center noise or setback rule found; framework only states expectations.",
+  "source_url": "https://www.mma.org/gov-halts-data-center-tax-incentive-releases-development-framework/",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MA",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "EO 658 is new with open questions (grandfathering, definitions), tax exemption paused, and DPU, MassDEP and municipal guidance still pending.",
+  "source_url": "https://www.bdlaw.com/data-centers/publications/massachusetts-conditions-large-data-center-permits-on-community-agreements/",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MA",
+  "indicator": "ad_backlog",
+  "level": 50,
+  "evidence": "DPU ordered utilities to report load projects over 25 MW and data center requests over 1 MW and to purge speculative requests from interconnection queues.",
+  "source_url": "https://www.mass.gov/doc/directive-to-the-electric-distribution-companies-regarding-data-center-interconnection-requests/download",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "RI",
+  "indicator": "pw_tariff",
+  "level": 0,
+  "evidence": "2026 bills H7270 (special large-load rate, 20 MW) and H7331 (50 MW rate classes) were held for study and H7331 is marked dead as of Jun 11, 2026; no RI large-load tariff or docket found.",
+  "source_url": "https://www.billtrack50.com/billdetail/1951464",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": "Bills may be reintroduced in 2027"
+ },
+ {
+  "state": "RI",
+  "indicator": "pw_min_commit",
+  "level": 0,
+  "evidence": "No minimum-bill or contract-term requirement for large loads found.",
+  "source_url": "https://pbn.com/as-smithfield-moves-to-ban-data-centers-lawmakers-debate-how-to-define-them/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "RI",
+  "indicator": "pw_collateral",
+  "level": 0,
+  "evidence": "No large-load deposit or collateral rule found.",
+  "source_url": "https://pbn.com/as-smithfield-moves-to-ban-data-centers-lawmakers-debate-how-to-define-them/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "RI",
+  "indicator": "pw_cost_alloc",
+  "level": 0,
+  "evidence": "H7331 would have required data centers of 50 MW or more to bear all serving costs, but it died in committee; no law or PUC order currently mandates it.",
+  "source_url": "https://webserver.rilegislature.gov/BillText26/HouseText26/H7331.htm",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "Reintroduction likely"
+ },
+ {
+  "state": "RI",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "Local actions only: Smithfield's planning board advanced a zoning ban on data centers for at least two years and residents asked for moratoria; no state pause.",
+  "source_url": "https://pbn.com/as-smithfield-moves-to-ban-data-centers-lawmakers-debate-how-to-define-them/",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "Smithfield Town Council vote scheduled May 5, 2026"
+ },
+ {
+  "state": "RI",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Siting is by local zoning; the Energy Facility Siting Board role proposed in H7331 was not enacted.",
+  "source_url": "https://webserver.rilegislature.gov/BillText26/HouseText26/H7331.htm",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "RI",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No state threshold in effect; proposed thresholds (20 MW in H7270, 50 MW in H7331) were not enacted.",
+  "source_url": "https://pbn.com/as-smithfield-moves-to-ban-data-centers-lawmakers-debate-how-to-define-them/",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "RI",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No expedited program or documented backlog found.",
+  "source_url": "https://pbn.com/as-smithfield-moves-to-ban-data-centers-lawmakers-debate-how-to-define-them/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "RI",
+  "indicator": "tx_sales",
+  "level": 60,
+  "evidence": "No enacted data-center sales tax exemption found; a bill for a 30-year exemption (DiPalma) and a House tax-break bill were pending or held in 2026.",
+  "source_url": "https://pbn.com/as-smithfield-moves-to-ban-data-centers-lawmakers-debate-how-to-define-them/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": "Tax break bills may return"
+ },
+ {
+  "state": "RI",
+  "indicator": "tx_property",
+  "level": 60,
+  "evidence": "No state data-center property tax abatement program found.",
+  "source_url": "https://pbn.com/as-smithfield-moves-to-ban-data-centers-lawmakers-debate-how-to-define-them/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "RI",
+  "indicator": "tx_conditions",
+  "level": 0,
+  "evidence": "No data center incentive program in effect, so no incentive conditions.",
+  "source_url": "https://pbn.com/as-smithfield-moves-to-ban-data-centers-lawmakers-debate-how-to-define-them/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "RI",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "H7331's annual DEM water reporting and efficiency plan authority died in committee; no data center water rule in effect.",
+  "source_url": "https://webserver.rilegislature.gov/BillText26/HouseText26/H7331.htm",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "RI",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No RI data-center-specific generator rules found.",
+  "source_url": "https://pbn.com/as-smithfield-moves-to-ban-data-centers-lawmakers-debate-how-to-define-them/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "RI",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No data-center-specific or general SEPA-type review found for Rhode Island.",
+  "source_url": "https://pbn.com/as-smithfield-moves-to-ban-data-centers-lawmakers-debate-how-to-define-them/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "RI",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No curtailment or on-site generation rules for data centers found.",
+  "source_url": "https://pbn.com/as-smithfield-moves-to-ban-data-centers-lawmakers-debate-how-to-define-them/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "RI",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No labor conditions specific to data centers found.",
+  "source_url": "https://pbn.com/as-smithfield-moves-to-ban-data-centers-lawmakers-debate-how-to-define-them/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "RI",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "No operating reporting requirement in effect; H7331 water reporting died.",
+  "source_url": "https://www.billtrack50.com/billdetail/1951464",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "RI",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide data center noise or setback rule found.",
+  "source_url": "https://pbn.com/as-smithfield-moves-to-ban-data-centers-lawmakers-debate-how-to-define-them/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "RI",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Data center policy is politically live (first siting fight became a governor's race issue) with multiple bills and local bans in play.",
+  "source_url": "https://developmentdocket.pages.dev/stories/2026-04-20-rhode-islands-first-data-center-fight-becomes-a-governors-race-issue.html",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "RI",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No data center interconnection backlog specific to Rhode Island found.",
+  "source_url": "https://pbn.com/as-smithfield-moves-to-ban-data-centers-lawmakers-debate-how-to-define-them/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ }
+]

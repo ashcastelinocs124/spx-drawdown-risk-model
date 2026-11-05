@@ -1,0 +1,1002 @@
+[
+ {
+  "state": "OH",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "PUCO approved AEP Ohio's Schedule DCT data-center tariff in July 2025 (load-study process for 25 MW+), but it covers only AEP Ohio's territory, and the HB 646 statewide data-center rate class failed.",
+  "source_url": "https://www.aepohio.com/company/about/rates/data-center-tariff",
+  "source_date": "2025-07",
+  "confidence": "medium",
+  "pending": "HB 646 (separate rate class) died in 2026 session"
+ },
+ {
+  "state": "OH",
+  "indicator": "pw_min_commit",
+  "level": 100,
+  "evidence": "AEP Ohio tariff: minimum monthly demand of 85% of contract capacity, initial term of ramp (max 4 yrs) plus 8 years, and exit fee of 36 months of minimum charges.",
+  "source_url": "https://www.aepohio.com/company/about/rates/data-center-tariff",
+  "source_date": "2025-07",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "OH",
+  "indicator": "pw_collateral",
+  "level": 100,
+  "evidence": "AEP Ohio requires a guarantee or collateral at signing equal to 50% of total minimum charges over the full contract term (waived only for A-/A3 credit plus cash test); surety bonds not accepted.",
+  "source_url": "https://www.aepohio.com/company/about/rates/data-center-tariff",
+  "source_date": "2025-07",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "OH",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "PUCO's AEP Ohio tariff makes data centers pay for planned capacity, but only in that utility's territory; the statewide cost-allocation rate class in HB 646 did not pass.",
+  "source_url": "https://ohiocapitaljournal.com/2026/08/10/all-candidates-for-ohio-governor-have-now-called-for-restrictions-on-data-center-boom/",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": "Next governor appoints PUCO members; candidates all call for data-center cost responsibility"
+ },
+ {
+  "state": "OH",
+  "indicator": "pm_moratorium",
+  "level": 60,
+  "evidence": "Governor-elect Amy Acton proposed a conditional statewide moratorium on new data centers (July 2026); multiple townships and Butler County have adopted local moratoria. No statewide moratorium is in effect.",
+  "source_url": "https://ohiocapitaljournal.com/2026/08/10/all-candidates-for-ohio-governor-have-now-called-for-restrictions-on-data-center-boom/",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": "Acton pledge (pre-election source); Ramaswamy had proposed day-one halt on approvals; implementation depends on legislature/executive action"
+ },
+ {
+  "state": "OH",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Ohio has no data-center-specific state siting regime; approval is through local zoning (article notes few guardrails and DeWine urging local conditions).",
+  "source_url": "https://ohiocapitaljournal.com/2026/08/10/all-candidates-for-ohio-governor-have-now-called-for-restrictions-on-data-center-boom/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "OH",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No state-level MW or acreage threshold triggers extra state review of data centers; the 25 MW AEP load-study threshold is a utility tariff term scored under power.",
+  "source_url": "https://www.aepohio.com/company/about/rates/data-center-tariff",
+  "source_date": "2025-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "OH",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No documented fast-track program or reported statewide permit backlog specific to data centers was found.",
+  "source_url": "https://ohiocapitaljournal.com/2026/08/10/all-candidates-for-ohio-governor-have-now-called-for-restrictions-on-data-center-boom/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "OH",
+  "indicator": "tx_sales",
+  "level": 0,
+  "evidence": "Ohio's data-center sales and use tax exemption is active at 100% with an investment/payroll test via the Tax Credit Authority; a legislative repeal was vetoed by DeWine in 2025 and the House lacked votes to override (June 2026). Cost about $1.6B in 2025.",
+  "source_url": "https://signalohio.org/ohio-republicans-back-off-effort-to-kill-a-beefy-tax-credit-for-data-centers/",
+  "source_date": "2026-06",
+  "confidence": "high",
+  "pending": "Repeal/reduction still debated; DeWine left tax break to next governor; Acton wants tax-break reform with clawbacks"
+ },
+ {
+  "state": "OH",
+  "indicator": "tx_property",
+  "level": 0,
+  "evidence": "Local property-tax abatements for data centers are routine (e.g., New Albany granted 17 data centers 65-100% abatements for 15 years).",
+  "source_url": "https://signalohio.org/ohio-republicans-back-off-effort-to-kill-a-beefy-tax-credit-for-data-centers/",
+  "source_date": "2026-06",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "OH",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Exemption is conditioned on Tax Credit Authority agreements (investment and payroll tests, repayment possible if unmet), though 2026 coverage describes few guardrails; HB 646 would have cut exemption to 50%.",
+  "source_url": "https://signalohio.org/ohio-republicans-back-off-effort-to-kill-a-beefy-tax-credit-for-data-centers/",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "Acton plan proposes clawbacks"
+ },
+ {
+  "state": "OH",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "Ohio EPA declined (July 2026) to finalize a general NPDES permit for data-center wastewater and will review each discharge by individual permit; registration applies to withdrawals of 100,000 gpd or more. No data-center-specific caps; HB 646 closed-loop/water provisions died.",
+  "source_url": "https://www.tribtoday.com/news/local-news/2026/07/epa-rejects-blanket-permit-for-data-centers",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "OH",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Ohio-specific data-center generator limits found; baseline/general air permitting applies.",
+  "source_url": "https://ohiocapitaljournal.com/2026/08/10/all-candidates-for-ohio-governor-have-now-called-for-restrictions-on-data-center-boom/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "OH",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "Ohio has no general state environmental-review (SEPA-type) statute and no data-center-specific impact review found.",
+  "source_url": "https://ohiocapitaljournal.com/2026/08/10/all-candidates-for-ohio-governor-have-now-called-for-restrictions-on-data-center-boom/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "OH",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No state mandatory curtailment or on-site generation limits specific to data centers found.",
+  "source_url": "https://www.aepohio.com/company/about/rates/data-center-tariff",
+  "source_date": "2025-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "OH",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No prevailing wage or local-hire mandate tied to data-center incentives was found (Acton plan proposes union construction jobs).",
+  "source_url": "https://ohiocapitaljournal.com/2026/08/10/all-candidates-for-ohio-governor-have-now-called-for-restrictions-on-data-center-boom/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": "Acton union-jobs proposal"
+ },
+ {
+  "state": "OH",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "Incentive agreements through the Tax Credit Authority carry compliance review; no statutory public operating report for data centers (HB 646 would have required water anomaly reporting).",
+  "source_url": "https://ohiocapitaljournal.com/2026/08/10/all-candidates-for-ohio-governor-have-now-called-for-restrictions-on-data-center-boom/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "OH",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise/setback rules specific to data centers found.",
+  "source_url": "https://ohiocapitaljournal.com/2026/08/10/all-candidates-for-ohio-governor-have-now-called-for-restrictions-on-data-center-boom/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "OH",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "HB 646 and a June 2026 reduction package collapsed, tax-break repeal fight unresolved, and governor-elect has pledged a conditional moratorium.",
+  "source_url": "https://signalohio.org/ohio-republicans-back-off-effort-to-kill-a-beefy-tax-credit-for-data-centers/",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "New governor takes office Jan 2027"
+ },
+ {
+  "state": "OH",
+  "indicator": "ad_backlog",
+  "level": 50,
+  "evidence": "AEP Ohio requires multi-step load studies and capacity ramps for 25 MW+ requests; no published queue backlog figure was found.",
+  "source_url": "https://www.aepohio.com/company/about/rates/data-center-tariff",
+  "source_date": "2025-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IN",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "IURC approved the I&M large-load settlement (Cause 46097) applying to new loads of 70 MW at one site or 150 MW aggregated; other Indiana utilities handled case by case.",
+  "source_url": "https://www.utilitydive.com/news/indiana-iurc-large-load-interconnection-data-center-aep-amazon-google/740452",
+  "source_date": "2025-02",
+  "confidence": "medium",
+  "pending": "Other utilities (NIPSCO GenCo, Duke, AES) not confirmed in this research"
+ },
+ {
+  "state": "IN",
+  "indicator": "pw_min_commit",
+  "level": 100,
+  "evidence": "I&M large-load terms: at least 12 years after ramp and monthly billing of at least 80% of contracted demand, with early-termination charges.",
+  "source_url": "https://www.govtech.com/artificial-intelligence/ohio-neighboring-states-safeguard-electric-customers",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "IN",
+  "indicator": "pw_collateral",
+  "level": null,
+  "evidence": "Collateral requirements in the I&M order were not stated in sources reviewed (IURC added review of capacity reductions over 20%); could not be confirmed.",
+  "source_url": "https://www.utilitydive.com/news/indiana-iurc-large-load-interconnection-data-center-aep-amazon-google/740452",
+  "source_date": "2025-02",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IN",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "2025 HEA 1007 requires large prospective loads to provide financial assurances so utilities recover at least 80% of costs and other customers are shielded; I&M settlement defers detailed allocation to later proceedings.",
+  "source_url": "https://thisweekinenergy.substack.com/p/bill-to-boost-energy-generation-and",
+  "source_date": "2025-04",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "IN",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "At least 17 Indiana counties have temporary moratoria and Marshall and Cass counties have banned new data centers; no statewide moratorium.",
+  "source_url": "https://www.wboi.org/2026-07-06/indiana-counties-data-center-moratoriums-bans-2026",
+  "source_date": "2026-07",
+  "confidence": "high",
+  "pending": "Indianapolis special zoning rules vote expected; federal moratorium bill introduced"
+ },
+ {
+  "state": "IN",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Siting is by local zoning; HB 1333 (letting large developments bypass local zoning on some farmland) died in committee in 2026.",
+  "source_url": "https://mirrorindy.org/data-center-legislation-indiana-general-assembly-2026/",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "IN",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No state-level MW/acreage threshold triggers extra state review of data centers; 70 MW I&M tariff threshold is scored under power.",
+  "source_url": "https://www.utilitydive.com/news/indiana-iurc-large-load-interconnection-data-center-aep-amazon-google/740452",
+  "source_date": "2025-02",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IN",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "HEA 1007 expedites approvals for utility projects serving large loads, but no data-center-specific permitting fast-track program was identified.",
+  "source_url": "https://thisweekinenergy.substack.com/p/bill-to-boost-energy-generation-and",
+  "source_date": "2025-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IN",
+  "indicator": "tx_sales",
+  "level": 30,
+  "evidence": "State data-center sales/use exemption (IC 6-2.5-15) runs up to 25 years, or 50 years above $750M investment; a 2026 bill (HB 1210) requires a payment of 1% of electricity savings to qualify.",
+  "source_url": "https://iedc.in.gov/incentives/data-center-sales-tax-exemption",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": "Final HB 1210 terms reportedly watered down; details unverified"
+ },
+ {
+  "state": "IN",
+  "indicator": "tx_property",
+  "level": 0,
+  "evidence": "Local governments may exempt data-center IT equipment from personal property tax for owners investing at least $25M.",
+  "source_url": "https://iedc.in.gov/incentives/data-center-sales-tax-exemption",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "IN",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Incentives carry investment thresholds and, from 2026, the 1% savings-sharing payment (HB 1210); no clawbacks confirmed.",
+  "source_url": "https://mirrorindy.org/data-center-legislation-indiana-general-assembly-2026/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IN",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No data-center-specific water limits or reporting; 2026 legislation reviewed included no water provisions.",
+  "source_url": "https://mirrorindy.org/data-center-legislation-indiana-general-assembly-2026/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IN",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Indiana-specific data-center generator rules found; baseline permits apply.",
+  "source_url": "https://www.wboi.org/2026-07-06/indiana-counties-data-center-moratoriums-bans-2026",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IN",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "Indiana has little state or federal regulation specific to data centers and no general state environmental review act.",
+  "source_url": "https://www.wboi.org/2026-07-06/indiana-counties-data-center-moratoriums-bans-2026",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "IN",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No statewide mandatory curtailment or on-site generation limits for data centers found.",
+  "source_url": "https://www.utilitydive.com/news/indiana-iurc-large-load-interconnection-data-center-aep-amazon-google/740452",
+  "source_date": "2025-02",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IN",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No prevailing wage or local hire requirement tied to data-center incentives found.",
+  "source_url": "https://iedc.in.gov/incentives/data-center-sales-tax-exemption",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IN",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "Sales-tax exemption awarded by IEDC is conditioned on agreement terms; no statutory public operating reporting identified.",
+  "source_url": "https://iedc.in.gov/incentives/data-center-sales-tax-exemption",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IN",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise/setback rules for data centers; localities setting their own ordinances (11 counties).",
+  "source_url": "https://www.wboi.org/2026-07-06/indiana-counties-data-center-moratoriums-bans-2026",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "IN",
+  "indicator": "ad_uncertainty",
+  "level": 0,
+  "evidence": "Little state-level change advanced in 2026 (large-load study bill HB 1245 stalled); governor remains supportive. Local actions are active but state framework stable.",
+  "source_url": "https://mirrorindy.org/data-center-legislation-indiana-general-assembly-2026/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IN",
+  "indicator": "ad_backlog",
+  "level": 50,
+  "evidence": "Large I&M load commitments (settlement with Amazon, Google) indicate substantial queue; no documented severe backlog found.",
+  "source_url": "https://www.utilitydive.com/news/indiana-iurc-large-load-interconnection-data-center-aep-amazon-google/740452",
+  "source_date": "2025-02",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MI",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "MPSC approved Consumers Energy's large-load (100 MW+) tariff in November 2025 and ordered DTE (Dec 2025) to file a very-large-customer tariff within 90 days; DTE tariff finalization not confirmed.",
+  "source_url": "https://www.govtech.com/artificial-intelligence/ohio-neighboring-states-safeguard-electric-customers",
+  "source_date": "2025-11",
+  "confidence": "medium",
+  "pending": "DTE large-load tariff case pending"
+ },
+ {
+  "state": "MI",
+  "indicator": "pw_min_commit",
+  "level": 100,
+  "evidence": "Consumers tariff: 15-year minimum term, generally 80% minimum billing, four years' notice and exit fee; DTE Saline contract: 80% minimum billing, 19-year term, up to 10 years of minimum bills on early exit.",
+  "source_url": "https://www.michigan.gov/mpsc/commission/news-releases/2025/12/18/mpsc-approves-dte-electric-energy-contracts-for-data-center",
+  "source_date": "2025-12",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "MI",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "MPSC-approved DTE agreements include credit and collateral requirements, but specifics were not published in the release.",
+  "source_url": "https://www.michigan.gov/mpsc/commission/news-releases/2025/12/18/mpsc-approves-dte-electric-energy-contracts-for-data-center",
+  "source_date": "2025-12",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MI",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "MPSC orders require DTE to absorb unrecovered costs to serve the 1,383 MW data center, keep surcharges off other customers, and shed data-center load first in emergencies; Consumers tariff builds in cost protections.",
+  "source_url": "https://www.michigan.gov/mpsc/commission/news-releases/2025/12/18/mpsc-approves-dte-electric-energy-contracts-for-data-center",
+  "source_date": "2025-12",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MI",
+  "indicator": "pm_moratorium",
+  "level": 60,
+  "evidence": "Dozens of Michigan townships and cities have local moratoria; governor-elect Jocelyn Benson campaigned on restricting data centers that use state water or raise power costs, and was described in the task brief as pledging a pause until guardrails (sources reviewed show conditional language).",
+  "source_url": "https://www.michiganpublic.org/politics-government/2026-06-29/michigan-communities-are-hitting-pause-on-data-centers-the-clock-is-ticking",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": "Benson pause pledge unverified in reviewed sources; confirm after inauguration (Jan 2027)"
+ },
+ {
+  "state": "MI",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Data centers are approved through local zoning; a statewide siting standard has been proposed by candidates but not enacted.",
+  "source_url": "https://bridgemi.com/michigan-government/where-michigan-gubernatorial-candidates-stand-on-data-centers/",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MI",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No state siting-review MW/acreage threshold; 100 MW tariff threshold is scored under power.",
+  "source_url": "https://www.michigan.gov/mpsc/commission/news-releases/2025/12/18/mpsc-approves-dte-electric-energy-contracts-for-data-center",
+  "source_date": "2025-12",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MI",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No data-center fast-track or documented permit backlog found; DTE/Saline approvals took roughly months with local disputes.",
+  "source_url": "https://bridgemi.com/michigan-government/where-michigan-gubernatorial-candidates-stand-on-data-centers/",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MI",
+  "indicator": "tx_sales",
+  "level": 30,
+  "evidence": "Enterprise data center sales/use tax exemption (6%) requires $250M investment, 30 jobs at 150% of regional median wage, MSF certification before purchases, and no new certifications after Dec 31, 2029.",
+  "source_url": "https://www.michiganbusiness.org/services/data-center/",
+  "source_date": "2026",
+  "confidence": "high",
+  "pending": "Bipartisan bills (Dec 2025) would repeal the exemption"
+ },
+ {
+  "state": "MI",
+  "indicator": "tx_property",
+  "level": 30,
+  "evidence": "Exempt facilities may not receive state or local property tax benefits (e.g., PA 198) unless the local government approves by resolution.",
+  "source_url": "https://www.michiganbusiness.org/services/data-center/",
+  "source_date": "2026",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "MI",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Conditions include jobs through 2050, municipal water use, clean energy procurement, green building certification and annual MSF reports; clawback mechanics not confirmed beyond certification/fees.",
+  "source_url": "https://www.michiganbusiness.org/services/data-center/",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MI",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "Withdrawals of 100,000 gpd or more must register through EGLE's Water Withdrawal Assessment Tool, but municipal-supplied data centers fall outside direct reporting; tax exemption requires municipal water.",
+  "source_url": "https://www.mcdonaldhopkins.com/insights/news/the-next-water-war-ai-data-centers-and-michigans-most-precious-resource",
+  "source_date": "2025",
+  "confidence": "medium",
+  "pending": "Data-center water disclosure bill introduced"
+ },
+ {
+  "state": "MI",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Michigan-specific data-center generator limits found; baseline/general permits apply.",
+  "source_url": "https://www.mcdonaldhopkins.com/insights/news/the-next-water-war-ai-data-centers-and-michigans-most-precious-resource",
+  "source_date": "2025",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MI",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "Michigan has no general SEPA-type law or data-center-specific review found.",
+  "source_url": "https://www.mcdonaldhopkins.com/insights/news/the-next-water-war-ai-data-centers-and-michigans-most-precious-resource",
+  "source_date": "2025",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MI",
+  "indicator": "op_backup",
+  "level": 50,
+  "evidence": "MPSC required DTE to curtail the Saline data center before other customers in an involuntary load shed, a project-level (not statewide) obligation.",
+  "source_url": "https://www.michigan.gov/mpsc/commission/news-releases/2025/12/18/mpsc-approves-dte-electric-energy-contracts-for-data-center",
+  "source_date": "2025-12",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MI",
+  "indicator": "op_labor",
+  "level": 50,
+  "evidence": "Tax exemption requires jobs paying at least 150% of regional median wage; Benson wants union jobs.",
+  "source_url": "https://www.michiganbusiness.org/services/data-center/",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MI",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "Annual reports to the Michigan Strategic Fund required to keep the tax exemption; late reports carry $5,000 fees.",
+  "source_url": "https://www.michiganbusiness.org/services/data-center/",
+  "source_date": "2026",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "MI",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise/setback standard for data centers found; handled by local ordinances.",
+  "source_url": "https://bridgemi.com/michigan-government/where-michigan-gubernatorial-candidates-stand-on-data-centers/",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MI",
+  "indicator": "ad_uncertainty",
+  "level": 100,
+  "evidence": "Attorney General Nessel appealed MPSC's approval of the DTE Saline contracts, repeal bills are pending, and a new governor has pledged guardrails.",
+  "source_url": "https://www.cbsnews.com/detroit/news/michigan-ag-appeals-approval-of-dte-saline-data-center-contracts/",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": "Appeal outcome and Benson agenda"
+ },
+ {
+  "state": "MI",
+  "indicator": "ad_backlog",
+  "level": 50,
+  "evidence": "Multi-GW requests (1.4 GW Saline, Google Van Buren) and open DTE tariff case indicate pressure, but no documented severe backlog was found.",
+  "source_url": "https://michiganadvance.com/2026/10/02/michigan-regulators-ok-dte-contracts-for-google-data-center/",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IL",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "ICC approved ComEd's large-load tariff changes (March 2026) with escalating deposits and opened a further investigation into ratepayer protections; Ameren status not confirmed.",
+  "source_url": "https://capitolnewsillinois.com/news/regulators-ok-comeds-plan-to-increase-deposit-costs-for-large-load-projects-like-data-centers/",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": "ICC investigation expected to finish within about eight months"
+ },
+ {
+  "state": "IL",
+  "indicator": "pw_min_commit",
+  "level": 0,
+  "evidence": "No minimum-demand or term requirement for large loads found in the ComEd order or elsewhere in Illinois; ICC investigation could add them.",
+  "source_url": "https://capitolnewsillinois.com/news/regulators-ok-comeds-plan-to-increase-deposit-costs-for-large-load-projects-like-data-centers/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": "ICC proceeding on additional protections"
+ },
+ {
+  "state": "IL",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "ComEd deposits start at $1M for 50-200 MW requests and rise $500,000 per additional 100 MW over 200 MW.",
+  "source_url": "https://capitolnewsillinois.com/news/regulators-ok-comeds-plan-to-increase-deposit-costs-for-large-load-projects-like-data-centers/",
+  "source_date": "2026-03",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "IL",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "POWER Act (bring-your-own clean capacity, no subsidy of grid upgrades) failed in spring 2026; ICC investigating protections, with a possible November veto-session vote.",
+  "source_url": "https://www.route-fifty.com/artificial-intelligence/2026/06/illinois-not-quite-ready-pass-data-center-regulations-despite-public-pressure/414088/",
+  "source_date": "2026-06",
+  "confidence": "high",
+  "pending": "POWER Act may return in Nov 2026 veto session"
+ },
+ {
+  "state": "IL",
+  "indicator": "pm_moratorium",
+  "level": 0,
+  "evidence": "No statewide moratorium and none was confirmed locally in the sources reviewed; the Governor's June 2026 pause covers tax-incentive processing only, which does not count.",
+  "source_url": "https://www.route-fifty.com/artificial-intelligence/2026/06/illinois-not-quite-ready-pass-data-center-regulations-despite-public-pressure/414088/",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IL",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Siting by local zoning; POWER Act siting setbacks (200 ft from homes/drinking water) did not pass.",
+  "source_url": "https://www.circleofblue.org/2026/water-policy-politics/illinois-fails-to-pass-landmark-act-requiring-responsible-data-center-energy-and-water-use/",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "IL",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No state review threshold in force; the ComEd 50 MW deposit tier is scored under power.",
+  "source_url": "https://capitolnewsillinois.com/news/regulators-ok-comeds-plan-to-increase-deposit-costs-for-large-load-projects-like-data-centers/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IL",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "ComEd faces 75+ large-load requests totaling over 28,000 MW, but no formal permit-timeline program or documented 18-month delay was found.",
+  "source_url": "https://capitolnewsillinois.com/news/regulators-ok-comeds-plan-to-increase-deposit-costs-for-large-load-projects-like-data-centers/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IL",
+  "indicator": "tx_sales",
+  "level": 80,
+  "evidence": "Pritzker directed DCEO to stop processing Data Center Investment Program agreements effective July 1, 2026 (two-year suspension of new state incentives).",
+  "source_url": "https://dceo.illinois.gov/expandrelocate/incentives/datacenters.html",
+  "source_date": "2026-06",
+  "confidence": "high",
+  "pending": "Suspension is two years; legislative changes possible"
+ },
+ {
+  "state": "IL",
+  "indicator": "tx_property",
+  "level": 0,
+  "evidence": "No state property-tax prohibition; local abatements remain a local decision (state suspension covers state incentives only).",
+  "source_url": "https://www.route-fifty.com/artificial-intelligence/2026/06/illinois-not-quite-ready-pass-data-center-regulations-despite-public-pressure/414088/",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IL",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Program required $250M investment, 20 jobs at 120% of county median wage, carbon-neutral or green-building certification, and renewable 5-year certificates dependent on compliance; clawbacks not stated.",
+  "source_url": "https://dceo.illinois.gov/expandrelocate/incentives/datacenters.html",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "IL",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "POWER Act quarterly water reporting to the State Water Survey did not pass; no data-center-specific water rule in force.",
+  "source_url": "https://www.circleofblue.org/2026/water-policy-politics/illinois-fails-to-pass-landmark-act-requiring-responsible-data-center-energy-and-water-use/",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "POWER Act could return in November"
+ },
+ {
+  "state": "IL",
+  "indicator": "ev_emissions",
+  "level": 100,
+  "evidence": "SB 25 (signed Jan 8, 2026) requires new data-center emergency diesel generators to meet Tier 4-equivalent standards from Dec 1, 2026 and limits non-emergency runtime to 50 hours per year.",
+  "source_url": "https://www.all4inc.com/4-the-record-articles/illinois-data-centers-fears-for-tiers/",
+  "source_date": "2026-06",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "IL",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "Illinois has no general SEPA-type law and no data-center-specific impact review in force.",
+  "source_url": "https://www.route-fifty.com/artificial-intelligence/2026/06/illinois-not-quite-ready-pass-data-center-regulations-despite-public-pressure/414088/",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IL",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No mandatory curtailment or on-site-generation limit found beyond air-permit rules.",
+  "source_url": "https://www.all4inc.com/4-the-record-articles/illinois-data-centers-fears-for-tiers/",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IL",
+  "indicator": "op_labor",
+  "level": 50,
+  "evidence": "Incentive program required total compensation of at least 120% of county median wage (now suspended for new projects).",
+  "source_url": "https://dceo.illinois.gov/expandrelocate/incentives/datacenters.html",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "IL",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "DCEO publishes statutory annual Data Center Investment reports tied to the incentive program.",
+  "source_url": "https://dceo.illinois.gov/expandrelocate/incentives/datacenters.html",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": "POWER Act would add public reporting"
+ },
+ {
+  "state": "IL",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise/setback rules for data centers in force (POWER Act setbacks failed).",
+  "source_url": "https://www.route-fifty.com/artificial-intelligence/2026/06/illinois-not-quite-ready-pass-data-center-regulations-despite-public-pressure/414088/",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IL",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Tax incentives paused, POWER Act expected back in the November veto session, and ICC investigation open.",
+  "source_url": "https://www.route-fifty.com/artificial-intelligence/2026/06/illinois-not-quite-ready-pass-data-center-regulations-despite-public-pressure/414088/",
+  "source_date": "2026-06",
+  "confidence": "high",
+  "pending": "Nov 2026 veto session"
+ },
+ {
+  "state": "IL",
+  "indicator": "ad_backlog",
+  "level": 100,
+  "evidence": "ComEd's pipeline of 75+ projects requesting over 28,000 MW exceeds its record 24,000 MW peak, documented by the ICC.",
+  "source_url": "https://capitolnewsillinois.com/news/regulators-ok-comeds-plan-to-increase-deposit-costs-for-large-load-projects-like-data-centers/",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "WI",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "PSC decided April 24, 2026 (Docket 6630-TE-113) to approve a revised We Energies Very Large Customer tariff, lowering eligibility from 500 MW to 100 MW; other utilities not confirmed.",
+  "source_url": "https://content.govdelivery.com/attachments/WIPSC/2026/04/24/file_attachments/3629258/PSC%20Overhauls%20We%20Energies%20Data%20Center%20Tariff,%20Makes%20Improvements%20to%20Protect%20Existing%20Customers.pdf",
+  "source_date": "2026-04",
+  "confidence": "high",
+  "pending": "Final Order to follow; Alliant not confirmed"
+ },
+ {
+  "state": "WI",
+  "indicator": "pw_min_commit",
+  "level": 100,
+  "evidence": "PSC extended the minimum initial term to 15 years for We Energies very large customers.",
+  "source_url": "https://content.govdelivery.com/attachments/WIPSC/2026/04/24/file_attachments/3629258/PSC%20Overhauls%20We%20Energies%20Data%20Center%20Tariff,%20Makes%20Improvements%20to%20Protect%20Existing%20Customers.pdf",
+  "source_date": "2026-04",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "WI",
+  "indicator": "pw_collateral",
+  "level": null,
+  "evidence": "Collateral or credit requirements were not described in the PSC release or coverage reviewed.",
+  "source_url": "https://www.datacenterknowledge.com/regulations/psc-tightens-data-center-tariff-rules-in-wisconsin",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WI",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "PSC removed a capacity-only option and approved a full-benefits model requiring very large customers to pay 100% of the costs of resources built for them, and ordered revisions on transmission cost shifting.",
+  "source_url": "https://content.govdelivery.com/attachments/WIPSC/2026/04/24/file_attachments/3629258/PSC%20Overhauls%20We%20Energies%20Data%20Center%20Tariff,%20Makes%20Improvements%20to%20Protect%20Existing%20Customers.pdf",
+  "source_date": "2026-04",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "WI",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "Local moratoria exist (City of Madison, Manitowoc County 18 months, Bellevue, northeast Wisconsin towns); statewide moratorium bill AB 1099 failed. Governor-elect Crowley backs local control and strict guardrails but not a stated statewide moratorium.",
+  "source_url": "https://isthmus.com/news/news/dane-county-data-center-moratorium-on-fast-track-after-finding-state-law-workaround/",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": "Crowley guardrails agenda from Jan 2027"
+ },
+ {
+  "state": "WI",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Siting is local; the AB 840/SB 843 package died at session end in April 2026, so no state siting or review regime exists.",
+  "source_url": "https://rejournals.com/wisconsins-data-center-reckoning-four-bills-no-resolution-and-a-policy-vacuum/",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "WI",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No state review threshold in force; the 100 MW PSC tariff threshold is scored under power.",
+  "source_url": "https://content.govdelivery.com/attachments/WIPSC/2026/04/24/file_attachments/3629258/PSC%20Overhauls%20We%20Energies%20Data%20Center%20Tariff,%20Makes%20Improvements%20to%20Protect%20Existing%20Customers.pdf",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WI",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No data-center fast track or documented permitting backlog identified.",
+  "source_url": "https://rejournals.com/wisconsins-data-center-reckoning-four-bills-no-resolution-and-a-policy-vacuum/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WI",
+  "indicator": "tx_sales",
+  "level": 0,
+  "evidence": "Qualified data-center sales/use tax exemption stays in place with WEDC certification and county-population investment thresholds of $50M-$150M.",
+  "source_url": "https://revenue.wi.gov/DOR%20Publications/2114QualifiedDataCenter.pdf",
+  "source_date": "2026",
+  "confidence": "high",
+  "pending": "Tiffany has called for ending subsidies; Democratic bill tying breaks to labor/renewable standards failed"
+ },
+ {
+  "state": "WI",
+  "indicator": "tx_property",
+  "level": 60,
+  "evidence": "No state property-tax abatement program for data centers was identified in sources reviewed.",
+  "source_url": "https://rejournals.com/wisconsins-data-center-reckoning-four-bills-no-resolution-and-a-policy-vacuum/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WI",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Exemption requires WEDC certification, investment within 5 years, and can be revoked; Democratic bill adding labor and renewable conditions failed.",
+  "source_url": "https://revenue.wi.gov/DOR%20Publications/2114QualifiedDataCenter.pdf",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "WI",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "Wisconsin general-permit review applies to withdrawals of 100,000 gpd or more; the Assembly-passed data-center bill (water recycling, DNR reporting) died in the Senate.",
+  "source_url": "https://www.glslregionalbody.org/media/ujspaizk/data-centers-and-thresholds-overview.pdf",
+  "source_date": "2025",
+  "confidence": "low",
+  "pending": "Bill could be reintroduced in 2027 session"
+ },
+ {
+  "state": "WI",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Wisconsin-specific data-center generator limits found; baseline permits apply.",
+  "source_url": "https://rejournals.com/wisconsins-data-center-reckoning-four-bills-no-resolution-and-a-policy-vacuum/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WI",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No data-center-specific state environmental review enacted; reclamation provisions in AB 840 died.",
+  "source_url": "https://rejournals.com/wisconsins-data-center-reckoning-four-bills-no-resolution-and-a-policy-vacuum/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WI",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "PSC tariff coverage reviewed does not describe mandatory curtailment or on-site generation limits.",
+  "source_url": "https://www.datacenterknowledge.com/regulations/psc-tightens-data-center-tariff-rules-in-wisconsin",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WI",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No statutory prevailing wage or local-hire mandate; Crowley supports union labor and Democratic bill on labor standards failed.",
+  "source_url": "https://www.wpr.org/news/data-centers-unions-trades-wisconsin-governors-race-crowley-tiffany",
+  "source_date": "2025-12",
+  "confidence": "low",
+  "pending": "Crowley union-labor pledge"
+ },
+ {
+  "state": "WI",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "PSC ordered additional reporting on how the tariffs work and on utility agreements with very large customers.",
+  "source_url": "https://content.govdelivery.com/attachments/WIPSC/2026/04/24/file_attachments/3629258/PSC%20Overhauls%20We%20Energies%20Data%20Center%20Tariff,%20Makes%20Improvements%20to%20Protect%20Existing%20Customers.pdf",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "WI",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise/setback rules for data centers identified.",
+  "source_url": "https://rejournals.com/wisconsins-data-center-reckoning-four-bills-no-resolution-and-a-policy-vacuum/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WI",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "PSC Final Order still to issue, data-center bills died in April 2026 session with Evers signaling veto, and a new governor takes office.",
+  "source_url": "https://rejournals.com/wisconsins-data-center-reckoning-four-bills-no-resolution-and-a-policy-vacuum/",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "WI",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented interconnection or agency backlog affecting data centers found.",
+  "source_url": "https://content.govdelivery.com/attachments/WIPSC/2026/04/24/file_attachments/3629258/PSC%20Overhauls%20We%20Energies%20Data%20Center%20Tariff,%20Makes%20Improvements%20to%20Protect%20Existing%20Customers.pdf",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ }
+]

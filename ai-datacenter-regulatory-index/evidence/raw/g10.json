@@ -1,0 +1,1002 @@
+[
+ {
+  "state": "ME",
+  "indicator": "pw_tariff",
+  "level": 40,
+  "evidence": "Maine DOER asked the PUC on 2026-05-20 to open a proceeding on how large data centers are served, including large-load tariffs; no approved data-center tariff was found.",
+  "source_url": "https://www.maine.gov/energy/sites/maine.gov.energy/files/2026-05/DOER%20letter%20re%20EO%205%20data%20centers.pdf",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": "PUC proceeding requested under EO 5; not confirmed opened"
+ },
+ {
+  "state": "ME",
+  "indicator": "pw_min_commit",
+  "level": 0,
+  "evidence": "No Maine large-load minimum-bill, term or exit-fee rule found; DOER letter lists minimum contract terms and exit fees only as items to study.",
+  "source_url": "https://www.maine.gov/energy/sites/maine.gov.energy/files/2026-05/DOER%20letter%20re%20EO%205%20data%20centers.pdf",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": "PUC proceeding could examine"
+ },
+ {
+  "state": "ME",
+  "indicator": "pw_collateral",
+  "level": 0,
+  "evidence": "No data-center-specific deposit or collateral rule found; security deposits and creditworthiness standards are only topics for the requested PUC inquiry.",
+  "source_url": "https://www.maine.gov/energy/sites/maine.gov.energy/files/2026-05/DOER%20letter%20re%20EO%205%20data%20centers.pdf",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ME",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "Gov. Mills' Executive Order 5 (2026-04-29) directs DOER and the PUC to develop strategies so data centers bear the costs they create; it is a directive, not a statute or PUC order.",
+  "source_url": "https://www.maine.gov/energy/sites/maine.gov.energy/files/2026-05/DOER%20letter%20re%20EO%205%20data%20centers.pdf",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": "Advisory council recommendations and possible PUC order pending"
+ },
+ {
+  "state": "ME",
+  "indicator": "pm_moratorium",
+  "level": 60,
+  "evidence": "The Legislature passed LD 307 (moratorium on data centers over 20 MW until Nov 2027); Mills vetoed it 2026-04-24 and the override failed; governor-elect Hannah Pingree backed passing the moratorium.",
+  "source_url": "https://hannahforgovernor.com/midcoast-villager-democratic-governor-candidates-break-with-mills-on-data-centers/",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "Pingree pledge (per task brief, taking office Jan 2027) could revive a statewide pause; the source page is her campaign-period statement"
+ },
+ {
+  "state": "ME",
+  "indicator": "pm_siting",
+  "level": 50,
+  "evidence": "No data-center-specific siting regime; projects such as the Jay redevelopment proceed via ordinary state and local permits, with a Central Maine Power service agreement.",
+  "source_url": "https://www.route-fifty.com/artificial-intelligence/2026/04/maine-governor-vetoes-landmark-data-center-ban/413123/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": "Advisory council to recommend regulatory tools"
+ },
+ {
+  "state": "ME",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No threshold is in effect; LD 307 would have used a 20 MW trigger but was vetoed.",
+  "source_url": "https://www.route-fifty.com/artificial-intelligence/2026/04/maine-governor-vetoes-landmark-data-center-ban/413123/",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "A 20 MW threshold could return in a revived bill"
+ },
+ {
+  "state": "ME",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No documented fast-track program or reported backlog specific to data centers found.",
+  "source_url": "https://www.route-fifty.com/artificial-intelligence/2026/04/maine-governor-vetoes-landmark-data-center-ban/413123/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ME",
+  "indicator": "tx_sales",
+  "level": 60,
+  "evidence": "No Maine data-center sales tax exemption program was found; LD 713 addresses property-tax programs only.",
+  "source_url": "https://news.bloombergtax.com/daily-tax-report-state/maine-excludes-data-centers-from-business-equipment-property-tax-exemption",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ME",
+  "indicator": "tx_property",
+  "level": 80,
+  "evidence": "LD 713 (enacted 2026-04-23) excludes data centers that begin operations on or after Aug 1 from the business equipment property tax exemption (BETE) and the Dirigo program.",
+  "source_url": "https://news.bloombergtax.com/daily-tax-report-state/maine-excludes-data-centers-from-business-equipment-property-tax-exemption",
+  "source_date": "2026-04",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "ME",
+  "indicator": "tx_conditions",
+  "level": 0,
+  "evidence": "With data centers excluded from BETE and Dirigo, no state incentives with conditions are available.",
+  "source_url": "https://news.bloombergtax.com/daily-tax-report-state/maine-excludes-data-centers-from-business-equipment-property-tax-exemption",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "ME",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No data-center-specific water limits or reporting found in Maine law.",
+  "source_url": "https://www.route-fifty.com/artificial-intelligence/2026/04/maine-governor-vetoes-landmark-data-center-ban/413123/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ME",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No state-specific backup-generator rules for data centers found.",
+  "source_url": "https://www.route-fifty.com/artificial-intelligence/2026/04/maine-governor-vetoes-landmark-data-center-ban/413123/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ME",
+  "indicator": "ev_review",
+  "level": 50,
+  "evidence": "No data-center-specific environmental review; general state environmental permitting applies.",
+  "source_url": "https://www.route-fifty.com/artificial-intelligence/2026/04/maine-governor-vetoes-landmark-data-center-ban/413123/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ME",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No state rule on behind-the-meter generation or curtailment for data centers found.",
+  "source_url": "https://www.route-fifty.com/artificial-intelligence/2026/04/maine-governor-vetoes-landmark-data-center-ban/413123/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ME",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No labor conditions specific to data centers found.",
+  "source_url": "https://www.route-fifty.com/artificial-intelligence/2026/04/maine-governor-vetoes-landmark-data-center-ban/413123/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ME",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "No operating reporting mandate for data centers found.",
+  "source_url": "https://www.route-fifty.com/artificial-intelligence/2026/04/maine-governor-vetoes-landmark-data-center-ban/413123/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ME",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules for data centers found.",
+  "source_url": "https://www.route-fifty.com/artificial-intelligence/2026/04/maine-governor-vetoes-landmark-data-center-ban/413123/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ME",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "EO 5 advisory council, a possible PUC proceeding and a governor-elect who backs a moratorium leave the policy in flux.",
+  "source_url": "https://hannahforgovernor.com/midcoast-villager-democratic-governor-candidates-break-with-mills-on-data-centers/",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "New governor takes office Jan 2027"
+ },
+ {
+  "state": "ME",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented interconnection or agency backlog affecting data centers found; CMP estimated the Jay project could be served up to 200 MW without upgrades.",
+  "source_url": "https://www.route-fifty.com/artificial-intelligence/2026/04/maine-governor-vetoes-landmark-data-center-ban/413123/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NH",
+  "indicator": "pw_tariff",
+  "level": 40,
+  "evidence": "No NH PUC data-center tariff found; ratepayer-protection and large-load bills (30 MW) were filed as early drafts for the 2027 session.",
+  "source_url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": "Bills cannot move until 2027 session"
+ },
+ {
+  "state": "NH",
+  "indicator": "pw_min_commit",
+  "level": 0,
+  "evidence": "No large-load minimum bill or term rule found in NH.",
+  "source_url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NH",
+  "indicator": "pw_collateral",
+  "level": 0,
+  "evidence": "No data-center-specific collateral rule found in NH.",
+  "source_url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NH",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "Sens./Reps. Innis and Cormen named keeping data-center delivery costs off ratepayers as a priority and Cormen drafted a 30 MW large-user bill; nothing enacted.",
+  "source_url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": "2027 session"
+ },
+ {
+  "state": "NH",
+  "indicator": "pm_moratorium",
+  "level": 60,
+  "evidence": "Gov. Ayotte said in Sept 2026 she will propose a statewide moratorium in the next biennial budget (finalized summer 2027); Innis (through 2027) and Cormen (through 2028, 20 MW+) filed draft moratorium bills.",
+  "source_url": "https://www.nhpr.org/nh-news/2026-09-02/ayotte-opposes-potential-bow-data-center-plans-to-propose-moratorium-on-data-centers-in-state",
+  "source_date": "2026-09",
+  "confidence": "high",
+  "pending": "Budget proposal due early 2027; not in effect"
+ },
+ {
+  "state": "NH",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "NH has local zoning only for data centers; Rep. Stavis proposes defining sizes so towns can regulate by scale (50 MW large-load tier triggers zoning board review).",
+  "source_url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": "Stavis proposal pending"
+ },
+ {
+  "state": "NH",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No state review threshold in effect; proposals use 20 MW (moratorium), 30 MW (ratepayer bill) and 50 MW (zoning tier).",
+  "source_url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": "Proposals pending for 2027"
+ },
+ {
+  "state": "NH",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track program or documented backlog for data centers found.",
+  "source_url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NH",
+  "indicator": "tx_sales",
+  "level": 0,
+  "evidence": "New Hampshire has no general sales tax.",
+  "source_url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "NH",
+  "indicator": "tx_property",
+  "level": 60,
+  "evidence": "No state data-center property tax abatement program found; local-only tools may exist.",
+  "source_url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": "Ayotte moratorium proposal"
+ },
+ {
+  "state": "NH",
+  "indicator": "tx_conditions",
+  "level": 0,
+  "evidence": "No state data-center incentives found, so no conditions attach.",
+  "source_url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NH",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No NH data-center water limit or reporting rule in effect; Ayotte cited water costs as a concern.",
+  "source_url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NH",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No NH-specific backup generator rules for data centers found; Cormen draft would require clean on-site power for 30 MW+ users.",
+  "source_url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": "Cormen draft pending"
+ },
+ {
+  "state": "NH",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "NH has no general SEPA-type review law applying to data centers (not specifically confirmed).",
+  "source_url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NH",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "HB 672 (2025) deregulated off-grid power providers, easing on-site generation; the Cormen draft would push demand reduction at peak.",
+  "source_url": "https://www.thedartmouth.com/article/2025/10/ehlrich-joseph-new-energy-law-deregulates-off-grid-energy-providers",
+  "source_date": "2025-10",
+  "confidence": "medium",
+  "pending": "Cormen draft would encourage peak demand reduction"
+ },
+ {
+  "state": "NH",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No labor conditions specific to data centers found.",
+  "source_url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NH",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "No statutory operating reporting for data centers found.",
+  "source_url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NH",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules for data centers found.",
+  "source_url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NH",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Governor pledging a moratorium plus multiple pending bills for 2027.",
+  "source_url": "https://www.nhpr.org/nh-news/2026-09-02/ayotte-opposes-potential-bow-data-center-plans-to-propose-moratorium-on-data-centers-in-state",
+  "source_date": "2026-09",
+  "confidence": "high",
+  "pending": "2027 session and budget"
+ },
+ {
+  "state": "NH",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented data-center interconnection backlog found in NH.",
+  "source_url": "https://www.nhpr.org/nh-news/2026-10-27/data-centers-legislation-newhampshire-bills-moratorium-restrictions",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "VT",
+  "indicator": "pw_tariff",
+  "level": 0,
+  "evidence": "No approved Vermont large-load tariff found; H.727 would have required PUC-approved large load service equity contracts but was vetoed.",
+  "source_url": "https://ljfo.vermont.gov/assets/Uploads/H.727-An-act-relating-to-sustainable-data-center-development-As-passed-by-the-House.pdf",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": "Bill likely to be revisited in 2027 session"
+ },
+ {
+  "state": "VT",
+  "indicator": "pw_min_commit",
+  "level": 0,
+  "evidence": "No minimum-bill or term rule in effect; the vetoed H.727 text summary did not address it.",
+  "source_url": "https://ljfo.vermont.gov/assets/Uploads/H.727-An-act-relating-to-sustainable-data-center-development-As-passed-by-the-House.pdf",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "VT",
+  "indicator": "pw_collateral",
+  "level": 0,
+  "evidence": "No data-center collateral rule in effect found.",
+  "source_url": "https://ljfo.vermont.gov/assets/Uploads/H.727-An-act-relating-to-sustainable-data-center-development-As-passed-by-the-House.pdf",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "VT",
+  "indicator": "pw_cost_alloc",
+  "level": 0,
+  "evidence": "H.727 would have set up PUC-approved large-load contracts to protect ratepayers, but Gov. Scott vetoed it on 2026-05-28 and the House sustained the veto 83-52.",
+  "source_url": "https://vermontbiz.com/node/243628",
+  "source_date": "2026-06",
+  "confidence": "high",
+  "pending": "Sponsors want a new bill with Act 250 protections"
+ },
+ {
+  "state": "VT",
+  "indicator": "pm_moratorium",
+  "level": 0,
+  "evidence": "No statewide or local moratorium found in effect; moratorium discussion occurred in House testimony but H.727 failed.",
+  "source_url": "https://vermontbiz.com/node/243628",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "VT",
+  "indicator": "pm_siting",
+  "level": 50,
+  "evidence": "Act 250 and PUC oversight apply under existing law (cited by Gov. Scott); H.727 would have explicitly extended Act 250 to data centers but was vetoed.",
+  "source_url": "https://vermontbiz.com/node/243628",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "VT",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "The vetoed H.727 used a 20 MW trigger, so no data-center threshold is in effect.",
+  "source_url": "https://ljfo.vermont.gov/assets/Uploads/H.727-An-act-relating-to-sustainable-data-center-development-As-passed-by-the-House.pdf",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": "20 MW threshold could return"
+ },
+ {
+  "state": "VT",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track program or documented backlog found.",
+  "source_url": "https://vermontbiz.com/node/243628",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "VT",
+  "indicator": "tx_sales",
+  "level": 60,
+  "evidence": "No Vermont data-center sales tax exemption program found.",
+  "source_url": "https://ljfo.vermont.gov/assets/Uploads/H.727-An-act-relating-to-sustainable-data-center-development-As-passed-by-the-House.pdf",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "VT",
+  "indicator": "tx_property",
+  "level": 60,
+  "evidence": "No state data-center property tax abatement program found.",
+  "source_url": "https://ljfo.vermont.gov/assets/Uploads/H.727-An-act-relating-to-sustainable-data-center-development-As-passed-by-the-House.pdf",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "VT",
+  "indicator": "tx_conditions",
+  "level": 0,
+  "evidence": "No data-center incentives found, so no conditions attach.",
+  "source_url": "https://ljfo.vermont.gov/assets/Uploads/H.727-An-act-relating-to-sustainable-data-center-development-As-passed-by-the-House.pdf",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "VT",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "H.727 would have added wastewater and PFAS monitoring plans for certain data centers, but it was vetoed; nothing data-center-specific in effect.",
+  "source_url": "https://ljfo.vermont.gov/assets/Uploads/H.727-An-act-relating-to-sustainable-data-center-development-As-passed-by-the-House.pdf",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "VT",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Vermont-specific backup generator rules for data centers found.",
+  "source_url": "https://ljfo.vermont.gov/assets/Uploads/H.727-An-act-relating-to-sustainable-data-center-development-As-passed-by-the-House.pdf",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "VT",
+  "indicator": "ev_review",
+  "level": 50,
+  "evidence": "Gov. Scott said existing law such as Act 250, environmental permits and energy siting already apply; Act 250 is a general state review law.",
+  "source_url": "https://vermontbiz.com/node/243628",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "VT",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No state rule on on-site generation or curtailment for data centers found.",
+  "source_url": "https://ljfo.vermont.gov/assets/Uploads/H.727-An-act-relating-to-sustainable-data-center-development-As-passed-by-the-House.pdf",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "VT",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No labor conditions specific to data centers found.",
+  "source_url": "https://ljfo.vermont.gov/assets/Uploads/H.727-An-act-relating-to-sustainable-data-center-development-As-passed-by-the-House.pdf",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "VT",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "No operating reporting mandate in effect; H.727 would have required a decommissioning model recommendation but was vetoed.",
+  "source_url": "https://ljfo.vermont.gov/assets/Uploads/H.727-An-act-relating-to-sustainable-data-center-development-As-passed-by-the-House.pdf",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "VT",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide data-center noise or setback rules found.",
+  "source_url": "https://ljfo.vermont.gov/assets/Uploads/H.727-An-act-relating-to-sustainable-data-center-development-As-passed-by-the-House.pdf",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "VT",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Veto sustained, but data-center legislation is expected to return and the veto debate remains contested.",
+  "source_url": "https://vtdigger.org/2026/06/22/extortion-and-pollution-killed-the-data-center-bill/",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "Next Legislature convenes Jan 2027"
+ },
+ {
+  "state": "VT",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented data-center interconnection backlog found.",
+  "source_url": "https://vermontbiz.com/node/243628",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AK",
+  "indicator": "pw_tariff",
+  "level": 0,
+  "evidence": "No Alaska RCA data-center tariff found; SB 250 (commission-approved contracts) passed the Senate but died in the House committee.",
+  "source_url": "https://www.dwt.com/blogs/energy--environmental-law-blog/2026/06/alaska-data-center-development-next-steps",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "SB 250 likely revived in a future session"
+ },
+ {
+  "state": "AK",
+  "indicator": "pw_min_commit",
+  "level": 0,
+  "evidence": "No large-load minimum bill or term rule found.",
+  "source_url": "https://www.dwt.com/blogs/energy--environmental-law-blog/2026/06/alaska-data-center-development-next-steps",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AK",
+  "indicator": "pw_collateral",
+  "level": 0,
+  "evidence": "No rule in effect; an SB 250 committee amendment would have required financial security for utility investments over $1 million, but the bill died.",
+  "source_url": "https://www.dwt.com/blogs/energy--environmental-law-blog/2026/06/alaska-data-center-development-next-steps",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "AK",
+  "indicator": "pw_cost_alloc",
+  "level": 0,
+  "evidence": "SB 250 would have kept data-center power costs off other ratepayers and required community benefit agreements; it died in the House committee.",
+  "source_url": "https://www.dwt.com/blogs/energy--environmental-law-blog/2026/06/alaska-data-center-development-next-steps",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "Likely reintroduced"
+ },
+ {
+  "state": "AK",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "Fairbanks North Star Borough mayor proposed a borough land-use permit moratorium on data centers (5 MW+) to Dec 31, 2027, and the assembly asked the state for a moratorium; not yet adopted.",
+  "source_url": "https://www.alaskasnewssource.com/2026/10/24/fairbanks-borough-mayor-proposes-temporary-data-center-moratorium/",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": "Ordinance goes to assembly and Planning Commission (90 days); local only"
+ },
+ {
+  "state": "AK",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "No state siting regime; local zoning governs (Anchorage adopted a data-center land-use framework) and DNR handles state land leases such as the North Slope project.",
+  "source_url": "https://www.dwt.com/blogs/energy--environmental-law-blog/2026/06/alaska-data-center-development-next-steps",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "AK",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No state threshold; the Fairbanks proposal defines large-scale as 5 MW or 50,000 sq ft but is local.",
+  "source_url": "https://www.alaskasnewssource.com/2026/10/24/fairbanks-borough-mayor-proposes-temporary-data-center-moratorium/",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "AK",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track program or documented backlog; the North Slope campus is in early permitting and leasing.",
+  "source_url": "https://www.dwt.com/blogs/energy--environmental-law-blog/2026/06/alaska-data-center-development-next-steps",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AK",
+  "indicator": "tx_sales",
+  "level": 0,
+  "evidence": "Alaska has no state sales tax.",
+  "source_url": "https://www.alaskasnewssource.com/2026/04/30/data-centers-alaska-lawmakers-gauge-bans-or-tax-incentives-with-just-weeks-left-session",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "AK",
+  "indicator": "tx_property",
+  "level": 60,
+  "evidence": "Alaska offers no state data-center incentives, per April 2026 reporting (34 states do); no state abatement program found.",
+  "source_url": "https://www.alaskasnewssource.com/2026/04/30/data-centers-alaska-lawmakers-gauge-bans-or-tax-incentives-with-just-weeks-left-session",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "Incentive bills were discussed in 2026 session"
+ },
+ {
+  "state": "AK",
+  "indicator": "tx_conditions",
+  "level": 0,
+  "evidence": "No state data-center incentives, so no conditions attach.",
+  "source_url": "https://www.alaskasnewssource.com/2026/04/30/data-centers-alaska-lawmakers-gauge-bans-or-tax-incentives-with-just-weeks-left-session",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "AK",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No state water rule in effect; an SB 250 committee amendment would have required monthly water and wastewater plans but the bill died.",
+  "source_url": "https://www.dwt.com/blogs/energy--environmental-law-blog/2026/06/alaska-data-center-development-next-steps",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "AK",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Alaska-specific data-center generator rules found; Fairbanks cited air quality from on-site generation as a concern.",
+  "source_url": "https://www.alaskasnewssource.com/2026/10/24/fairbanks-borough-mayor-proposes-temporary-data-center-moratorium/",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AK",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No data-center-specific or general SEPA-type state review found.",
+  "source_url": "https://www.dwt.com/blogs/energy--environmental-law-blog/2026/06/alaska-data-center-development-next-steps",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AK",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No state on-site generation or curtailment rule found; SB 250 would have added reliability safeguards but died.",
+  "source_url": "https://www.dwt.com/blogs/energy--environmental-law-blog/2026/06/alaska-data-center-development-next-steps",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AK",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No labor conditions specific to data centers found.",
+  "source_url": "https://www.alaskasnewssource.com/2026/04/30/data-centers-alaska-lawmakers-gauge-bans-or-tax-incentives-with-just-weeks-left-session",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AK",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "No operating reporting mandate in effect found.",
+  "source_url": "https://www.alaskasnewssource.com/2026/04/30/data-centers-alaska-lawmakers-gauge-bans-or-tax-incentives-with-just-weeks-left-session",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AK",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide data-center noise or setback rules found; Anchorage framework covers noise locally.",
+  "source_url": "https://www.dwt.com/blogs/energy--environmental-law-blog/2026/06/alaska-data-center-development-next-steps",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AK",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Legislation likely to return, Fairbanks moratorium pending and a state request for a moratorium by the borough assembly.",
+  "source_url": "https://fm.kuac.org/2026-08-31/in-legislative-priorities-fairbanks-north-star-borough-assembly-doubles-up-on-ai-data-center-moratorium-request",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "AK",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented data-center interconnection queue backlog found (gas supply adequacy is questioned but not a queue).",
+  "source_url": "https://www.dwt.com/blogs/energy--environmental-law-blog/2026/06/alaska-data-center-development-next-steps",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "pw_tariff",
+  "level": 0,
+  "evidence": "No Hawaiian Electric or PUC data-center tariff found; a 50-state survey lists no action in Hawaii.",
+  "source_url": "https://www.gtlaw.com/ar/general/large-load-data-center-electric-cost-allocation-tariffs-50-state-survey",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "pw_min_commit",
+  "level": 0,
+  "evidence": "No large-load minimum bill or term rule found.",
+  "source_url": "https://www.gtlaw.com/ar/general/large-load-data-center-electric-cost-allocation-tariffs-50-state-survey",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "pw_collateral",
+  "level": 0,
+  "evidence": "No data-center collateral rule found.",
+  "source_url": "https://www.gtlaw.com/ar/general/large-load-data-center-electric-cost-allocation-tariffs-50-state-survey",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "pw_cost_alloc",
+  "level": 0,
+  "evidence": "No Hawaii law or PUC order on data-center cost responsibility found.",
+  "source_url": "https://www.gtlaw.com/ar/general/large-load-data-center-electric-cost-allocation-tariffs-50-state-survey",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "Hawaii County Bill 170 would make data centers not a permitted use under county zoning; a council committee advanced it in July 2026 and a vote was deferred until October.",
+  "source_url": "https://www.govtech.com/artificial-intelligence/hawaii-county-defers-ai-data-center-ban-until-october",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": "Bill 170 pending; state-level none"
+ },
+ {
+  "state": "HI",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "No state data-center siting regime; county zoning governs, as Hawaii County Bill 170 shows.",
+  "source_url": "https://www.hawaiipublicradio.org/text/local-news/2026-07-08/hawaii-county-moves-to-block-data-centers",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No state threshold found.",
+  "source_url": "https://www.hawaiipublicradio.org/text/local-news/2026-07-08/hawaii-county-moves-to-block-data-centers",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track program or documented backlog found; the Hawaii County planning director knew of only inquiries, not permit applications.",
+  "source_url": "https://www.hawaiipublicradio.org/text/local-news/2026-07-08/hawaii-county-moves-to-block-data-centers",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "tx_sales",
+  "level": 60,
+  "evidence": "Hawaii imposes general excise tax and no data-center exemption program was found.",
+  "source_url": "https://www.hawaiipublicradio.org/text/local-news/2026-07-08/hawaii-county-moves-to-block-data-centers",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "tx_property",
+  "level": 60,
+  "evidence": "No state data-center property tax abatement program found.",
+  "source_url": "https://www.hawaiipublicradio.org/text/local-news/2026-07-08/hawaii-county-moves-to-block-data-centers",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "tx_conditions",
+  "level": 0,
+  "evidence": "No data-center incentives found, so no conditions attach.",
+  "source_url": "https://www.hawaiipublicradio.org/text/local-news/2026-07-08/hawaii-county-moves-to-block-data-centers",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No data-center-specific water rule found.",
+  "source_url": "https://www.hawaiipublicradio.org/text/local-news/2026-07-08/hawaii-county-moves-to-block-data-centers",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Hawaii-specific data-center generator rules found.",
+  "source_url": "https://www.hawaiipublicradio.org/text/local-news/2026-07-08/hawaii-county-moves-to-block-data-centers",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "ev_review",
+  "level": 50,
+  "evidence": "Hawaii's general environmental review statute (HRS ch. 343) applies to qualifying projects; no data-center-specific review.",
+  "source_url": "https://www.hawaiipublicradio.org/text/local-news/2026-07-08/hawaii-county-moves-to-block-data-centers",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No state on-site generation or curtailment rule for data centers found.",
+  "source_url": "https://www.hawaiipublicradio.org/text/local-news/2026-07-08/hawaii-county-moves-to-block-data-centers",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No labor conditions specific to data centers found.",
+  "source_url": "https://www.hawaiipublicradio.org/text/local-news/2026-07-08/hawaii-county-moves-to-block-data-centers",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "No operating reporting mandate found.",
+  "source_url": "https://www.hawaiipublicradio.org/text/local-news/2026-07-08/hawaii-county-moves-to-block-data-centers",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide data-center noise or setback rules found.",
+  "source_url": "https://www.hawaiipublicradio.org/text/local-news/2026-07-08/hawaii-county-moves-to-block-data-centers",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "HI",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "County zoning ban pending and deferred; broader policy being considered.",
+  "source_url": "https://www.staradvertiser.com/2026/10/03/hawaii-news/hawaii-county-considers-curbing-ai-data-centers/",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": "Council vote on Bill 170"
+ },
+ {
+  "state": "HI",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented data-center interconnection backlog found.",
+  "source_url": "https://www.hawaiipublicradio.org/text/local-news/2026-07-08/hawaii-county-moves-to-block-data-centers",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ }
+]

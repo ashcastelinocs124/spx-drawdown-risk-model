@@ -1,0 +1,1002 @@
+[
+ {
+  "state": "VA",
+  "indicator": "pw_tariff",
+  "level": 100,
+  "evidence": "The SCC approved Dominion's new GS-5 large-load rate class (PUR-2025-00058, Nov 2025, 25 MW+ at 75% load factor) and an Appalachian Power large power schedule (PUR-2025-00057).",
+  "source_url": "https://www.eei.org/-/media/Project/EEI/Documents/Issues%20and%20Policy/List%20of%20Large%20Customer%20Projects%20and%20Tariffs",
+  "source_date": "2026-10",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "VA",
+  "indicator": "pw_min_commit",
+  "level": 100,
+  "evidence": "GS-5 requires 14-year contracts with minimum demand charges of 85% for transmission/distribution and 60% for generation, and customers stay liable for minimums if they exit early.",
+  "source_url": "https://www.datacenterdynamics.com/en/news/virginia-regulators-approve-new-rate-class-for-data-centers-and-other-large-loads/",
+  "source_date": "2025-11",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "VA",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "Collateral terms for GS-5 were not stated in the sources I could open; scored moderate because the class carries stranded-cost protections, but this is unverified.",
+  "source_url": "https://www.datacenterdynamics.com/en/news/virginia-regulators-approve-new-rate-class-for-data-centers-and-other-large-loads/",
+  "source_date": "2025-11",
+  "confidence": "low",
+  "pending": "Check the SCC final order in PUR-2025-00058 for credit/collateral language."
+ },
+ {
+  "state": "VA",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "The GS-5 order and the July 2026 Affordable Virginia package (signed July 1, 2026) put ratepayer protections against data-center-driven infrastructure costs into law.",
+  "source_url": "https://www.whitefordlaw.com/news-events/client-alert-update-virginia-enacts-energy-consumption-tax-on-data-centers-and-signs-broader-energy-affordability-package",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": "SB 339 cost-subsidy investigation may move in the 2027 session."
+ },
+ {
+  "state": "VA",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "No statewide pause; localities are acting (Loudoun attorney opinion of Sept 2026 allows up to 12 months of delay, Prince William amended its overlay to largely end by-right development).",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/data-centers-facing-major-regulatory",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": "Local actions are described as not technically moratoria; scored at the local level."
+ },
+ {
+  "state": "VA",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Siting stays with localities; Gov. Spanberger's EO 22 (Sept 18, 2026) does not change local zoning and only withholds discretionary state help.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/virginia-governor-issues-executive-order",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": "Virginia Energy siting recommendations due in 240 days."
+ },
+ {
+  "state": "VA",
+  "indicator": "pm_threshold",
+  "level": 100,
+  "evidence": "EO 22 bars VEDP discretionary assistance (Business Ready Sites, expedited permitting) for new projects of 25 MW or more, a sub-100 MW state trigger.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/virginia-governor-issues-executive-order",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": "Trigger is loss of state assistance rather than a formal review."
+ },
+ {
+  "state": "VA",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No dedicated fast-track program; Loudoun reports local review could run up to 12 months from submittal.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/data-centers-facing-major-regulatory",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "VA",
+  "indicator": "tx_sales",
+  "level": 30,
+  "evidence": "Sales and use tax exemption is active but requires $150M investment, 50 jobs at 150% of prevailing wage and a VEDP MOU; it runs to 2035 and was preserved in the June 2026 budget (HB 30).",
+  "source_url": "https://www.vedp.org/incentive/data-center-retail-sales-use-tax-exemption",
+  "source_date": "2026",
+  "confidence": "high",
+  "pending": "Joint Subcommittee on Tax Policy report due Dec 15, 2026."
+ },
+ {
+  "state": "VA",
+  "indicator": "tx_property",
+  "level": 0,
+  "evidence": "No state property-tax abatement program was found; localities set their own business property tax on data center equipment. Level reflects routine local treatment, not verified in this research.",
+  "source_url": "https://www.hklaw.com/en/insights/publications/2026/08/virginia-preserves-data-center-tax-incentive",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "VA",
+  "indicator": "tx_conditions",
+  "level": 100,
+  "evidence": "The exemption requires MOU thresholds within three years and the benefit must be repaid if investment/job thresholds are not met.",
+  "source_url": "https://www.vedp.org/incentive/data-center-retail-sales-use-tax-exemption",
+  "source_date": "2026",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "VA",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No statewide data-center water reporting or limit is in effect; EO 22 only directs DEQ to build an accelerated water-rule workplan within 180 days.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/virginia-governor-issues-executive-order",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": "DEQ water/noise workplans due ~March 2027."
+ },
+ {
+  "state": "VA",
+  "indicator": "ev_emissions",
+  "level": 100,
+  "evidence": "HB 507 (effective July 1, 2026) requires data center air permits to meet at least Tier 4-equivalent limits; DEQ guidance sets a presumptive 0.60 g/hp-hr limit effectively requiring SCR; SB 336/HB 1502 added stricter standards.",
+  "source_url": "https://datacenterknowledge.com/build-design/virginia-deq-revises-data-center-generator-rules-as-community-pushback-builds",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": "EO 22 orders cumulative-impact review of generators."
+ },
+ {
+  "state": "VA",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No data-center-specific or general state environmental review applying to private data centers was found.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/virginia-governor-issues-executive-order",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": "DEQ studies under EO 22 could change this."
+ },
+ {
+  "state": "VA",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No mandatory curtailment or on-site generation limits are in force; EO 22 only directs work on possible curtailment arrangements with the SCC and PJM.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/virginia-governor-issues-executive-order",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": "Curtailment arrangements under study."
+ },
+ {
+  "state": "VA",
+  "indicator": "op_labor",
+  "level": 50,
+  "evidence": "Labor-type conditions exist only as incentive terms (jobs paying 150% of prevailing wage under the sales tax exemption MOU).",
+  "source_url": "https://www.vedp.org/incentive/data-center-retail-sales-use-tax-exemption",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "VA",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "Reporting is incentive-linked through the VEDP MOU; EO 22 limits new NDAs and calls for model disclosure guidance.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/virginia-governor-issues-executive-order",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": "Statutory reporting may follow in 2027."
+ },
+ {
+  "state": "VA",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rule for data centers yet; EO 22 directs DEQ to accelerate noise rules.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/virginia-governor-issues-executive-order",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": "DEQ noise workplan due in 180 days."
+ },
+ {
+  "state": "VA",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Major changes are pending: EO 22 reports due in 120-240 days, a tax-policy study due Dec 15, 2026, and 2027 legislation expected.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/virginia-governor-issues-executive-order",
+  "source_date": "2026-09",
+  "confidence": "high",
+  "pending": "2027 General Assembly."
+ },
+ {
+  "state": "VA",
+  "indicator": "ad_backlog",
+  "level": 50,
+  "evidence": "Loudoun cites up to 12 months of local delay; broader grid interconnection backlog was not documented in the sources I could open.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/data-centers-facing-major-regulatory",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": "Dominion/PJM queue delays not independently verified here."
+ },
+ {
+  "state": "MD",
+  "indicator": "pw_tariff",
+  "level": 40,
+  "evidence": "2025 Next Generation Energy Act and the 2026 RELIEF Act (HB 1532) require utilities to file large-load tariffs; filings went to the PSC on Sept 1, 2026 (PC72) and are pending.",
+  "source_url": "https://www.eei.org/-/media/Project/EEI/Documents/Issues%20and%20Policy/List%20of%20Large%20Customer%20Projects%20and%20Tariffs",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": "PC72 approval pending."
+ },
+ {
+  "state": "MD",
+  "indicator": "pw_min_commit",
+  "level": 0,
+  "evidence": "No enacted minimum-bill or term rules yet; the terms will be set in the pending PSC tariff proceedings.",
+  "source_url": "https://www.mintz.com/sites/default/files/media/documents/2026-10-05/AG-Watch-How-Maryland-Is-Meeting-The-Data-Center-Age_Erek-L.-Barron.pdf",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": "PC72 proceedings."
+ },
+ {
+  "state": "MD",
+  "indicator": "pw_collateral",
+  "level": 0,
+  "evidence": "No large-load-specific collateral rule is in effect; HB 1532 imposes a registration fee of at least $1,000 per MW of peak load, but that is a fee rather than collateral.",
+  "source_url": "https://www.mintz.com/sites/default/files/media/documents/2026-10-05/AG-Watch-How-Maryland-Is-Meeting-The-Data-Center-Age_Erek-L.-Barron.pdf",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": "PC72 proceedings."
+ },
+ {
+  "state": "MD",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "HB 1532 (Chapter 353, signed May 12, 2026) lowered the large-load definition to 25 MW/60% load factor and requires pass-through of PJM capacity costs to large-load accounts.",
+  "source_url": "https://www.mintz.com/sites/default/files/media/documents/2026-10-05/AG-Watch-How-Maryland-Is-Meeting-The-Data-Center-Age_Erek-L.-Barron.pdf",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MD",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "Many counties have local moratoria (14 of 24 jurisdictions per press); no statewide moratorium, though a GOP candidate now calls for one.",
+  "source_url": "https://thedailyrecord.com/2026/09/23/moore-executive-order-maryland-data-center-review/",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": "Candidate calls for a statewide moratorium; none proposed by governor or legislature."
+ },
+ {
+  "state": "MD",
+  "indicator": "pm_siting",
+  "level": 50,
+  "evidence": "The Sept 23, 2026 EO creates a statewide review by a Data Center Accountability Task Force; projects rated Not Aligned lose state support and state review is deferred until local approvals are documented.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/maryland-governor-issues-executive-order",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MD",
+  "indicator": "pm_threshold",
+  "level": 100,
+  "evidence": "The EO applies to projects of 25 MW or more and to Large Load Customers.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/maryland-governor-issues-executive-order",
+  "source_date": "2026-09",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "MD",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "The EO offers a Coordinated Review Pathway for Aligned projects, and HB 1532 offers accelerated permitting for a voluntary clean-capacity rating; no general timelines are documented.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/maryland-governor-issues-executive-order",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MD",
+  "indicator": "tx_sales",
+  "level": 0,
+  "evidence": "A 2020 sales and use tax exemption is active with low thresholds ($2M or $5M investment depending on location); Gov. Moore plans to seek repeal in 2027.",
+  "source_url": "https://www.bondbuyer.com/news/maryland-moves-against-data-centers",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": "Repeal planned for the 2027 session."
+ },
+ {
+  "state": "MD",
+  "indicator": "tx_property",
+  "level": 60,
+  "evidence": "No state property-tax abatement for data centers was found; local treatment not verified.",
+  "source_url": "https://www.bondbuyer.com/news/maryland-moves-against-data-centers",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MD",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "The sales tax exemption required job creation and minimum investment; the EO ties state incentive eligibility to Task Force alignment.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/maryland-governor-issues-executive-order",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MD",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "HB 1532 registration covers energy and water use, and the EO review covers water availability and cooling technology; a public dashboard will show water use.",
+  "source_url": "https://www.mintz.com/sites/default/files/media/documents/2026-10-05/AG-Watch-How-Maryland-Is-Meeting-The-Data-Center-Age_Erek-L.-Barron.pdf",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MD",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Maryland-specific generator limits were found; the EO folds backup-generator emissions into project review only.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/maryland-governor-issues-executive-order",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": "EO review may produce conditions."
+ },
+ {
+  "state": "MD",
+  "indicator": "ev_review",
+  "level": 100,
+  "evidence": "The EO sets a data-center-specific review covering water, cooling, generator emissions, stormwater and Chesapeake Bay impacts.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/maryland-governor-issues-executive-order",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MD",
+  "indicator": "op_backup",
+  "level": 50,
+  "evidence": "The EO asks developers to consider curtailment or flexible-load participation; no mandate in force.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/maryland-governor-issues-executive-order",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MD",
+  "indicator": "op_labor",
+  "level": 50,
+  "evidence": "HB 1532's voluntary clean-capacity rating (with accelerated permitting) carries a prevailing wage condition for construction.",
+  "source_url": "https://www.mintz.com/sites/default/files/media/documents/2026-10-05/AG-Watch-How-Maryland-Is-Meeting-The-Data-Center-Age_Erek-L.-Barron.pdf",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MD",
+  "indicator": "op_reporting",
+  "level": 100,
+  "evidence": "HB 1532 creates mandatory registration covering energy and water use, and the EO sets up a monthly public dashboard of location, peak demand and water use.",
+  "source_url": "https://www.mintz.com/sites/default/files/media/documents/2026-10-05/AG-Watch-How-Maryland-Is-Meeting-The-Data-Center-Age_Erek-L.-Barron.pdf",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MD",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rule for data centers found.",
+  "source_url": "https://thedailyrecord.com/2026/09/23/moore-executive-order-maryland-data-center-review/",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MD",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "PSC large-load tariffs are pending, the EO is new, and legislative changes (including exemption repeal) are expected in 2027.",
+  "source_url": "https://www.venable.com/insights/publications/2026/09/maryland-governor-issues-executive-order",
+  "source_date": "2026-09",
+  "confidence": "high",
+  "pending": "2027 General Assembly."
+ },
+ {
+  "state": "MD",
+  "indicator": "ad_backlog",
+  "level": 50,
+  "evidence": "Moderate: many local moratoria and pending tariff proceedings; no documented queue figures were found.",
+  "source_url": "https://thedailyrecord.com/2026/09/23/moore-executive-order-maryland-data-center-review/",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "PA",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "PPL's large-load tariff was approved in its rate settlement (R-2025-3057164) and the PUC adopted a statewide model tariff framework (M-2025-3054271) for 50 MW/100 MW aggregate that is guidance, not binding.",
+  "source_url": "https://www.eei.org/-/media/Project/EEI/Documents/Issues%20and%20Policy/List%20of%20Large%20Customer%20Projects%20and%20Tariffs",
+  "source_date": "2026-10",
+  "confidence": "high",
+  "pending": "Other utilities' tariff filings pending."
+ },
+ {
+  "state": "PA",
+  "indicator": "pw_min_commit",
+  "level": 50,
+  "evidence": "PPL's class sets a minimum ten-year commitment; the model tariff offers non-binding guidance on minimum terms and exit provisions.",
+  "source_url": "https://www.datacenterdynamics.com/en/news/ppl-secures-puc-approval-to-introduce-new-rate-class-structure-for-large-load-users-including-data-centers/",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "PA",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "The model tariff includes deposits and financial security against stranded assets and enhanced CIAC up-front payments, but as guidance with no amounts.",
+  "source_url": "https://www.utilitydive.com/news/pennsylvania-releases-first-of-its-kind-large-load-model-tariff/820456/",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "PA",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "The model tariff reinforces cost causation and the Aug 18, 2026 EO 2026-05 pushes the PUC to make data centers bear PJM backstop and interconnection costs; neither is yet a binding statewide mandate.",
+  "source_url": "https://www.dlapiper.com/en-kr/insights/publications/2026/08/pennsylvania-executive-order-establishes-state-compliance-framework",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": "PUC action on EO requests."
+ },
+ {
+  "state": "PA",
+  "indicator": "pm_moratorium",
+  "level": 0,
+  "evidence": "No statewide or local moratorium was confirmed in the sources reviewed.",
+  "source_url": "https://www.reedsmith.com/articles/pennsylvania-governor-signs-executive-order-imposing-new-requirements-on-data-center-development/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "PA",
+  "indicator": "pm_siting",
+  "level": 50,
+  "evidence": "EO 2026-05 requires local approvals and sets a two-track DEP process with consent orders and GRID requirements.",
+  "source_url": "https://www.reedsmith.com/articles/pennsylvania-governor-signs-executive-order-imposing-new-requirements-on-data-center-development/",
+  "source_date": "2026-08",
+  "confidence": "high",
+  "pending": "Legal challenges expected."
+ },
+ {
+  "state": "PA",
+  "indicator": "pm_threshold",
+  "level": 100,
+  "evidence": "The EO's GRID requirements and consent orders apply to projects above 25 MW of peak demand.",
+  "source_url": "https://www.dlapiper.com/en-kr/insights/publications/2026/08/pennsylvania-executive-order-establishes-state-compliance-framework",
+  "source_date": "2026-08",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "PA",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "Data centers are removed from the Permit Fast Track program; Track 1 projects get rolling review, Track 2 waits for all applications; the model tariff expects interconnection studies within six months.",
+  "source_url": "https://www.reedsmith.com/articles/pennsylvania-governor-signs-executive-order-imposing-new-requirements-on-data-center-development/",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "PA",
+  "indicator": "tx_sales",
+  "level": 30,
+  "evidence": "The sales/use tax exemption program (Act 25 of 2021) is active but requires at least $75M investment, 25 jobs and $1M in wages, and the EO orders new GRID conditions for applicants.",
+  "source_url": "https://gigafact.org/fact-briefs/does-pennsylvania-give-tax-breaks-to-data-centers/",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "Revenue guidelines being updated per EO."
+ },
+ {
+  "state": "PA",
+  "indicator": "tx_property",
+  "level": 60,
+  "evidence": "The state data center program does not exempt property taxes.",
+  "source_url": "https://gigafact.org/fact-briefs/does-pennsylvania-give-tax-breaks-to-data-centers/",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "PA",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "The exemption carries job, investment and wage conditions, and the EO adds GRID compliance; clawback terms were not confirmed.",
+  "source_url": "https://www.dlapiper.com/en-kr/insights/publications/2026/08/pennsylvania-executive-order-establishes-state-compliance-framework",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "PA",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "Annual water consumption reporting to DEP is required starting July 1, 2027, and Track 2 projects need water withdrawal/discharge authorizations before review.",
+  "source_url": "https://www.reedsmith.com/articles/pennsylvania-governor-signs-executive-order-imposing-new-requirements-on-data-center-development/",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "PA",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No state-specific generator limits yet; the EO only directs DEP to recommend rules on backup generator controls, cumulative impacts and grid use.",
+  "source_url": "https://www.dlapiper.com/en-kr/insights/publications/2026/08/pennsylvania-executive-order-establishes-state-compliance-framework",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": "DEP recommendations pending."
+ },
+ {
+  "state": "PA",
+  "indicator": "ev_review",
+  "level": 100,
+  "evidence": "Data-center-specific DEP consent orders under the GRID requirements, including environmental protection terms, apply to projects of 25 MW or more.",
+  "source_url": "https://www.dlapiper.com/en-kr/insights/publications/2026/08/pennsylvania-executive-order-establishes-state-compliance-framework",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "PA",
+  "indicator": "op_backup",
+  "level": 50,
+  "evidence": "The EO advocates PUC rules to curtail data centers first in emergencies and ties Track 1 to bringing power generation; not yet mandated.",
+  "source_url": "https://www.reedsmith.com/articles/pennsylvania-governor-signs-executive-order-imposing-new-requirements-on-data-center-development/",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": "PUC rulemaking."
+ },
+ {
+  "state": "PA",
+  "indicator": "op_labor",
+  "level": 50,
+  "evidence": "The GRID requirements include workforce and economic development focus but no specific labor standards were found.",
+  "source_url": "https://www.dlapiper.com/en-kr/insights/publications/2026/08/pennsylvania-executive-order-establishes-state-compliance-framework",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "PA",
+  "indicator": "op_reporting",
+  "level": 100,
+  "evidence": "Operating data centers must report energy and water consumption under the Fiscal Code by July 1, 2027 and annually, per the EO.",
+  "source_url": "https://www.reedsmith.com/articles/pennsylvania-governor-signs-executive-order-imposing-new-requirements-on-data-center-development/",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "PA",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules for data centers found.",
+  "source_url": "https://www.reedsmith.com/articles/pennsylvania-governor-signs-executive-order-imposing-new-requirements-on-data-center-development/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "PA",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "The EO is new, expected to draw legal challenges, with unclear treatment of existing projects, and the model tariff is non-binding.",
+  "source_url": "https://www.reedsmith.com/articles/pennsylvania-governor-signs-executive-order-imposing-new-requirements-on-data-center-development/",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": "Legal challenges and PUC proceedings."
+ },
+ {
+  "state": "PA",
+  "indicator": "ad_backlog",
+  "level": 50,
+  "evidence": "PJM large-load integration rules are still being revised under FERC's June 2026 order; PA-specific queue data not found.",
+  "source_url": "https://www.willkie.com/publications/2026/07/ferc-greenlights-pjm-co-located-load-framework-in-part-calls-for-further-tariff-updates",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "DE",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "HB 233 (signed Aug 26, 2026) requires Delmarva to create a higher rate class for hyperscale users; Delmarva's GS-LL (Docket 25-0826, 50 MW+) is still pending at the PSC.",
+  "source_url": "https://www.delawarepublic.org/politics-government/2026-08-28/slate-of-energy-bills-get-governor-meyers-signature",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": "PSC approval of GS-LL pending."
+ },
+ {
+  "state": "DE",
+  "indicator": "pw_min_commit",
+  "level": 0,
+  "evidence": "No enacted minimum-bill or term requirement was found; GS-LL terms are pending.",
+  "source_url": "https://www.eei.org/-/media/Project/EEI/Documents/Issues%20and%20Policy/List%20of%20Large%20Customer%20Projects%20and%20Tariffs",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": "GS-LL docket 25-0826."
+ },
+ {
+  "state": "DE",
+  "indicator": "pw_collateral",
+  "level": 0,
+  "evidence": "No large-load-specific collateral rule found; SB 205 (certificate to operate with financial commitments) stalled in committee.",
+  "source_url": "https://spotlightdelaware.org/2026/02/02/data-center-regulation-bill-advances-in-delaware-legislature/",
+  "source_date": "2026-02",
+  "confidence": "low",
+  "pending": "SB 205 could return."
+ },
+ {
+  "state": "DE",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "Laws signed Aug 26, 2026 bar data centers from passing costs to ratepayers, make them bear T&D and capacity costs, and require them to bring their own generation (HB 445).",
+  "source_url": "https://whyy.org/articles/data-center-legislation-delaware/",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "DE",
+  "indicator": "pm_moratorium",
+  "level": 0,
+  "evidence": "No moratorium was found; critics called SB 205 a de facto moratorium but it did not advance.",
+  "source_url": "https://spotlightdelaware.org/2026/02/02/data-center-regulation-bill-advances-in-delaware-legislature/",
+  "source_date": "2026-02",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "DE",
+  "indicator": "pm_siting",
+  "level": 50,
+  "evidence": "State review applies through the Coastal Zone Act (DNREC and the Coastal Zone Industrial Control Board blocked Project Washington in March 2026); otherwise local approval.",
+  "source_url": "https://delawarelive.com/dnrec-board-blocks-data-center-under-coastal-zone-act-raising-questions-about-delawares-economic-path/",
+  "source_date": "2026-03",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "DE",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No MW trigger for state review is in force (SB 205's 30 MW certificate failed; the 50 MW figure is a rate-class threshold).",
+  "source_url": "https://spotlightdelaware.org/2026/02/02/data-center-regulation-bill-advances-in-delaware-legislature/",
+  "source_date": "2026-02",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "DE",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No special fast-track program found; Project Washington was reviewed through a multi-month DNREC and board process.",
+  "source_url": "https://delawarelive.com/dnrec-board-blocks-data-center-under-coastal-zone-act-raising-questions-about-delawares-economic-path/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "DE",
+  "indicator": "tx_sales",
+  "level": 0,
+  "evidence": "Delaware has no general sales tax.",
+  "source_url": "https://whyy.org/articles/data-center-legislation-delaware/",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "DE",
+  "indicator": "tx_property",
+  "level": 60,
+  "evidence": "No state data-center property-tax abatement was found; local practices not verified.",
+  "source_url": "https://www.sierraclub.org/delaware/blog/2026/07/2026-end-session-recap",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "DE",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "HB 310 limits a tax credit so data centers qualify only if they bring their own generation under HB 445, and a separate measure bars job-creation credits.",
+  "source_url": "https://www.sierraclub.org/delaware/blog/2026/07/2026-end-session-recap",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "DE",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "The new laws do not address water use; advocates say further measures are needed.",
+  "source_url": "https://whyy.org/articles/data-center-legislation-delaware/",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "DE",
+  "indicator": "ev_emissions",
+  "level": 50,
+  "evidence": "DNREC treated 500+ diesel generators and fuel storage as prohibited heavy industry under the Coastal Zone Act, and HB 445 requires part of backup power to be clean rather than diesel.",
+  "source_url": "https://delawarelive.com/dnrec-board-blocks-data-center-under-coastal-zone-act-raising-questions-about-delawares-economic-path/",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "DE",
+  "indicator": "ev_review",
+  "level": 50,
+  "evidence": "Coastal Zone Act review applies to projects in the coastal zone, as in the Project Washington decision.",
+  "source_url": "https://delawarelive.com/dnrec-board-blocks-data-center-under-coastal-zone-act-raising-questions-about-delawares-economic-path/",
+  "source_date": "2026-03",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "DE",
+  "indicator": "op_backup",
+  "level": 100,
+  "evidence": "Large facilities must reduce use during peak demand and bring their own generation under the Aug 2026 laws.",
+  "source_url": "https://whyy.org/articles/data-center-legislation-delaware/",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "DE",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No labor requirement found; job-creation tax credits are barred.",
+  "source_url": "https://whyy.org/articles/data-center-legislation-delaware/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "DE",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "No ongoing data center operating reporting requirement found; SB 312 only bars NDAs.",
+  "source_url": "https://www.sierraclub.org/delaware/blog/2026/07/2026-end-session-recap",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "DE",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules found.",
+  "source_url": "https://www.sierraclub.org/delaware/blog/2026/07/2026-end-session-recap",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "DE",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Newly signed laws await PSC implementation, the GS-LL docket is pending, and the Project Washington developer says it still intends to proceed.",
+  "source_url": "https://delawarelive.com/dnrec-board-blocks-data-center-under-coastal-zone-act-raising-questions-about-delawares-economic-path/",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": "Implementation and possible appeal."
+ },
+ {
+  "state": "DE",
+  "indicator": "ad_backlog",
+  "level": 50,
+  "evidence": "Delmarva says data centers could nearly double Delaware's power demand; no documented queue backlog.",
+  "source_url": "https://www.delawarepublic.org/politics-government/2026-08-28/slate-of-energy-bills-get-governor-meyers-signature",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WV",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "The PSC approved Appalachian Power and Wheeling Power Large Capacity Power and Industrial Power tariffs (24-0611-E-T-PW, Mar 2025); FirstEnergy opposes a tariff and prefers special contracts.",
+  "source_url": "https://www.eei.org/-/media/Project/EEI/Documents/Issues%20and%20Policy/List%20of%20Large%20Customer%20Projects%20and%20Tariffs",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": "FirstEnergy gas plant case pending."
+ },
+ {
+  "state": "WV",
+  "indicator": "pw_min_commit",
+  "level": 100,
+  "evidence": "The settlement behind the APCo large-load rules provides 12-year initial terms, about 80% purchase commitments and 100 MW minimum capacity; the order approving it was reported in Mar 2025.",
+  "source_url": "https://wvpublic.org/story/energy-environment/data-center-deal-struck-between-appalachian-power-google/",
+  "source_date": "2025-01",
+  "confidence": "medium",
+  "pending": "Final order terms not independently opened."
+ },
+ {
+  "state": "WV",
+  "indicator": "pw_collateral",
+  "level": 0,
+  "evidence": "No collateral terms were reported for West Virginia; advocates in the FirstEnergy case want collateral but FirstEnergy refuses.",
+  "source_url": "https://wvpress.org/breaking-news/wv-frustration-mounts-amid-evidence-state-is-lagging-in-data-center-protection/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": "FirstEnergy docket."
+ },
+ {
+  "state": "WV",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "HB 2014 bars utilities from passing microgrid-related costs to other customers; broader ratepayer protections were described as lacking.",
+  "source_url": "https://broadbandbreakfast.com/west-virginia-passes-law-to-attract-data-centers-advance-energy-infrastructure/",
+  "source_date": "2025-04",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "WV",
+  "indicator": "pm_moratorium",
+  "level": 0,
+  "evidence": "No moratorium found.",
+  "source_url": "https://wvpress.org/breaking-news/wv-frustration-mounts-amid-evidence-state-is-lagging-in-data-center-protection/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WV",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "HB 2014 limits local governments from restricting microgrid districts and high-impact data centers, pointing to preemption of local limits.",
+  "source_url": "https://wvpress.org/breaking-news/wv-frustration-mounts-amid-evidence-state-is-lagging-in-data-center-protection/",
+  "source_date": "2026-07",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "WV",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "The 90 MW 'high-impact' definition triggers local preemption, not extra state review.",
+  "source_url": "https://wvpress.org/breaking-news/wv-frustration-mounts-amid-evidence-state-is-lagging-in-data-center-protection/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WV",
+  "indicator": "pm_timeline",
+  "level": 0,
+  "evidence": "DEP granted an air permit for a large microgrid/data center project about five months after application; HB 2014 microgrid districts are meant to streamline siting.",
+  "source_url": "https://wvpress.org/breaking-news/wv-frustration-mounts-amid-evidence-state-is-lagging-in-data-center-protection/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WV",
+  "indicator": "tx_sales",
+  "level": 60,
+  "evidence": "No data-center sales tax exemption program was identified in the sources reviewed.",
+  "source_url": "https://broadbandbreakfast.com/west-virginia-passes-law-to-attract-data-centers-advance-energy-infrastructure/",
+  "source_date": "2025-04",
+  "confidence": "low",
+  "pending": "Not verified; no search found a program."
+ },
+ {
+  "state": "WV",
+  "indicator": "tx_property",
+  "level": 60,
+  "evidence": "HB 2014 creates a special property tax structure for data centers (revenue split between state income tax relief, host county and other funds); no abatement was found.",
+  "source_url": "https://broadbandbreakfast.com/west-virginia-passes-law-to-attract-data-centers-advance-energy-infrastructure/",
+  "source_date": "2025-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WV",
+  "indicator": "tx_conditions",
+  "level": 0,
+  "evidence": "No incentive conditions identified because no incentives were found.",
+  "source_url": "https://broadbandbreakfast.com/west-virginia-passes-law-to-attract-data-centers-advance-energy-infrastructure/",
+  "source_date": "2025-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WV",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No state water requirement for data centers; large facilities can use 3-5 million gallons per day.",
+  "source_url": "https://wvpress.org/breaking-news/wv-frustration-mounts-amid-evidence-state-is-lagging-in-data-center-protection/",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "WV",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "DEP uses its normal air permits; diesel backup concerns exist but no data-center-specific limits.",
+  "source_url": "https://wvpress.org/breaking-news/wv-frustration-mounts-amid-evidence-state-is-lagging-in-data-center-protection/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WV",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No data-center-specific or general state environmental review identified.",
+  "source_url": "https://wvpress.org/breaking-news/wv-frustration-mounts-amid-evidence-state-is-lagging-in-data-center-protection/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WV",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No curtailment mandate or limits on on-site generation; HB 2014 encourages microgrids and self-generation.",
+  "source_url": "https://broadbandbreakfast.com/west-virginia-passes-law-to-attract-data-centers-advance-energy-infrastructure/",
+  "source_date": "2025-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WV",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No labor conditions found.",
+  "source_url": "https://broadbandbreakfast.com/west-virginia-passes-law-to-attract-data-centers-advance-energy-infrastructure/",
+  "source_date": "2025-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WV",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "HB 2014 shields developers from sharing certain project information; no operating reporting identified.",
+  "source_url": "https://wvpress.org/breaking-news/wv-frustration-mounts-amid-evidence-state-is-lagging-in-data-center-protection/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WV",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise/setback rules; noise concerns raised locally.",
+  "source_url": "https://wvpress.org/breaking-news/wv-frustration-mounts-amid-evidence-state-is-lagging-in-data-center-protection/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WV",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "PSC coal-capacity rules under HB 2014 head to the legislature in 2027, and the FirstEnergy gas plant case is unresolved.",
+  "source_url": "https://www.theintelligencer.net/news/top-headlines/2026/10/west-virginia-public-service-commission-releases-proposed-rules-for-power-plant-capacity/",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": "2027 legislative rule bundle."
+ },
+ {
+  "state": "WV",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No data-center-specific queue backlog documented.",
+  "source_url": "https://wvpress.org/breaking-news/wv-frustration-mounts-amid-evidence-state-is-lagging-in-data-center-protection/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ }
+]

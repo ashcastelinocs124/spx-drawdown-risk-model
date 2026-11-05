@@ -1,0 +1,1002 @@
+[
+ {
+  "state": "TX",
+  "indicator": "pw_tariff",
+  "level": 100,
+  "evidence": "SB 6 (2025) and the PUCT's large-load interconnection standards for loads of 75 MW or more in ERCOT (Project 58481) were adopted in Sept 2026, and PUCT approved the ERCOT Batch Zero framework on June 18, 2026; this is a mandated interconnection/cost framework for all ERCOT utilities rather than a classic rate class.",
+  "source_url": "https://utilitydive.com/news/texas-puc-adopts-data-center-interconnection-rules/830899",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": "Final rule text and effective date not confirmed; further PUCT SB 6 rulemakings (4CP transmission cost allocation, demand reduction) still open."
+ },
+ {
+  "state": "TX",
+  "indicator": "pw_min_commit",
+  "level": 50,
+  "evidence": "Adopted rule keeps a flat $100,000 study fee, requires financial security applied to amounts owed if a project misses milestones (notification window extended to 24 months), but no minimum-bill or take-or-pay term was found.",
+  "source_url": "https://utilitydive.com/news/texas-puc-adopts-data-center-interconnection-rules/830899",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": "PUCT said it may amend the rule as study-cost data accumulates."
+ },
+ {
+  "state": "TX",
+  "indicator": "pw_collateral",
+  "level": 100,
+  "evidence": "ERCOT large loads must post financial security (proposed at $50,000 per MW) plus pay 100% of direct interconnection costs; Batch Zero applies a $50,000/MW default security and CIAC payments; the final rule dropped the non-refundable fee and 80% forfeiture but retained security.",
+  "source_url": "https://www.mondaq.com/unitedstates/oil-gas-electricity/1807826/puct-approves-batch-zero-framework-that-will-provide-a-pathway-for-large-load-to-connect-to-the-grid-and-receive-electricity",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "Final per-MW security amount in the Sept 2026 rule not confirmed in sources read."
+ },
+ {
+  "state": "TX",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "SB 6 (2025) requires new large loads of 75 MW+ to contribute to interconnection costs and directs the PUCT to reevaluate transmission cost allocation to shift costs from residential and small commercial customers.",
+  "source_url": "https://www.butlersnow.com/news-and-events/texas-legislature-adopts-new-law-regarding-large-load-interconnection-and-operation",
+  "source_date": "2025-06",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "TX",
+  "indicator": "pm_moratorium",
+  "level": 60,
+  "evidence": "Gov. Abbott on Sept 21, 2026 ordered TCEQ to halt all permits sought by data centers until ERCOT completes its audit, and ERCOT paused Batch Zero; this is a partial state pause by directive, not a statute.",
+  "source_url": "https://www.dlapiper.com/en/insights/publications/2026/09/governor-abbott-expands-data-center-permitting-pause",
+  "source_date": "2026-09",
+  "confidence": "high",
+  "pending": "Pause remains until ERCOT audit (expected Dec 2026); TCEQ report due Oct 19, 2026; Abbott wants the Legislature to eliminate incentives."
+ },
+ {
+  "state": "TX",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "No state siting board or certificate for data centers; siting is by local zoning, with ERCOT/PUCT interconnection approval handled separately.",
+  "source_url": "https://www.butlersnow.com/news-and-events/texas-legislature-adopts-new-law-regarding-large-load-interconnection-and-operation",
+  "source_date": "2025-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "TX",
+  "indicator": "pm_threshold",
+  "level": 100,
+  "evidence": "SB 6 and PUCT standards trigger added disclosure, study and security requirements for new or expanded loads of 75 MW or more at a single site, below the 100 MW line.",
+  "source_url": "https://www.mondaq.com/unitedstates/oil-gas-electricity/1768842/public-utility-commission-of-texas-issues-proposed-rules-for-large-load-interconnections-what-data-center-and-ai-facility-developers-need-to-know",
+  "source_date": "2026-04",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "TX",
+  "indicator": "pm_timeline",
+  "level": 100,
+  "evidence": "ERCOT tracks more than 438,000 MW of large-load requests; Batch Zero results and MW allocations are not due until April 9, 2027 with a final transmission plan in fall 2027, and the TCEQ pause adds further delay.",
+  "source_url": "https://www.mondaq.com/unitedstates/oil-gas-electricity/1807826/puct-approves-batch-zero-framework-that-will-provide-a-pathway-for-large-load-to-connect-to-the-grid-and-receive-electricity",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "TX",
+  "indicator": "tx_sales",
+  "level": 30,
+  "evidence": "Sales tax exemption on data center equipment and electricity requires at least $200M investment, 100,000 sq ft and 20 permanent jobs, with self-certification and repayment if requirements fail.",
+  "source_url": "https://www.tpr.org/economy-and-labor/2026-07-28/texas-lawmakers-question-billions-in-tax-breaks-for-data-centers",
+  "source_date": "2026-07",
+  "confidence": "high",
+  "pending": "Senate Finance chair says the Legislature will revisit it next session; Abbott wants incentives eliminated."
+ },
+ {
+  "state": "TX",
+  "indicator": "tx_property",
+  "level": 0,
+  "evidence": "Local property-tax abatements for data centers are routinely available in Texas; the TPR report notes them as costs outside the state sales-tax estimate.",
+  "source_url": "https://www.tpr.org/economy-and-labor/2026-07-28/texas-lawmakers-question-billions-in-tax-breaks-for-data-centers",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": "Abbott and lawmakers signal curbing incentives in 2027 session."
+ },
+ {
+  "state": "TX",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Exemption carries job and investment conditions and projects that fail must repay avoided tax; of 20 projects audited, six were noncompliant or withdrew, but verification lags for years.",
+  "source_url": "https://www.tpr.org/economy-and-labor/2026-07-28/texas-lawmakers-question-billions-in-tax-breaks-for-data-centers",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": "Lawmakers considering stricter job requirements and audits."
+ },
+ {
+  "state": "TX",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "Texas Water Code requires data centers and other major users to return the annual TWDB water-use survey (failure is a criminal offense and blocks TCEQ permits); Abbott ordered enforcement Sept 14, 2026 and the AG opened an investigation Sept 24, 2026.",
+  "source_url": "https://gov.texas.gov/news/post/governor-abbott-directs-twdb-to-penalize-data-center-reporting-failures",
+  "source_date": "2026-09",
+  "confidence": "high",
+  "pending": "TWDB compliance update was due Oct 14, 2026."
+ },
+ {
+  "state": "TX",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No data-center-specific generator air limits found; TCEQ general permitting applies, now subject to the Abbott permit pause.",
+  "source_url": "https://www.fox7austin.com/news/texas-pausing-permits-all-data-centers",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "TX",
+  "indicator": "ev_review",
+  "level": 100,
+  "evidence": "Abbott's directive makes TCEQ approvals conditional on a data-center-specific audit disclosing power source, water use, cooling, noise, lighting, traffic, incentives and ownership; this is by executive directive, not statute.",
+  "source_url": "https://www.fox7austin.com/news/texas-pausing-permits-all-data-centers",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": "Could be codified or lifted after the ERCOT audit."
+ },
+ {
+  "state": "TX",
+  "indicator": "op_backup",
+  "level": 100,
+  "evidence": "SB 6 allows curtailment of new transmission-level large loads (connected after Dec 31, 2025) in load shed and lets ERCOT require loads with backup generation covering 50%+ of demand to deploy it or curtail before or during an energy emergency.",
+  "source_url": "https://www.butlersnow.com/news-and-events/texas-legislature-adopts-new-law-regarding-large-load-interconnection-and-operation",
+  "source_date": "2025-06",
+  "confidence": "high",
+  "pending": "Demand-reduction program rules (Project 58482) still in progress."
+ },
+ {
+  "state": "TX",
+  "indicator": "op_labor",
+  "level": 50,
+  "evidence": "Labor conditions are limited to incentive-linked job creation (20 permanent jobs) under the sales tax exemption; no prevailing wage or PLA mandate found.",
+  "source_url": "https://www.tpr.org/economy-and-labor/2026-07-28/texas-lawmakers-question-billions-in-tax-breaks-for-data-centers",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "TX",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "Annual TWDB water-use survey is mandatory for data centers and SB 6 requires large-load disclosures to ERCOT, but results are not published as a public operating-report regime.",
+  "source_url": "https://gov.texas.gov/news/post/governor-abbott-directs-twdb-to-penalize-data-center-reporting-failures",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "TX",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise, setback or similar operating rules for data centers found.",
+  "source_url": "https://www.fox7austin.com/news/texas-pausing-permits-all-data-centers",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "TX",
+  "indicator": "ad_uncertainty",
+  "level": 100,
+  "evidence": "Rules are in flux and directives overlap: final PUCT interconnection rule (Sept 2026), Batch Zero, an Abbott permit freeze, an AG investigation and pledged 2027 changes to incentives.",
+  "source_url": "https://www.dlapiper.com/en/insights/publications/2026/09/governor-abbott-expands-data-center-permitting-pause",
+  "source_date": "2026-09",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "TX",
+  "indicator": "ad_backlog",
+  "level": 100,
+  "evidence": "ERCOT large-load queue exceeds 438 GW (about 89% data centers) and ERCOT paused Batch Zero in August 2026 pending the audit.",
+  "source_url": "https://www.mondaq.com/unitedstates/oil-gas-electricity/1807826/puct-approves-batch-zero-framework-that-will-provide-a-pathway-for-large-load-to-connect-to-the-grid-and-receive-electricity",
+  "source_date": "2026-06",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "OK",
+  "indicator": "pw_tariff",
+  "level": 40,
+  "evidence": "HB 2992 (signed May 11, 2026, effective July 1) requires utilities to set separate terms for 75 MW+ large loads; PSO has filed a large-load tariff and OG&E filed a draft on June 17, 2026, none yet approved by the Corporation Commission.",
+  "source_url": "https://www.kgou.org/energy/2026-06-18/og-e-proposes-new-data-center-agreement-intended-to-prevent-residential-utility-cost-spikes",
+  "source_date": "2026-06",
+  "confidence": "high",
+  "pending": "OG&E expects roughly six months for approval."
+ },
+ {
+  "state": "OK",
+  "indicator": "pw_min_commit",
+  "level": 100,
+  "evidence": "OG&E's pending large-load agreement (75 MW+) proposes a 15-year term with a up to 5-year ramp, billing minimums and early-termination and capacity-reduction fees; HB 2992 requires long-term agreements but does not set a length.",
+  "source_url": "https://www.tdworld.com/transmission-reliability/article/55386986/oge-floats-large-load-tariff-to-protect-customers-from-data-center-demands",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "Level reflects the pending OG&E filing; enacted statute alone would score about 50."
+ },
+ {
+  "state": "OK",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "OG&E's pending tariff includes strong financial collateral requirements but amounts were not published in sources read.",
+  "source_url": "https://www.tdworld.com/transmission-reliability/article/55386986/oge-floats-large-load-tariff-to-protect-customers-from-data-center-demands",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": "Depends on Commission order."
+ },
+ {
+  "state": "OK",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "HB 2992, the Data Center Consumer Ratepayer Protection Act of 2026, applies cost-causation so 75 MW+ customers bear infrastructure costs tied to their projects; experts note SPP/FERC-governed transmission costs are outside state control.",
+  "source_url": "https://www.datacenterknowledge.com/regulations/oklahoma-law-opens-new-front-in-ai-data-center-power-fight",
+  "source_date": "2026-05",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "OK",
+  "indicator": "pm_moratorium",
+  "level": 0,
+  "evidence": "SB 1488 (statewide moratorium to Nov 1, 2029) was filed but did not advance; no statewide pause or Oklahoma local moratorium was identified (Lawton chose zoning limits instead).",
+  "source_url": "https://www.southwestledger.news/node/21429",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": "Bill may be reintroduced in 2027 session."
+ },
+ {
+  "state": "OK",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "No state siting approval for data centers; HB 2992 adds only notice to the Corporation Commission, county commissioners and neighbors within 60 days of a land purchase for large facilities.",
+  "source_url": "https://www.kgou.org/energy/2026-05-13/stitt-signs-bill-to-prevent-higher-utility-costs-from-data-centers-into-law",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "OK",
+  "indicator": "pm_threshold",
+  "level": 100,
+  "evidence": "HB 2992 defines large load customers as new facilities adding 75 MW or more, triggering special utility terms and land-acquisition notices.",
+  "source_url": "https://www.datacenterknowledge.com/regulations/oklahoma-law-opens-new-front-in-ai-data-center-power-fight",
+  "source_date": "2026-05",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "OK",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No expedited program or documented permitting backlog found for Oklahoma.",
+  "source_url": "https://www.datacenterknowledge.com/regulations/oklahoma-law-opens-new-front-in-ai-data-center-power-fight",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "OK",
+  "indicator": "tx_sales",
+  "level": 0,
+  "evidence": "Exemption on equipment for computer services/data processing (not electricity) with no investment or job minimum, subject to 80% out-of-state revenue test; web portals also exempt on electricity.",
+  "source_url": "https://www.okcommerce.gov/wp-content/uploads/Data-Center-Industry-Tax-Incentives.pdf",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": "HB 4424 (Speaker Hilbert) would limit data center incentives; status unknown."
+ },
+ {
+  "state": "OK",
+  "indicator": "tx_property",
+  "level": 30,
+  "evidence": "Sources conflict: the Commerce Dept lists a real-property investment exemption and a 2026 bill targets the five-year property-tax benefit, while a 2021 law reportedly excluded new data centers from the manufacturing exemption.",
+  "source_url": "https://www.readfrontier.org/stories/from-limiting-tax-breaks-to-moratoriums-oklahoma-legislators-eye-new-rules-for-data-centers/",
+  "source_date": "2026-02",
+  "confidence": "low",
+  "pending": "HB 4424 would limit the five-year property-tax benefit."
+ },
+ {
+  "state": "OK",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Incentives carry conditions such as the Quality Jobs payroll and wage thresholds and the 80% out-of-state revenue test; no clawback provisions were found.",
+  "source_url": "https://www.okcommerce.gov/wp-content/uploads/Data-Center-Industry-Tax-Incentives.pdf",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "OK",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No data center water reporting or limit enacted; HB 3394 (Corporation Commission list of large data centers with water and electricity use) was only introduced.",
+  "source_url": "https://www.readfrontier.org/stories/from-limiting-tax-breaks-to-moratoriums-oklahoma-legislators-eye-new-rules-for-data-centers/",
+  "source_date": "2026-02",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "OK",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No data-center-specific generator rules found; baseline air permitting applies.",
+  "source_url": "https://www.datacenterknowledge.com/regulations/oklahoma-law-opens-new-front-in-ai-data-center-power-fight",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "OK",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No state environmental review specific to data centers or general SEPA-type law found.",
+  "source_url": "https://www.datacenterknowledge.com/regulations/oklahoma-law-opens-new-front-in-ai-data-center-power-fight",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "OK",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No on-site generation or mandatory curtailment rules for data centers found.",
+  "source_url": "https://www.datacenterknowledge.com/regulations/oklahoma-law-opens-new-front-in-ai-data-center-power-fight",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": "OG&E tariff terms may add curtailment provisions."
+ },
+ {
+  "state": "OK",
+  "indicator": "op_labor",
+  "level": 50,
+  "evidence": "Labor conditions limited to incentive-linked wage and payroll thresholds in the Quality Jobs program.",
+  "source_url": "https://www.okcommerce.gov/wp-content/uploads/Data-Center-Industry-Tax-Incentives.pdf",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "OK",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "No ongoing operating reporting mandate enacted; HB 2992 disclosure covers land acquisition, not operations.",
+  "source_url": "https://www.datacenterknowledge.com/regulations/oklahoma-law-opens-new-front-in-ai-data-center-power-fight",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "OK",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules for data centers found; HB 4194 (decommissioning) was only introduced.",
+  "source_url": "https://www.readfrontier.org/stories/from-limiting-tax-breaks-to-moratoriums-oklahoma-legislators-eye-new-rules-for-data-centers/",
+  "source_date": "2026-02",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "OK",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "OG&E and PSO large-load tariffs await Commission action, HB 2992 terms are undefined, and incentive-limiting bills are expected to return.",
+  "source_url": "https://www.kgou.org/energy/2026-06-18/og-e-proposes-new-data-center-agreement-intended-to-prevent-residential-utility-cost-spikes",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "OK",
+  "indicator": "ad_backlog",
+  "level": 50,
+  "evidence": "Utilities describe a surge of data center load requests in OG&E and PSO territories and Oklahoma is in SPP, but no specific queue figures were found.",
+  "source_url": "https://www.kgou.org/energy/2026-06-18/og-e-proposes-new-data-center-agreement-intended-to-prevent-residential-utility-cost-spikes",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NM",
+  "indicator": "pw_tariff",
+  "level": 0,
+  "evidence": "No large-load or data-center tariff or PRC proceeding was found in sources read for New Mexico utilities (PNM, EPE, SPS); this is an absence finding.",
+  "source_url": "https://ladailypost.com/state-lawmakers-to-introduce-data-center-moratorium-in-upcoming-legislative-session/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": "Could not search PRC dockets directly; verify before use."
+ },
+ {
+  "state": "NM",
+  "indicator": "pw_min_commit",
+  "level": 0,
+  "evidence": "No minimum-bill or minimum-term rules for large loads found.",
+  "source_url": "https://ladailypost.com/state-lawmakers-to-introduce-data-center-moratorium-in-upcoming-legislative-session/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NM",
+  "indicator": "pw_collateral",
+  "level": 0,
+  "evidence": "No large-load deposit or collateral rules found.",
+  "source_url": "https://ladailypost.com/state-lawmakers-to-introduce-data-center-moratorium-in-upcoming-legislative-session/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NM",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "No statute or PRC order found; Haaland's pledged guardrails would require data centers to generate their own renewable energy, and the Project Jupiter participation agreement dedicates GRT proceeds to local water infrastructure.",
+  "source_url": "https://www.abqjournal.com/news/deb-haaland-vows-to-impose-data-center-moratorium-via-executive-order-if-elected-governor/3123658",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": "Haaland checklist and 2027 bills could mandate this."
+ },
+ {
+  "state": "NM",
+  "indicator": "pm_moratorium",
+  "level": 60,
+  "evidence": "Governor-elect Deb Haaland pledged an executive order for a statewide moratorium on new large-scale data centers, and four Democratic legislators plan a 2027 moratorium bill; Santa Fe County (18 months) and Socorro County (1 year) have local moratoria.",
+  "source_url": "https://www.abqjournal.com/news/deb-haaland-vows-to-impose-data-center-moratorium-via-executive-order-if-elected-governor/3123658",
+  "source_date": "2026-09",
+  "confidence": "high",
+  "pending": "EO would come on taking office (Jan 2027); legislative bill in the 2027 session."
+ },
+ {
+  "state": "NM",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Siting is by local zoning and county approvals (for example Do\u00f1a Ana County's $165B IRB for Project Jupiter); no state siting board.",
+  "source_url": "https://ladailypost.com/state-lawmakers-to-introduce-data-center-moratorium-in-upcoming-legislative-session/",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "NM",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No MW or acreage threshold for state review found.",
+  "source_url": "https://ladailypost.com/state-lawmakers-to-introduce-data-center-moratorium-in-upcoming-legislative-session/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": "Haaland's eight-point checklist may add one."
+ },
+ {
+  "state": "NM",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "Project Jupiter's air permits were deemed incomplete in Dec 2025 and remained pending in Aug 2026 with proceedings stayed by the NM Supreme Court, though no statewide timeline program exists.",
+  "source_url": "https://www.kob.com/?p=1126008",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NM",
+  "indicator": "tx_sales",
+  "level": 60,
+  "evidence": "No statewide data center sales/gross-receipts tax exemption program found; incentives come via local IRBs and the LEDA gross receipts tax share.",
+  "source_url": "https://www.nmlegis.gov/(X(1)S(sr2ovyuhheilfnk2ftrylnxi))/handouts/WNR%20102925%20Item%205%20EDD%20Data%20Center%20Economic%20Incentives.pdf",
+  "source_date": "2025-10",
+  "confidence": "low",
+  "pending": "Haaland says no state business aid unless guardrails are exceeded."
+ },
+ {
+  "state": "NM",
+  "indicator": "tx_property",
+  "level": 0,
+  "evidence": "County industrial revenue bonds are used routinely for abatement, for example a 95% abatement on Project Jupiter with a PILOT, and Meta's Los Lunas precedent.",
+  "source_url": "https://www.nmlegis.gov/(X(1)S(sr2ovyuhheilfnk2ftrylnxi))/handouts/WNR%20102925%20Item%205%20EDD%20Data%20Center%20Economic%20Incentives.pdf",
+  "source_date": "2025-10",
+  "confidence": "medium",
+  "pending": "Haaland pledge would restrict state aid."
+ },
+ {
+  "state": "NM",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Project Jupiter's participation agreement dedicates the first $50M of its GRT proceeds to county water and wastewater; no statewide clawback regime found.",
+  "source_url": "https://www.nmlegis.gov/(X(1)S(sr2ovyuhheilfnk2ftrylnxi))/handouts/WNR%20102925%20Item%205%20EDD%20Data%20Center%20Economic%20Incentives.pdf",
+  "source_date": "2025-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NM",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "State Engineer water-rights review applies; Project Jupiter's emergency well authorization is being challenged and critics demand a public hearing.",
+  "source_url": "https://www.kob.com/?p=1126008",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NM",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "NMED reviews Project Jupiter's air permit for on-site generation under the Air Quality Control Act, but no data-center-specific generator limits were found.",
+  "source_url": "https://www.dailylobo.com/article/2026/08/project-jupiter-where-the-ai-data-center-project-stands-in-nm",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": "Air permit hearing stayed by NM Supreme Court."
+ },
+ {
+  "state": "NM",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No state environmental impact review law or data-center-specific review found.",
+  "source_url": "https://www.dailylobo.com/article/2026/08/project-jupiter-where-the-ai-data-center-project-stands-in-nm",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NM",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No state rules on behind-the-meter generation or curtailment for data centers; the Microgrid Oversight Act (SB 235) died and a microgrid loophole remains.",
+  "source_url": "https://www.dailylobo.com/article/2026/08/project-jupiter-where-the-ai-data-center-project-stands-in-nm",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": "2027 bills aim to close the microgrid loophole."
+ },
+ {
+  "state": "NM",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No statutory labor conditions on data centers found.",
+  "source_url": "https://www.abqjournal.com/news/deb-haaland-vows-to-impose-data-center-moratorium-via-executive-order-if-elected-governor/3123658",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": "Haaland pledged New Mexicans get first bid on jobs."
+ },
+ {
+  "state": "NM",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "No ongoing operating reporting requirement found beyond local agreements.",
+  "source_url": "https://ladailypost.com/state-lawmakers-to-introduce-data-center-moratorium-in-upcoming-legislative-session/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NM",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules found.",
+  "source_url": "https://ladailypost.com/state-lawmakers-to-introduce-data-center-moratorium-in-upcoming-legislative-session/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NM",
+  "indicator": "ad_uncertainty",
+  "level": 100,
+  "evidence": "Active litigation has stayed Project Jupiter's air permit proceeding at the NM Supreme Court, while the governor-elect pledges an EO moratorium and legislators plan a 2027 moratorium bill.",
+  "source_url": "https://www.kob.com/?p=1126008",
+  "source_date": "2026-08",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "NM",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented interconnection queue or agency backlog for data centers found.",
+  "source_url": "https://ladailypost.com/state-lawmakers-to-introduce-data-center-moratorium-in-upcoming-legislative-session/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AZ",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "ACC approved an energy supply agreement for a TEP data center campus on Dec 3, 2025 and is pursuing a hybrid of extra-high-load tariffs plus ESAs; APS has a high load factor rate and its proposed update is in a rate case with a Commission vote due by Dec 31, 2026.",
+  "source_url": "https://www.azcc.gov/news/home/2026/04/17/chairman-myers--highlights-from-large-load-users-development-workshop",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "APS rate case decision by Dec 31, 2026; Docket E-00000A-25-0069."
+ },
+ {
+  "state": "AZ",
+  "indicator": "pw_min_commit",
+  "level": 50,
+  "evidence": "The approved TEP agreement is 10 years with minimum monthly billing and termination fees; a dissenting commissioner wanted longer terms.",
+  "source_url": "https://www.azcc.gov/news/home/2025/12/05/acc-approves-tep-energy-supply-agreement--ensures-customer-protections-from-costs-related-to-data-center-project",
+  "source_date": "2025-12",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "AZ",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "ACC workshop identified collateral and credit requirements as customer protections, but no amounts were set in sources read.",
+  "source_url": "https://www.azcc.gov/news/home/2026/04/17/chairman-myers--highlights-from-large-load-users-development-workshop",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AZ",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "The ACC order in Docket E-01933A-25-0187 requires the developer to pay for dedicated line extensions and a switchyard, and HB 2756 (2026) lets the ACC set service terms and requires cost-of-service studies; no statewide mandate yet.",
+  "source_url": "https://www.azcc.gov/news/home/2025/12/05/acc-approves-tep-energy-supply-agreement--ensures-customer-protections-from-costs-related-to-data-center-project",
+  "source_date": "2025-12",
+  "confidence": "medium",
+  "pending": "APS rate case could extend this."
+ },
+ {
+  "state": "AZ",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "Pima County passed a 120-day data center moratorium (ends Jan 20); Gov. Hobbs rejected AG Mayes' call for a statewide pause.",
+  "source_url": "https://www.kjzz.org/politics/2026-10-30/communities-across-arizona-consider-stronger-rules-for-data-center-development",
+  "source_date": "2026-10",
+  "confidence": "high",
+  "pending": "Pima Board of Supervisors vote expected by year-end; Mayes seeks legislation."
+ },
+ {
+  "state": "AZ",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "No state siting board for data centers; land use is by local zoning, and cities such as Tucson adopted data center code rules in Aug 2026.",
+  "source_url": "https://www.kjzz.org/politics/2026-10-30/communities-across-arizona-consider-stronger-rules-for-data-center-development",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "AZ",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "HB 2756 targets extra high load factor customers but the MW threshold was not available in the summary read; no state review threshold found.",
+  "source_url": "https://www.azleg.gov/legtext/57leg/2R/summary/H.HB2756_041026_SIGNED.DOCX.htm",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AZ",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No expedited program or documented permitting backlog found; the ACA has 60 days to decide incentive qualification.",
+  "source_url": "https://www.kjzz.org/business/2026-07-14/agency-received-flood-of-applications-ahead-of-pause-on-arizona-data-center-tax-breaks",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AZ",
+  "indicator": "tx_sales",
+  "level": 80,
+  "evidence": "HB 4168 bars new applications for the data center tax relief under A.R.S. 41-1519 from July 1, 2026 through June 30, 2029.",
+  "source_url": "https://ionanalytics.com/wp-content/uploads/2026/06/DWM-Data-Center-Legislative-Tracker-Passed-Publishing-version-1.2.pdf",
+  "source_date": "2026-06",
+  "confidence": "high",
+  "pending": "Hobbs wants to end the credit permanently."
+ },
+ {
+  "state": "AZ",
+  "indicator": "tx_property",
+  "level": 60,
+  "evidence": "No state property tax abatement for data centers was found; the state program covered sales tax.",
+  "source_url": "https://www.kjzz.org/business/2026-07-14/agency-received-flood-of-applications-ahead-of-pause-on-arizona-data-center-tax-breaks",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AZ",
+  "indicator": "tx_conditions",
+  "level": 0,
+  "evidence": "New incentives are unavailable during the pause, so no live incentive conditions apply.",
+  "source_url": "https://ionanalytics.com/wp-content/uploads/2026/06/DWM-Data-Center-Legislative-Tracker-Passed-Publishing-version-1.2.pdf",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AZ",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "No data-center-specific water rule is enacted; AG Mayes says there is little to no regulation, and local rules (Pima, Gilbert) propose bans on open-loop cooling. General groundwater rules apply.",
+  "source_url": "https://www.azfamily.com/2026/08/31/ag-mayes-calls-statewide-pause-new-data-center-construction/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": "Hobbs' office wants data centers to pay a fair share for water."
+ },
+ {
+  "state": "AZ",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No data-center-specific generator rules found.",
+  "source_url": "https://www.azfamily.com/2026/08/31/ag-mayes-calls-statewide-pause-new-data-center-construction/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AZ",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "Arizona has no state environmental review law for data centers.",
+  "source_url": "https://www.azfamily.com/2026/08/31/ag-mayes-calls-statewide-pause-new-data-center-construction/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AZ",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No state rules on on-site generation or mandatory curtailment for data centers found.",
+  "source_url": "https://www.azcc.gov/news/home/2026/04/17/chairman-myers--highlights-from-large-load-users-development-workshop",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AZ",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No labor conditions on data centers found; the incentive program is paused.",
+  "source_url": "https://www.kjzz.org/business/2026-07-14/agency-received-flood-of-applications-ahead-of-pause-on-arizona-data-center-tax-breaks",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AZ",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "HB 2756 requires utilities to file semiannual reports on extra high load factor interconnections with the ACC or governing body; no direct data center operating reports.",
+  "source_url": "https://www.azleg.gov/legtext/57leg/2R/summary/H.HB2756_041026_SIGNED.DOCX.htm",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "Reporting repeals Jan 1, 2034."
+ },
+ {
+  "state": "AZ",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules; local codes are being written.",
+  "source_url": "https://www.kjzz.org/politics/2026-10-30/communities-across-arizona-consider-stronger-rules-for-data-center-development",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "AZ",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "APS rate case decision due Dec 31, 2026, ACC large-load proceeding open, and AG Mayes vs Gov. Hobbs on a pause.",
+  "source_url": "https://azcc.gov/news/home/2026/07/10/what-s-next-in-the-aps-rate-case",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "AZ",
+  "indicator": "ad_backlog",
+  "level": 50,
+  "evidence": "Utilities report heavy large-load requests (TEP, APS, SRP) and the ACC is studying grid impacts, but no queue figures were found.",
+  "source_url": "https://www.azcc.gov/news/home/2026/04/17/chairman-myers--highlights-from-large-load-users-development-workshop",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NV",
+  "indicator": "pw_tariff",
+  "level": 40,
+  "evidence": "Microsoft filed a proposed Ratepayer Protection Tariff at the PUCN in May 2026, pending; no approved NV Energy data center rate class was found.",
+  "source_url": "https://developmentstoday.com/energy/microsoft-proposes-nevada-tariff-to-shield-ratepayers-from-ai-data-center-costs",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": "PUCN hearings expected; Ford wants three more PUCN commissioners."
+ },
+ {
+  "state": "NV",
+  "indicator": "pw_min_commit",
+  "level": 0,
+  "evidence": "No minimum-bill or term rules for large loads found; the Microsoft filing does not state a term or minimum.",
+  "source_url": "https://developmentstoday.com/energy/microsoft-proposes-nevada-tariff-to-shield-ratepayers-from-ai-data-center-costs",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NV",
+  "indicator": "pw_collateral",
+  "level": 0,
+  "evidence": "No large-load collateral rules found.",
+  "source_url": "https://developmentstoday.com/energy/microsoft-proposes-nevada-tariff-to-shield-ratepayers-from-ai-data-center-costs",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NV",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "Lombardo's EO 2026-005 requires abatement applicants to pledge to cover all electricity costs, but it applies only to those seeking tax breaks.",
+  "source_url": "https://thenevadaindependent.com/article/lombardo-curtails-nevada-data-center-tax-break-program-in-executive-order",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": "Ford says data centers should pay for power infrastructure; environmentalists want a statutory mandate."
+ },
+ {
+  "state": "NV",
+  "indicator": "pm_moratorium",
+  "level": 0,
+  "evidence": "No statewide or local moratorium was found; Ford's pledge is to pause tax abatements, which does not count here.",
+  "source_url": "https://thenevadaindependent.com/article/nevada-governor-candidate-aaron-ford-pledges-to-pause-new-data-center-tax-breaks",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NV",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "No state siting board for data centers; the GOED board approves abatements only.",
+  "source_url": "https://thenevadaindependent.com/article/nevada-governor-candidate-aaron-ford-pledges-to-pause-new-data-center-tax-breaks",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": "Ford would hold public hearings on each buildout."
+ },
+ {
+  "state": "NV",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No MW or acreage review threshold found.",
+  "source_url": "https://thenevadaindependent.com/article/nevada-governor-candidate-aaron-ford-pledges-to-pause-new-data-center-tax-breaks",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NV",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No expedited program; the EO orders state officials to propose ways to limit delays in meeting power demand.",
+  "source_url": "https://thenevadaindependent.com/article/lombardo-curtails-nevada-data-center-tax-break-program-in-executive-order",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NV",
+  "indicator": "tx_sales",
+  "level": 30,
+  "evidence": "Abatement program exists with capital, jobs and wage conditions; EO 2026-005 now bars relief on the school support tax and the state general-fund share of sales and use tax for new applicants.",
+  "source_url": "https://thenevadaindependent.com/article/lombardo-curtails-nevada-data-center-tax-break-program-in-executive-order",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": "Governor-elect Ford pledged to pause new abatements pending an audit."
+ },
+ {
+  "state": "NV",
+  "indicator": "tx_property",
+  "level": 30,
+  "evidence": "Property tax relief is available under the 2015 abatement law with capital, job, wage and audit conditions; 14 data centers received about $461M.",
+  "source_url": "https://thenevadaindependent.com/article/nevada-governor-candidate-aaron-ford-pledges-to-pause-new-data-center-tax-breaks",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": "Ford pause pledge would suspend new abatements."
+ },
+ {
+  "state": "NV",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Applicants must meet capex, job and wage requirements and audits, and the EO adds pledges on water standards, electricity costs and emergency grid access; no clawbacks were documented.",
+  "source_url": "https://thenevadaindependent.com/article/lombardo-curtails-nevada-data-center-tax-break-program-in-executive-order",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": "Ford would require public audits and more metrics."
+ },
+ {
+  "state": "NV",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "Abatement applicants must pledge to meet the water standard at their location under the EO; no general data center withdrawal caps found.",
+  "source_url": "https://thenevadaindependent.com/article/lombardo-curtails-nevada-data-center-tax-break-program-in-executive-order",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": "Ford proposes a statewide ban on evaporative cooling."
+ },
+ {
+  "state": "NV",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No data-center-specific generator rules found.",
+  "source_url": "https://thenevadaindependent.com/article/lombardo-curtails-nevada-data-center-tax-break-program-in-executive-order",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NV",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No state environmental review law or data-center-specific review found.",
+  "source_url": "https://thenevadaindependent.com/article/lombardo-curtails-nevada-data-center-tax-break-program-in-executive-order",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NV",
+  "indicator": "op_backup",
+  "level": 50,
+  "evidence": "Under the EO, abatement applicants pledge not to impede public access to electricity in a grid emergency; this is an incentive-linked obligation.",
+  "source_url": "https://thenevadaindependent.com/article/lombardo-curtails-nevada-data-center-tax-break-program-in-executive-order",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "NV",
+  "indicator": "op_labor",
+  "level": 50,
+  "evidence": "Abatements require hourly wage thresholds; no statutory prevailing wage mandate.",
+  "source_url": "https://thenevadaindependent.com/article/nevada-governor-candidate-aaron-ford-pledges-to-pause-new-data-center-tax-breaks",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": "Ford would require prevailing wages and encourage PLAs."
+ },
+ {
+  "state": "NV",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "Abatement recipients agree to regular audits, though economic output data is not required to keep the incentive.",
+  "source_url": "https://thenevadaindependent.com/article/nevada-governor-candidate-aaron-ford-pledges-to-pause-new-data-center-tax-breaks",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": "Ford would have GOED publish audits."
+ },
+ {
+  "state": "NV",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules found.",
+  "source_url": "https://thenevadaindependent.com/article/nevada-governor-candidate-aaron-ford-pledges-to-pause-new-data-center-tax-breaks",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NV",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Governor-elect Ford pledges to pause abatements and ban evaporative cooling, and Lombardo's EO and the pending Microsoft tariff add rule changes.",
+  "source_url": "https://thenevadannews.com/news/aaron-ford-to-overhaul-nevadas-utility-regulator/",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": "2027 legislative session."
+ },
+ {
+  "state": "NV",
+  "indicator": "ad_backlog",
+  "level": 50,
+  "evidence": "NV Energy plans about $3.5B in capital projects over three years to serve data centers, signaling constraints, but no queue data found.",
+  "source_url": "https://thenevadannews.com/news/aaron-ford-to-overhaul-nevadas-utility-regulator/",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ }
+]
