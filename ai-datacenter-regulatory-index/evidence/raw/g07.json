@@ -1,0 +1,1002 @@
+[
+ {
+  "state": "SD",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "MDU's Rate 45 (high-density contracted demand response, 10 MW+ new data center load) is approved in South Dakota and North Dakota, SB 135 (2026) requires separate service terms for 10 MW+ data centers, and Otter Tail filed a data-center rate structure for 75 MW+ loads (docket EL26-021) in July 2026.",
+  "source_url": "https://www.keloland.com/news/capitol-news-bureau/otter-tail-power-proposes-special-rates-for-data-centers/amp/",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": "Otter Tail EL26-021 pending at SD PUC; Xcel and Black Hills large-load terms not confirmed."
+ },
+ {
+  "state": "SD",
+  "indicator": "pw_min_commit",
+  "level": 50,
+  "evidence": "MDU Rate 45 requires an 85% load factor and security; Otter Tail's SD petition sets rate designs by customer without published term in the coverage found (its parallel ND filing proposes a 15-year minimum with exit fees).",
+  "source_url": "https://www.keloland.com/news/capitol-news-bureau/otter-tail-power-proposes-special-rates-for-data-centers/amp/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": "Otter Tail SD terms could become strong (15-yr/exit fees) if approved as in ND filing."
+ },
+ {
+  "state": "SD",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "MDU says data center customers must provide sufficient security and credit support, and SB 135 topics include collateral, but no per-MW deposit schedule was found.",
+  "source_url": "https://ndlegis.gov/sites/default/files/pdf/committees/69-2025/27.5028.03000appendixb.pdf",
+  "source_date": "2025-08",
+  "confidence": "low",
+  "pending": "Terms to be set in PUC dockets implementing SB 135."
+ },
+ {
+  "state": "SD",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "SB 135 (signed March 2026, effective July 1) requires data centers of 10 MW or more to pay for electricity rate increases they cause, and HB 1038 lets the PUC charge data centers for rate-review costs.",
+  "source_url": "https://www.keloland.com/news/capitol-news-bureau/governor-signs-data-center-protections-into-state-law/amp/",
+  "source_date": "2026-03",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "SD",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "Statewide moratorium bill HB 1301 (20 MW+, through June 2027) failed, but Aberdeen extended its local data center moratorium to July 2027 and other local pauses have been debated.",
+  "source_url": "https://www.dakotanewsnow.com/2026/10/21/aberdeen-mayor-explains-why-council-decided-extend-data-center-moratorium/",
+  "source_date": "2026-10",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "SD",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "SB 135 bars the state from preempting or limiting county and municipal authority to regulate data centers, so siting is by local zoning with no state certificate.",
+  "source_url": "https://www.keloland.com/news/capitol-news-bureau/governor-signs-data-center-protections-into-state-law/amp/",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "SD",
+  "indicator": "pm_threshold",
+  "level": 100,
+  "evidence": "SB 135 applies its ratepayer and water provisions and PUC cost review to data centers with 10 MW or more of peak demand, a threshold below 100 MW.",
+  "source_url": "https://www.keloland.com/news/capitol-news-bureau/governor-signs-data-center-protections-into-state-law/amp/",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "SD",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No expedited state program or documented backlog for data centers found; approvals run through local zoning and PUC tariff dockets.",
+  "source_url": "https://southdakotasearchlight.com/briefs/data-center-restrictions-signed-into-south-dakota-law-after-push-for-incentives-failed/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "SD",
+  "indicator": "tx_sales",
+  "level": 60,
+  "evidence": "South Dakota has a general sales tax and no data-center exemption: HB 1005 (50-year sales tax exemption) and SB 234 (IT equipment exemption) failed in 2026.",
+  "source_url": "https://westernstateswater.org/wp-content/uploads/2026/07/Data-Centers-Topical-Report-June-1-2026.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "SD",
+  "indicator": "tx_property",
+  "level": 60,
+  "evidence": "No state data-center property tax abatement was enacted in 2026; incentive bills failed. Local abatement options were not verified.",
+  "source_url": "https://southdakotasearchlight.com/briefs/data-center-restrictions-signed-into-south-dakota-law-after-push-for-incentives-failed/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": "Local tax-abatement authority not confirmed."
+ },
+ {
+  "state": "SD",
+  "indicator": "tx_conditions",
+  "level": 0,
+  "evidence": "No data-center incentive was enacted in 2026 (the proposed incentives, including a 50-year sales tax exemption, failed), so there are no incentive conditions to attach.",
+  "source_url": "https://southdakotasearchlight.com/briefs/data-center-restrictions-signed-into-south-dakota-law-after-push-for-incentives-failed/",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "SD",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "SB 135 adds water-use provisions requiring data centers not to overburden local water resources; specific limits or reporting formats were not found.",
+  "source_url": "https://southdakotasearchlight.com/briefs/data-center-restrictions-signed-into-south-dakota-law-after-push-for-incentives-failed/",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "SD",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No South Dakota-specific backup-generator rules for data centers found; a bill to exempt backup generators from PUC siting review failed, leaving baseline air permitting.",
+  "source_url": "https://southdakotasearchlight.com/briefs/data-center-restrictions-signed-into-south-dakota-law-after-push-for-incentives-failed/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "SD",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No state environmental review law or data-center-specific review identified in South Dakota.",
+  "source_url": "https://southdakotasearchlight.com/briefs/data-center-restrictions-signed-into-south-dakota-law-after-push-for-incentives-failed/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "SD",
+  "indicator": "op_backup",
+  "level": 50,
+  "evidence": "MDU Rate 45 gives data centers a demand-response signal and interrupts them first in system emergencies; this is rate-specific rather than a statewide mandate.",
+  "source_url": "https://ndlegis.gov/sites/default/files/pdf/committees/69-2025/27.5028.03000appendixb.pdf",
+  "source_date": "2025-08",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "SD",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No prevailing-wage, PLA or local-hire conditions for data centers found.",
+  "source_url": "https://southdakotasearchlight.com/briefs/data-center-restrictions-signed-into-south-dakota-law-after-push-for-incentives-failed/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "SD",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "HB 1301's annual public reporting for data centers failed; no statutory operating reporting was enacted.",
+  "source_url": "https://westernstateswater.org/wp-content/uploads/2026/07/Data-Centers-Topical-Report-June-1-2026.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "SD",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules for data centers; the state leaves such rules to counties and cities (Minnehaha and Lincoln counties are drafting ordinances).",
+  "source_url": "https://www.dakotanewsnow.com/2026/08/25/minnehaha-county-presents-initial-data-center-ordinance/",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "SD",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "SB 135 implementation at the PUC (Otter Tail EL26-021), local ordinances being drafted, and the Black Hills/NorthWestern merger review leave rules in motion.",
+  "source_url": "https://www.keloland.com/news/capitol-news-bureau/otter-tail-power-proposes-special-rates-for-data-centers/amp/",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": "Otter Tail docket; local ordinances; 2027 session."
+ },
+ {
+  "state": "SD",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented interconnection queue or agency backlog for data centers in South Dakota found.",
+  "source_url": "https://southdakotasearchlight.com/briefs/data-center-restrictions-signed-into-south-dakota-law-after-push-for-incentives-failed/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ND",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "MDU Rate 45 (10 MW+ new data center load, 85% load factor, demand response) is approved with PSC approval of each service agreement, while Otter Tail's PU-26-215 high-power-compute schedule (75 MW+, effective Jan 2027) is pending.",
+  "source_url": "https://www.psc.nd.gov/webdocs/case/26-0215/001-010.pdf",
+  "source_date": "2026-06",
+  "confidence": "high",
+  "pending": "Otter Tail PU-26-215 pending; Xcel not confirmed."
+ },
+ {
+  "state": "ND",
+  "indicator": "pw_min_commit",
+  "level": 50,
+  "evidence": "In effect, MDU Rate 45 carries load-factor and security terms; Otter Tail's pending Tier III proposes a 15-year minimum term with exit fees.",
+  "source_url": "https://www.psc.nd.gov/webdocs/case/26-0215/001-010.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "Otter Tail 15-yr term and exit fees would make this strong if approved."
+ },
+ {
+  "state": "ND",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "MDU requires sufficient security and credit support; Otter Tail's pending filing requires collateral sized to its risk exposure (letter of credit, bond, cash or parent guaranty).",
+  "source_url": "https://www.psc.nd.gov/webdocs/case/26-0215/001-010.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "Otter Tail collateral requirement pending."
+ },
+ {
+  "state": "ND",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "No statute mandates it, but PSC reviews each MDU data center agreement, MDU says no new rate-based assets are built for data centers and on-site generation costs are assigned to them.",
+  "source_url": "https://ndlegis.gov/sites/default/files/pdf/committees/69-2025/27.5028.03000appendixb.pdf",
+  "source_date": "2025-08",
+  "confidence": "medium",
+  "pending": "2027 session and interim AI/Data Centers Committee may consider mandates."
+ },
+ {
+  "state": "ND",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "Several counties (Barnes, Dunn, Morton and others) adopted local moratoria in 2026 (Oliver repealed its), while a statewide pause proposed by Sen. Mathern was not advanced in the September 2026 special session.",
+  "source_url": "https://northdakotamonitor.com/?p=21303",
+  "source_date": "2026-08",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "ND",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Local permits are the sole hurdle; the PSC can advise on grid impact but has no data-center siting authority and a certificate-of-public-convenience bill failed.",
+  "source_url": "https://www.pulse.bot/construction/news/data-center-dilemma-who-should-decide-where-they-go-in-north-dakota-6f31ac98-a9ef-405a-8c02-a2c9251adeac/",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": "Interim Artificial Intelligence and Data Centers Committee studying state role before 2027."
+ },
+ {
+  "state": "ND",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No statutory MW or acreage threshold triggers state review of data centers; only the MDU tariff's 10 MW threshold triggers PSC review of service agreements.",
+  "source_url": "https://ndlegis.gov/sites/default/files/pdf/committees/69-2025/27.5028.03000appendixb.pdf",
+  "source_date": "2025-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ND",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track program or documented delays found; MDU service requires a MISO load addition study and expedited project review.",
+  "source_url": "https://ndlegis.gov/sites/default/files/pdf/committees/69-2025/27.5028.03000appendixb.pdf",
+  "source_date": "2025-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ND",
+  "indicator": "tx_sales",
+  "level": 0,
+  "evidence": "North Dakota has an active sales tax exemption for data center IT equipment (enacted 2015, current form 2021) that saved more than $65 million in 2025; no restrictive thresholds were described.",
+  "source_url": "https://www.valleynewslive.com/2026/08/27/data-centers-north-dakota-have-received-millions-sales-tax-breaks/",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": "Interim committee and 2027 Legislature may revisit the exemption."
+ },
+ {
+  "state": "ND",
+  "indicator": "tx_property",
+  "level": 0,
+  "evidence": "Municipalities may exempt new or expanding business improvements for up to five years (or use PILOTs up to 20 years) under NDCC chapter 40-57.1, with data centers not excluded.",
+  "source_url": "https://ndlegis.gov/cencode/t40c57-1.pdf",
+  "source_date": "2026-11",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "ND",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "The sales tax exemption appears unconditioned (332 jobs created or retained 2021-2025), while property exemptions are negotiated with revocation terms; lawmakers are discussing community benefit agreements.",
+  "source_url": "https://www.valleynewslive.com/2026/08/27/data-centers-north-dakota-have-received-millions-sales-tax-breaks/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": "Community benefit agreement proposals for 2027."
+ },
+ {
+  "state": "ND",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No data-center-specific water limits or reporting found in North Dakota; water use remains a local concern.",
+  "source_url": "https://www.pulse.bot/construction/news/data-center-dilemma-who-should-decide-where-they-go-in-north-dakota-6f31ac98-a9ef-405a-8c02-a2c9251adeac/",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ND",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No state-specific backup generator rules for data centers found; local ordinances such as Morton County define when emergency generators may run.",
+  "source_url": "https://www.valleynewslive.com/2026/08/27/where-north-dakotas-data-centers-stand-26-facilities-tracked-statewide/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ND",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No state environmental review law or data-center-specific review identified; local permits are the main hurdle.",
+  "source_url": "https://www.pulse.bot/construction/news/data-center-dilemma-who-should-decide-where-they-go-in-north-dakota-6f31ac98-a9ef-405a-8c02-a2c9251adeac/",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ND",
+  "indicator": "op_backup",
+  "level": 50,
+  "evidence": "MDU Rate 45 customers are interrupted first in emergencies and expected to join demand response; on-site backup generation is permitted.",
+  "source_url": "https://ndlegis.gov/sites/default/files/pdf/committees/69-2025/27.5028.03000appendixb.pdf",
+  "source_date": "2025-08",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "ND",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No prevailing-wage, PLA or local-hire conditions for data centers found.",
+  "source_url": "https://www.valleynewslive.com/2026/08/27/data-centers-north-dakota-have-received-millions-sales-tax-breaks/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ND",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "No statutory operating reporting; the Tax Commissioner reports aggregate exemption and jobs data to an interim committee.",
+  "source_url": "https://www.valleynewslive.com/2026/08/27/data-centers-north-dakota-have-received-millions-sales-tax-breaks/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ND",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules; counties such as Morton are adopting local lighting, noise and setback ordinances.",
+  "source_url": "https://www.valleynewslive.com/2026/08/27/where-north-dakotas-data-centers-stand-26-facilities-tracked-statewide/",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "ND",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Interim AI and Data Centers Committee, tax-exemption scrutiny and a pending Otter Tail tariff set up possible changes in the 2027 session; the NDA ban was rejected in the September special session.",
+  "source_url": "https://northdakotamonitor.com/?p=21303",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": "2027 legislative session."
+ },
+ {
+  "state": "ND",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented data-center interconnection backlog found, though MDU noted transmission congestion from a northwest ND data center it does not serve.",
+  "source_url": "https://northdakotamonitor.com/?p=20905",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MT",
+  "indicator": "pw_tariff",
+  "level": 40,
+  "evidence": "NorthWestern Energy filed a Large New Load Tariff (5 MW+) with the Montana PSC on March 31, 2026; it is not approved, and a draft 2027 bill would create a large-load class.",
+  "source_url": "https://www.northwesternenergy.com/about-us/our-company/2026/04/01/northwestern-energy-submits-large-new-load-tariff-proposal-to-strengthen-customer-safeguards-and-support-montana-s-energy-future-and-economic-growth",
+  "source_date": "2026-04",
+  "confidence": "high",
+  "pending": "PSC decision on the tariff; 2027 Legislature."
+ },
+ {
+  "state": "MT",
+  "indicator": "pw_min_commit",
+  "level": 50,
+  "evidence": "The pending NorthWestern tariff proposes minimum demand and energy billing, longer minimum terms for 50 MW+ loads and termination cost provisions, but nothing is yet in effect.",
+  "source_url": "https://www.northwesternenergy.com/about-us/our-company/2026/04/01/northwestern-energy-submits-large-new-load-tariff-proposal-to-strengthen-customer-safeguards-and-support-montana-s-energy-future-and-economic-growth",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "Tariff pending."
+ },
+ {
+  "state": "MT",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "The pending tariff would require performance assurance and collateral and the draft interim-committee bill would require financial guarantees; amounts are unspecified and not yet in force.",
+  "source_url": "https://www.northwesternenergy.com/about-us/our-company/2026/04/01/northwestern-energy-submits-large-new-load-tariff-proposal-to-strengthen-customer-safeguards-and-support-montana-s-energy-future-and-economic-growth",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "Tariff and bill pending."
+ },
+ {
+  "state": "MT",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "Montana law requires PSC review that service to a new 5 MW+ NorthWestern customer will not harm others; stronger cost-causer mandates are proposed in the tariff and a draft 2027 bill advanced Sept 2026.",
+  "source_url": "https://dailymontanan.com/?p=38779",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": "Draft bill for 2027 session; tariff case."
+ },
+ {
+  "state": "MT",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "Missoula County adopted a one-year interim moratorium on new or expanded data centers in July 2026; no statewide pause has been enacted.",
+  "source_url": "https://montanafreepress.org/2026/07/09/missoula-county-adopts-temporary-moratorium-on-data-centers/",
+  "source_date": "2026-07",
+  "confidence": "high",
+  "pending": "Local ballot initiatives in Butte-Silver Bow and Yellowstone County; calls for 2027 statewide action."
+ },
+ {
+  "state": "MT",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Data centers are subject to local zoning and general environmental permits; DEQ's guidance identifies no data-center-specific state siting approval.",
+  "source_url": "https://montanachamber.com/wp-content/uploads/2026/04/Montana_DEQ_Data_Center_FAQ.pdf",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MT",
+  "indicator": "pm_threshold",
+  "level": 100,
+  "evidence": "New NorthWestern customers over 5 MW must show the PSC that service will not adversely affect other customers (MCA 68-8-201), a threshold far below 100 MW.",
+  "source_url": "https://montanachamber.com/wp-content/uploads/2026/04/Montana_DEQ_Data_Center_FAQ.pdf",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MT",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track program or documented backlog identified; DEQ advises early contact and MEPA review depends on permits needed.",
+  "source_url": "https://montanachamber.com/wp-content/uploads/2026/04/Montana_DEQ_Data_Center_FAQ.pdf",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MT",
+  "indicator": "tx_sales",
+  "level": 0,
+  "evidence": "Montana has no general sales tax, so data center equipment is not subject to one.",
+  "source_url": "https://commerce.mt.gov/_shared/business/docs/Business-Incentives-Summary-06102026.pdf",
+  "source_date": "2026-06",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "MT",
+  "indicator": "tx_property",
+  "level": 0,
+  "evidence": "Montana offers data centers a 10-year reduced property tax rate (Class 17) and a general new-industry property tax abatement.",
+  "source_url": "https://commerce.mt.gov/_shared/business/docs/Business-Incentives-Summary-06102026.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "MEIC and others urge higher data center property tax rates."
+ },
+ {
+  "state": "MT",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Class 17 eligibility has timelines and ownership criteria but no clawbacks or water or energy conditions were found in the summary.",
+  "source_url": "https://commerce.mt.gov/_shared/business/docs/Business-Incentives-Summary-06102026.pdf",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MT",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "Cooling water needs DNRC approval under the Montana Water Use Act and discharges need DEQ permits, but no data-center-specific cap or reporting exists.",
+  "source_url": "https://montanachamber.com/wp-content/uploads/2026/04/Montana_DEQ_Data_Center_FAQ.pdf",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "Advocates propose annual water reporting."
+ },
+ {
+  "state": "MT",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "Backup generators need a Montana Air Quality Permit only if potential emissions exceed 25 tons per year, a general baseline rule.",
+  "source_url": "https://montanachamber.com/wp-content/uploads/2026/04/Montana_DEQ_Data_Center_FAQ.pdf",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MT",
+  "indicator": "ev_review",
+  "level": 50,
+  "evidence": "The Montana Environmental Policy Act applies when a state agency action such as an air or water permit may significantly affect the environment.",
+  "source_url": "https://montanachamber.com/wp-content/uploads/2026/04/Montana_DEQ_Data_Center_FAQ.pdf",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MT",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No curtailment or on-site generation rules for data centers are in effect; the draft bill does not address self-supply.",
+  "source_url": "https://dailymontanan.com/?p=38779",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MT",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No prevailing-wage, PLA or local-hire conditions for data centers found.",
+  "source_url": "https://commerce.mt.gov/_shared/business/docs/Business-Incentives-Summary-06102026.pdf",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MT",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "No statutory operating reporting requirements for data centers found.",
+  "source_url": "https://montanachamber.com/wp-content/uploads/2026/04/Montana_DEQ_Data_Center_FAQ.pdf",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MT",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules for data centers; Missoula County's 2021 rules are local.",
+  "source_url": "https://montanafreepress.org/2026/07/09/missoula-county-adopts-temporary-moratorium-on-data-centers/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MT",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "A pending PSC tariff case, a clash between NorthWestern and the PSC over approval authority, a draft 2027 bill, and the Earthjustice complaint keep rules unsettled.",
+  "source_url": "https://news.mt.gov/Governors-Office/Gov-Gianforte-DEQ-Intervene-in-Large-New-Load-Tariff-Case-to-Protect-Montana-Customers",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "PSC tariff decision; 2027 session."
+ },
+ {
+  "state": "MT",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented data-center interconnection backlog found; NorthWestern said it had no signed agreements in 2025.",
+  "source_url": "https://www.utilitydive.com/news/northwestern-large-load-data-center-tariff-montana/803334/",
+  "source_date": "2025-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WY",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "Black Hills' Large Power Contract Service tariff, developed with Microsoft and accepted by the PSC, covers Cheyenne data centers, while Rocky Mountain Power handles loads over 200 MW through Schedule 400 special contracts under a pending docket.",
+  "source_url": "https://cowboystatedaily.com/2026/06/22/how-black-hills-energy-is-preparing-for-surge-of-power-hungry-wyoming-data-centers/",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "Black Hills (20002-148-ER-26) and RMP (20000-710-ER-26) dockets pending."
+ },
+ {
+  "state": "WY",
+  "indicator": "pw_min_commit",
+  "level": 50,
+  "evidence": "Wyoming large-load deals are special contracts that commonly carry multi-year terms and take-or-pay minimums, but the specific Black Hills LPCS minimums were not found.",
+  "source_url": "https://insight.factset.com/balancing-hyperscale-demand-and-ratepayer-protections-in-wyoming",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": "Rate case outcomes could set precedent."
+ },
+ {
+  "state": "WY",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "Black Hills requires large customers to fund interconnection and file a service plan with the PSC, with guarantees or letters of credit typical; no published deposit schedule found.",
+  "source_url": "https://cowboystatedaily.com/2026/06/22/how-black-hills-energy-is-preparing-for-surge-of-power-hungry-wyoming-data-centers/",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WY",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "Black Hills' tariff makes the large customer pay infrastructure costs and Gov. Gordon's Executive Order 2026-03 tells developers to pay additional power costs, but the order has no enforcement and no statute exists.",
+  "source_url": "https://wyomingoutdoorcouncil.org/wp-content/uploads/WOC-Data-Centers-_-White-Paper-2.0-_-Public-Version_FINAL-2.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "Legislative action expected after the EO."
+ },
+ {
+  "state": "WY",
+  "indicator": "pm_moratorium",
+  "level": 0,
+  "evidence": "Cheyenne's city council rejected a 12-month data center moratorium 8-1 in May 2026 and no other Wyoming moratoria were found.",
+  "source_url": "https://www.wyomingpublicmedia.org/wyoming-economy/2026-05-28/no-pause-on-data-centers-for-cheyenne",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "WY",
+  "indicator": "pm_siting",
+  "level": 50,
+  "evidence": "The Industrial Siting Council reviews large industrial projects, but data centers in county or city industrial parks (e.g., Cheyenne LEADS) can avoid it, so state review is partial.",
+  "source_url": "https://wyomingoutdoorcouncil.org/wp-content/uploads/WOC-Data-Centers-_-White-Paper-2.0-_-Public-Version_FINAL-2.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "Proposals to bring park-sited data centers under the Council."
+ },
+ {
+  "state": "WY",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No MW or acreage threshold for data centers is set in Wyoming law; a 75 MW PSC review bill drafted in 2025 was never introduced.",
+  "source_url": "https://wyomingoutdoorcouncil.org/wp-content/uploads/WOC-Data-Centers-_-White-Paper-2.0-_-Public-Version_FINAL-2.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "WY",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "Industrial Siting Act reviews have a statutory limit of roughly 135-165 days but can take up to 18 months, with no special data center fast-track found.",
+  "source_url": "https://www.ksut.org/2026-01-16/bigger-data-centers-are-coming-how-can-wyoming-get-ahead-of-the-boom",
+  "source_date": "2026-01",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "WY",
+  "indicator": "tx_sales",
+  "level": 0,
+  "evidence": "Wyoming exempts data center equipment from sales tax under W.S. 39-15-105 with a low entry bar of $5 million capital investment and $2 million annual equipment purchases (higher tier at $50 million).",
+  "source_url": "https://wyoleg.gov/InterimCommittee/2023/03-202311133-032023DataCenterExemptionReport.pdf",
+  "source_date": "2023-11",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "WY",
+  "indicator": "tx_property",
+  "level": 60,
+  "evidence": "No data-center-specific property tax abatement was found in Wyoming sources reviewed.",
+  "source_url": "https://wyoleg.gov/InterimCommittee/2023/03-202311133-032023DataCenterExemptionReport.pdf",
+  "source_date": "2023-11",
+  "confidence": "low",
+  "pending": "Not verified against statute."
+ },
+ {
+  "state": "WY",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "The sales tax exemption requires Wyoming Business Council job certification, record keeping and tax accrual if thresholds are missed, with annual agency reporting to the legislature.",
+  "source_url": "https://wyoleg.gov/InterimCommittee/2023/03-202311133-032023DataCenterExemptionReport.pdf",
+  "source_date": "2023-11",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "WY",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "HB 90, a $500,000 study of data center consumptive water use, failed in 2026, and the executive order only asks agencies for water-saving recommendations.",
+  "source_url": "https://westernstateswater.org/wp-content/uploads/2026/07/Data-Centers-Topical-Report-June-1-2026.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "EO 2026-03 agency water recommendations (due 60 days after order)."
+ },
+ {
+  "state": "WY",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "Wyoming DEQ air permitting is the main track and no Wyoming-specific backup diesel generator rules for data centers were identified.",
+  "source_url": "https://wyomingoutdoorcouncil.org/wp-content/uploads/WOC-Data-Centers-_-White-Paper-2.0-_-Public-Version_FINAL-2.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "WY",
+  "indicator": "ev_review",
+  "level": 50,
+  "evidence": "The Industrial Siting Act provides socioeconomic and environmental review of large industrial projects, though industrial-park siting can sidestep it.",
+  "source_url": "https://wyomingoutdoorcouncil.org/wp-content/uploads/WOC-Data-Centers-_-White-Paper-2.0-_-Public-Version_FINAL-2.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "WY",
+  "indicator": "op_backup",
+  "level": 50,
+  "evidence": "Black Hills expects large-load customers to build or contract for their own dispatchable on-site power integrated with the grid, but no mandatory curtailment rule exists.",
+  "source_url": "https://cowboystatedaily.com/2026/06/22/how-black-hills-energy-is-preparing-for-surge-of-power-hungry-wyoming-data-centers/",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "WY",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No prevailing-wage, PLA or local-hire conditions for data centers found.",
+  "source_url": "https://wyoleg.gov/InterimCommittee/2023/03-202311133-032023DataCenterExemptionReport.pdf",
+  "source_date": "2023-11",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WY",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "Exemption users must report sales tax exempted and jobs if the Department of Revenue asks, and agencies report annually to the revenue interim committee.",
+  "source_url": "https://wyoleg.gov/InterimCommittee/2023/03-202311133-032023DataCenterExemptionReport.pdf",
+  "source_date": "2023-11",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "WY",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback restrictions for data centers; EO 2026-03 only sets principles for agencies.",
+  "source_url": "https://wyomingoutdoorcouncil.org/wp-content/uploads/WOC-Data-Centers-_-White-Paper-2.0-_-Public-Version_FINAL-2.pdf",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "WY",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Executive Order 2026-03, legislative committee work on large loads, and pending Black Hills and Rocky Mountain Power rate cases leave rules in flux.",
+  "source_url": "https://insight.factset.com/balancing-hyperscale-demand-and-ratepayer-protections-in-wyoming",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": "2027 legislative session."
+ },
+ {
+  "state": "WY",
+  "indicator": "ad_backlog",
+  "level": 50,
+  "evidence": "The consumer advocate says the state cannot yet handle the load growth, with a 5 GW+ developer pipeline and Black Hills load studies taking months to years.",
+  "source_url": "https://cowboystatedaily.com/2026/06/18/wyoming-wrestles-with-unprecedented-power-demand-from-massive-data-centers/",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "ID",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "Idaho Power requires a special contract for loads over 20 MW, and HB 911 (2026) requires PUC approval of service contracts for new large loads of 50 MW or more.",
+  "source_url": "https://idahoconservation.org/icl-bill-tracker/electricity-new-large-loads",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "Implementation of HB 911 at the PUC."
+ },
+ {
+  "state": "ID",
+  "indicator": "pw_min_commit",
+  "level": 50,
+  "evidence": "HB 911 sets contract requirements for large loads, but its term or minimum bill details were not confirmed.",
+  "source_url": "https://idahoconservation.org/icl-bill-tracker/electricity-new-large-loads",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ID",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "HB 911 sets requirements for financial security for new large loads, with no specific deposit amounts found.",
+  "source_url": "https://idahoconservation.org/icl-bill-tracker/electricity-new-large-loads",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ID",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "HB 911 (2026) applies a no-harm test and cost allocation rules so large loads cover the full cost of their energy use; ICL lists it as law.",
+  "source_url": "https://idahoconservation.org/icl-bill-tracker/electricity-new-large-loads",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "Signing detail not independently confirmed."
+ },
+ {
+  "state": "ID",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "Bannock County adopted a 180-day data center moratorium in 2026; Kootenai County had a moratorium it later replaced with rules.",
+  "source_url": "https://idahoconservation.org/blog/bannock-county-sets-a-180-day-data-center-moratorium",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "ID",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Siting is by local zoning and county approvals (such as Kuna's); no state siting certificate exists for data centers.",
+  "source_url": "https://boisedev.com/news/2026/03/16/data-micron-exemption/",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "ID",
+  "indicator": "pm_threshold",
+  "level": 100,
+  "evidence": "HB 911 triggers PUC contract review for new loads of 50 MW or more, below the 100 MW mark.",
+  "source_url": "https://idahoconservation.org/icl-bill-tracker/electricity-new-large-loads",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "ID",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No expedited state program or documented delays for data center approval found.",
+  "source_url": "https://boisedev.com/news/2026/03/16/data-micron-exemption/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ID",
+  "indicator": "tx_sales",
+  "level": 30,
+  "evidence": "Idaho's 2020 sales tax exemption for data center purchases requires projects over $250 million with more than 30 permanent jobs; 2026 repeal bills failed.",
+  "source_url": "https://boisedev.com/news/2026/02/09/bipartisan-bill-would-limit-tax-exemptions-for-data-centers-add-new-requirements-for-water-power-usage/",
+  "source_date": "2026-02",
+  "confidence": "medium",
+  "pending": "Rollback bills recur each session."
+ },
+ {
+  "state": "ID",
+  "indicator": "tx_property",
+  "level": 30,
+  "evidence": "Businesses investing over $1 billion in a county can cap property tax value at $400 million, but data centers were barred from urban renewal districts in 2023.",
+  "source_url": "https://boisedev.com/news/2026/03/16/data-micron-exemption/",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": "Lawmakers agree the cap needs reform."
+ },
+ {
+  "state": "ID",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "The exemption carries job and investment thresholds but no clawbacks, and a bill to add power and water conditions and a sunset died in 2026.",
+  "source_url": "https://boisedev.com/news/2026/03/16/data-micron-exemption/",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "ID",
+  "indicator": "ev_water",
+  "level": 100,
+  "evidence": "HB 895, signed April 2, 2026, classifies data center cooling as consumptive use and requires closed-loop or direct-to-chip cooling or municipal and district water instead of standard commercial water permits.",
+  "source_url": "https://westernstateswater.org/wp-content/uploads/2026/07/Data-Centers-Topical-Report-June-1-2026.pdf",
+  "source_date": "2026-06",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "ID",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Idaho-specific backup generator rules for data centers found.",
+  "source_url": "https://boisedev.com/news/2026/03/16/data-micron-exemption/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ID",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "Idaho has no general state environmental review act and no data-center-specific review.",
+  "source_url": "https://boisedev.com/news/2026/03/16/data-micron-exemption/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ID",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No curtailment or on-site generation mandate for data centers found.",
+  "source_url": "https://idahoconservation.org/icl-bill-tracker/electricity-new-large-loads",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ID",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No prevailing-wage, PLA or local-hire conditions found; related bills failed.",
+  "source_url": "https://westernstateswater.org/wp-content/uploads/2026/07/Data-Centers-Topical-Report-June-1-2026.pdf",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ID",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "Bills requiring water transparency and reporting (HB 609, HB 820, HB 897) failed in 2026.",
+  "source_url": "https://westernstateswater.org/wp-content/uploads/2026/07/Data-Centers-Topical-Report-June-1-2026.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "ID",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide data center noise or setback rules; counties such as Kootenai bar data centers over the aquifer locally.",
+  "source_url": "https://www.kunr.org/2026-03-27/some-mountain-west-counties-impose-moratoriums-on-data-centers-as-national-pause-is-proposed",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "ID",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Tax rollback efforts, property-tax cap reform and HB 911 and HB 895 implementation keep the policy environment moving.",
+  "source_url": "https://boisedev.com/news/2026/03/16/data-micron-exemption/",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": "2027 session."
+ },
+ {
+  "state": "ID",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented interconnection or agency backlog for data centers found.",
+  "source_url": "https://idahoconservation.org/icl-bill-tracker/electricity-new-large-loads",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ }
+]

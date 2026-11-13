@@ -1,0 +1,1002 @@
+[
+ {
+  "state": "LA",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "Louisiana PSC voted 4-1 on 2025-12-17 (Coussan directive) to create a large-load fast lane for utilities such as Entergy Louisiana; this is a directive/framework plus bespoke contracts (e.g., Meta), not a standalone statewide tariff class.",
+  "source_url": "https://www.eenews.net/articles/louisiana-adopts-lightning-speed-process-to-power-data-centers",
+  "source_date": "2025-12",
+  "confidence": "medium",
+  "pending": "Commissioner Lewis's competing directive was deferred; two new PSC members seated after Nov 2026 election."
+ },
+ {
+  "state": "LA",
+  "indicator": "pw_min_commit",
+  "level": 50,
+  "evidence": "Coussan directive requires at least a 10-year agreement with a new large-load customer; Meta's Entergy contracts reportedly run 15-20 years.",
+  "source_url": "https://www.all4energy.org/watchdog/large-load-and-lightning-directives/",
+  "source_date": "2025-12",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "LA",
+  "indicator": "pw_collateral",
+  "level": 0,
+  "evidence": "No large-load-specific deposit or collateral requirement found in the PSC directive or press coverage reviewed.",
+  "source_url": "https://www.all4energy.org/watchdog/large-load-and-lightning-directives/",
+  "source_date": "2025-12",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "LA",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "To use the expedited path the large-load customer must cover at least 50% of upfront costs; Gov. Landry's 2026-06-25 executive order also targets protecting ratepayers from data-center costs. Applies to the fast track rather than all large loads.",
+  "source_url": "https://lailluminator.com/?p=33545",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "Landry EO directs LED to write new tax-break eligibility conditions within 90 days (about late Sept 2026)."
+ },
+ {
+  "state": "LA",
+  "indicator": "pm_moratorium",
+  "level": 0,
+  "evidence": "No state or local data center moratorium found in Louisiana in sources reviewed.",
+  "source_url": "https://www.eenews.net/articles/louisiana-adopts-lightning-speed-process-to-power-data-centers",
+  "source_date": "2025-12",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "LA",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Siting is local zoning; the PSC reviews generation certification for utilities, not data center siting. No state siting board found.",
+  "source_url": "https://www.eenews.net/articles/louisiana-adopts-lightning-speed-process-to-power-data-centers",
+  "source_date": "2025-12",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "LA",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No MW or acreage threshold for state data center review found; the PSC directive does not define 'large load' in the coverage reviewed.",
+  "source_url": "https://www.eenews.net/articles/louisiana-adopts-lightning-speed-process-to-power-data-centers",
+  "source_date": "2025-12",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "LA",
+  "indicator": "pm_timeline",
+  "level": 0,
+  "evidence": "Landry's 'Lightning Speed' initiative and the Dec 2025 PSC directive cap expedited utility generation approvals at about 7-8 months versus a normal 10-12; the PSC fast-tracked Entergy's seven plants for Meta in April 2026.",
+  "source_url": "https://www.wwno.org/coastal-desk/2026-04-21/advocates-cite-lack-of-transparency-rising-costs-as-regulators-fast-track-second-meta-data-center",
+  "source_date": "2026-04",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "LA",
+  "indicator": "tx_sales",
+  "level": 30,
+  "evidence": "Act 730 (2024) gives a state and local sales/use tax rebate to data centers with at least $200M of new investment and 50 new permanent jobs, for 20 years plus a possible 10-year extension; spending must fall between 2024-07-01 and 2029-07-01.",
+  "source_url": "https://www.credaglobal.org/chapters/find-a-local-chapter/united-states-chapters/louisiana/gulf-coast/news/louisiana-provides-incentives-for-data-center-development",
+  "source_date": "2024",
+  "confidence": "medium",
+  "pending": "Landry EO (2026-06-25) orders new eligibility requirements for the exemption."
+ },
+ {
+  "state": "LA",
+  "indicator": "tx_property",
+  "level": null,
+  "evidence": "Could not confirm how property tax abatement or PILOT arrangements apply to data centers in Louisiana; search budget ran out before this was checked.",
+  "source_url": "",
+  "source_date": "",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "LA",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Act 730 rebate requires Department of Economic Development certification, $200M investment and 50 jobs, and allows the department to terminate the agreement; no wage or efficiency clawbacks found.",
+  "source_url": "https://www.credaglobal.org/chapters/find-a-local-chapter/united-states-chapters/louisiana/gulf-coast/news/louisiana-provides-incentives-for-data-center-development",
+  "source_date": "2024",
+  "confidence": "medium",
+  "pending": "LED to add new conditions under the 2026 executive order."
+ },
+ {
+  "state": "LA",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No enacted water rule for data centers; HB 1206 (2026), which would give DEC authority over data center withdrawals with hearings, was deferred on 2026-04-28.",
+  "source_url": "https://cpo.soar.com/articles/7870721/Louisiana/Data-center-water-permitting-bill-deferred-after-supporters-press-transparency-goals",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "Sponsor plans a broader permit-and-reporting bill in a future session."
+ },
+ {
+  "state": "LA",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Louisiana data-center-specific backup generator or on-site generation air rule found.",
+  "source_url": "https://www.eenews.net/articles/louisiana-adopts-lightning-speed-process-to-power-data-centers",
+  "source_date": "2025-12",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "LA",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No data-center-specific state environmental review found; Louisiana has no general SEPA-style law identified in sources reviewed.",
+  "source_url": "https://www.eenews.net/articles/louisiana-adopts-lightning-speed-process-to-power-data-centers",
+  "source_date": "2025-12",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "LA",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No state curtailment, demand-response or behind-the-meter limit for data centers found.",
+  "source_url": "https://www.all4energy.org/watchdog/large-load-and-lightning-directives/",
+  "source_date": "2025-12",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "LA",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No prevailing wage, PLA or local-hire mandate for data centers found.",
+  "source_url": "https://www.credaglobal.org/chapters/find-a-local-chapter/united-states-chapters/louisiana/gulf-coast/news/louisiana-provides-incentives-for-data-center-development",
+  "source_date": "2024",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "LA",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "Incentive agreements are certified by the Department of Economic Development; advocates and a court-related dispute over Meta disclosing job and power figures suggest limited reporting only.",
+  "source_url": "https://www.wwno.org/coastal-desk/2026-04-21/advocates-cite-lack-of-transparency-rising-costs-as-regulators-fast-track-second-meta-data-center",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "LA",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rule for data centers found.",
+  "source_url": "https://www.eenews.net/articles/louisiana-adopts-lightning-speed-process-to-power-data-centers",
+  "source_date": "2025-12",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "LA",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Governor ordered new tax-break conditions in June 2026, a deferred water bill and a deferred competing PSC directive are pending, and PSC seats turn over after the Nov 2026 election.",
+  "source_url": "https://lailluminator.com/?p=33545",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "Final PSC vote on Entergy/Meta plants set for Nov 18, 2026."
+ },
+ {
+  "state": "LA",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented interconnection queue or agency backlog specific to data centers found; the PSC is instead accelerating approvals.",
+  "source_url": "https://www.wwno.org/coastal-desk/2026-04-21/advocates-cite-lack-of-transparency-rising-costs-as-regulators-fast-track-second-meta-data-center",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "No standalone large-load tariff described; Entergy Mississippi serves data centers through bespoke contracts under SB 2001 (2024), and Entergy has made a voluntary 'Fair Share Plus' pledge. Earthjustice/Synapse recommend a standardized large-load contract.",
+  "source_url": "https://earthjustice.org/feature/data-center-mississippi-report",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "pw_min_commit",
+  "level": 50,
+  "evidence": "Entergy says its data center agreements include multi-year terms, prepayment and early-termination penalties, but gives no term length or minimum-bill percentage.",
+  "source_url": "https://www.entergy.com/datacenters/fairshareplus",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "Entergy's Fair Share Plus principles call for liquid collateral (cash, letters of credit) and parent guarantees, with no dollar amounts; a voluntary pledge, not a PSC rule.",
+  "source_url": "https://www.entergy.com/datacenters/fairshareplus",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "Entergy's voluntary pledge says data centers pay their share; Synapse estimates Mississippi residential customers still pay about $10.60/month through an interim capacity rider, and SB 2001 reduced PSC oversight.",
+  "source_url": "https://earthjustice.org/feature/data-center-mississippi-report",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "Jackson City Council passed a six-month data center moratorium 5-2 on 2026-07-14.",
+  "source_url": "https://ourtupelo.com/jackson-passes-states-first-data-center-moratorium/",
+  "source_date": "2026-07",
+  "confidence": "high",
+  "pending": "Council can extend or end it at any time."
+ },
+ {
+  "state": "MS",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "No state siting board; siting is by local zoning and MDA incentive approval, with MDEQ air permits as the only state review.",
+  "source_url": "https://mississippitoday.org/2026/07/29/data-centers-incentives-mississippi/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No MW threshold for extra state review found; statutory incentive thresholds are investment- and jobs-based.",
+  "source_url": "https://mississippitoday.org/2026/07/29/data-centers-incentives-mississippi/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "pm_timeline",
+  "level": 0,
+  "evidence": "SB 2001 (2024) was designed to make utility grid expansion for data centers easier and faster by reducing PSC oversight.",
+  "source_url": "https://earthjustice.org/feature/data-center-mississippi-report",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "tx_sales",
+  "level": 0,
+  "evidence": "Statutory 10-year sales/use tax exemption on data center construction materials and equipment needs MDA approval, $20M investment and 20 jobs at 125% of the average wage (thresholds cut in 2019); AWS got a permanent exemption under SB 2001.",
+  "source_url": "https://mississippitoday.org/2026/07/29/data-centers-incentives-mississippi/",
+  "source_date": "2026-07",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "tx_property",
+  "level": 0,
+  "evidence": "Counties routinely grant fee-in-lieu agreements that can cut property tax to about one-third, after $60M investment, for up to 30 years (10 per property).",
+  "source_url": "https://mississippitoday.org/2026/07/29/data-centers-incentives-mississippi/",
+  "source_date": "2026-07",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "tx_conditions",
+  "level": 100,
+  "evidence": "The statute provides MDA certification, recapture clauses, annual reviews and audits that can cancel exemptions with penalties; the SB 2001 AWS package also had clawbacks.",
+  "source_url": "https://mississippitoday.org/2026/07/29/data-centers-incentives-mississippi/",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No water withdrawal limit or reporting requirement for data centers found in sources reviewed.",
+  "source_url": "https://mississippitoday.org/2026/07/29/data-centers-incentives-mississippi/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "MDEQ's Permit Board approved xAI's Southaven air permit for 41 permanent gas turbines on 2026-03-10 with modeling showing compliance with standards; no stricter state-specific limits reported.",
+  "source_url": "https://www.mpbonline.org/blogs/news/mississippi-regulators-approve-permit-for-xai-gas-turbines-in-southaven-despite-resident-concerns/",
+  "source_date": "2026-03",
+  "confidence": "medium",
+  "pending": "Permit opposed by residents/SELC; challenge possible."
+ },
+ {
+  "state": "MS",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No data-center-specific environmental review found; no general state environmental policy act identified.",
+  "source_url": "https://mississippitoday.org/2026/07/29/data-centers-incentives-mississippi/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No curtailment or demand-response mandate for data centers found; on-site turbines are permitted (xAI Southaven).",
+  "source_url": "https://www.mpbonline.org/blogs/news/mississippi-regulators-approve-permit-for-xai-gas-turbines-in-southaven-despite-resident-concerns/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "op_labor",
+  "level": 50,
+  "evidence": "Incentives require jobs paying at least 125% of the average state wage (about $49,700), a wage condition tied to the exemption.",
+  "source_url": "https://mississippitoday.org/2026/07/29/data-centers-incentives-mississippi/",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "Incentive-linked MDA annual reviews and audits apply; no statutory public energy or water reporting found.",
+  "source_url": "https://mississippitoday.org/2026/07/29/data-centers-incentives-mississippi/",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules for data centers found.",
+  "source_url": "https://mississippitoday.org/2026/07/29/data-centers-incentives-mississippi/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "ad_uncertainty",
+  "level": 0,
+  "evidence": "No pending major rule found; critics call for reform of SB 2001 but no bill identified.",
+  "source_url": "https://earthjustice.org/feature/data-center-mississippi-report",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MS",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented data center interconnection backlog found.",
+  "source_url": "https://earthjustice.org/feature/data-center-mississippi-report",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AL",
+  "indicator": "pw_tariff",
+  "level": 100,
+  "evidence": "Act 2026-610, effective 2026-10-01, requires large-load data centers (150 MW or more) in Alabama Power territory to sign PSC-approved contracts; PSC adopted implementing review rules 2026-10-06. Contract-based rather than a published rate class.",
+  "source_url": "https://www.fox10tv.com/2026/10/02/alabama-data-center-law-takes-effect-oct-1-heres-what-it-means-your-power-bill/",
+  "source_date": "2026-10",
+  "confidence": "high",
+  "pending": "PSC proposed moving to a 60-day review; rules still new."
+ },
+ {
+  "state": "AL",
+  "indicator": "pw_min_commit",
+  "level": 50,
+  "evidence": "Law includes billing requirements and minimum contract lengths, but the figures were not available in sources reviewed.",
+  "source_url": "https://www.fox10tv.com/2026/10/02/alabama-data-center-law-takes-effect-oct-1-heres-what-it-means-your-power-bill/",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AL",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "Law includes some up-front costs for large-load customers; amounts not public in sources reviewed.",
+  "source_url": "https://www.fox10tv.com/2026/10/02/alabama-data-center-law-takes-effect-oct-1-heres-what-it-means-your-power-bill/",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AL",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "Act 2026-610 requires data centers of 150 MW or more to cover incremental generation, transmission, fuel and tax costs, and the PSC may approve contracts only if they benefit other customers.",
+  "source_url": "https://www.fox10tv.com/2026/10/02/alabama-data-center-law-takes-effect-oct-1-heres-what-it-means-your-power-bill/",
+  "source_date": "2026-10",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "AL",
+  "indicator": "pm_moratorium",
+  "level": 0,
+  "evidence": "No statewide or local data center moratorium found in Alabama in sources reviewed.",
+  "source_url": "https://www.alreporter.com/2026/04/10/alabama-senate-sends-bill-to-limit-data-center-tax-breaks-to-governor/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AL",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "No state siting board; siting is local zoning. PSC contract review is not a siting approval.",
+  "source_url": "https://www.fox10tv.com/2026/10/02/alabama-data-center-law-takes-effect-oct-1-heres-what-it-means-your-power-bill/",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AL",
+  "indicator": "pm_threshold",
+  "level": 50,
+  "evidence": "Act 2026-610 contract review applies at 150 MW peak demand, and HB 399/SB 265 apply tax limits at 100 MW or more; both thresholds are at or above 100 MW.",
+  "source_url": "https://www.fox10tv.com/2026/10/02/alabama-data-center-law-takes-effect-oct-1-heres-what-it-means-your-power-bill/",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "AL",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "PSC must vote within 90 days on each large-load contract or it is deemed approved (45 days in the initial July window); no special fast-track program.",
+  "source_url": "https://abc3340.com/news/alabama-news/alabama-psc-adopts-new-review-rules-for-large-data-center-power-contracts",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "AL",
+  "indicator": "tx_sales",
+  "level": 60,
+  "evidence": "HB 399/SB 265 (reported signed April 2026) makes data centers of 100 MW or more pay state sales and use tax; the bill's exact sales tax mechanics and effective dates were not confirmed.",
+  "source_url": "https://www.alreporter.com/2026/04/10/alabama-senate-sends-bill-to-limit-data-center-tax-breaks-to-governor/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": "Confirm enrolled act number and effective date."
+ },
+ {
+  "state": "AL",
+  "indicator": "tx_property",
+  "level": 30,
+  "evidence": "A bill reported signed in April 2026 caps property tax abatements for large data centers at 20 years (previously 30) from 2027-01-01, with 10 more years only for binding local-benefit agreements; application sunset moves to 2032.",
+  "source_url": "https://www.law360.com/tax-authority/articles/2467079",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": "Bill number (HB 399) not confirmed as the signed act."
+ },
+ {
+  "state": "AL",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "The extra 10 abatement years require binding agreements with Revenue and Commerce for local investments (roads, broadband, water, education); no wage or job clawbacks found.",
+  "source_url": "https://www.alreporter.com/2026/04/10/alabama-senate-sends-bill-to-limit-data-center-tax-breaks-to-governor/",
+  "source_date": "2026-04",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "AL",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No data-center water withdrawal or reporting rule found in sources reviewed.",
+  "source_url": "https://www.alreporter.com/2026/04/10/alabama-senate-sends-bill-to-limit-data-center-tax-breaks-to-governor/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AL",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Alabama data-center-specific backup generator rule found.",
+  "source_url": "https://www.alreporter.com/2026/04/10/alabama-senate-sends-bill-to-limit-data-center-tax-breaks-to-governor/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AL",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No data-center-specific state environmental review found.",
+  "source_url": "https://www.alreporter.com/2026/04/10/alabama-senate-sends-bill-to-limit-data-center-tax-breaks-to-governor/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AL",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No curtailment, demand-response or on-site generation rule for data centers found.",
+  "source_url": "https://www.fox10tv.com/2026/10/02/alabama-data-center-law-takes-effect-oct-1-heres-what-it-means-your-power-bill/",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AL",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No labor conditions on data centers found.",
+  "source_url": "https://www.alreporter.com/2026/04/10/alabama-senate-sends-bill-to-limit-data-center-tax-breaks-to-governor/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AL",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "No statutory operating reporting found; PSC contract filings are summarized publicly but are not operating reports.",
+  "source_url": "https://abc3340.com/news/alabama-news/alabama-psc-adopts-new-review-rules-for-large-data-center-power-contracts",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AL",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules for data centers found.",
+  "source_url": "https://www.alreporter.com/2026/04/10/alabama-senate-sends-bill-to-limit-data-center-tax-breaks-to-governor/",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AL",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Act 2026-610 and the PSC rules took effect only in October 2026, the PSC proposed a longer review window, and the attorney general is seeking changes to rate-setting.",
+  "source_url": "https://abc3340.com/news/alabama-news/alabama-psc-adopts-new-review-rules-for-large-data-center-power-contracts",
+  "source_date": "2026-10",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "AL",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented interconnection backlog found.",
+  "source_url": "https://www.fox10tv.com/2026/10/02/alabama-data-center-law-takes-effect-oct-1-heres-what-it-means-your-power-bill/",
+  "source_date": "2026-10",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "No Arkansas PSC large-load tariff or docket found; Entergy Arkansas says Google covers its full cost to serve under a bespoke arrangement and Entergy's Fair Share Plus pledge is voluntary.",
+  "source_url": "https://talkbusiness.net/2026/03/entergy-arkansas-rate-filing-outlines-investments-rate-hikes-and-decreases/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "pw_min_commit",
+  "level": 50,
+  "evidence": "Only Entergy's general Fair Share Plus statement of multi-year terms and termination penalties; no Arkansas-specific figures found.",
+  "source_url": "https://www.entergy.com/datacenters/fairshareplus",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "Entergy's voluntary pledge refers to liquid collateral and parent guarantees; no Arkansas PSC requirement found.",
+  "source_url": "https://www.entergy.com/datacenters/fairshareplus",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "No state mandate; utilities say customers will not subsidize data centers, the Generating Arkansas Jobs Act lets utilities recover new generation costs before construction, and Pulaski County proposed local ratepayer-protection rules.",
+  "source_url": "https://www.newsfromthestates.com/article/arkansas-explained-understanding-data-center-boom-and-debate",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "Independence County approved a five-year moratorium (Aug 2026), Madison County a three-year one, and Pulaski County a 12-month one; Little Rock has not paused approvals.",
+  "source_url": "https://arkansasadvocate.com/2026/08/11/outside-of-little-rock-arkansas-counties-and-cities-move-ahead-on-data-center-moratoriums/embed/",
+  "source_date": "2026-08",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "No state siting regime; counties are adding conditional-use permits and notice rules (Pulaski proposal), and wetlands approvals are federal/state permits.",
+  "source_url": "https://www.newsfromthestates.com/article/arkansas-explained-understanding-data-center-boom-and-debate",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "pm_threshold",
+  "level": 0,
+  "evidence": "No state MW threshold; local thresholds only (Little Rock rules target 250,000 sq ft and over 50 MW).",
+  "source_url": "https://www.newsfromthestates.com/article/arkansas-explained-understanding-data-center-boom-and-debate",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track program or documented long delays found at state level.",
+  "source_url": "https://www.newsfromthestates.com/article/arkansas-explained-understanding-data-center-boom-and-debate",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "tx_sales",
+  "level": 0,
+  "evidence": "Act 548 of 2025 (HB 1444) cut the minimum investment for the data center sales/use tax exemption from $500M to $100M and extended it to expansions and multi-site data centers (large ones $2B).",
+  "source_url": "https://www.datacenterdynamics.com/en/news/arkansas-expands-data-center-tax-abatements",
+  "source_date": "2025",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "tx_property",
+  "level": 0,
+  "evidence": "Local property tax breaks are being granted routinely, e.g., for Google in Little Rock and the Conway project.",
+  "source_url": "https://www.newsfromthestates.com/article/arkansas-explained-understanding-data-center-boom-and-debate",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "Recipients must keep minimum annual payroll of $1M (or $3M for larger centers) for two years after construction; crypto-mining facilities excluded; no clawbacks documented.",
+  "source_url": "https://www.newsfromthestates.com/article/arkansas-explained-understanding-data-center-boom-and-debate",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No state water limit or reporting rule; Little Rock proposes daily water-use reporting before approval and Pulaski County would not limit use.",
+  "source_url": "https://www.newsfromthestates.com/article/arkansas-explained-understanding-data-center-boom-and-debate",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": "Local proposals only."
+ },
+ {
+  "state": "AR",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Arkansas data-center-specific generator rule found.",
+  "source_url": "https://www.newsfromthestates.com/article/arkansas-explained-understanding-data-center-boom-and-debate",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No data-center-specific state environmental review found; some projects need wetlands approvals.",
+  "source_url": "https://www.newsfromthestates.com/article/arkansas-explained-understanding-data-center-boom-and-debate",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No curtailment or on-site generation rule for data centers found.",
+  "source_url": "https://www.newsfromthestates.com/article/arkansas-explained-understanding-data-center-boom-and-debate",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "op_labor",
+  "level": 50,
+  "evidence": "Payroll minimums are tied to the sales tax incentive; no prevailing wage or local-hire mandate found.",
+  "source_url": "https://www.newsfromthestates.com/article/arkansas-explained-understanding-data-center-boom-and-debate",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "Incentive-linked payroll certification; no statutory public energy or water reporting found.",
+  "source_url": "https://www.newsfromthestates.com/article/arkansas-explained-understanding-data-center-boom-and-debate",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules found; local ordinances emerging.",
+  "source_url": "https://www.newsfromthestates.com/article/arkansas-explained-understanding-data-center-boom-and-debate",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Wave of local moratoria and proposed county rules, and a county moratorium was invalidated by a vote miscount, create local uncertainty; no state change pending found.",
+  "source_url": "https://arkansasadvocate.com/2026/08/11/outside-of-little-rock-arkansas-counties-and-cities-move-ahead-on-data-center-moratoriums/embed/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "AR",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented interconnection backlog found.",
+  "source_url": "https://talkbusiness.net/2026/03/entergy-arkansas-rate-filing-outlines-investments-rate-hikes-and-decreases/",
+  "source_date": "2026-03",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "TN",
+  "indicator": "pw_tariff",
+  "level": 100,
+  "evidence": "TVA's board approved a data center rate class on 2026-08-20, effective 2026-10-01, with a Capacity Commitment Charge on new or expanding loads above 5 MW and about a 10% average bill increase phased over three years; TVA supplies all Tennessee distributors.",
+  "source_url": "https://www.unite.ai/tva-board-creates-data-center-rate-to-shield-households-from-ai-power-costs/",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": "Details such as contract terms are in board materials not reviewed."
+ },
+ {
+  "state": "TN",
+  "indicator": "pw_min_commit",
+  "level": 50,
+  "evidence": "The Capacity Commitment Charge implies a commitment requirement, but term length and minimum-bill percentage were not found.",
+  "source_url": "https://www.unite.ai/tva-board-creates-data-center-rate-to-shield-households-from-ai-power-costs/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "TN",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "TVA's new rate includes a new upfront cost for large customers; amount not found.",
+  "source_url": "https://www.wfae.org/2026-08-25/tva-welcomes-data-centers-but-at-a-price",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "TN",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "A 2026 Tennessee law (HB 1847, signed by Gov. Lee, effective on signature) requires data centers with at least 50 MW peak demand to pay for their own electricity infrastructure, with limited exceptions for system-benefiting upgrades.",
+  "source_url": "https://lawrenceburgnow.com/05302026data.html",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "TN",
+  "indicator": "pm_moratorium",
+  "level": 0,
+  "evidence": "No enacted state or local moratorium confirmed; Knox County's zoning commission recommended a one-year moratorium in Aug 2026.",
+  "source_url": "https://www.wvlt.tv/2026/08/13/knox-co-zoning-commission-approves-recommendation-one-year-moratorium-data-centers/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": "Knox County moratorium recommendation could be adopted."
+ },
+ {
+  "state": "TN",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "No state siting board; siting is by local zoning and utility service.",
+  "source_url": "https://lawrenceburgnow.com/05302026data.html",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "TN",
+  "indicator": "pm_threshold",
+  "level": 100,
+  "evidence": "The 2026 cost-responsibility law applies at 50 MW peak demand within three years, a sub-100 MW trigger, though it triggers cost rules rather than a siting review.",
+  "source_url": "https://lawrenceburgnow.com/05302026data.html",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "TN",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No special fast-track or documented long-delay program found; air permits for xAI turbines in Memphis were contested.",
+  "source_url": "https://www.memphisflyer.com/shelby-county-health-department-grants-air-permit-for-xai-turbines",
+  "source_date": "2025-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "TN",
+  "indicator": "tx_sales",
+  "level": 0,
+  "evidence": "Data centers qualify for a sales tax break after investing over $100M within three years and creating 15 full-time jobs; 15 companies hold exemptions.",
+  "source_url": "https://newschannel9.com/news/local/tennessee-data-centers-raise-questions-over-tax-breaks-loss-of-revenue-to-state",
+  "source_date": "2026-09",
+  "confidence": "high",
+  "pending": "Rep. Behn plans a 2027 bill to pause the exemption for three years."
+ },
+ {
+  "state": "TN",
+  "indicator": "tx_property",
+  "level": null,
+  "evidence": "Could not confirm Tennessee property tax abatement practice for data centers; search budget ran out before this was checked.",
+  "source_url": "",
+  "source_date": "",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "TN",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "The sales tax break requires $100M investment and 15 jobs; no clawbacks or efficiency conditions found, and Revenue cannot release recipients' names.",
+  "source_url": "https://newschannel9.com/news/local/tennessee-data-centers-raise-questions-over-tax-breaks-loss-of-revenue-to-state",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "TN",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No Tennessee data-center water limit or reporting rule found.",
+  "source_url": "https://lawrenceburgnow.com/05302026data.html",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "TN",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "xAI Memphis turbines were permitted by the Shelby County Health Department (local program) and TVA turbines cleared in Dec 2025; no state-specific stricter rule found.",
+  "source_url": "https://www.actionnews5.com/2025/12/30/health-department-clears-tva-build-6-gas-turbines-boxtown/",
+  "source_date": "2025-12",
+  "confidence": "low",
+  "pending": "Appeals of xAI permits pending."
+ },
+ {
+  "state": "TN",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No state environmental policy act or data-center-specific review found.",
+  "source_url": "https://lawrenceburgnow.com/05302026data.html",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "TN",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "A 2026 Tennessee bill gives data centers the ability to self-power with limited regulation, so there is no curtailment mandate; enactment details were not confirmed.",
+  "source_url": "https://www.newsfromthestates.com/article/tennessee-bill-gives-data-centers-ability-self-power-limited-regulation",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "TN",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No labor conditions on data centers found beyond the job-count incentive threshold.",
+  "source_url": "https://newschannel9.com/news/local/tennessee-data-centers-raise-questions-over-tax-breaks-loss-of-revenue-to-state",
+  "source_date": "2026-09",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "TN",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "No statutory public reporting; Revenue says privacy law bars naming exemption recipients.",
+  "source_url": "https://newschannel9.com/news/local/tennessee-data-centers-raise-questions-over-tax-breaks-loss-of-revenue-to-state",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": "Behn bill would require separate reporting and public recipient names."
+ },
+ {
+  "state": "TN",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules for data centers found.",
+  "source_url": "https://lawrenceburgnow.com/05302026data.html",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "TN",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "TVA rate rollout begins Oct 2026, a 2027 bill proposes pausing tax breaks, and appeals of xAI permits are pending.",
+  "source_url": "https://newschannel9.com/news/local/tennessee-data-centers-raise-questions-over-tax-breaks-loss-of-revenue-to-state",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "TN",
+  "indicator": "ad_backlog",
+  "level": 0,
+  "evidence": "No documented data-center interconnection backlog found.",
+  "source_url": "https://www.unite.ai/tva-board-creates-data-center-rate-to-shield-households-from-ai-power-costs/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": ""
+ }
+]

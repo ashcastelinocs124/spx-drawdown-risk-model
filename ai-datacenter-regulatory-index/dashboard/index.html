@@ -1,0 +1,1367 @@
+<meta name="dash-one-writer">
+<style>
+.sx { font-family: var(--font-anthropic-sans); color: var(--color-fg); display: grid; gap: var(--cds-gap-lg); }
+.sx h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
+.sx h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.sx .lede { font-size: var(--cds-font-size-body); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 0; max-width: 60rem; }
+.sx .lede b { color: var(--color-fg); font-weight: 600; }
+.sx .note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 var(--cds-gap-md); }
+.sx .card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+.sx .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr)); gap: var(--cds-gap-md); }
+.sx .tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); }
+.sx .tile .lab { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); display: flex; align-items: center; gap: var(--cds-gap-xs); }
+.sx .tile .num { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; display: block; margin-top: var(--cds-gap-xs); min-height: 1.2em; }
+.sx .sw { width: 0.7rem; height: 0.7rem; border-radius: 2px; display: inline-block; flex: none; }
+.sx .sw.uncalled { border: 1px dashed var(--color-fg-muted); }
+.sx .sw.none-race { background: var(--cds-chart-grid); }
+.sx .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.sx .seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); overflow: hidden; }
+.sx .seg button { font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); background: transparent; color: var(--color-fg-muted); border: 0; cursor: pointer; }
+.sx .seg button[aria-pressed="true"] { background: var(--color-bg); color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.sx .maphead { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--cds-gap-sm); }
+.sx .legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-sm) 0; }
+.sx .legend span { display: inline-flex; align-items: center; gap: var(--cds-gap-xs); }
+.sx .legend[hidden] { display: none; }
+.sx .mapbox { position: relative; min-height: 320px; }
+.sx .barbox { position: relative; min-height: 230px; }
+.sx .tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); max-width: 18rem; z-index: 2; }
+.sx .tip .t1 { color: var(--cds-text-secondary); }
+.sx .tip .t2 { font-weight: var(--cds-font-weight-medium); margin: 2px 0; }
+.sx .tip .t3 { margin-top: 4px; }
+.sx .tablebox { max-height: 34rem; overflow: auto; border-top: 1px solid var(--color-border-line); }
+.sx table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.sx th { position: sticky; top: 0; background: var(--color-panel); text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; z-index: 1; }
+.sx td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+.sx td.wide { min-width: 16rem; }
+.sx td.src { max-width: 12rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sx td.src a { color: var(--color-fg-muted); }
+.sx .search { font: inherit; font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); color: var(--color-fg); width: min(100%, 18rem); margin-bottom: var(--cds-gap-sm); }
+.sx .method p { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0; max-width: 60rem; }
+.sx .exp { display: grid; gap: var(--cds-gap-md); }
+.sx .exp .tiles { margin-top: var(--cds-gap-sm); }
+.sx .expbox { min-height: 420px; }
+.sx .pick { display: inline-flex; align-items: center; gap: var(--cds-gap-xs); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.sx .pick select { font: inherit; padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); color: var(--color-fg); }
+.sx td.num { text-align: right; }
+.sx .pollbox { min-height: 300px; }
+.sx .ixrank { min-height: 820px; }
+.sx .ixscatter { min-height: 300px; }
+.sx .ixcomps { min-height: 150px; margin-bottom: var(--cds-gap-md); }
+.sx .tile .lab + .lab { margin-top: var(--cds-gap-xs); }
+.sx [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+.sx [data-dash-source-state=empty] { color: transparent; }
+.sx .fail { display: flex; align-items: center; justify-content: center; gap: var(--cds-gap-xs); min-height: inherit; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.sx .fail i { width: 0.375rem; height: 0.375rem; border-radius: 50%; background: var(--color-bad); display: inline-block; }
+</style>
+
+<div class="sx">
+  <header id="top">
+    <div class="maphead">
+      <h1>2026 election winners on data centers and AI</h1>
+      <div class="seg" role="group" aria-label="Office">
+        <button type="button" data-office-btn="senate" aria-pressed="true">Senate</button>
+        <button type="button" data-office-btn="gov" aria-pressed="false">Governors</button>
+      </div>
+    </div>
+    <p class="lede" data-office="senate"><b data-draw="num" data-source="summary" data-field="halt_or_pay" data-row="0">—</b> of the <b data-draw="num" data-source="summary" data-field="called" data-row="0">—</b> called winners want to pause data centers or make them pay their own power and grid costs; <b data-draw="num" data-source="summary" data-field="supportive" data-row="0">—</b> are openly supportive. <b data-draw="num" data-source="summary" data-field="ai_reg" data-row="0">—</b> back stronger AI regulation, and <b data-draw="num" data-source="summary" data-field="ai_none" data-row="0">—</b> have no clear public AI record.</p>
+    <p class="lede" data-office="gov" hidden><b data-draw="num" data-source="gsummary" data-field="halt_or_pay" data-row="0">—</b> of the <b data-draw="num" data-source="gsummary" data-field="called" data-row="0">—</b> called governor winners want to pause data centers or make them pay their own power and grid costs; <b data-draw="num" data-source="gsummary" data-field="supportive" data-row="0">—</b> are openly supportive. <b data-draw="num" data-source="gsummary" data-field="ai_reg" data-row="0">—</b> back stronger AI regulation, and <b data-draw="num" data-source="gsummary" data-field="ai_none" data-row="0">—</b> have no clear public AI record.</p>
+    <p class="note">Results as projected on Nov 4, 2026: Senate races in Alaska and Mississippi and governor races in Alaska and Kansas are still uncalled. Governor results come from AP calls as compiled by MultiState and network projections. Stances come from campaign plans, Senate votes and statements, and news coverage, 2025–2026.</p>
+  </header>
+
+  <section class="tiles" aria-label="Senate headline counts" data-office="senate">
+    <div class="tile"><span class="lab">Seats called</span><b class="num dash-skeleton" data-draw="num" data-source="summary" data-field="called" data-row="0">—</b></div>
+    <div class="tile"><span class="lab">Flipped to Democrats</span><b class="num dash-skeleton" data-draw="num" data-source="summary" data-field="flips" data-row="0">—</b></div>
+    <div class="tile"><span class="lab"><i class="sw" data-sw="dc:Moratorium"></i>Back a moratorium</span><b class="num dash-skeleton" data-draw="num" data-source="summary" data-field="moratorium" data-row="0">—</b></div>
+    <div class="tile"><span class="lab"><i class="sw" data-sw="dc:Make them pay"></i>Make them pay</span><b class="num dash-skeleton" data-draw="num" data-source="summary" data-field="pay" data-row="0">—</b></div>
+    <div class="tile"><span class="lab"><i class="sw" data-sw="dc:Supportive"></i>Supportive</span><b class="num dash-skeleton" data-draw="num" data-source="summary" data-field="supportive" data-row="0">—</b></div>
+    <div class="tile"><span class="lab"><i class="sw" data-sw="dc:No clear record"></i>No clear record</span><b class="num dash-skeleton" data-draw="num" data-source="summary" data-field="dc_none" data-row="0">—</b></div>
+  </section>
+  <section class="tiles" aria-label="Governor headline counts" data-office="gov" hidden>
+    <div class="tile"><span class="lab">Governorships called</span><b class="num dash-skeleton" data-draw="num" data-source="gsummary" data-field="called" data-row="0">—</b></div>
+    <div class="tile"><span class="lab">Flipped to Democrats</span><b class="num dash-skeleton" data-draw="num" data-source="gsummary" data-field="flips" data-row="0">—</b></div>
+    <div class="tile"><span class="lab"><i class="sw" data-sw="dc:Moratorium"></i>Back a moratorium</span><b class="num dash-skeleton" data-draw="num" data-source="gsummary" data-field="moratorium" data-row="0">—</b></div>
+    <div class="tile"><span class="lab"><i class="sw" data-sw="dc:Make them pay"></i>Make them pay</span><b class="num dash-skeleton" data-draw="num" data-source="gsummary" data-field="pay" data-row="0">—</b></div>
+    <div class="tile"><span class="lab"><i class="sw" data-sw="dc:Supportive"></i>Supportive</span><b class="num dash-skeleton" data-draw="num" data-source="gsummary" data-field="supportive" data-row="0">—</b></div>
+    <div class="tile"><span class="lab"><i class="sw" data-sw="dc:No clear record"></i>No clear record</span><b class="num dash-skeleton" data-draw="num" data-source="gsummary" data-field="dc_none" data-row="0">—</b></div>
+  </section>
+
+  <section class="card" id="map">
+    <div class="maphead">
+      <h2>Where each winner stands, by state</h2>
+      <div class="seg" role="group" aria-label="Map shows">
+        <button type="button" data-mode="dc" aria-pressed="true">Data centers</button>
+        <button type="button" data-mode="ai" aria-pressed="false">AI policy</button>
+      </div>
+    </div>
+    <p class="note">Each square is a state; hover for the winner and their position. A dot marks someone new to the office. Use the Senate / Governors switch at the top.</p>
+    <div class="legend" data-legend="dc">
+      <span><i class="sw" data-sw="dc:Moratorium"></i>Moratorium / pause new builds</span>
+      <span><i class="sw" data-sw="dc:Make them pay"></i>Restrict, make them pay</span>
+      <span><i class="sw" data-sw="dc:Local control / mixed"></i>Local control / mixed</span>
+      <span><i class="sw" data-sw="dc:Supportive"></i>Supportive</span>
+      <span><i class="sw" data-sw="dc:No clear record"></i>No clear record</span>
+      <span><i class="sw uncalled"></i>Not yet called</span>
+      <span><i class="sw none-race"></i>No race this year</span>
+    </div>
+    <div class="legend" data-legend="ai" hidden>
+      <span><i class="sw" data-sw="ai:Stronger regulation"></i>Stronger regulation</span>
+      <span><i class="sw" data-sw="ai:Mixed"></i>Mixed</span>
+      <span><i class="sw" data-sw="ai:Light-touch"></i>Light-touch / pro-build-out</span>
+      <span><i class="sw" data-sw="ai:No clear record"></i>No clear record</span>
+      <span><i class="sw uncalled"></i>Not yet called</span>
+      <span><i class="sw none-race"></i>No race this year</span>
+    </div>
+    <div class="mapbox dash-skeleton" data-draw="map" data-source="winners" data-office="senate"></div>
+    <div class="mapbox dash-skeleton" data-draw="map" data-source="governors" data-office="gov" hidden></div>
+  </section>
+
+  <section class="grid2" data-office="senate">
+    <div class="card" id="dc-party">
+      <h2>Data center stance by party</h2>
+      <p class="note">Winners in called races. Democrats to the left, Republicans to the right.</p>
+      <div class="barbox dash-skeleton" data-draw="bars" data-kind="dc" data-source="dc_counts"></div>
+    </div>
+    <div class="card" id="ai-party">
+      <h2>AI policy stance by party</h2>
+      <p class="note">Winners in called races. Democrats to the left, Republicans to the right.</p>
+      <div class="barbox dash-skeleton" data-draw="bars" data-kind="ai" data-source="ai_counts"></div>
+    </div>
+  </section>
+  <section class="grid2" data-office="gov" hidden>
+    <div class="card" id="gov-dc-party">
+      <h2>Data center stance by party</h2>
+      <p class="note">Winners in called races. Democrats to the left, Republicans to the right.</p>
+      <div class="barbox dash-skeleton" data-draw="bars" data-kind="dc" data-source="gdc_counts"></div>
+    </div>
+    <div class="card" id="gov-ai-party">
+      <h2>AI policy stance by party</h2>
+      <p class="note">Winners in called races. Democrats to the left, Republicans to the right.</p>
+      <div class="barbox dash-skeleton" data-draw="bars" data-kind="ai" data-source="gai_counts"></div>
+    </div>
+  </section>
+
+  <section class="card" id="table" data-office="senate">
+    <h2>Every Senate race, with sources</h2>
+    <p class="note">Summaries are in our own words; open the source links to check each position.</p>
+    <input class="search" type="search" placeholder="Search name, state or stance" aria-label="Search the table">
+    <div class="tablebox">
+      <table data-source="winners" data-row-key="abbr">
+        <thead><tr>
+          <th data-field="abbr">State</th>
+          <th data-field="winner">Winner</th>
+          <th data-field="party">Party</th>
+          <th data-field="result">Result</th>
+          <th data-field="newcomer">New to seat</th>
+          <th data-field="dc_stance">Data centers</th>
+          <th data-field="dc_summary">What they've said or done</th>
+          <th data-field="ai_stance">AI policy</th>
+          <th data-field="ai_summary">What they've said or done</th>
+          <th data-field="source_1">Source</th>
+          <th data-field="source_2">Source</th>
+        </tr></thead>
+        <tbody data-draw="table"></tbody>
+      </table>
+    </div>
+  </section>
+  <section class="card" id="gov-table" data-office="gov" hidden>
+    <h2>Every governor race, with sources</h2>
+    <p class="note">Summaries are in our own words; open the source links to check each position.</p>
+    <input class="search" type="search" placeholder="Search name, state or stance" aria-label="Search the table">
+    <div class="tablebox">
+      <table data-source="governors" data-row-key="abbr">
+        <thead><tr>
+          <th data-field="abbr">State</th>
+          <th data-field="winner">Winner</th>
+          <th data-field="party">Party</th>
+          <th data-field="opponent">Opponent</th>
+          <th data-field="result">Result</th>
+          <th data-field="newcomer">New to seat</th>
+          <th data-field="dc_stance">Data centers</th>
+          <th data-field="dc_summary">What they've said or done</th>
+          <th data-field="ai_stance">AI policy</th>
+          <th data-field="ai_summary">What they've said or done</th>
+          <th data-field="source_1">Source</th>
+          <th data-field="source_2">Source</th>
+          <th data-field="results_source">Result source</th>
+        </tr></thead>
+        <tbody data-draw="table"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="exp" id="exposure">
+    <div class="card">
+      <div class="maphead">
+        <h2>Company exposure to the data center backlash</h2>
+      </div>
+      <div data-office="senate">
+      <p class="lede"><b data-draw="exnum" data-source="exposure_total" data-field="restrict_b" data-row="0">—</b> of <b data-draw="exnum" data-source="exposure_total" data-field="total_b" data-row="0">—</b> in data center investment announced since January 2024 sits in states whose 2026 Senate winner wants a pause or wants data centers to pay their own costs: <b data-draw="exnum" data-source="exposure_total" data-field="restrict_share" data-row="0">—</b> of the total.</p>
+      <p class="note">Dollar figures as announced by each company or a state or local official, Jan 2024 – Nov 2026. Superseded, cancelled, land-only, lease-value and multi-state figures are listed in the table but not counted.</p>
+      <div class="tiles">
+        <div class="tile"><span class="lab">Announced, counted</span><b class="num dash-skeleton" data-draw="exnum" data-source="exposure_total" data-field="total_b" data-row="0">—</b></div>
+        <div class="tile"><span class="lab">Announcements counted</span><b class="num dash-skeleton" data-draw="exnum" data-source="exposure_total" data-field="n_counted" data-row="0">—</b></div>
+        <div class="tile"><span class="lab"><i class="sw" data-sw="dc:Make them pay"></i>In pause / make-pay states</span><b class="num dash-skeleton" data-draw="exnum" data-source="exposure_total" data-field="restrict_b" data-row="0">—</b></div>
+        <div class="tile"><span class="lab"><i class="sw uncalled"></i>In uncalled Mississippi</span><b class="num dash-skeleton" data-draw="exnum" data-source="exposure_total" data-field="uncalled_b" data-row="0">—</b></div>
+        <div class="tile"><span class="lab"><i class="sw none-race"></i>In states with no 2026 race</span><b class="num dash-skeleton" data-draw="exnum" data-source="exposure_total" data-field="norace_b" data-row="0">—</b></div>
+      </div>
+      <div data-office="gov" hidden>
+      <p class="lede"><b data-draw="exnum" data-source="exposure_total_gov" data-field="restrict_b" data-row="0">—</b> of <b data-draw="exnum" data-source="exposure_total_gov" data-field="total_b" data-row="0">—</b> in data center investment announced since January 2024 sits in states whose 2026 governor winner wants a pause or wants data centers to pay their own costs: <b data-draw="exnum" data-source="exposure_total_gov" data-field="restrict_share" data-row="0">—</b> of the total.</p>
+      <p class="note">Dollar figures as announced by each company or a state or local official, Jan 2024 – Nov 2026. Superseded, cancelled, land-only, lease-value and multi-state figures are listed in the table but not counted.</p>
+      <div class="tiles">
+        <div class="tile"><span class="lab">Announced, counted</span><b class="num dash-skeleton" data-draw="exnum" data-source="exposure_total_gov" data-field="total_b" data-row="0">—</b></div>
+        <div class="tile"><span class="lab">Announcements counted</span><b class="num dash-skeleton" data-draw="exnum" data-source="exposure_total_gov" data-field="n_counted" data-row="0">—</b></div>
+        <div class="tile"><span class="lab"><i class="sw" data-sw="dc:Make them pay"></i>In pause / make-pay states</span><b class="num dash-skeleton" data-draw="exnum" data-source="exposure_total_gov" data-field="restrict_b" data-row="0">—</b></div>
+        <div class="tile"><span class="lab"><i class="sw uncalled"></i>In uncalled governor races</span><b class="num dash-skeleton" data-draw="exnum" data-source="exposure_total_gov" data-field="uncalled_b" data-row="0">—</b></div>
+        <div class="tile"><span class="lab"><i class="sw none-race"></i>In states with no 2026 governor race</span><b class="num dash-skeleton" data-draw="exnum" data-source="exposure_total_gov" data-field="norace_b" data-row="0">—</b></div>
+      </div>
+    </div>
+
+    <div class="card" id="exposure-by-company">
+      <h2>Where each company's announced dollars sit, by the stance of each state's new officeholder</h2>
+      <p class="note">Bars split each company's counted dollars by the data center stance of the senator or governor (per the switch at the top) just elected in that state. The percentage is the share in pause or make-pay states.</p>
+      <div class="legend">
+        <span><i class="sw" data-sw="dc:Moratorium"></i>Moratorium</span>
+        <span><i class="sw" data-sw="dc:Make them pay"></i>Make them pay</span>
+        <span><i class="sw" data-sw="dc:Local control / mixed"></i>Local control / mixed</span>
+        <span><i class="sw" data-sw="dc:Supportive"></i>Supportive</span>
+        <span><i class="sw" data-sw="dc:No clear record"></i>No clear record</span>
+        <span><i class="sw uncalled"></i>Not yet called</span>
+        <span><i class="sw none-race"></i>No race this year</span>
+      </div>
+      <div class="barbox expbox dash-skeleton" data-draw="expbars" data-source="exposure" data-office="senate"></div>
+      <div class="barbox expbox dash-skeleton" data-draw="expbars" data-source="exposure_gov" data-office="gov" hidden></div>
+    </div>
+
+    <div class="card" id="exposure-map">
+      <div class="maphead">
+        <h2>Announced dollars by state</h2>
+        <label class="pick"><span>Company</span>
+          <select class="copick" aria-label="Company">
+            <option value="">All companies</option>
+            <option>Amazon (AWS)</option>
+            <option>Google</option>
+            <option>Meta</option>
+            <option>Microsoft</option>
+            <option>OpenAI / Stargate</option>
+            <option>xAI</option>
+            <option>CoreWeave</option>
+            <option>QTS (Blackstone)</option>
+            <option>Digital Realty</option>
+            <option>Equinix</option>
+          </select>
+        </label>
+      </div>
+      <p class="note">Darker squares hold more announced dollars. The stripe along the bottom of each square is the data center stance of the 2026 winner for the office selected at the top. Hover for the breakdown.</p>
+      <div class="mapbox dash-skeleton" data-draw="invmap" data-source="investments winners" data-office="senate"></div>
+      <div class="mapbox dash-skeleton" data-draw="invmap" data-source="investments governors" data-office="gov" hidden></div>
+    </div>
+
+    <div class="card" id="announcements">
+      <h2>Every announcement, with sources</h2>
+      <p class="note">Filtered by the company picker above. "Counted" says whether the figure is in the totals; the note says why not.</p>
+      <input class="search exsearch" type="search" placeholder="Search site, state or note" aria-label="Search announcements">
+      <div class="tablebox">
+        <table data-source="investments" data-row-key="id">
+          <thead><tr>
+            <th data-field="id">#</th>
+            <th data-field="company">Company</th>
+            <th data-field="abbr">State</th>
+            <th data-field="site">Site</th>
+            <th data-field="amount_b">$ billions</th>
+            <th data-field="counted">Counted</th>
+            <th data-field="announced">Announced</th>
+            <th data-field="status">Status</th>
+            <th data-field="note">Note</th>
+            <th data-field="publisher">Source</th>
+            <th data-field="source_url">Link</th>
+          </tr></thead>
+          <tbody data-draw="invtable"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="exp" id="reg-index">
+    <div class="card">
+      <h2>AI data center regulatory index</h2>
+      <p class="lede">How hard it is to build and run a large AI data center in each state, from <b>0</b> (fewest rules and costs) to <b>100</b> (most restrictive). <b data-draw="ixtop" data-source="index_scores">—</b> ranks most restrictive; <b data-draw="ixbottom" data-source="index_scores">—</b> ranks least.</p>
+      <p class="note">Weighted composite of six components: Power 30%, Permitting 25%, Tax 15%, Environment 15%, Operating rules 10%, Administration 5%. Each component averages rubric-scored indicators drawn from PUC dockets, statutes, executive orders, agency rules and reporting. <span data-draw="ixasof" data-source="index_evidence">—</span></p>
+      <div class="tiles">
+        <div class="tile"><span class="lab">National median score</span><b class="num dash-skeleton" data-draw="ixnum" data-source="index_summary" data-field="median" data-row="0">—</b></div>
+        <div class="tile"><span class="lab">Statewide moratorium in effect</span><b class="num dash-skeleton" data-draw="ixnum" data-source="index_summary" data-field="moratorium_now" data-row="0">—</b></div>
+        <div class="tile"><span class="lab">Statewide pause proposed or partial</span><b class="num dash-skeleton" data-draw="ixnum" data-source="index_summary" data-field="moratorium_pending" data-row="0">—</b></div>
+        <div class="tile"><span class="lab">Large-load tariff approved</span><b class="num dash-skeleton" data-draw="ixnum" data-source="index_summary" data-field="tariff_approved" data-row="0">—</b></div>
+        <div class="tile"><span class="lab">Mandatory cost-allocation rule</span><b class="num dash-skeleton" data-draw="ixnum" data-source="index_summary" data-field="cost_alloc" data-row="0">—</b></div>
+        <div class="tile"><span class="lab">Rows from primary or reputable sources</span><b class="num dash-skeleton" data-draw="ixnum" data-source="index_summary" data-field="confident_share" data-row="0">—</b><span class="lab">The rest are low confidence, mostly "no rule found"</span></div>
+      </div>
+    </div>
+
+    <div class="card" id="index-map">
+      <div class="maphead">
+        <h2>Index by state</h2>
+        <label class="pick"><span>Show</span>
+          <select class="ixpick" aria-label="Index component">
+            <option value="composite">Composite index</option>
+            <option value="Power">Power (30%)</option>
+            <option value="Permitting">Permitting (25%)</option>
+            <option value="Tax">Tax (15%)</option>
+            <option value="Environment">Environment (15%)</option>
+            <option value="Operating rules">Operating rules (10%)</option>
+            <option value="Administration">Administration (5%)</option>
+          </select>
+        </label>
+      </div>
+      <p class="note">Darker squares are more restrictive. Click a state to see every indicator behind its score.</p>
+      <div class="legend ixlegend" data-draw="ixlegend" data-source="index_scores"></div>
+      <div class="mapbox dash-skeleton" data-draw="ixmap" data-source="index_scores"></div>
+    </div>
+
+    <div class="card" id="index-ranking">
+      <h2>All 50 states, ranked</h2>
+      <p class="note">Each bar is the composite score, split into what each weighted component contributes. Hover a segment for its component score.</p>
+      <div class="legend">
+        <span><i class="sw" data-sw="ix:Power"></i>Power</span>
+        <span><i class="sw" data-sw="ix:Permitting"></i>Permitting</span>
+        <span><i class="sw" data-sw="ix:Tax"></i>Tax</span>
+        <span><i class="sw" data-sw="ix:Environment"></i>Environment</span>
+        <span><i class="sw" data-sw="ix:Operating rules"></i>Operating rules</span>
+        <span><i class="sw" data-sw="ix:Administration"></i>Administration</span>
+      </div>
+      <div class="barbox ixrank dash-skeleton" data-draw="ixrank" data-source="index_scores"></div>
+    </div>
+
+    <div class="card" id="index-vs-capital">
+      <h2>Where the money is going vs. how restrictive the state is</h2>
+      <p class="note">Each dot is a state: index score across, announced and counted data center dollars up (Jan 2024 – Nov 2026, all companies). Dots right of the dashed line score above the national median.</p>
+      <div class="barbox ixscatter dash-skeleton" data-draw="ixscatter" data-source="index_scores investments"></div>
+    </div>
+
+    <div class="card" id="index-state">
+      <div class="maphead">
+        <h2 data-draw="ixstatetitle" data-source="index_scores">—</h2>
+        <label class="pick"><span>State</span>
+          <select class="ixstate" aria-label="State" data-draw="ixstatepick" data-source="index_scores"></select>
+        </label>
+      </div>
+      <p class="note">Every indicator for the selected state: the rubric level (0–100), what was found, and the source. "Pending" flags bills, dockets or pledges that could change the score.</p>
+      <div class="ixcomps" data-draw="ixstatecomps" data-source="index_scores"></div>
+      <div class="tablebox">
+        <table data-source="index_evidence" data-row-key="id">
+          <thead><tr>
+            <th data-field="component">Component</th>
+            <th data-field="indicator_label">Indicator</th>
+            <th data-field="level">Level</th>
+            <th data-field="evidence">What we found</th>
+            <th data-field="pending">Pending</th>
+            <th data-field="confidence">Confidence</th>
+            <th data-field="source_date">Source date</th>
+            <th data-field="source_url">Link</th>
+          </tr></thead>
+          <tbody data-draw="ixtable"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="exp" id="sentiment">
+    <div class="card">
+      <h2>What the public thinks about data center buildout</h2>
+      <p class="note">National polls, 2025–2026. Question wording, populations and answer options differ between pollsters, so compare within a chart rather than across them. Rows marked as news summaries could not be checked against the pollster's own release.</p>
+      <div class="tiles">
+        <div class="tile"><span class="lab">Expect a local data center to raise their electric bill</span><b class="num dash-skeleton" data-draw="pollnum" data-source="polls" data-field="pct" data-where="chart=callout&amp;group=bills">—</b><span class="lab">Economist / YouGov, Aug 2026</span></div>
+        <div class="tile"><span class="lab">Worry a great deal about data centers' environmental impact</span><b class="num dash-skeleton" data-draw="pollnum" data-source="polls" data-field="pct" data-where="chart=callout&amp;group=env_great">—</b><span class="lab">Gallup, Mar 2026 (another 24% a fair amount)</span></div>
+        <div class="tile"><span class="lab">Want construction slowed to address concerns</span><b class="num dash-skeleton" data-draw="pollnum" data-source="polls" data-field="pct" data-where="chart=callout&amp;group=slower">—</b><span class="lab">Fox News, Jul 2026 ("nearly 8 in 10")</span></div>
+        <div class="tile"><span class="lab">Say government isn't doing enough to regulate AI</span><b class="num dash-skeleton" data-draw="pollnum" data-source="polls" data-field="pct" data-where="chart=callout&amp;group=ai_reg">—</b><span class="lab">NBC News Decision Desk, Aug 2026 (news summary)</span></div>
+      </div>
+    </div>
+
+    <div class="card" id="local-support">
+      <h2>Would you want a data center in your area?</h2>
+      <p class="note">Share opposing and supporting a data center built locally, by poll. Grey is the rest: neutral, not sure, or not published.</p>
+      <div class="legend">
+        <span><i class="sw" data-sw="poll:Oppose"></i>Oppose</span>
+        <span><i class="sw" data-sw="poll:Support"></i>Support</span>
+        <span><i class="sw none-race"></i>Neither / not sure / not published</span>
+      </div>
+      <div class="barbox pollbox dash-skeleton" data-draw="pollbars" data-source="polls"></div>
+    </div>
+
+    <section class="grid2">
+      <div class="card" id="opposition-trend">
+        <h2>Local opposition has climbed since 2025</h2>
+        <p class="note">Share opposing a nearby data center in repeated polls. Embold / Heatmap (registered voters) and Emerson (likely voters).</p>
+        <div class="barbox dash-skeleton" data-draw="polltrend" data-source="polls"></div>
+      </div>
+      <div class="card" id="concerns">
+        <h2>What people think data centers harm</h2>
+        <p class="note">Pew: share saying data centers are mostly bad for each area, January vs. August 2026.</p>
+        <div class="legend">
+          <span><i class="sw" data-sw="poll:Jan"></i>Jan 2026</span>
+          <span><i class="sw" data-sw="poll:Oppose"></i>Aug 2026</span>
+        </div>
+        <div class="barbox dash-skeleton" data-draw="pollimpacts" data-source="polls"></div>
+      </div>
+    </section>
+
+    <section class="grid2">
+      <div class="card" id="party-comfort">
+        <h2>Discomfort crosses party lines</h2>
+        <p class="note">Pew, Jul–Aug 2026: how comfortable people would be with a new data center in their area. Below, Gallup's share who strongly oppose one locally.</p>
+        <div class="legend">
+          <span><i class="sw" data-sw="poll:Extremely/very comfortable"></i>Extremely / very comfortable</span>
+          <span><i class="sw" data-sw="poll:Somewhat comfortable"></i>Somewhat comfortable</span>
+          <span><i class="sw" data-sw="poll:Not too/not at all comfortable"></i>Not too / not at all comfortable</span>
+          <span><i class="sw" data-sw="poll:Haven't heard of data centers"></i>Haven't heard of them</span>
+        </div>
+        <div class="barbox dash-skeleton" data-draw="pollparty" data-source="polls"></div>
+      </div>
+      <div class="card" id="exit-poll">
+        <h2>How much it mattered at the ballot box</h2>
+        <p class="note">NBC News exit poll, Nov 3, 2026: share calling each issue a crucial or major factor in their vote for Congress (news summary of the exit poll).</p>
+        <div class="barbox dash-skeleton" data-draw="pollexit" data-source="polls"></div>
+      </div>
+    </section>
+
+    <div class="card" id="poll-table">
+      <h2>Every poll figure, with sources</h2>
+      <div class="tablebox">
+        <table data-source="polls" data-row-key="id">
+          <thead><tr>
+            <th data-field="id">#</th>
+            <th data-field="chart">Chart</th>
+            <th data-field="pollster">Pollster</th>
+            <th data-field="fielded">Fielded</th>
+            <th data-field="population">Population</th>
+            <th data-field="question">Question</th>
+            <th data-field="group">Group</th>
+            <th data-field="item">Answer / item</th>
+            <th data-field="pct">%</th>
+            <th data-field="source_type">Source type</th>
+            <th data-field="source_url">Link</th>
+          </tr></thead>
+          <tbody data-draw="table"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="card method" id="method">
+    <h2>How stances were classified</h2>
+    <p><b>Moratorium</b>: called for pausing or stopping new data center construction. <b>Make them pay</b>: wants data centers to cover their own power, grid or water costs, or to lose tax breaks, without a pause. <b>Local control / mixed</b>: says communities should decide, or weighs benefits against costs. <b>Supportive</b>: promotes building them. <b>No clear record</b>: no sourced position found, which is not the same as no position.</p>
+    <p>AI policy: <b>Stronger regulation</b> means new rules, a regulator, testing mandates or opposing a ban on state AI laws; <b>Light-touch</b> means emphasizing build-out and competing with China over new rules; <b>Mixed</b> covers narrower or competing positions. Positions were read from public records and news; some rest on a single source or on aggregator summaries, and nothing was inferred from party.</p>
+    <p>Exposure: each company's announced US data center dollars (Jan 2024 – Nov 2026) are placed in the state where the site is and labeled with the data center stance of that state's 2026 Senate winner. Only dollar figures stated by the company or a state or local official, or in the company's own permit filings, are counted. Where a later figure replaces an earlier one, only the latest counts. Stargate sites are listed under OpenAI / Stargate rather than Oracle. "At least" and "more than" figures count at their stated floor. The list is a floor too: some announcements gave no dollar figure, and smaller ones may be missing. States with no race this year still have officeholders whose views aren't shown here.</p>
+    <p>Regulatory index: each state is scored on 20 indicators using a fixed rubric (allowed levels only, e.g. moratorium 0/25/60/100). A component is the average of its scored indicators, and the composite is the weighted sum: Power 30%, Permitting 25%, Tax 15%, Environment 15%, Operating rules 10%, Administration 5%. Where no rule was found after searching, the indicator scores as unrestricted with low confidence, so lower-scoring states partly reflect absence of evidence. Governor-elect pledges count only as "proposed" levels. Indicators with no source are left unscored.</p>
+    <p>Governors: winners and stances for all 36 races were classified the same way as senators. Several governor-elect stances are campaign pledges rather than enacted policy, and incumbents' records include signed bills and executive orders.</p>
+  </section>
+</div>
+
+<script>
+dash.calc('summary', {
+  inputs: ['winners'],
+  title: 'Headline counts',
+  description: 'Counts of winners in called races by result and stance.',
+  fn: (winners) => {
+    const c = winners.filter((r) => r.result !== 'Uncalled');
+    const n = (f) => c.filter(f).length;
+    return [{
+      called: c.length,
+      flips: n((r) => r.result === 'Flip'),
+      newcomers: n((r) => r.newcomer === 'Yes'),
+      moratorium: n((r) => r.dc_stance === 'Moratorium'),
+      pay: n((r) => r.dc_stance === 'Make them pay'),
+      halt_or_pay: n((r) => r.dc_stance === 'Moratorium' || r.dc_stance === 'Make them pay'),
+      supportive: n((r) => r.dc_stance === 'Supportive'),
+      dc_none: n((r) => r.dc_stance === 'No clear record'),
+      ai_reg: n((r) => r.ai_stance === 'Stronger regulation'),
+      ai_none: n((r) => r.ai_stance === 'No clear record'),
+    }];
+  },
+});
+dash.calc('dc_counts', {
+  inputs: ['winners'],
+  title: 'Data center stance by party',
+  description: 'Winners in called races counted by data center stance and party.',
+  fn: (winners) => ['Moratorium', 'Make them pay', 'Local control / mixed', 'Supportive', 'No clear record'].map((s) => {
+    const m = winners.filter((r) => r.result !== 'Uncalled' && r.dc_stance === s);
+    return {stance: s, D: m.filter((r) => r.party === 'D').length, R: m.filter((r) => r.party === 'R').length, total: m.length};
+  }),
+});
+dash.calc('ai_counts', {
+  inputs: ['winners'],
+  title: 'AI policy stance by party',
+  description: 'Winners in called races counted by AI policy stance and party.',
+  fn: (winners) => ['Stronger regulation', 'Mixed', 'Light-touch', 'No clear record'].map((s) => {
+    const m = winners.filter((r) => r.result !== 'Uncalled' && r.ai_stance === s);
+    return {stance: s, D: m.filter((r) => r.party === 'D').length, R: m.filter((r) => r.party === 'R').length, total: m.length};
+  }),
+});
+
+dash.calc('gsummary', {
+  inputs: ['governors'],
+  title: 'Governor headline counts',
+  description: 'Counts of governor winners in called races by result and stance.',
+  fn: (governors) => {
+    const c = governors.filter((r) => r.result !== 'Uncalled');
+    const n = (f) => c.filter(f).length;
+    return [{
+      called: c.length,
+      flips: n((r) => r.result === 'Flip'),
+      newcomers: n((r) => r.newcomer === 'Yes'),
+      moratorium: n((r) => r.dc_stance === 'Moratorium'),
+      pay: n((r) => r.dc_stance === 'Make them pay'),
+      halt_or_pay: n((r) => r.dc_stance === 'Moratorium' || r.dc_stance === 'Make them pay'),
+      supportive: n((r) => r.dc_stance === 'Supportive'),
+      dc_none: n((r) => r.dc_stance === 'No clear record'),
+      ai_reg: n((r) => r.ai_stance === 'Stronger regulation'),
+      ai_none: n((r) => r.ai_stance === 'No clear record'),
+    }];
+  },
+});
+dash.calc('gdc_counts', {
+  inputs: ['governors'],
+  title: 'Governors: data center stance by party',
+  description: 'Governor winners in called races counted by data center stance and party.',
+  fn: (governors) => ['Moratorium', 'Make them pay', 'Local control / mixed', 'Supportive', 'No clear record'].map((s) => {
+    const m = governors.filter((r) => r.result !== 'Uncalled' && r.dc_stance === s);
+    return {stance: s, D: m.filter((r) => r.party === 'D').length, R: m.filter((r) => r.party === 'R').length, total: m.length};
+  }),
+});
+dash.calc('gai_counts', {
+  inputs: ['governors'],
+  title: 'Governors: AI policy stance by party',
+  description: 'Governor winners in called races counted by AI policy stance and party.',
+  fn: (governors) => ['Stronger regulation', 'Mixed', 'Light-touch', 'No clear record'].map((s) => {
+    const m = governors.filter((r) => r.result !== 'Uncalled' && r.ai_stance === s);
+    return {stance: s, D: m.filter((r) => r.party === 'D').length, R: m.filter((r) => r.party === 'R').length, total: m.length};
+  }),
+});
+
+window.sxColor = (kind, stance) => {
+  const muted = 'var(--cds-chart-muted)';
+  const order = kind === 'dc'
+    ? ['Moratorium', 'Make them pay', 'Local control / mixed', 'Supportive']
+    : ['Stronger regulation', 'Mixed', 'Light-touch'];
+  if (kind === 'poll') {
+    const m = {Oppose: dash.colors[0], Support: dash.colors[3], 'Not too/not at all comfortable': dash.colors[0], 'Extremely/very comfortable': dash.colors[3], 'Somewhat comfortable': dash.colors[2], "Haven't heard of data centers": muted, Jan: muted};
+    return m[stance] || muted;
+  }
+  const i = order.indexOf(stance);
+  return i < 0 ? muted : dash.colors[i];
+};
+window.sxMode = 'dc';
+
+document.querySelectorAll('.sx [data-sw]').forEach((el) => {
+  const [kind, stance] = el.getAttribute('data-sw').split(':');
+  el.style.background = window.sxColor(kind, stance);
+});
+
+document.querySelectorAll('.sx .seg button').forEach((b) => {
+  b.addEventListener('click', () => {
+    window.sxMode = b.getAttribute('data-mode');
+    document.querySelectorAll('.sx .seg button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    document.querySelectorAll('.sx [data-legend]').forEach((l) => { l.hidden = l.getAttribute('data-legend') !== window.sxMode; });
+    dash.draw('map');
+  });
+});
+
+document.querySelectorAll('.sx [data-office-btn]').forEach((b) => {
+  b.addEventListener('click', () => {
+    const office = b.getAttribute('data-office-btn');
+    document.querySelectorAll('.sx [data-office-btn]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    document.querySelectorAll('.sx [data-office]').forEach((el) => { el.hidden = el.getAttribute('data-office') !== office; });
+  });
+});
+
+document.querySelectorAll('.sx .search').forEach((inp) => {
+  if (inp.classList.contains('exsearch')) return;
+  inp.addEventListener('input', () => { dash.draw('table'); });
+});
+
+// Text widths must be measured in an attached SVG; a detached one reports 0.
+window.sxMeasure = (el, texts, size) => {
+  const ns = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(ns, 'svg');
+  svg.setAttribute('width', '0'); svg.setAttribute('height', '0');
+  svg.style.position = 'absolute'; svg.style.visibility = 'hidden';
+  el.append(svg);
+  let m = 0;
+  texts.forEach((t) => { const n = document.createElementNS(ns, 'text'); n.setAttribute('font-size', size); n.textContent = t; svg.append(n); m = Math.max(m, n.getComputedTextLength()); });
+  svg.remove();
+  return m;
+};
+const sxFail = (el) => {
+  const d = document.createElement('div'); d.className = 'fail';
+  const i = document.createElement('i'); const s = document.createElement('span'); s.textContent = 'Failed to load';
+  d.append(i, s); el.replaceChildren(d);
+};
+
+dash.draw('num', (el) => {
+  const g = dash.data(el.getAttribute('data-source'));
+  el.classList.toggle('dash-skeleton', g.status === 'loading');
+  const f = el.getAttribute('data-field');
+  el.textContent = g.status === 'ok' && g.data[0] ? d3.format(',')(g.data[0][f]) : '—';
+});
+
+// Tile-grid layout: [col, row] per state (geometry, not data).
+const SX_GRID = {AK:[0,0],ME:[11,0],VT:[10,1],NH:[11,1],WA:[1,2],ID:[2,2],MT:[3,2],ND:[4,2],MN:[5,2],IL:[6,2],WI:[7,2],MI:[8,2],NY:[9,2],RI:[10,2],MA:[11,2],OR:[1,3],NV:[2,3],WY:[3,3],SD:[4,3],IA:[5,3],IN:[6,3],OH:[7,3],PA:[8,3],NJ:[9,3],CT:[10,3],CA:[1,4],UT:[2,4],CO:[3,4],NE:[4,4],MO:[5,4],KY:[6,4],WV:[7,4],VA:[8,4],MD:[9,4],DE:[10,4],AZ:[2,5],NM:[3,5],KS:[4,5],AR:[5,5],TN:[6,5],NC:[7,5],SC:[8,5],DC:[9,5],OK:[4,6],LA:[5,6],MS:[6,6],AL:[7,6],GA:[8,6],HI:[0,7],TX:[4,7],FL:[9,7]};
+
+dash.draw('map', (el) => {
+  const g = dash.data(el.getAttribute('data-source'));
+  el.classList.toggle('dash-skeleton', g.status === 'loading');
+  if (g.status === 'error' || g.status === 'connect') { sxFail(el); return; }
+  if (g.status !== 'ok') { el.replaceChildren(); return; }
+  const rows = new Map(g.data.map((r) => [r.abbr, r]));
+  const mode = window.sxMode;
+  const W = el.clientWidth || 600;
+  const cell = Math.min(Math.floor(W / 12), 58);
+  const gap = Math.max(2, Math.round(cell * 0.07));
+  const w = cell * 12, h = cell * 8;
+  const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${w} ${h}`).attr('role', 'img').attr('aria-label', 'Tile map of states colored by stance');
+  const tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true;
+  const line = (cls, txt) => { const d = document.createElement('div'); d.className = cls; d.textContent = txt; return d; };
+  Object.entries(SX_GRID).forEach(([ab, [c, rr]]) => {
+    const r = rows.get(ab);
+    const x = c * cell + gap / 2, y = rr * cell + gap / 2, s = cell - gap;
+    const gEl = svg.append('g');
+    const stance = r ? (mode === 'dc' ? r.dc_stance : r.ai_stance) : null;
+    const rect = gEl.append('rect').attr('x', x).attr('y', y).attr('width', s).attr('height', s).attr('rx', 4);
+    if (!r) rect.attr('fill', 'var(--cds-chart-grid)');
+    else if (r.result === 'Uncalled') rect.attr('fill', 'var(--color-panel)').attr('stroke', 'var(--color-fg-muted)').attr('stroke-dasharray', '3 3');
+    else rect.attr('fill', window.sxColor(mode, stance));
+    const dark = r && r.result !== 'Uncalled' && stance !== 'No clear record';
+    gEl.append('text').attr('x', x + s / 2).attr('y', y + s / 2).attr('dy', '0.35em').attr('text-anchor', 'middle')
+      .attr('font-size', Math.max(9, Math.round(cell * 0.24))).attr('font-weight', 500)
+      .attr('fill', !r ? 'var(--color-fg-muted)' : dark ? '#fff' : 'var(--color-fg)').text(ab);
+    if (r && r.newcomer === 'Yes') gEl.append('circle').attr('cx', x + s - 6).attr('cy', y + 6).attr('r', 2.6).attr('fill', dark ? '#fff' : 'var(--color-fg)');
+    if (r) {
+      gEl.style('cursor', 'default')
+        .on('mouseenter mousemove', (ev) => {
+          tip.replaceChildren(
+            line('t1', `${r.state} ${el.getAttribute('data-source') === 'governors' ? 'governor' : 'Senate'} · ${r.result === 'Uncalled' ? 'Not yet called' : (r.result === 'Flip' ? 'Flipped' : 'Held') + ' · ' + r.party}`),
+            line('t2', r.winner),
+            line('', `${mode === 'dc' ? 'Data centers' : 'AI policy'}: ${stance}`),
+            line('t3', mode === 'dc' ? r.dc_summary : r.ai_summary));
+          tip.hidden = false;
+          const box = el.getBoundingClientRect();
+          let tx = ev.clientX - box.left + 12, ty = ev.clientY - box.top + 12;
+          const tw = tip.offsetWidth, th = tip.offsetHeight;
+          if (tx + tw > box.width) tx = Math.max(0, ev.clientX - box.left - tw - 12);
+          if (ty + th > box.height) ty = Math.max(0, ev.clientY - box.top - th - 12);
+          tip.style.left = tx + 'px'; tip.style.top = ty + 'px';
+          rect.attr('stroke', 'var(--color-fg)').attr('stroke-width', 2).attr('stroke-dasharray', null);
+        })
+        .on('mouseleave', () => {
+          tip.hidden = true;
+          if (r.result === 'Uncalled') rect.attr('stroke', 'var(--color-fg-muted)').attr('stroke-width', 1).attr('stroke-dasharray', '3 3');
+          else rect.attr('stroke', null);
+        });
+    }
+  });
+  el.replaceChildren(svg.node(), tip);
+});
+
+dash.draw('bars', (el) => {
+  const kind = el.getAttribute('data-kind');
+  const g = dash.data(el.getAttribute('data-source'));
+  el.classList.toggle('dash-skeleton', g.status === 'loading');
+  if (g.status === 'error' || g.status === 'connect') { sxFail(el); return; }
+  if (g.status !== 'ok') { el.replaceChildren(); return; }
+  const rows = g.data;
+  const W = el.clientWidth || 360;
+  const svg = d3.create('svg').attr('width', '100%');
+  const labW = window.sxMeasure(el, rows.map((r) => r.stance), 12) || 120;
+  const labelW = Math.min(Math.ceil(labW) + 10, W * 0.4);
+  const rowH = 34, top = 22, h = top + rows.length * rowH + 4;
+  const mid = labelW + (W - labelW) / 2;
+  const half = (W - labelW) / 2 - (Math.ceil(window.sxMeasure(el, ['99'], 11)) + 10);
+  const max = d3.max(rows, (r) => Math.max(r.D, r.R)) || 1;
+  const x = d3.scaleLinear([0, max], [0, half]);
+  svg.attr('viewBox', `0 0 ${W} ${h}`).attr('role', 'img').attr('aria-label', 'Stance counts by party');
+  svg.append('text').attr('x', mid - 6).attr('y', 12).attr('text-anchor', 'end').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text('← Democrats');
+  svg.append('text').attr('x', mid + 6).attr('y', 12).attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text('Republicans →');
+  svg.append('line').attr('x1', mid).attr('x2', mid).attr('y1', top - 4).attr('y2', h).attr('stroke', 'var(--cds-chart-axis)');
+  rows.forEach((r, i) => {
+    const y = top + i * rowH + 6, bh = rowH - 12;
+    const c = window.sxColor(kind, r.stance);
+    svg.append('text').attr('x', 0).attr('y', y + bh / 2).attr('dy', '0.35em').attr('font-size', 12).attr('fill', 'var(--color-fg)').text(r.stance);
+    svg.append('rect').attr('x', mid - x(r.D)).attr('y', y).attr('width', x(r.D)).attr('height', bh).attr('rx', 3).attr('fill', c);
+    svg.append('rect').attr('x', mid).attr('y', y).attr('width', x(r.R)).attr('height', bh).attr('rx', 3).attr('fill', c);
+    svg.append('text').attr('x', mid - x(r.D) - 5).attr('y', y + bh / 2).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(r.D);
+    svg.append('text').attr('x', mid + x(r.R) + 5).attr('y', y + bh / 2).attr('dy', '0.35em').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(r.R);
+  });
+  el.replaceChildren(svg.node());
+});
+
+dash.draw('table', (tb) => {
+  const table = tb.closest('table');
+  const id = table ? table.getAttribute('data-source') : '';
+  const g = dash.data(id);
+  if (g.status !== 'ok') { tb.replaceChildren(); return; }
+  const card = tb.closest('.card');
+  const inp = card ? card.querySelector('.search') : null;
+  const q = inp ? inp.value.trim().toLowerCase() : '';
+  const cols = [...table.querySelectorAll('th[data-field]')].map((th) => th.getAttribute('data-field'));
+  const rank = {Flip: 0, Hold: 1, Uncalled: 2};
+  let rows = g.data.slice().filter((r) => !q || Object.values(r).some((v) => String(v ?? '').toLowerCase().includes(q)));
+  if (id !== 'polls') rows = rows.sort((a, b) => (rank[a.result] - rank[b.result]) || String(a.state).localeCompare(String(b.state)));
+  tb.replaceChildren(...rows.map((r) => {
+    const tr = document.createElement('tr');
+    cols.forEach((c) => {
+      const td = document.createElement('td');
+      const v = r[c] ?? '';
+      if (/^https:\/\//.test(String(v))) {
+        td.className = 'src';
+        const a = document.createElement('a'); a.href = v; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.textContent = v; td.append(a);
+      } else {
+        if (/summary$|question/.test(c)) td.className = 'wide';
+        if (c === 'pct') td.className = 'num';
+        if (c === 'dc_stance' || c === 'ai_stance') td.style.boxShadow = `inset 3px 0 0 ${window.sxColor(c === 'dc_stance' ? 'dc' : 'ai', v)}`;
+        td.textContent = v;
+      }
+      tr.append(td);
+    });
+    return tr;
+  }));
+});
+
+// ---- Company exposure ----
+dash.calc('exposure', {
+  inputs: ['investments', 'winners'],
+  title: 'Exposure by company',
+  description: "Each company's counted announced dollars, split by the data center stance of the state's 2026 Senate winner.",
+  fn: (investments, winners) => {
+    const stanceOf = new Map(winners.map((w) => [w.abbr, w.result === 'Uncalled' ? 'Not yet called' : w.dc_stance]));
+    const cats = ['Moratorium', 'Make them pay', 'Local control / mixed', 'Supportive', 'No clear record', 'Not yet called', 'No 2026 race'];
+    const by = new Map();
+    investments.filter((r) => r.counted === 'Yes').forEach((r) => {
+      const amt = Number(r.amount_b);
+      const cat = stanceOf.get(r.abbr) || 'No 2026 race';
+      if (!by.has(r.company)) by.set(r.company, Object.fromEntries(cats.map((c) => [c, 0])));
+      by.get(r.company)[cat] += amt;
+    });
+    return [...by.entries()].map(([company, v]) => {
+      const total = cats.reduce((s, c) => s + v[c], 0);
+      const restrict = v['Moratorium'] + v['Make them pay'];
+      return {company, total_b: Math.round(total * 100) / 100, restrict_b: Math.round(restrict * 100) / 100, restrict_share: total ? restrict / total : 0,
+        moratorium_b: v['Moratorium'], pay_b: v['Make them pay'], local_b: v['Local control / mixed'], supportive_b: v['Supportive'],
+        norecord_b: v['No clear record'], uncalled_b: v['Not yet called'], norace_b: v['No 2026 race']};
+    }).sort((a, b) => b.total_b - a.total_b);
+  },
+});
+dash.calc('exposure_total', {
+  inputs: ['exposure', 'investments'],
+  title: 'Exposure totals',
+  description: 'All companies combined: counted dollars and the share in pause or make-pay states.',
+  fn: (exposure, investments) => {
+    const s = (f) => Math.round(exposure.reduce((t, r) => t + r[f], 0) * 100) / 100;
+    const total = s('total_b'), restrict = s('restrict_b');
+    return [{total_b: total, restrict_b: restrict, restrict_share: total ? restrict / total : 0, uncalled_b: s('uncalled_b'), norace_b: s('norace_b'),
+      n_counted: investments.filter((r) => r.counted === 'Yes').length}];
+  },
+});
+
+dash.calc('exposure_gov', {
+  inputs: ['investments', 'governors'],
+  title: 'Exposure by company (governors)',
+  description: "Each company's counted announced dollars, split by the data center stance of the state's 2026 governor winner.",
+  fn: (investments, governors) => {
+    const stanceOf = new Map(governors.map((w) => [w.abbr, w.result === 'Uncalled' ? 'Not yet called' : w.dc_stance]));
+    const cats = ['Moratorium', 'Make them pay', 'Local control / mixed', 'Supportive', 'No clear record', 'Not yet called', 'No 2026 race'];
+    const by = new Map();
+    investments.filter((r) => r.counted === 'Yes').forEach((r) => {
+      const amt = Number(r.amount_b);
+      const cat = stanceOf.get(r.abbr) || 'No 2026 race';
+      if (!by.has(r.company)) by.set(r.company, Object.fromEntries(cats.map((c) => [c, 0])));
+      by.get(r.company)[cat] += amt;
+    });
+    return [...by.entries()].map(([company, v]) => {
+      const total = cats.reduce((s, c) => s + v[c], 0);
+      const restrict = v['Moratorium'] + v['Make them pay'];
+      return {company, total_b: Math.round(total * 100) / 100, restrict_b: Math.round(restrict * 100) / 100, restrict_share: total ? restrict / total : 0,
+        moratorium_b: v['Moratorium'], pay_b: v['Make them pay'], local_b: v['Local control / mixed'], supportive_b: v['Supportive'],
+        norecord_b: v['No clear record'], uncalled_b: v['Not yet called'], norace_b: v['No 2026 race']};
+    }).sort((a, b) => b.total_b - a.total_b);
+  },
+});
+dash.calc('exposure_total_gov', {
+  inputs: ['exposure_gov', 'investments'],
+  title: 'Exposure totals (governors)',
+  description: 'All companies combined: counted dollars and the share in pause or make-pay states.',
+  fn: (exposure_gov, investments) => {
+    const s = (f) => Math.round(exposure_gov.reduce((t, r) => t + r[f], 0) * 100) / 100;
+    const total = s('total_b'), restrict = s('restrict_b');
+    return [{total_b: total, restrict_b: restrict, restrict_share: total ? restrict / total : 0, uncalled_b: s('uncalled_b'), norace_b: s('norace_b'),
+      n_counted: investments.filter((r) => r.counted === 'Yes').length}];
+  },
+});
+
+window.sxCo = '';
+window.sxMoney = (v) => `$${d3.format(',.1f')(v)}B`;
+document.querySelectorAll('.sx .copick').forEach((sel) => {
+  sel.addEventListener('change', () => { window.sxCo = sel.value; dash.draw('invmap'); dash.draw('invtable'); });
+});
+document.querySelectorAll('.sx .exsearch').forEach((inp) => {
+  inp.addEventListener('input', () => { window.sxExQ = inp.value.trim().toLowerCase(); dash.draw('invtable'); });
+});
+
+dash.draw('exnum', (el) => {
+  const g = dash.data(el.getAttribute('data-source'));
+  el.classList.toggle('dash-skeleton', g.status === 'loading');
+  const f = el.getAttribute('data-field');
+  if (g.status !== 'ok' || !g.data[0]) { el.textContent = '—'; return; }
+  const v = g.data[0][f];
+  el.textContent = f === 'restrict_share' ? d3.format('.0%')(v) : f === 'n_counted' ? d3.format(',')(v) : window.sxMoney(v);
+});
+
+dash.draw('expbars', (el) => {
+  const g = dash.data(el.getAttribute('data-source'));
+  el.classList.toggle('dash-skeleton', g.status === 'loading');
+  if (g.status === 'error' || g.status === 'connect') { sxFail(el); return; }
+  if (g.status !== 'ok') { el.replaceChildren(); return; }
+  const rows = g.data;
+  const segs = [
+    ['moratorium_b', 'Moratorium', window.sxColor('dc', 'Moratorium')],
+    ['pay_b', 'Make them pay', window.sxColor('dc', 'Make them pay')],
+    ['local_b', 'Local control / mixed', window.sxColor('dc', 'Local control / mixed')],
+    ['supportive_b', 'Supportive', window.sxColor('dc', 'Supportive')],
+    ['norecord_b', 'No clear record', 'var(--cds-chart-muted)'],
+    ['uncalled_b', 'Not yet called', 'none'],
+    ['norace_b', 'No 2026 race', 'var(--cds-chart-grid)'],
+  ];
+  const W = el.clientWidth || 600;
+  const svg = d3.create('svg').attr('width', '100%');
+  const labelW = Math.min(Math.ceil(window.sxMeasure(el, rows.map((r) => r.company), 12) || 100) + 10, W * 0.4);
+  const endW = Math.ceil(window.sxMeasure(el, rows.map((r) => `${window.sxMoney(r.total_b)} · ${d3.format('.0%')(r.restrict_share)}`), 11) || 90) + 10;
+  const rowH = 34, h = rows.length * rowH + 4;
+  const x = d3.scaleLinear([0, d3.max(rows, (r) => r.total_b) || 1], [0, Math.max(40, W - labelW - endW)]);
+  svg.attr('viewBox', `0 0 ${W} ${h}`).attr('role', 'img').attr('aria-label', 'Announced dollars per company by state senator stance');
+  const tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true;
+  const line = (cls, txt) => { const d = document.createElement('div'); d.className = cls; d.textContent = txt; return d; };
+  rows.forEach((r, i) => {
+    const y = i * rowH + 6, bh = rowH - 12;
+    svg.append('text').attr('x', 0).attr('y', y + bh / 2).attr('dy', '0.35em').attr('font-size', 12).attr('fill', 'var(--color-fg)').text(r.company);
+    let cx = labelW;
+    segs.forEach(([f, name, col]) => {
+      const w = x(r[f]);
+      if (w <= 0) return;
+      const rect = svg.append('rect').attr('x', cx).attr('y', y).attr('width', Math.max(0, w - 1)).attr('height', bh).attr('rx', 2)
+        .attr('fill', col === 'none' ? 'var(--color-panel)' : col);
+      if (col === 'none') rect.attr('stroke', 'var(--color-fg-muted)').attr('stroke-dasharray', '3 2');
+      rect.on('mouseenter mousemove', (ev) => {
+        tip.replaceChildren(line('t1', r.company), line('t2', `${name}: ${window.sxMoney(r[f])}`), line('', `${d3.format('.0%')(r[f] / r.total_b)} of ${window.sxMoney(r.total_b)} counted`));
+        tip.hidden = false;
+        const box = el.getBoundingClientRect();
+        let tx = ev.clientX - box.left + 12, ty = ev.clientY - box.top + 12;
+        if (tx + tip.offsetWidth > box.width) tx = Math.max(0, ev.clientX - box.left - tip.offsetWidth - 12);
+        if (ty + tip.offsetHeight > box.height) ty = Math.max(0, ev.clientY - box.top - tip.offsetHeight - 12);
+        tip.style.left = tx + 'px'; tip.style.top = ty + 'px';
+      }).on('mouseleave', () => { tip.hidden = true; });
+      cx += w;
+    });
+    svg.append('text').attr('x', cx + 6).attr('y', y + bh / 2).attr('dy', '0.35em').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)')
+      .text(`${window.sxMoney(r.total_b)} · ${d3.format('.0%')(r.restrict_share)}`);
+  });
+  el.replaceChildren(svg.node(), tip);
+});
+
+dash.draw('invmap', (el) => {
+  const office = el.getAttribute('data-source').split(' ')[1];
+  const g = dash.data('investments'), wn = dash.data(office);
+  const loading = g.status === 'loading' || wn.status === 'loading';
+  el.classList.toggle('dash-skeleton', loading);
+  if (g.status === 'error' || g.status === 'connect' || wn.status === 'error' || wn.status === 'connect') { sxFail(el); return; }
+  if (g.status !== 'ok' || wn.status !== 'ok') { el.replaceChildren(); return; }
+  const co = window.sxCo;
+  const winners = new Map(wn.data.map((w) => [w.abbr, w]));
+  const rows = g.data.filter((r) => r.counted === 'Yes' && (!co || r.company === co));
+  const byState = d3.rollup(rows, (v) => ({total: d3.sum(v, (r) => Number(r.amount_b)), items: d3.rollups(v, (vv) => d3.sum(vv, (r) => Number(r.amount_b)), (r) => r.company).sort((a, b) => b[1] - a[1])}), (r) => r.abbr);
+  const max = d3.max([...byState.values()], (v) => v.total) || 1;
+  const op = d3.scaleSqrt([0, max], [0.12, 1]);
+  const W = el.clientWidth || 600;
+  const cell = Math.min(Math.floor(W / 12), 58);
+  const gap = Math.max(2, Math.round(cell * 0.07));
+  const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${cell * 12} ${cell * 8}`).attr('role', 'img').attr('aria-label', 'Tile map of announced data center dollars by state');
+  const tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true;
+  const line = (cls, txt) => { const d = document.createElement('div'); d.className = cls; d.textContent = txt; return d; };
+  Object.entries(SX_GRID).forEach(([ab, [c, rr]]) => {
+    const v = byState.get(ab);
+    const w = winners.get(ab);
+    const x = c * cell + gap / 2, y = rr * cell + gap / 2, s = cell - gap;
+    const gEl = svg.append('g');
+    gEl.append('rect').attr('x', x).attr('y', y).attr('width', s).attr('height', s).attr('rx', 4).attr('fill', 'var(--cds-chart-grid)');
+    const fill = gEl.append('rect').attr('x', x).attr('y', y).attr('width', s).attr('height', s).attr('rx', 4)
+      .attr('fill', v ? dash.colors[0] : 'none').attr('fill-opacity', v ? op(v.total) : 0);
+    const stripe = !w ? null : w.result === 'Uncalled' ? 'var(--color-fg-muted)' : window.sxColor('dc', w.dc_stance);
+    if (stripe) gEl.append('rect').attr('x', x + 3).attr('y', y + s - 6).attr('width', s - 6).attr('height', 3).attr('rx', 1.5).attr('fill', stripe)
+      .attr('stroke', 'var(--color-panel)').attr('stroke-width', 0.5);
+    const strong = v && op(v.total) > 0.55;
+    gEl.append('text').attr('x', x + s / 2).attr('y', y + s / 2 - 3).attr('dy', '0.35em').attr('text-anchor', 'middle')
+      .attr('font-size', Math.max(9, Math.round(cell * 0.22))).attr('font-weight', 500).attr('fill', strong ? '#fff' : v ? 'var(--color-fg)' : 'var(--color-fg-muted)').text(ab);
+    if (v && cell >= 40) gEl.append('text').attr('x', x + s / 2).attr('y', y + s / 2 + Math.round(cell * 0.2)).attr('text-anchor', 'middle')
+      .attr('font-size', Math.max(8, Math.round(cell * 0.17))).attr('fill', strong ? '#fff' : 'var(--color-fg-muted)').text(`$${d3.format(',.0f')(v.total)}B`);
+    gEl.on('mouseenter mousemove', (ev) => {
+      const lab = office === 'governors' ? 'Governor' : 'Senate';
+      const sen = !w ? `No 2026 ${lab.toLowerCase()} race` : w.result === 'Uncalled' ? `${lab} race not yet called` : `${lab}: ${w.winner} (${w.party}) · ${w.dc_stance}`;
+      const parts = [line('t1', sen), line('t2', v ? `${window.sxMoney(v.total)} announced${co ? ' by ' + co : ''}` : `No counted announcements${co ? ' by ' + co : ''}`)];
+      if (v && !co) v.items.forEach(([name, amt]) => parts.push(line('', `${name}: ${window.sxMoney(amt)}`)));
+      tip.replaceChildren(...parts);
+      tip.hidden = false;
+      const box = el.getBoundingClientRect();
+      let tx = ev.clientX - box.left + 12, ty = ev.clientY - box.top + 12;
+      if (tx + tip.offsetWidth > box.width) tx = Math.max(0, ev.clientX - box.left - tip.offsetWidth - 12);
+      if (ty + tip.offsetHeight > box.height) ty = Math.max(0, ev.clientY - box.top - tip.offsetHeight - 12);
+      tip.style.left = tx + 'px'; tip.style.top = ty + 'px';
+      fill.attr('stroke', 'var(--color-fg)').attr('stroke-width', 2);
+    }).on('mouseleave', () => { tip.hidden = true; fill.attr('stroke', null); });
+  });
+  el.replaceChildren(svg.node(), tip);
+});
+
+dash.draw('invtable', (tb) => {
+  const g = dash.data('investments');
+  if (g.status !== 'ok') { tb.replaceChildren(); return; }
+  const co = window.sxCo, q = window.sxExQ || '';
+  const cols = ['id', 'company', 'abbr', 'site', 'amount_b', 'counted', 'announced', 'status', 'note', 'publisher', 'source_url'];
+  const rows = g.data.filter((r) => (!co || r.company === co) && (!q || [...cols, 'state'].some((c) => String(r[c] ?? '').toLowerCase().includes(q))))
+    .slice().sort((a, b) => (a.counted === b.counted ? 0 : a.counted === 'Yes' ? -1 : 1) || (Number(b.amount_b) || 0) - (Number(a.amount_b) || 0));
+  tb.replaceChildren(...rows.map((r) => {
+    const tr = document.createElement('tr');
+    cols.forEach((c) => {
+      const td = document.createElement('td');
+      const v = r[c] ?? '';
+      if (c === 'source_url') {
+        td.className = 'src';
+        if (/^https:\/\//.test(v)) { const a = document.createElement('a'); a.href = v; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.textContent = v; td.append(a); }
+        else td.textContent = v;
+      } else if (c === 'amount_b') {
+        td.className = 'num';
+        td.textContent = v === null || v === '' ? '' : String(v);
+      } else {
+        if (c === 'note' || c === 'site') td.className = 'wide';
+        td.textContent = v;
+      }
+      tr.append(td);
+    });
+    return tr;
+  }));
+});
+
+// ---- Public sentiment ----
+const sxPct = (v) => `${d3.format('.0f')(v)}%`;
+const sxTip = (el, tip, ev) => {
+  tip.hidden = false;
+  const box = el.getBoundingClientRect();
+  let tx = ev.clientX - box.left + 12, ty = ev.clientY - box.top + 12;
+  if (tx + tip.offsetWidth > box.width) tx = Math.max(0, ev.clientX - box.left - tip.offsetWidth - 12);
+  if (ty + tip.offsetHeight > box.height) ty = Math.max(0, ev.clientY - box.top - tip.offsetHeight - 12);
+  tip.style.left = tx + 'px'; tip.style.top = ty + 'px';
+};
+const sxLine = (cls, txt) => { const d = document.createElement('div'); d.className = cls; d.textContent = txt; return d; };
+const sxPollState = (el) => {
+  const g = dash.data('polls');
+  el.classList.toggle('dash-skeleton', g.status === 'loading');
+  if (g.status === 'error' || g.status === 'connect') { sxFail(el); return null; }
+  if (g.status !== 'ok') { el.replaceChildren(); return null; }
+  return g.data;
+};
+
+dash.draw('pollnum', (el) => {
+  const g = dash.data('polls');
+  el.classList.toggle('dash-skeleton', g.status === 'loading');
+  const key = new URLSearchParams(el.getAttribute('data-where')).get('group');
+  const r = g.status === 'ok' ? g.data.find((x) => x.chart === 'callout' && x.group === key) : null;
+  el.textContent = r ? sxPct(Number(r.pct)) : '—';
+});
+
+dash.draw('pollbars', (el) => {
+  const data = sxPollState(el); if (!data) return;
+  const rows = d3.groups(data.filter((r) => r.chart === 'local'), (r) => r.group)
+    .map(([group, v]) => ({group, order: Number(v[0].order), oppose: Number((v.find((r) => r.item === 'Oppose') || {}).pct || 0), support: (v.find((r) => r.item === 'Support') || {}).pct, meta: v[0]}))
+    .sort((a, b) => a.order - b.order);
+  const W = el.clientWidth || 600;
+  const labelW = Math.min(Math.ceil(window.sxMeasure(el, rows.map((r) => r.group), 12)) + 12, W * 0.42);
+  const rowH = 32, h = rows.length * rowH + 22;
+  const x = d3.scaleLinear([0, 100], [labelW, W - 4]);
+  const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${h}`).attr('role', 'img').attr('aria-label', 'Local data center support and opposition by poll');
+  const tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true;
+  [0, 25, 50, 75, 100].forEach((t) => {
+    svg.append('line').attr('x1', x(t)).attr('x2', x(t)).attr('y1', 0).attr('y2', h - 18).attr('stroke', t === 50 ? 'var(--cds-chart-reference)' : 'var(--cds-chart-grid)').attr('stroke-dasharray', t === 50 ? '3 3' : null);
+    svg.append('text').attr('x', x(t)).attr('y', h - 4).attr('text-anchor', t === 0 ? 'start' : t === 100 ? 'end' : 'middle').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(`${t}%`);
+  });
+  rows.forEach((r, i) => {
+    const y = i * rowH + 5, bh = rowH - 12;
+    svg.append('text').attr('x', 0).attr('y', y + bh / 2).attr('dy', '0.35em').attr('font-size', 12).attr('fill', 'var(--color-fg)').text(r.group);
+    const sup = r.support === undefined ? null : Number(r.support);
+    const segs = [['Oppose', 0, r.oppose, window.sxColor('poll', 'Oppose')]];
+    if (sup !== null) segs.push(['Support', 100 - sup, sup, window.sxColor('poll', 'Support')]);
+    svg.append('rect').attr('x', x(0)).attr('y', y).attr('width', x(100) - x(0)).attr('height', bh).attr('rx', 2).attr('fill', 'var(--cds-chart-grid)');
+    segs.forEach(([name, start, val, col]) => {
+      const rect = svg.append('rect').attr('x', x(start)).attr('y', y).attr('width', Math.max(0, x(start + val) - x(start) - 1)).attr('height', bh).attr('rx', 2).attr('fill', col);
+      if (x(start + val) - x(start) > 30) svg.append('text').attr('x', name === 'Oppose' ? x(start) + 6 : x(start + val) - 6).attr('y', y + bh / 2).attr('dy', '0.35em')
+        .attr('text-anchor', name === 'Oppose' ? 'start' : 'end').attr('font-size', 11).attr('fill', '#fff').attr('pointer-events', 'none').text(sxPct(val));
+      rect.on('mouseenter mousemove', (ev) => {
+        tip.replaceChildren(sxLine('t1', `${r.meta.pollster} · ${r.meta.fielded}`), sxLine('t2', `${name}: ${sxPct(val)}`), sxLine('', r.meta.population), sxLine('t3', r.meta.question), sxLine('t3', r.meta.source_type));
+        sxTip(el, tip, ev);
+      }).on('mouseleave', () => { tip.hidden = true; });
+    });
+  });
+  el.replaceChildren(svg.node(), tip);
+});
+
+dash.draw('polltrend', (el) => {
+  const data = sxPollState(el); if (!data) return;
+  const series = d3.groups(data.filter((r) => r.chart === 'trend'), (r) => r.group)
+    .map(([name, v]) => ({name, pts: v.map((r) => ({d: new Date(`${r.item}-01T00:00:00Z`), v: Number(r.pct), r})).sort((a, b) => a.d - b.d)}));
+  const W = el.clientWidth || 400, H = 230;
+  const endW = Math.ceil(window.sxMeasure(el, series.map((s) => `${s.name} 100%`), 11)) + 10;
+  const m = {l: 34, r: endW, t: 10, b: 24};
+  const all = series.flatMap((s) => s.pts);
+  const x = d3.scaleUtc(d3.extent(all, (p) => p.d), [m.l, W - m.r]);
+  const y = d3.scaleLinear([0, 100], [H - m.b, m.t]);
+  const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Opposition to local data centers over time');
+  const tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true;
+  [0, 25, 50, 75, 100].forEach((t) => {
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(t)).attr('y2', y(t)).attr('stroke', 'var(--cds-chart-grid)');
+    svg.append('text').attr('x', m.l - 6).attr('y', y(t)).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(`${t}%`);
+  });
+  const ticks = x.ticks(Math.max(2, Math.floor((W - m.l - m.r) / 80)));
+  ticks.forEach((t) => svg.append('text').attr('x', x(t)).attr('y', H - 6).attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(d3.utcFormat('%b %Y')(t)));
+  const ends = [];
+  series.forEach((s, i) => {
+    const col = i === 0 ? dash.colors[0] : dash.colors[1];
+    svg.append('path').attr('d', d3.line((p) => x(p.d), (p) => y(p.v))(s.pts)).attr('fill', 'none').attr('stroke', col).attr('stroke-width', 2).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round');
+    s.pts.forEach((p) => {
+      svg.append('circle').attr('cx', x(p.d)).attr('cy', y(p.v)).attr('r', 4).attr('fill', col).attr('stroke', 'var(--color-panel)').attr('stroke-width', 1.5)
+        .on('mouseenter mousemove', (ev) => { tip.replaceChildren(sxLine('t1', `${s.name} · ${d3.utcFormat('%b %Y')(p.d)}`), sxLine('t2', `Oppose: ${sxPct(p.v)}`), sxLine('t3', p.r.source_type)); sxTip(el, tip, ev); })
+        .on('mouseleave', () => { tip.hidden = true; });
+    });
+    const last = s.pts[s.pts.length - 1];
+    ends.push({y: y(last.v), name: `${s.name} ${sxPct(last.v)}`, col, x: x(last.d)});
+  });
+  ends.sort((a, b) => a.y - b.y);
+  for (let k = 1; k < ends.length; k++) if (ends[k].y - ends[k - 1].y < 13) ends[k].y = ends[k - 1].y + 13;
+  ends.forEach((e) => svg.append('text').attr('x', W - m.r + 6).attr('y', e.y).attr('dy', '0.35em').attr('font-size', 11).attr('fill', 'var(--color-fg)').text(e.name));
+  el.replaceChildren(svg.node(), tip);
+});
+
+dash.draw('pollimpacts', (el) => {
+  const data = sxPollState(el); if (!data) return;
+  const rows = d3.groups(data.filter((r) => r.chart === 'impacts'), (r) => r.item)
+    .map(([item, v]) => ({item, order: Number(v[0].order), jan: Number(v.find((r) => r.group === 'Jan 2026').pct), aug: Number(v.find((r) => r.group === 'Aug 2026').pct)}))
+    .sort((a, b) => a.order - b.order);
+  const W = el.clientWidth || 400;
+  const labelW = Math.min(Math.ceil(window.sxMeasure(el, rows.map((r) => r.item), 12)) + 12, W * 0.45);
+  const rowH = 36, h = rows.length * rowH + 22;
+  const x = d3.scaleLinear([0, 60], [labelW + 8, W - 30]);
+  const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${h}`).attr('role', 'img').attr('aria-label', 'Share saying data centers are mostly bad, January vs August 2026');
+  [0, 20, 40, 60].forEach((t) => {
+    svg.append('line').attr('x1', x(t)).attr('x2', x(t)).attr('y1', 0).attr('y2', h - 18).attr('stroke', 'var(--cds-chart-grid)');
+    svg.append('text').attr('x', x(t)).attr('y', h - 4).attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(`${t}%`);
+  });
+  rows.forEach((r, i) => {
+    const cy = i * rowH + rowH / 2;
+    svg.append('text').attr('x', 0).attr('y', cy).attr('dy', '0.35em').attr('font-size', 12).attr('fill', 'var(--color-fg)').text(r.item);
+    svg.append('line').attr('x1', x(r.jan)).attr('x2', x(r.aug)).attr('y1', cy).attr('y2', cy).attr('stroke', 'var(--cds-chart-axis)').attr('stroke-width', 2);
+    svg.append('circle').attr('cx', x(r.jan)).attr('cy', cy).attr('r', 5).attr('fill', window.sxColor('poll', 'Jan'));
+    svg.append('circle').attr('cx', x(r.aug)).attr('cy', cy).attr('r', 5).attr('fill', window.sxColor('poll', 'Oppose'));
+    svg.append('text').attr('x', x(r.jan) - 8).attr('y', cy).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(sxPct(r.jan));
+    svg.append('text').attr('x', x(r.aug) + 8).attr('y', cy).attr('dy', '0.35em').attr('font-size', 11).attr('fill', 'var(--color-fg)').text(sxPct(r.aug));
+  });
+  el.replaceChildren(svg.node());
+});
+
+dash.draw('pollparty', (el) => {
+  const data = sxPollState(el); if (!data) return;
+  const cats = ['Extremely/very comfortable', 'Somewhat comfortable', 'Not too/not at all comfortable', "Haven't heard of data centers"];
+  const pew = d3.groups(data.filter((r) => r.chart === 'party'), (r) => r.group).map(([group, v]) => ({group, vals: cats.map((c) => Number((v.find((r) => r.item === c) || {}).pct || 0))}));
+  const strong = data.filter((r) => r.chart === 'strong').sort((a, b) => Number(a.order) - Number(b.order));
+  const W = el.clientWidth || 400;
+  const labelW = Math.min(Math.ceil(window.sxMeasure(el, [...pew.map((p) => p.group), ...strong.map((s) => s.group)], 12)) + 12, W * 0.4);
+  const rowH = 32, gapH = 34;
+  const h = pew.length * rowH + gapH + strong.length * rowH + 4;
+  const x = d3.scaleLinear([0, 100], [labelW, W - 36]);
+  const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${h}`).attr('role', 'img').attr('aria-label', 'Comfort with a local data center by party, and strong opposition by party');
+  const tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true;
+  pew.forEach((p, i) => {
+    const y = i * rowH + 4, bh = rowH - 10;
+    svg.append('text').attr('x', 0).attr('y', y + bh / 2).attr('dy', '0.35em').attr('font-size', 12).attr('fill', 'var(--color-fg)').text(p.group);
+    let cx = 0;
+    p.vals.forEach((v, k) => {
+      const rect = svg.append('rect').attr('x', x(cx)).attr('y', y).attr('width', Math.max(0, x(cx + v) - x(cx) - 1)).attr('height', bh).attr('rx', 2).attr('fill', window.sxColor('poll', cats[k]));
+      if (x(cx + v) - x(cx) > 28) svg.append('text').attr('x', x(cx) + (x(cx + v) - x(cx)) / 2).attr('y', y + bh / 2).attr('dy', '0.35em').attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', k === 3 ? 'var(--color-fg)' : '#fff').attr('pointer-events', 'none').text(sxPct(v));
+      rect.on('mouseenter mousemove', (ev) => { tip.replaceChildren(sxLine('t1', `Pew · ${p.group}`), sxLine('t2', `${cats[k]}: ${sxPct(v)}`)); sxTip(el, tip, ev); }).on('mouseleave', () => { tip.hidden = true; });
+      cx += v;
+    });
+  });
+  const y0 = pew.length * rowH + gapH;
+  svg.append('text').attr('x', 0).attr('y', y0 - 12).attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text('Gallup: strongly oppose a local AI data center');
+  strong.forEach((s, i) => {
+    const y = y0 + i * rowH, bh = rowH - 12, v = Number(s.pct);
+    svg.append('text').attr('x', 0).attr('y', y + bh / 2).attr('dy', '0.35em').attr('font-size', 12).attr('fill', 'var(--color-fg)').text(s.group);
+    svg.append('rect').attr('x', x(0)).attr('y', y).attr('width', x(v) - x(0)).attr('height', bh).attr('rx', 2).attr('fill', window.sxColor('poll', 'Oppose'));
+    svg.append('text').attr('x', x(v) + 6).attr('y', y + bh / 2).attr('dy', '0.35em').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(sxPct(v));
+  });
+  el.replaceChildren(svg.node(), tip);
+});
+
+dash.draw('pollexit', (el) => {
+  const data = sxPollState(el); if (!data) return;
+  const rows = data.filter((r) => r.chart === 'exit').sort((a, b) => Number(a.order) - Number(b.order));
+  const W = el.clientWidth || 400;
+  const labelW = Math.min(Math.ceil(window.sxMeasure(el, rows.map((r) => r.item), 12)) + 12, W * 0.45);
+  const rowH = 34, h = rows.length * rowH + 4;
+  const x = d3.scaleLinear([0, 100], [labelW, W - 40]);
+  const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${h}`).attr('role', 'img').attr('aria-label', 'Issues voters called crucial or major factors');
+  rows.forEach((r, i) => {
+    const y = i * rowH + 6, bh = rowH - 14, v = Number(r.pct);
+    const hi = r.item === 'AI and data centers';
+    svg.append('text').attr('x', 0).attr('y', y + bh / 2).attr('dy', '0.35em').attr('font-size', 12).attr('font-weight', hi ? 600 : 400).attr('fill', 'var(--color-fg)').text(r.item);
+    svg.append('rect').attr('x', x(0)).attr('y', y).attr('width', x(v) - x(0)).attr('height', bh).attr('rx', 2).attr('fill', hi ? dash.colors[0] : 'var(--cds-chart-muted)');
+    svg.append('text').attr('x', x(v) + 6).attr('y', y + bh / 2).attr('dy', '0.35em').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(sxPct(v));
+  });
+  el.replaceChildren(svg.node());
+});
+
+// ---- Regulatory index ----
+window.sxIxComps = [['Power', 0.30], ['Permitting', 0.25], ['Tax', 0.15], ['Environment', 0.15], ['Operating rules', 0.10], ['Administration', 0.05]];
+dash.calc('index_scores', {
+  inputs: ['index_evidence'],
+  title: 'Index scores by state',
+  description: 'Component score = mean of its scored indicators; composite = weighted sum (Power 30, Permitting 25, Tax 15, Environment 15, Operating 10, Administration 5).',
+  fn: (index_evidence) => {
+    const comps = [['Power', 0.30], ['Permitting', 0.25], ['Tax', 0.15], ['Environment', 0.15], ['Operating rules', 0.10], ['Administration', 0.05]];
+    const states = [...new Set(index_evidence.map((r) => r.state))];
+    const rows = states.map((st) => {
+      const mine = index_evidence.filter((r) => r.state === st);
+      const out = {state: st, n_indicators: mine.length, n_scored: mine.filter((r) => r.level !== null && r.level !== '').length, n_pending: mine.filter((r) => r.pending).length};
+      let total = 0;
+      comps.forEach(([c, w]) => {
+        const v = mine.filter((r) => r.component === c && r.level !== null && r.level !== '').map((r) => Number(r.level));
+        const score = v.length ? v.reduce((a, b) => a + b, 0) / v.length : 0;
+        out[c] = Math.round(score * 10) / 10;
+        out[`${c} contribution`] = Math.round(score * w * 10) / 10;
+        total += score * w;
+      });
+      out.composite = Math.round(total * 10) / 10;
+      return out;
+    }).sort((a, b) => b.composite - a.composite);
+    rows.forEach((r, i) => { r.rank = i + 1; });
+    return rows;
+  },
+});
+dash.calc('index_summary', {
+  inputs: ['index_scores', 'index_evidence'],
+  title: 'Index headline figures',
+  description: 'Median composite and counts of states at key indicator levels.',
+  fn: (index_scores, index_evidence) => {
+    const sc = index_scores.map((r) => r.composite).sort((a, b) => a - b);
+    const m = sc.length ? (sc.length % 2 ? sc[(sc.length - 1) / 2] : (sc[sc.length / 2 - 1] + sc[sc.length / 2]) / 2) : 0;
+    const count = (ind, f) => index_evidence.filter((r) => r.indicator === ind && r.level !== null && r.level !== '' && f(Number(r.level))).length;
+    const scored = index_evidence.filter((r) => r.level !== null && r.level !== '' && /^https?:/.test(r.source_url || '')).length;
+    return [{median: Math.round(m * 10) / 10, moratorium_now: count('pm_moratorium', (v) => v === 100), moratorium_pending: count('pm_moratorium', (v) => v === 60),
+      tariff_approved: count('pw_tariff', (v) => v >= 70), cost_alloc: count('pw_cost_alloc', (v) => v === 100), coverage: index_evidence.length ? scored / index_evidence.length : 0,
+      confident_share: index_evidence.length ? index_evidence.filter((r) => r.confidence === 'high' || r.confidence === 'medium').length / index_evidence.length : 0}];
+  },
+});
+
+window.sxIxMode = 'composite';
+window.sxIxState = null;
+window.sxIxColor = (c) => ({Power: dash.colors[0], Permitting: dash.colors[1], Tax: dash.colors[2], Environment: dash.colors[3], 'Operating rules': dash.colors[4], Administration: dash.colors[5]}[c] || 'var(--cds-chart-muted)');
+document.querySelectorAll('.sx [data-sw^="ix:"]').forEach((el) => { el.style.background = window.sxIxColor(el.getAttribute('data-sw').slice(3)); });
+window.sxIxRamp = () => {
+  const probe = document.createElement('span'); probe.style.color = 'var(--color-panel)'; document.body.append(probe);
+  const bg = getComputedStyle(probe).color; probe.remove();
+  return d3.interpolateRgb(bg, dash.colors[0]);
+};
+document.querySelectorAll('.sx .ixpick').forEach((sel) => sel.addEventListener('change', () => { window.sxIxMode = sel.value; dash.draw('ixmap'); dash.draw('ixlegend'); }));
+window.sxIxSelect = (st) => { window.sxIxState = st; dash.draw('ixstatepick'); dash.draw('ixstatetitle'); dash.draw('ixstatecomps'); dash.draw('ixtable'); };
+
+dash.draw('ixnum', (el) => {
+  const g = dash.data('index_summary');
+  el.classList.toggle('dash-skeleton', g.status === 'loading');
+  const f = el.getAttribute('data-field');
+  if (g.status !== 'ok' || !g.data[0]) { el.textContent = '—'; return; }
+  const v = g.data[0][f];
+  el.textContent = (f === 'coverage' || f === 'confident_share') ? d3.format('.0%')(v) : f === 'median' ? d3.format('.1f')(v) : d3.format(',')(v);
+});
+dash.draw('ixtop', (el) => {
+  const g = dash.data('index_scores');
+  const r = g.status === 'ok' ? g.data[0] : null;
+  el.textContent = r ? `${r.state} (${d3.format('.1f')(r.composite)})` : '—';
+});
+dash.draw('ixbottom', (el) => {
+  const g = dash.data('index_scores');
+  const r = g.status === 'ok' ? g.data[g.data.length - 1] : null;
+  el.textContent = r ? `${r.state} (${d3.format('.1f')(r.composite)})` : '—';
+});
+dash.draw('ixasof', (el) => {
+  const g = dash.data('index_evidence');
+  const d = g.status === 'ok' ? d3.max(g.data, (r) => String(r.source_date || '').slice(0, 10)) : null;
+  el.textContent = d ? `Newest source: ${d}.` : '—';
+});
+dash.draw('ixlegend', (el) => {
+  const g = dash.data('index_scores');
+  if (g.status !== 'ok') { el.replaceChildren(); return; }
+  const ramp = window.sxIxRamp();
+  const mk = (t, v) => { const s = document.createElement('span'); const i = document.createElement('i'); i.className = 'sw'; i.style.background = ramp(v / 100); s.append(i, document.createTextNode(t)); return s; };
+  el.replaceChildren(mk('0 least restrictive', 0.06), mk('25', 25), mk('50', 50), mk('75', 75), mk('100 most restrictive', 100));
+});
+dash.draw('ixmap', (el) => {
+  const g = dash.data('index_scores');
+  el.classList.toggle('dash-skeleton', g.status === 'loading');
+  if (g.status === 'error' || g.status === 'connect') { sxFail(el); return; }
+  if (g.status !== 'ok') { el.replaceChildren(); return; }
+  const mode = window.sxIxMode, key = mode === 'composite' ? 'composite' : mode;
+  const rows = new Map(g.data.map((r) => [r.state, r]));
+  const ramp = window.sxIxRamp();
+  const W = el.clientWidth || 600, cell = Math.min(Math.floor(W / 12), 58), gap = Math.max(2, Math.round(cell * 0.07));
+  const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${cell * 12} ${cell * 8}`).attr('role', 'img').attr('aria-label', 'Tile map of regulatory index scores');
+  const tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true;
+  Object.entries(SX_GRID).forEach(([ab, [c, rr]]) => {
+    const r = rows.get(ab);
+    const x = c * cell + gap / 2, y = rr * cell + gap / 2, s = cell - gap;
+    const gEl = svg.append('g').style('cursor', r ? 'pointer' : 'default');
+    const v = r ? Number(r[key]) : null;
+    const rect = gEl.append('rect').attr('x', x).attr('y', y).attr('width', s).attr('height', s).attr('rx', 4).attr('fill', r ? ramp(Math.max(0.06, v / 100)) : 'var(--cds-chart-grid)');
+    if (window.sxIxState === ab) rect.attr('stroke', 'var(--color-fg)').attr('stroke-width', 2);
+    const strong = r && v > 55;
+    gEl.append('text').attr('x', x + s / 2).attr('y', y + s / 2 - 3).attr('dy', '0.35em').attr('text-anchor', 'middle').attr('font-size', Math.max(9, Math.round(cell * 0.22))).attr('font-weight', 500).attr('fill', strong ? '#fff' : r ? 'var(--color-fg)' : 'var(--color-fg-muted)').text(ab);
+    if (r && cell >= 40) gEl.append('text').attr('x', x + s / 2).attr('y', y + s / 2 + Math.round(cell * 0.2)).attr('text-anchor', 'middle').attr('font-size', Math.max(8, Math.round(cell * 0.17))).attr('fill', strong ? '#fff' : 'var(--color-fg-muted)').text(d3.format('.0f')(v));
+    if (!r) return;
+    gEl.on('mouseenter mousemove', (ev) => {
+      tip.replaceChildren(sxLine('t1', `${ab} · rank ${r.rank} of ${g.data.length}`), sxLine('t2', `Composite ${d3.format('.1f')(r.composite)}`),
+        ...window.sxIxComps.map(([cn]) => sxLine('', `${cn}: ${d3.format('.0f')(r[cn])}`)));
+      sxTip(el, tip, ev);
+    }).on('mouseleave', () => { tip.hidden = true; }).on('click', () => { window.sxIxSelect(ab); dash.draw('ixmap'); });
+  });
+  el.replaceChildren(svg.node(), tip);
+});
+dash.draw('ixrank', (el) => {
+  const g = dash.data('index_scores');
+  el.classList.toggle('dash-skeleton', g.status === 'loading');
+  if (g.status === 'error' || g.status === 'connect') { sxFail(el); return; }
+  if (g.status !== 'ok') { el.replaceChildren(); return; }
+  const rows = g.data;
+  const W = el.clientWidth || 600;
+  const labelW = Math.ceil(window.sxMeasure(el, rows.map((r) => `${r.rank}. ${r.state}`), 11)) + 10;
+  const endW = Math.ceil(window.sxMeasure(el, ['100.0'], 11)) + 10;
+  const rowH = 16, h = rows.length * rowH + 22;
+  const x = d3.scaleLinear([0, 100], [labelW, W - endW]);
+  const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${h}`).attr('role', 'img').attr('aria-label', 'States ranked by regulatory index');
+  const tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true;
+  [0, 25, 50, 75, 100].forEach((t) => {
+    svg.append('line').attr('x1', x(t)).attr('x2', x(t)).attr('y1', 0).attr('y2', h - 18).attr('stroke', 'var(--cds-chart-grid)');
+    svg.append('text').attr('x', x(t)).attr('y', h - 4).attr('text-anchor', t === 100 ? 'end' : 'middle').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(t);
+  });
+  rows.forEach((r, i) => {
+    const y = i * rowH + 2, bh = rowH - 4;
+    svg.append('text').attr('x', 0).attr('y', y + bh / 2).attr('dy', '0.35em').attr('font-size', 11).attr('fill', 'var(--color-fg)').text(`${r.rank}. ${r.state}`)
+      .style('cursor', 'pointer').on('click', () => window.sxIxSelect(r.state));
+    let cx = 0;
+    window.sxIxComps.forEach(([cn, w]) => {
+      const v = Number(r[`${cn} contribution`]);
+      if (v <= 0) return;
+      svg.append('rect').attr('x', x(cx)).attr('y', y).attr('width', Math.max(0, x(cx + v) - x(cx) - 0.5)).attr('height', bh).attr('fill', window.sxIxColor(cn))
+        .style('cursor', 'pointer')
+        .on('mouseenter mousemove', (ev) => { tip.replaceChildren(sxLine('t1', `${r.state} · ${cn} (${w * 100}%)`), sxLine('t2', `Component score ${d3.format('.0f')(r[cn])}`), sxLine('', `Adds ${d3.format('.1f')(v)} to the composite ${d3.format('.1f')(r.composite)}`)); sxTip(el, tip, ev); })
+        .on('mouseleave', () => { tip.hidden = true; })
+        .on('click', () => window.sxIxSelect(r.state));
+      cx += v;
+    });
+    svg.append('text').attr('x', x(cx) + 5).attr('y', y + bh / 2).attr('dy', '0.35em').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(d3.format('.1f')(r.composite));
+  });
+  el.replaceChildren(svg.node(), tip);
+});
+dash.draw('ixscatter', (el) => {
+  const g = dash.data('index_scores'), inv = dash.data('investments');
+  el.classList.toggle('dash-skeleton', g.status === 'loading' || inv.status === 'loading');
+  if ([g, inv].some((d) => d.status === 'error' || d.status === 'connect')) { sxFail(el); return; }
+  if (g.status !== 'ok' || inv.status !== 'ok') { el.replaceChildren(); return; }
+  const dollars = d3.rollup(inv.data.filter((r) => r.counted === 'Yes'), (v) => d3.sum(v, (r) => Number(r.amount_b)), (r) => r.abbr);
+  const pts = g.data.map((r) => ({st: r.state, x: Number(r.composite), y: dollars.get(r.state) || 0}));
+  const sorted = pts.map((p) => p.x).sort((a, b) => a - b);
+  const med = sorted.length % 2 ? sorted[(sorted.length - 1) / 2] : (sorted[sorted.length / 2 - 1] + sorted[sorted.length / 2]) / 2;
+  const W = el.clientWidth || 600, H = 300;
+  const yMax = d3.max(pts, (p) => p.y) || 1;
+  const yTicks = d3.scaleLinear([0, yMax], [0, 1]).nice().ticks(5);
+  const tickW = Math.ceil(window.sxMeasure(el, yTicks.map((t) => `$${t}B`), 11)) + 10;
+  const m = {l: tickW, r: 14, t: 12, b: 34};
+  const x = d3.scaleLinear([0, 100], [m.l, W - m.r]);
+  const y = d3.scaleLinear([0, yTicks[yTicks.length - 1] || yMax], [H - m.b, m.t]);
+  const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Index score vs announced data center dollars by state');
+  const tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true;
+  yTicks.forEach((t) => {
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(t)).attr('y2', y(t)).attr('stroke', 'var(--cds-chart-grid)');
+    svg.append('text').attr('x', m.l - 6).attr('y', y(t)).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(`$${t}B`);
+  });
+  [0, 25, 50, 75, 100].forEach((t) => svg.append('text').attr('x', x(t)).attr('y', H - m.b + 16).attr('text-anchor', t === 0 ? 'start' : t === 100 ? 'end' : 'middle').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(t));
+  svg.append('text').attr('x', (m.l + W - m.r) / 2).attr('y', H - 4).attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text('Index score (higher = more restrictive)');
+  svg.append('line').attr('x1', x(med)).attr('x2', x(med)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 3');
+  pts.forEach((p) => {
+    const big = p.y > 0;
+    const c = svg.append('circle').attr('cx', x(p.x)).attr('cy', y(p.y)).attr('r', big ? 5 : 3.5).attr('fill', big ? dash.colors[0] : 'var(--cds-chart-muted)').attr('fill-opacity', big ? 0.85 : 0.6).attr('stroke', 'var(--color-panel)').style('cursor', 'pointer');
+    c.on('mouseenter mousemove', (ev) => { tip.replaceChildren(sxLine('t1', p.st), sxLine('t2', `Index ${d3.format('.1f')(p.x)}`), sxLine('', `${window.sxMoney(p.y)} announced, counted`)); sxTip(el, tip, ev); })
+      .on('mouseleave', () => { tip.hidden = true; }).on('click', () => window.sxIxSelect(p.st));
+  });
+  const labels = pts.filter((p) => p.y >= yMax * 0.18).map((p) => ({...p, ly: y(p.y)})).sort((a, b) => a.ly - b.ly);
+  for (let k = 1; k < labels.length; k++) if (labels[k].ly - labels[k - 1].ly < 12 && Math.abs(x(labels[k].x) - x(labels[k - 1].x)) < 30) labels[k].ly = labels[k - 1].ly + 12;
+  labels.forEach((p) => svg.append('text').attr('x', x(p.x) + 8).attr('y', p.ly).attr('dy', '0.35em').attr('font-size', 11).attr('fill', 'var(--color-fg)').attr('pointer-events', 'none').text(p.st));
+  el.replaceChildren(svg.node(), tip);
+});
+dash.draw('ixstatepick', (sel) => {
+  const g = dash.data('index_scores');
+  const rows = g.status === 'ok' ? g.data.slice().sort((a, b) => a.state.localeCompare(b.state)) : [];
+  if (!window.sxIxState && g.status === 'ok' && g.data[0]) window.sxIxState = g.data[0].state;
+  sel.replaceChildren(...rows.map((r) => new Option(`${r.state} (${d3.format('.1f')(r.composite)})`, r.state)));
+  sel.value = window.sxIxState || '';
+  sel.onchange = () => { window.sxIxSelect(sel.value); dash.draw('ixmap'); };
+});
+dash.draw('ixstatetitle', (el) => {
+  const g = dash.data('index_scores');
+  const r = g.status === 'ok' ? g.data.find((x) => x.state === (window.sxIxState || (g.data[0] || {}).state)) : null;
+  el.textContent = r ? `${r.state}: ${d3.format('.1f')(r.composite)}, rank ${r.rank} of ${g.data.length}` : '—';
+});
+dash.draw('ixstatecomps', (el) => {
+  const g = dash.data('index_scores');
+  if (g.status !== 'ok') { el.replaceChildren(); return; }
+  const r = g.data.find((x) => x.state === (window.sxIxState || (g.data[0] || {}).state));
+  if (!r) { el.replaceChildren(); return; }
+  const W = el.clientWidth || 600, rowH = 24, h = window.sxIxComps.length * rowH + 6;
+  const labelW = Math.ceil(window.sxMeasure(el, window.sxIxComps.map(([c, w]) => `${c} (${w * 100}%)`), 12)) + 10;
+  const x = d3.scaleLinear([0, 100], [labelW, W - 40]);
+  const svg = d3.create('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${h}`).attr('role', 'img').attr('aria-label', 'Component scores for the selected state');
+  window.sxIxComps.forEach(([c, w], i) => {
+    const y = i * rowH + 4, bh = rowH - 10, v = Number(r[c]);
+    svg.append('text').attr('x', 0).attr('y', y + bh / 2).attr('dy', '0.35em').attr('font-size', 12).attr('fill', 'var(--color-fg)').text(`${c} (${w * 100}%)`);
+    svg.append('rect').attr('x', x(0)).attr('y', y).attr('width', x(100) - x(0)).attr('height', bh).attr('rx', 2).attr('fill', 'var(--cds-chart-grid)');
+    svg.append('rect').attr('x', x(0)).attr('y', y).attr('width', Math.max(0, x(v) - x(0))).attr('height', bh).attr('rx', 2).attr('fill', window.sxIxColor(c));
+    svg.append('text').attr('x', x(100) + 6).attr('y', y + bh / 2).attr('dy', '0.35em').attr('font-size', 11).attr('fill', 'var(--color-fg-muted)').text(d3.format('.0f')(v));
+  });
+  el.replaceChildren(svg.node());
+});
+dash.draw('ixtable', (tb) => {
+  const g = dash.data('index_evidence'), sc = dash.data('index_scores');
+  if (g.status !== 'ok') { tb.replaceChildren(); return; }
+  const st = window.sxIxState || (sc.status === 'ok' && sc.data[0] ? sc.data[0].state : '');
+  const order = Object.fromEntries(window.sxIxComps.map(([c], i) => [c, i]));
+  const cols = ['component', 'indicator_label', 'level', 'evidence', 'pending', 'confidence', 'source_date', 'source_url'];
+  const rows = g.data.filter((r) => r.state === st).sort((a, b) => order[a.component] - order[b.component]);
+  tb.replaceChildren(...rows.map((r) => {
+    const tr = document.createElement('tr'); tr.setAttribute('data-key', r.id);
+    cols.forEach((c) => {
+      const td = document.createElement('td'); const v = r[c] ?? '';
+      if (c === 'source_url') {
+        td.className = 'src';
+        if (/^https?:\/\//.test(String(v))) { const a = document.createElement('a'); a.href = v; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.textContent = v; td.append(a); }
+      } else {
+        if (c === 'evidence' || c === 'pending') td.className = 'wide';
+        if (c === 'level') { td.className = 'num'; td.textContent = v === null || v === '' ? '' : String(v); }
+        else td.textContent = v;
+        if (c === 'component') td.style.boxShadow = `inset 3px 0 0 ${window.sxIxColor(v)}`;
+      }
+      tr.append(td);
+    });
+    return tr;
+  }));
+});
+</script>

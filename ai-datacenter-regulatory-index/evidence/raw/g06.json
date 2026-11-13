@@ -1,0 +1,1002 @@
+[
+ {
+  "state": "MN",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "The PUC ordered Xcel in June 2025 to propose a very-large-customer tariff; Xcel filed in July 2025 and the PUC has approved decision options, while Dakota Electric was ordered to file in Dec 2025 and Minnesota Power and Otter Tail dockets are expected later.",
+  "source_url": "https://www.oregon.gov/energy/get-involved/Documents/03-Pete-Wyckoff-State-of-Minnesota-DCAC-05-29-2026.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "PUC must define the 'Very Large Customer' class by 2026-12-15; remaining utilities' dockets to come."
+ },
+ {
+  "state": "MN",
+  "indicator": "pw_min_commit",
+  "level": 100,
+  "evidence": "Xcel's large-load terms include a 15-year minimum commitment and exit fees, and the PUC's decision options set take-or-pay and exit-fee percentages at 80%.",
+  "source_url": "https://www.oregon.gov/energy/get-involved/Documents/03-Pete-Wyckoff-State-of-Minnesota-DCAC-05-29-2026.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": "Final tariff order pending."
+ },
+ {
+  "state": "MN",
+  "indicator": "pw_collateral",
+  "level": 50,
+  "evidence": "Xcel's large-load proposal secures monthly bills and requires large-load customers to meet credit-assurance requirements, with customers paying all interconnection and upgrade costs.",
+  "source_url": "https://pineislandmn.gov/vertical/sites/%7B52A5D060-3422-4069-8E86-A961C2752B7F%7D/uploads/25-11-207_MN_Data_Center_Regulation_Information_Sheet.pdf",
+  "source_date": "2025-11",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MN",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "Chapter 12 (2025 1st Special Session) directs the PUC to create a very-large-customer class and bars shifting costs attributable to these customers, including stranded costs, to other ratepayers.",
+  "source_url": "https://www.house.mn.gov/NewLaws/story/2025/5641",
+  "source_date": "2025-07",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "MN",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "No statewide pause, but cities have acted locally, e.g. Minneapolis council voted 8-5 in May 2026 for a six-month pause on data centers over 350,000 sq ft and Eagan adopted a one-year moratorium.",
+  "source_url": "https://broadbandbreakfast.com/minneapolis-approves-six-month-moratorium-on-large-data-centers.md",
+  "source_date": "2026-05",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MN",
+  "indicator": "pm_siting",
+  "level": 50,
+  "evidence": "No dedicated data-center siting board; the PUC approves electric service agreements for very large customers and can permit or deny behind-the-meter gas plants, while the Business First Stop program coordinates agency permits and local governments decide zoning.",
+  "source_url": "https://www.house.mn.gov/NewLaws/story/2025/5641",
+  "source_date": "2025-07",
+  "confidence": "low",
+  "pending": "A House bill requiring a full environmental study and permitting process was heard in 2026 but not enacted."
+ },
+ {
+  "state": "MN",
+  "indicator": "pm_threshold",
+  "level": 50,
+  "evidence": "Chapter 12 ties annual fees ($2M-$5M) to forecast peak demand starting at 100 MW and applies special water-permit conditions above 100 million gallons per year of consumptive use.",
+  "source_url": "https://www.house.mn.gov/NewLaws/story/2025/5641",
+  "source_date": "2025-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MN",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track or documented-delay program in statute; the law routes applicants to the DEED Business First Stop for permit coordination, and litigation has halted some projects.",
+  "source_url": "https://www.house.mn.gov/NewLaws/story/2025/5641",
+  "source_date": "2025-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MN",
+  "indicator": "tx_sales",
+  "level": 30,
+  "evidence": "The enterprise IT equipment sales-tax exemption now covers qualified large-scale data centers (25,000+ sq ft, $250M+ invested within 60 months) for up to 35 years, but electricity is no longer exempt and green-certification conditions apply.",
+  "source_url": "https://www.house.mn.gov/NewLaws/story/2025/5641",
+  "source_date": "2025-07",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "MN",
+  "indicator": "tx_property",
+  "level": null,
+  "evidence": "Searched but did not find a verifiable statement on state or local property-tax abatement for Minnesota data centers.",
+  "source_url": "https://www.house.mn.gov/NewLaws/story/2025/5641",
+  "source_date": "2025-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MN",
+  "indicator": "tx_conditions",
+  "level": 100,
+  "evidence": "Large-scale data centers must obtain a green building or sustainable design certification within three years of service or repay the exempted tax to the Department of Revenue, and construction workers must be paid prevailing wage.",
+  "source_url": "https://www.house.mn.gov/NewLaws/story/2025/5641",
+  "source_date": "2025-07",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "MN",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "Chapter 12 imposes special permit conditions on proposals whose consumptive water use exceeds 100 million gallons per year; advocates note NDAs still hide planned use.",
+  "source_url": "https://www.house.mn.gov/NewLaws/story/2025/5641",
+  "source_date": "2025-07",
+  "confidence": "medium",
+  "pending": "Reviewer should confirm whether the statute also requires periodic water-use reporting."
+ },
+ {
+  "state": "MN",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Minnesota-specific backup-generator limits for data centers were found beyond general MPCA permitting.",
+  "source_url": "https://www.house.mn.gov/NewLaws/story/2025/5641",
+  "source_date": "2025-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MN",
+  "indicator": "ev_review",
+  "level": 50,
+  "evidence": "General Minnesota environmental review (EAW/EIS and AUAR) applies to data centers and is being litigated (Pine Island injunction May 2026); no data-center-specific review statute has been enacted.",
+  "source_url": "https://www.mncenter.org/legal-updates-mceas-data-center-cases",
+  "source_date": "2026-05",
+  "confidence": "high",
+  "pending": "A bill for a full environmental study of data centers was heard in 2026 but did not pass."
+ },
+ {
+  "state": "MN",
+  "indicator": "op_backup",
+  "level": 50,
+  "evidence": "Utilities must offer a voluntary clean energy and capacity tariff to large customers, and Xcel must bring a 24/7 hourly clean-energy tariff by Dec 1; the PUC can approve or deny behind-the-meter gas plants.",
+  "source_url": "https://www.oregon.gov/energy/get-involved/Documents/03-Pete-Wyckoff-State-of-Minnesota-DCAC-05-29-2026.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MN",
+  "indicator": "op_labor",
+  "level": 100,
+  "evidence": "Chapter 12 requires that workers constructing or refurbishing qualified large-scale data centers be paid the prevailing wage.",
+  "source_url": "https://www.house.mn.gov/NewLaws/story/2025/5641",
+  "source_date": "2025-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MN",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "Incentive-linked reporting: data centers certify green-building attainment to the Commerce Department and pay peak-demand-based annual fees; no general public operating report is required.",
+  "source_url": "https://www.oregon.gov/energy/get-involved/Documents/03-Pete-Wyckoff-State-of-Minnesota-DCAC-05-29-2026.pdf",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MN",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules for data centers found; local ordinances (e.g. Monticello) set these.",
+  "source_url": "https://www.mncenter.org/legal-updates-mceas-data-center-cases",
+  "source_date": "2026-05",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MN",
+  "indicator": "ad_uncertainty",
+  "level": 100,
+  "evidence": "AUAR lawsuits by MCEA (Pine Island injunction, Hermantown, Monticello, Faribault appeal) are active, and the PUC's very-large-customer class and Xcel tariff are still being finalized.",
+  "source_url": "https://www.mncenter.org/legal-updates-mceas-data-center-cases",
+  "source_date": "2026-05",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "MN",
+  "indicator": "ad_backlog",
+  "level": null,
+  "evidence": "Could not verify a documented interconnection-queue or agency backlog specific to data centers in Minnesota (search budget ran out).",
+  "source_url": "",
+  "source_date": "",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IA",
+  "indicator": "pw_tariff",
+  "level": 100,
+  "evidence": "The Iowa Utilities Commission has approved Individual Customer Rate tariffs for both MidAmerican (15 MW threshold) and Alliant/IPL (25 MW threshold).",
+  "source_url": "https://www.cleanenergydistricts.org/data-centers-in-iowa-resource-hub",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "IA",
+  "indicator": "pw_min_commit",
+  "level": 50,
+  "evidence": "MidAmerican's tariff carries a 10-year minimum contract and Alliant's at least five years with an ~80% load factor, below the 12-year bar.",
+  "source_url": "https://www.cleanenergydistricts.org/data-centers-in-iowa-resource-hub",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "IA",
+  "indicator": "pw_collateral",
+  "level": 0,
+  "evidence": "No large-load-specific deposit or collateral requirement was found for the Iowa ICR tariffs.",
+  "source_url": "https://www.cleanenergydistricts.org/data-centers-in-iowa-resource-hub",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IA",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "Alliant must file annual reports showing large customers cover their costs, but a bill to mandate separate data-center rate classes (HF 2447/HF 2690) did not reach the floor in 2026.",
+  "source_url": "https://www.cleanenergydistricts.org/iowa-policy/2026-iowa-legislative-session",
+  "source_date": "2026-02",
+  "confidence": "medium",
+  "pending": "Governor-elect Rob Sand wants data centers to 'pay full freight'; 2027 bills likely."
+ },
+ {
+  "state": "IA",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "No statewide moratorium; county-level pauses are spreading in Iowa and Nebraska while Clinton's council rejected one and GOP candidate Zach Lahn had called for a statewide pause.",
+  "source_url": "https://www.kwit.org/podcast/spm-news/2026-07-03/growing-number-of-county-moratoriums-on-data-centers-in-nebraska-iowa",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": "Sand has not endorsed a moratorium per reporting."
+ },
+ {
+  "state": "IA",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "Siting is left to cities and counties (e.g. Linn County's ordinance requiring a water study and Water Use Agreement); the IUC reviews gas plants only.",
+  "source_url": "https://www.cleanenergydistricts.org/data-centers-in-iowa-resource-hub",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "IA",
+  "indicator": "pm_threshold",
+  "level": 100,
+  "evidence": "The state-approved tariff thresholds (15 MW MidAmerican, 25 MW Alliant) trigger special rate treatment well below 100 MW, but no statutory siting threshold exists.",
+  "source_url": "https://www.cleanenergydistricts.org/data-centers-in-iowa-resource-hub",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IA",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track or documented-delay program found for Iowa data centers.",
+  "source_url": "https://www.cleanenergydistricts.org/data-centers-in-iowa-resource-hub",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IA",
+  "indicator": "tx_sales",
+  "level": 30,
+  "evidence": "Sales/use tax exemptions for equipment, electricity and backup fuel require $200M+ investment, and HF 976 (June 2025) caps the energy exemption at 10 or 15 years for new and expanded facilities.",
+  "source_url": "https://www.brownwinick.com/insights/iowa-sales-tax-changes-for-data-centers",
+  "source_date": "2025-06",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "IA",
+  "indicator": "tx_property",
+  "level": 0,
+  "evidence": "Local property-tax rebates and TIF are routine, e.g. Cedar Rapids gave QTS and Google 20 years of 70% property-tax rebates.",
+  "source_url": "https://www.cleanenergydistricts.org/data-centers-in-iowa-resource-hub",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "IA",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "The exemption requires an investment threshold, Department of Revenue registration and annual reporting of electricity and fuel purchases; no clawback provision was found.",
+  "source_url": "https://www.brownwinick.com/insights/iowa-sales-tax-changes-for-data-centers",
+  "source_date": "2025-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "IA",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "Data-center water use is reviewed under general DNR water-use permits, but a bill requiring quarterly water reporting (HF 2447/2690) did not advance.",
+  "source_url": "https://www.cleanenergydistricts.org/iowa-policy/2026-iowa-legislative-session",
+  "source_date": "2026-02",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IA",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Iowa-specific data-center generator limits found beyond baseline air permitting.",
+  "source_url": "https://www.cleanenergydistricts.org/data-centers-in-iowa-resource-hub",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IA",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "Iowa has no general state environmental-review (SEPA-type) statute that was found to apply to data centers.",
+  "source_url": "https://www.cleanenergydistricts.org/data-centers-in-iowa-resource-hub",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IA",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No on-site generation or demand-response mandate for data centers found (backup fuel is sales-tax exempt).",
+  "source_url": "https://www.brownwinick.com/insights/iowa-sales-tax-changes-for-data-centers",
+  "source_date": "2025-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IA",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No prevailing-wage, PLA or local-hire requirement for data centers found.",
+  "source_url": "https://www.brownwinick.com/insights/iowa-sales-tax-changes-for-data-centers",
+  "source_date": "2025-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "IA",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "Data centers claiming the exemption must register with the Department of Revenue and file annual reports on electricity and backup fuel purchases; a public quarterly-reporting bill failed.",
+  "source_url": "https://www.brownwinick.com/insights/iowa-sales-tax-changes-for-data-centers",
+  "source_date": "2025-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "IA",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules for data centers found; Sand proposes setbacks.",
+  "source_url": "https://www.timesrepublican.com/news/todays-news/2026/08/sand-weighs-in-on-data-center-regulations-during-town-hall-at-mcc-thursday/",
+  "source_date": "2026-08",
+  "confidence": "low",
+  "pending": "Sand backs setbacks, transparency on water/electric use and 'real and expensive consequences'."
+ },
+ {
+  "state": "IA",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Governor-elect Rob Sand has pledged to make data centers 'pay full freight' with setbacks and reporting, and 2026 bills carried over, so rules may change in 2027.",
+  "source_url": "https://www.timesrepublican.com/news/todays-news/2026/08/sand-weighs-in-on-data-center-regulations-during-town-hall-at-mcc-thursday/",
+  "source_date": "2026-08",
+  "confidence": "medium",
+  "pending": "Brief describes Sand as governor-elect; I could not confirm the Nov 3, 2026 result by search."
+ },
+ {
+  "state": "IA",
+  "indicator": "ad_backlog",
+  "level": null,
+  "evidence": "Could not verify a documented interconnection-queue or agency backlog specific to data centers in Iowa (search budget ran out).",
+  "source_url": "",
+  "source_date": "",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MO",
+  "indicator": "pw_tariff",
+  "level": 100,
+  "evidence": "The PSC has approved large-load tariffs for Ameren Missouri and Evergy under SB 4 (2025), with Liberty's case still pending.",
+  "source_url": "https://psc.mo.gov/General/Utility_Tariffs_for_Large_Load_Customers",
+  "source_date": "2026-04",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "MO",
+  "indicator": "pw_min_commit",
+  "level": 100,
+  "evidence": "The tariffs require a 12-year minimum term (plus optional 5-year ramp), an 80% minimum demand charge, and exit and early-termination fees.",
+  "source_url": "https://psc.mo.gov/General/Utility_Tariffs_for_Large_Load_Customers",
+  "source_date": "2026-04",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "MO",
+  "indicator": "pw_collateral",
+  "level": 100,
+  "evidence": "Large-load customers must post collateral equal to two years of minimum monthly bills and meet creditworthiness and liquidity tests.",
+  "source_url": "https://psc.mo.gov/Electric/PSC_Approves_Evergy_Large_Load_Power_Service_Plan_with_Customer_Protections--pr-26-38",
+  "source_date": "2025-11",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "MO",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "SB 4 (2025) requires PSC rates for large loads reflecting their cost share and bars unjust or unreasonable costs on other classes; the PSC set the threshold at 75 MW.",
+  "source_url": "https://www.kcur.org/housing-development-section/2026-07-01/missouri-data-center-rules-water-energy-legislature",
+  "source_date": "2026-07",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "MO",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "No statewide moratorium; St. Charles passed a one-year moratorium in Aug 2025 and a de facto permanent ban in May 2026, while a Sept 2026 rally demanded a statewide pause and no bill has moved.",
+  "source_url": "https://missouriindependent.com/2026/06/05/theyre-already-here-regulating-data-centers-stalls-in-missouri/",
+  "source_date": "2026-06",
+  "confidence": "high",
+  "pending": "Statewide-moratorium demands could surface in the 2027 session."
+ },
+ {
+  "state": "MO",
+  "indicator": "pm_siting",
+  "level": 0,
+  "evidence": "No state siting board; zoning and approvals are local, and a bill to create a state approval board (Cupps) died.",
+  "source_url": "https://missouriindependent.com/2026/06/05/theyre-already-here-regulating-data-centers-stalls-in-missouri/",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MO",
+  "indicator": "pm_threshold",
+  "level": 100,
+  "evidence": "The PSC large-load tariff threshold is 75 MW of forecast monthly peak demand, below 100 MW; critics note smaller projects are uncovered.",
+  "source_url": "https://www.kcur.org/housing-development-section/2026-07-01/missouri-data-center-rules-water-energy-legislature",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MO",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track program or documented permitting delay found.",
+  "source_url": "https://missouriindependent.com/2026/06/05/theyre-already-here-regulating-data-centers-stalls-in-missouri/",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MO",
+  "indicator": "tx_sales",
+  "level": 0,
+  "evidence": "Missouri's DED Data Center Sales Tax Exemption Program is active for NAICS 518210/519130 firms; the exact investment and job thresholds could not be confirmed.",
+  "source_url": "https://ded.mo.gov/programs/business/data-center-sales-tax-exemption-program",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": "Thresholds unverified; could be 30 if strict."
+ },
+ {
+  "state": "MO",
+  "indicator": "tx_property",
+  "level": 0,
+  "evidence": "Local tax breaks are routine in Missouri (e.g. Independence approved them, and voters later ousted two council members); a bill to ban data-center incentives failed.",
+  "source_url": "https://missouriindependent.com/2026/06/05/theyre-already-here-regulating-data-centers-stalls-in-missouri/",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MO",
+  "indicator": "tx_conditions",
+  "level": 50,
+  "evidence": "The DED exemption requires a project plan, employee list, E-Verify MOU and an annual report; no clawback specifics were confirmed.",
+  "source_url": "https://ded.mo.gov/programs/business/data-center-sales-tax-exemption-program",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MO",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No data-center water permit or reporting rule was enacted; HB 3362 (DNR permits for large water users) and HB 2239 (closed-loop at 100 MW) died without floor votes.",
+  "source_url": "https://www.kcur.org/housing-development-section/2026-07-01/missouri-data-center-rules-water-energy-legislature",
+  "source_date": "2026-07",
+  "confidence": "high",
+  "pending": "Rep. Byrnes plans oversight and transparency proposals for 2027."
+ },
+ {
+  "state": "MO",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Missouri-specific data-center generator rules found.",
+  "source_url": "https://www.kcur.org/housing-development-section/2026-07-01/missouri-data-center-rules-water-energy-legislature",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MO",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No state environmental review applies specifically to data centers; none of 100 bills passed in 2026 addressed them.",
+  "source_url": "https://www.kcur.org/housing-development-section/2026-07-01/missouri-data-center-rules-water-energy-legislature",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MO",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "No on-site generation or curtailment mandate for data centers found.",
+  "source_url": "https://www.kcur.org/housing-development-section/2026-07-01/missouri-data-center-rules-water-energy-legislature",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MO",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No prevailing-wage, PLA or local-hire rule for data centers found.",
+  "source_url": "https://missouriindependent.com/2026/06/05/theyre-already-here-regulating-data-centers-stalls-in-missouri/",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MO",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "Incentive recipients file a DED Data Center Annual Report; no statutory public operating reporting exists (transparency bills failed).",
+  "source_url": "https://ded.mo.gov/programs/business/data-center-sales-tax-exemption-program",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "MO",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules; the McCreery noise/water transparency bill did not advance.",
+  "source_url": "https://missouriindependent.com/2026/06/05/theyre-already-here-regulating-data-centers-stalls-in-missouri/",
+  "source_date": "2026-06",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MO",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Several bills (transparency, NDA ban, hyperscale definition) are expected in the 2027 session and the public is pressing for a moratorium, though none has passed.",
+  "source_url": "https://www.kcur.org/housing-development-section/2026-09-17/data-center-protest-missouri-capitol-legislature-construction-moratorium",
+  "source_date": "2026-09",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "MO",
+  "indicator": "ad_backlog",
+  "level": null,
+  "evidence": "Could not verify a documented interconnection-queue or agency backlog specific to data centers in Missouri (search budget ran out).",
+  "source_url": "",
+  "source_date": "",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "pw_tariff",
+  "level": 70,
+  "evidence": "The KCC unanimously approved Evergy's large-load power service rate plan on 2025-11-06; approval for other Kansas utilities such as Black Hills was not confirmed.",
+  "source_url": "https://www.utilitydive.com/news/kansas-michigan-data-center-large-load-evergy-consumers/805115/",
+  "source_date": "2025-11",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "pw_min_commit",
+  "level": 100,
+  "evidence": "Evergy's tariff requires a minimum 12-year term (plus up to 5 years ramp) and a minimum monthly bill of 80% of contract demand.",
+  "source_url": "https://www.utilitydive.com/news/kansas-michigan-data-center-large-load-evergy-consumers/805115/",
+  "source_date": "2025-11",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "pw_collateral",
+  "level": 100,
+  "evidence": "Customers must post collateral equal to two years of minimum bills, and pay for any transmission upgrades needed to serve them.",
+  "source_url": "https://kansasreflector.com/?p=55299",
+  "source_date": "2025-11",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "pw_cost_alloc",
+  "level": 100,
+  "evidence": "The KCC order makes large users cover infrastructure costs for new loads over 75 MW without shifting them to other customers.",
+  "source_url": "https://kansasreflector.com/?p=55299",
+  "source_date": "2025-11",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "No statewide pause; counties including Sedgwick (90-day permit suspension, Jan 2026) and Marion have paused data centers, and Senate Majority Leader Blasi asked for a three-year Sedgwick moratorium and floated state legislation.",
+  "source_url": "https://www.kwch.com/2026/02/24/kansas-lawmakers-ask-three-year-pause-sedgwick-county-data-centers/",
+  "source_date": "2026-02",
+  "confidence": "medium",
+  "pending": "Blasi said he would introduce state legislation for Sedgwick if the county did not act."
+ },
+ {
+  "state": "KS",
+  "indicator": "pm_siting",
+  "level": 50,
+  "evidence": "Local zoning governs siting, but incentive recipients need Kansas Fusion Center Oversight Board security approval, which can deny projects threatening critical infrastructure.",
+  "source_url": "https://www.kslegislature.gov/li/b2025_26/measures/documents/summary_sb_98_2025",
+  "source_date": "2025",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "pm_threshold",
+  "level": 100,
+  "evidence": "The Evergy tariff applies to new loads over 75 MW (cut from 100 MW in the settlement), below 100 MW.",
+  "source_url": "https://kansasreflector.com/?p=55299",
+  "source_date": "2025-11",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "pm_timeline",
+  "level": 50,
+  "evidence": "No fast-track program or documented delays found.",
+  "source_url": "https://www.kansascommerce.gov/ja/program/business-incentives-and-services/sb-98-data-center-sales-tax-exemption/",
+  "source_date": "2025-11",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "tx_sales",
+  "level": 30,
+  "evidence": "SB 98 grants a 20-year state and local sales tax exemption but requires $250M investment within five years, 20 jobs, a water plan, a 10-year utility power contract and security review.",
+  "source_url": "https://www.kansascommerce.gov/ja/program/business-incentives-and-services/sb-98-data-center-sales-tax-exemption/",
+  "source_date": "2025-11",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "tx_property",
+  "level": null,
+  "evidence": "Searched but found no verifiable source on Kansas property-tax abatement for data centers; SB 98 covers sales tax only.",
+  "source_url": "https://www.kslegislature.gov/li/b2025_26/measures/documents/summary_sb_98_2025",
+  "source_date": "2025",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "tx_conditions",
+  "level": 100,
+  "evidence": "SB 98 lets Commerce require repayment of exempted tax and terminate the exemption after a breach not cured within 120 days, with audits and five-year reviews.",
+  "source_url": "https://www.kslegislature.gov/li/b2025_26/measures/documents/summary_sb_98_2025",
+  "source_date": "2025",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "ev_water",
+  "level": 50,
+  "evidence": "Exemption applicants must adopt a comprehensive water plan and a water conservation, reuse and replacement plan, but no general withdrawal limits or reporting exist for all data centers.",
+  "source_url": "https://www.kansascommerce.gov/ja/program/business-incentives-and-services/sb-98-data-center-sales-tax-exemption/",
+  "source_date": "2025-11",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Kansas-specific data-center generator rules found.",
+  "source_url": "https://www.kslegislature.gov/li/b2025_26/measures/documents/summary_sb_98_2025",
+  "source_date": "2025",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "Kansas has no state environmental-review law found to apply to data centers.",
+  "source_url": "https://www.kslegislature.gov/li/b2025_26/measures/documents/summary_sb_98_2025",
+  "source_date": "2025",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "op_backup",
+  "level": 50,
+  "evidence": "Evergy's agreement offers four voluntary options for large-load customers to access clean energy; no mandatory curtailment was found.",
+  "source_url": "https://www.utilitydive.com/news/kansas-michigan-data-center-large-load-evergy-consumers/805115/",
+  "source_date": "2025-11",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "op_labor",
+  "level": 50,
+  "evidence": "SB 98 ties the exemption to 20 new full-time jobs filled by Kansas residents; no prevailing-wage mandate found.",
+  "source_url": "https://www.kansascommerce.gov/ja/program/business-incentives-and-services/sb-98-data-center-sales-tax-exemption/",
+  "source_date": "2025-11",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "op_reporting",
+  "level": 50,
+  "evidence": "Exemption recipients report to Commerce's incentive database and annual report and face audits; data is largely confidential rather than public.",
+  "source_url": "https://www.kslegislature.gov/li/b2025_26/measures/documents/summary_sb_98_2025",
+  "source_date": "2025",
+  "confidence": "high",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules for data centers found.",
+  "source_url": "https://www.kslegislature.gov/li/b2025_26/measures/documents/summary_sb_98_2025",
+  "source_date": "2025",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "KS",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "Legislators have floated state action beyond local pauses and the data-center fight is a live issue in the 2026 elections, though no major rule is pending.",
+  "source_url": "https://www.kwch.com/2026/02/24/kansas-lawmakers-ask-three-year-pause-sedgwick-county-data-centers/",
+  "source_date": "2026-02",
+  "confidence": "low",
+  "pending": "Fall 2026 Kansas debate coverage (Axios) could not be fetched."
+ },
+ {
+  "state": "KS",
+  "indicator": "ad_backlog",
+  "level": null,
+  "evidence": "Could not verify a documented interconnection-queue or agency backlog specific to data centers in Kansas (search budget ran out).",
+  "source_url": "",
+  "source_date": "",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NE",
+  "indicator": "pw_tariff",
+  "level": 40,
+  "evidence": "Public power districts (OPPD, NPPD, LES) have no large-load tariff I could verify; LB 1261 (signed 2026-04-14) requires large loads to sign long-term contracts with their local district, and OPPD's June 2026 rate-policy revision does not mention data centers.",
+  "source_url": "https://www.publicpower.org/periodical/article/how-public-power-keeping-communities-first-data-center-development",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": "Individual district tariffs not located."
+ },
+ {
+  "state": "NE",
+  "indicator": "pw_min_commit",
+  "level": 50,
+  "evidence": "LB 1261 requires large-load customers to sign long-term contracts with their public power district, but the term and minimum-bill terms were not found.",
+  "source_url": "https://www.publicpower.org/periodical/article/how-public-power-keeping-communities-first-data-center-development",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NE",
+  "indicator": "pw_collateral",
+  "level": 0,
+  "evidence": "No large-load collateral requirement found for Nebraska public power districts.",
+  "source_url": "https://www.publicpower.org/periodical/article/how-public-power-keeping-communities-first-data-center-development",
+  "source_date": "2026-04",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NE",
+  "indicator": "pw_cost_alloc",
+  "level": 50,
+  "evidence": "LB 1261 (2026) places the cost of new generation and utility upgrades on energy users needing over 1,000 MW, so its mandate covers only the very largest loads.",
+  "source_url": "https://nebraskapublicmedia.org/es/news/news-articles/data-centers-are-eyeing-nebraska-heres-how-counties-are-responding/",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "NE",
+  "indicator": "pm_moratorium",
+  "level": 25,
+  "evidence": "No statewide moratorium (Pillen says his order is not one), but at least 11-12 counties including Seward and Otoe have local moratoria and Gage and others are considering them.",
+  "source_url": "https://nebraskapublicmedia.org/es/news/news-articles/data-centers-are-eyeing-nebraska-heres-how-counties-are-responding/",
+  "source_date": "2026-06",
+  "confidence": "high",
+  "pending": "Critics call the incentive ban an effective moratorium; Sen. Jacobson plans a 2027 bill to codify the order."
+ },
+ {
+  "state": "NE",
+  "indicator": "pm_siting",
+  "level": 50,
+  "evidence": "EO 26-17 directs DED, Revenue and the Department of Water, Energy and Environment to review data center proposals for state interest, while county zoning and special-use permits still control siting.",
+  "source_url": "https://governor.nebraska.gov/node/9916",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "NE",
+  "indicator": "pm_threshold",
+  "level": 50,
+  "evidence": "LB 1261's private-generation pathway applies at over 1,000 MW; the executive order sets no MW threshold.",
+  "source_url": "https://nebraskapublicmedia.org/es/news/news-articles/data-centers-are-eyeing-nebraska-heres-how-counties-are-responding/",
+  "source_date": "2026",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "NE",
+  "indicator": "pm_timeline",
+  "level": 0,
+  "evidence": "LB 663 sets a strict timeline for county boards reviewing special or conditional use permits, which residents said speeds approvals.",
+  "source_url": "https://nebraskapublicmedia.org/es/news/news-articles/data-centers-are-eyeing-nebraska-heres-how-counties-are-responding/",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NE",
+  "indicator": "tx_sales",
+  "level": 80,
+  "evidence": "EO 26-17 (signed 2026-07-21) bars approving data centers for ImagiNE Nebraska Act incentives, the route to their conditional sales-tax relief.",
+  "source_url": "https://governor.nebraska.gov/node/9916",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": "Sen. Jacobson plans a 2027 bill to codify the order."
+ },
+ {
+  "state": "NE",
+  "indicator": "tx_property",
+  "level": 80,
+  "evidence": "The same order ends data center access to ImagiNE incentives, which include property-tax-related benefits; the exact property-tax effect was not verified.",
+  "source_url": "https://nebraskaexaminer.com/2026/07/20/pillen-rescinds-imagine-act-tax-incentives-for-new-nebraska-data-centers/",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NE",
+  "indicator": "tx_conditions",
+  "level": 0,
+  "evidence": "With ImagiNE incentives closed to new data centers, no incentive conditions apply.",
+  "source_url": "https://nebraskaexaminer.com/2026/07/20/pillen-rescinds-imagine-act-tax-incentives-for-new-nebraska-data-centers/",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "NE",
+  "indicator": "ev_water",
+  "level": 0,
+  "evidence": "No statewide data-center water rule found; the order creates a task force with Natural Resources Districts to recommend water protections, and a closed-loop cooling amendment to LB 1261 was rejected.",
+  "source_url": "https://governor.nebraska.gov/node/9916",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": "Task force recommendations pending."
+ },
+ {
+  "state": "NE",
+  "indicator": "ev_emissions",
+  "level": 0,
+  "evidence": "No Nebraska-specific data-center generator rules found.",
+  "source_url": "https://governor.nebraska.gov/node/9916",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NE",
+  "indicator": "ev_review",
+  "level": 0,
+  "evidence": "No state environmental review specific to data centers found.",
+  "source_url": "https://governor.nebraska.gov/node/9916",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NE",
+  "indicator": "op_backup",
+  "level": 0,
+  "evidence": "LB 1261 permits behind-the-meter private generation for over-1,000 MW users; no curtailment mandate found.",
+  "source_url": "https://nebraskapublicmedia.org/es/news/news-articles/data-centers-are-eyeing-nebraska-heres-how-counties-are-responding/",
+  "source_date": "2026",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NE",
+  "indicator": "op_labor",
+  "level": 0,
+  "evidence": "No prevailing-wage or local-hire rule for data centers found.",
+  "source_url": "https://governor.nebraska.gov/node/9916",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NE",
+  "indicator": "op_reporting",
+  "level": 0,
+  "evidence": "No ongoing operating-report requirement for data centers found.",
+  "source_url": "https://governor.nebraska.gov/node/9916",
+  "source_date": "2026-07",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NE",
+  "indicator": "op_restrictions",
+  "level": 0,
+  "evidence": "No statewide noise or setback rules found; counties are drafting their own.",
+  "source_url": "https://nebraskapublicmedia.org/es/news/news-articles/data-centers-are-eyeing-nebraska-heres-how-counties-are-responding/",
+  "source_date": "2026-06",
+  "confidence": "low",
+  "pending": ""
+ },
+ {
+  "state": "NE",
+  "indicator": "ad_uncertainty",
+  "level": 50,
+  "evidence": "The July 2026 executive order, a pending task force, a planned 2027 codifying bill and spreading county moratoria leave rules unsettled.",
+  "source_url": "https://nebraskaexaminer.com/2026/07/20/pillen-rescinds-imagine-act-tax-incentives-for-new-nebraska-data-centers/",
+  "source_date": "2026-07",
+  "confidence": "medium",
+  "pending": ""
+ },
+ {
+  "state": "NE",
+  "indicator": "ad_backlog",
+  "level": null,
+  "evidence": "Could not verify a documented interconnection-queue or agency backlog specific to data centers in Nebraska (search budget ran out).",
+  "source_url": "",
+  "source_date": "",
+  "confidence": "low",
+  "pending": ""
+ }
+]
